@@ -16,8 +16,8 @@
   
   <entry>
     <title><![CDATA[CNNIC证书]]></title>
-    <link href="http://qunwang6.github.io/blog/cnnicCACertificate/"/>
-    <id>http://qunwang6.github.io/blog/cnnicCACertificate/</id>
+    <link href="http://qunwang6.github.io/blog/CNNICCertificate/"/>
+    <id>http://qunwang6.github.io/blog/CNNICCertificate/</id>
     <published>2015-06-02T16:00:00.000Z</published>
     <updated>2015-06-03T15:03:38.000Z</updated>
     <content type="html"><![CDATA[<ul>
@@ -197,6 +197,30 @@
   </entry>
   
   <entry>
+    <title><![CDATA[Help Sheet]]></title>
+    <link href="http://qunwang6.github.io/blog/HelpSheet/"/>
+    <id>http://qunwang6.github.io/blog/HelpSheet/</id>
+    <published>2015-05-30T16:00:00.000Z</published>
+    <updated>2015-06-03T13:13:49.000Z</updated>
+    <content type="html"><![CDATA[<ul>
+<li><a href="http://kachibito.net/wp-content/uploads/2009/08/wp-cheat1.html" target="_blank" rel="external">WP Help Sheet</a></li>
+<li><a href="https://github.com/tiimgreen/github-cheat-sheet" target="_blank" rel="external">tiimgreen/github-cheat-sheet</a><!--next page-->
+</li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[<ul>
+<li><a href="http://kachibito.net/wp-content/uploads/2009/08/wp-cheat1.html" target="_blank" rel="external">WP Help Sheet</a></li>
+<li>]]>
+    </summary>
+    
+      <category term="Sheet" scheme="http://qunwang6.github.io/blog/tags/Sheet/"/>
+    
+      <category term="Sheet" scheme="http://qunwang6.github.io/blog/categories/Sheet/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[iOS developer tips]]></title>
     <link href="http://qunwang6.github.io/blog/iOSDeveloperTips/"/>
     <id>http://qunwang6.github.io/blog/iOSDeveloperTips/</id>
@@ -340,30 +364,6 @@
       <category term="HTTP2" scheme="http://qunwang6.github.io/blog/tags/HTTP2/"/>
     
       <category term="HTTP2" scheme="http://qunwang6.github.io/blog/categories/HTTP2/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Help Sheet]]></title>
-    <link href="http://qunwang6.github.io/blog/HelpSheet/"/>
-    <id>http://qunwang6.github.io/blog/HelpSheet/</id>
-    <published>2015-05-30T16:00:00.000Z</published>
-    <updated>2015-06-03T13:13:49.000Z</updated>
-    <content type="html"><![CDATA[<ul>
-<li><a href="http://kachibito.net/wp-content/uploads/2009/08/wp-cheat1.html" target="_blank" rel="external">WP Help Sheet</a></li>
-<li><a href="https://github.com/tiimgreen/github-cheat-sheet" target="_blank" rel="external">tiimgreen/github-cheat-sheet</a><!--next page-->
-</li>
-</ul>
-]]></content>
-    <summary type="html">
-    <![CDATA[<ul>
-<li><a href="http://kachibito.net/wp-content/uploads/2009/08/wp-cheat1.html" target="_blank" rel="external">WP Help Sheet</a></li>
-<li>]]>
-    </summary>
-    
-      <category term="Sheet" scheme="http://qunwang6.github.io/blog/tags/Sheet/"/>
-    
-      <category term="Sheet" scheme="http://qunwang6.github.io/blog/categories/Sheet/"/>
     
   </entry>
   
@@ -599,37 +599,6 @@
   </entry>
   
   <entry>
-    <title><![CDATA[CSS Avengers Card with 3D rotation and neon effect]]></title>
-    <link href="http://qunwang6.github.io/blog/CSS3D/"/>
-    <id>http://qunwang6.github.io/blog/CSS3D/</id>
-    <published>2015-05-16T16:00:00.000Z</published>
-    <updated>2015-06-03T13:13:52.000Z</updated>
-    <content type="html"><![CDATA[<p><img src="http://i.imgur.com/iCBLZco.gif" alt=""></p>
-<blockquote>
-<p>Avengers assemble an SVG scalable logo!<br>Sort of virtual hologram Marvel Avengers card with 3D rotate animation, SVG scalable Avengers logo and Iron Man colors (red and gold) and a nice neon effect.<br>Pure CSS and an SVG Avengers logo.</p>
-</blockquote>
-<h3 id="HTML">HTML</h3><figure class="highlight stylus"><table><tr><td class="code"><pre><span class="line">&lt;<span class="tag">div</span> class=<span class="string">"card animate"</span>&gt;</span><br><span class="line">&lt;<span class="tag">img</span> src=<span class="string">"//upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Symbol_from_Marvel%27s_The_Avengers_logo.svg/191px-Symbol_from_Marvel%27s_The_Avengers_logo.svg.png"</span> <span class="attribute">width</span>=<span class="string">"191"</span> <span class="attribute">height</span>=<span class="string">"223"</span> /&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
-<a id="more"></a>
-<h3 id="CSS">CSS</h3><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="tag">html</span>,<span class="tag">body</span><span class="rules">&#123;</span><br><span class="line"><span class="rule"><span class="attribute">background</span>:<span class="value"><span class="hexcolor">#252527</span></span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">color</span>:<span class="value"><span class="hexcolor">#fff</span></span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">margin</span>:<span class="value"><span class="number">0</span></span></span>;<span class="rule"><span class="attribute">padding</span>:<span class="value"><span class="number">0</span></span></span>;</span><br><span class="line"></span><br><span class="line"><span class="rule"><span class="attribute">display</span>:<span class="value">block</span></span>;<span class="rule"><span class="attribute">overflow</span>:<span class="value">hidden</span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">width</span>:<span class="value"><span class="number">100%</span></span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">height</span>:<span class="value"><span class="number">100%</span></span></span>;</span><br><span class="line"></span><br><span class="line">&#125;</span></span><br><span class="line"><span class="tag">img</span><span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">display</span>:<span class="value">block</span></span>;</span><br><span class="line"><span class="comment">/*</span><br><span class="line">  width:191px;height:223px;</span><br><span class="line">  */</span></span><br><span class="line">  <span class="rule"><span class="attribute">color</span>:<span class="value"><span class="hexcolor">#fff</span></span></span>;<span class="rule"><span class="attribute">background</span>:<span class="value">transparent</span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">100%</span></span></span>; <span class="rule"><span class="attribute">height</span>:<span class="value"> auto</span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">margin</span>:<span class="value"><span class="number">0</span></span></span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="rule"><span class="attribute">transform</span>:<span class="value"><span class="function">rotate3d</span>(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>)</span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">-webkit-transform</span>:<span class="value"><span class="function">rotate3d</span>(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>)</span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">-moz-transform</span>:<span class="value"><span class="function">rotate3d</span>(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>)</span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">-o-transform</span>:<span class="value"><span class="function">rotate3d</span>(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>)</span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">-ms-transform</span>:<span class="value"><span class="function">rotate3d</span>(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>)</span></span>;</span><br><span class="line"></span><br><span class="line">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="class">.animate</span><span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">animation</span>:<span class="value">spin <span class="number">4s</span> linear infinite</span></span>;</span><br><span class="line">    <span class="rule"><span class="attribute">-webkit-animation</span>:<span class="value">spin <span class="number">4s</span> linear infinite</span></span>;</span><br><span class="line">    <span class="rule"><span class="attribute">-moz-animation</span>:<span class="value">spin <span class="number">4s</span> linear infinite</span></span>;</span><br><span class="line">    <span class="rule"><span class="attribute">-o-animation</span>:<span class="value">spin <span class="number">4s</span> linear infinite</span></span>;</span><br><span class="line">    <span class="rule"><span class="attribute">-ms-animation</span>:<span class="value">spin <span class="number">4s</span> linear infinite</span></span>;</span><br><span class="line"></span><br><span class="line">&#125;</span></span><br><span class="line"><span class="at_rule">@<span class="keyword">keyframes</span> spin </span>&#123; 100% <span class="rules">&#123; <span class="rule"><span class="attribute">transform</span>:<span class="value"><span class="function">rotateY</span>(<span class="number">360deg</span>)</span></span>; &#125;</span> &#125;</span><br><span class="line"><span class="at_rule">@<span class="keyword">-webkit-keyframes</span> spin </span>&#123; 100% <span class="rules">&#123; <span class="rule"><span class="attribute">-webkit-transform</span>:<span class="value"> <span class="function">rotateY</span>(<span class="number">360deg</span>)</span></span>; &#125;</span> &#125;</span><br><span class="line"><span class="at_rule">@<span class="keyword">-moz-keyframes</span> spin </span>&#123; 100% <span class="rules">&#123; <span class="rule"><span class="attribute">-moz-transform</span>:<span class="value"> <span class="function">rotateY</span>(<span class="number">360deg</span>)</span></span>; &#125;</span> &#125;</span><br><span class="line"><span class="at_rule">@<span class="keyword">-o-keyframes</span> spin </span>&#123; 100% <span class="rules">&#123; <span class="rule"><span class="attribute">-o-transform</span>:<span class="value"><span class="function">rotateY</span>(<span class="number">360deg</span>)</span></span>; &#125;</span> &#125;</span><br><span class="line"><span class="at_rule">@<span class="keyword">-ms-keyframes</span> spin </span>&#123; 100% <span class="rules">&#123; <span class="rule"><span class="attribute">-ms-transform</span>:<span class="value"><span class="function">rotateY</span>(<span class="number">360deg</span>)</span></span>; &#125;</span> &#125;</span><br><span class="line"></span><br><span class="line"><span class="class">.card</span><span class="rules">&#123;</span><br><span class="line"></span><br><span class="line">  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">50%</span></span></span>;<span class="rule"><span class="attribute">max-width</span>:<span class="value"><span class="number">150px</span></span></span>; <span class="rule"><span class="attribute">height</span>:<span class="value"> auto</span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">30%</span> auto</span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">padding</span>:<span class="value"><span class="number">20%</span> <span class="number">10%</span></span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">border-radius</span>:<span class="value"><span class="number">10px</span></span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">background</span>:<span class="value"><span class="hexcolor">#ED1C24</span></span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">background</span>:<span class="value"> <span class="function">rgb</span>(<span class="number">180</span>,<span class="number">112</span>,<span class="number">107</span>)</span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">background</span>:<span class="value"> <span class="function">-moz-linear-gradient</span>(top,  <span class="function">rgba</span>(<span class="number">180</span>,<span class="number">112</span>,<span class="number">107</span>,<span class="number">1</span>) <span class="number">0%</span>, <span class="function">rgba</span>(<span class="number">144</span>,<span class="number">53</span>,<span class="number">39</span>,<span class="number">1</span>) <span class="number">100%</span>)</span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">background</span>:<span class="value"> <span class="function">-webkit-gradient</span>(linear, left top, left bottom, <span class="function">color-stop</span>(<span class="number">0%</span>,<span class="function">rgba</span>(<span class="number">180</span>,<span class="number">112</span>,<span class="number">107</span>,<span class="number">1</span>)), <span class="function">color-stop</span>(<span class="number">100%</span>,<span class="function">rgba</span>(<span class="number">144</span>,<span class="number">53</span>,<span class="number">39</span>,<span class="number">1</span>)))</span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">background</span>:<span class="value"> <span class="function">-webkit-linear-gradient</span>(top,  <span class="function">rgba</span>(<span class="number">180</span>,<span class="number">112</span>,<span class="number">107</span>,<span class="number">1</span>) <span class="number">0%</span>,<span class="function">rgba</span>(<span class="number">144</span>,<span class="number">53</span>,<span class="number">39</span>,<span class="number">1</span>) <span class="number">100%</span>)</span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">background</span>:<span class="value"> <span class="function">-o-linear-gradient</span>(top,  <span class="function">rgba</span>(<span class="number">180</span>,<span class="number">112</span>,<span class="number">107</span>,<span class="number">1</span>) <span class="number">0%</span>,<span class="function">rgba</span>(<span class="number">144</span>,<span class="number">53</span>,<span class="number">39</span>,<span class="number">1</span>) <span class="number">100%</span>)</span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">background</span>:<span class="value"> <span class="function">-ms-linear-gradient</span>(top,  <span class="function">rgba</span>(<span class="number">180</span>,<span class="number">112</span>,<span class="number">107</span>,<span class="number">1</span>) <span class="number">0%</span>,<span class="function">rgba</span>(<span class="number">144</span>,<span class="number">53</span>,<span class="number">39</span>,<span class="number">1</span>) <span class="number">100%</span>)</span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">background</span>:<span class="value"> <span class="function">linear-gradient</span>(to bottom,  <span class="function">rgba</span>(<span class="number">180</span>,<span class="number">112</span>,<span class="number">107</span>,<span class="number">1</span>) <span class="number">0%</span>,<span class="function">rgba</span>(<span class="number">144</span>,<span class="number">53</span>,<span class="number">39</span>,<span class="number">1</span>) <span class="number">100%</span>)</span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">filter</span>:<span class="value"> progid:DXImageTransform.Microsoft.<span class="function">gradient</span>( startColorstr=<span class="string">'#b4706b'</span>, endColorstr=<span class="string">'#903527'</span>,GradientType=<span class="number">0</span> )</span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">opacity</span>:<span class="value"><span class="number">0.75</span></span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">transform-style</span>:<span class="value"> preserve-<span class="number">3</span>d</span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">-webkit-transform-style</span>:<span class="value"> preserve-<span class="number">3</span>d</span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">-moz-transform-style</span>:<span class="value"> preserve-<span class="number">3</span>d</span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">-o-transform-style</span>:<span class="value"> preserve-<span class="number">3</span>d</span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">-ms-transform-style</span>:<span class="value"> preserve-<span class="number">3</span>d</span></span>;</span><br><span class="line">    <span class="rule"><span class="attribute">border</span>:<span class="value"> <span class="number">5px</span> solid <span class="hexcolor">#D8C160</span></span></span>;</span><br><span class="line">    <span class="rule"><span class="attribute">box-shadow</span>:<span class="value"> <span class="number">0</span> <span class="number">0</span> <span class="number">30px</span> <span class="hexcolor">#EEE5CD</span></span></span>;</span><br><span class="line"></span><br><span class="line">&#125;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="tag">body</span><span class="rules">&#123;</span><br><span class="line"></span><br><span class="line"><span class="rule"><span class="attribute">perspective-origin</span>:<span class="value"> <span class="number">0%</span> <span class="number">0%</span></span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">-webkit-perspective-origin</span>:<span class="value"> <span class="number">0%</span> <span class="number">0%</span></span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">-moz-perspective-origin</span>:<span class="value"> <span class="number">0%</span> <span class="number">0%</span></span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">-o-perspective-origin</span>:<span class="value"> <span class="number">0%</span> <span class="number">0%</span></span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">-ms-perspective-origin</span>:<span class="value"> <span class="number">0%</span> <span class="number">0%</span></span></span>;</span><br><span class="line"></span><br><span class="line">  <span class="rule"><span class="attribute">perspective</span>:<span class="value"> <span class="number">1200px</span></span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">-webkit-perspective</span>:<span class="value"> <span class="number">1200px</span></span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">-moz-perspective</span>:<span class="value"> <span class="number">2800px</span></span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">-o-perspective</span>:<span class="value"> <span class="number">1200px</span></span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">-ms-perspective</span>:<span class="value"> <span class="number">1200px</span></span></span>;</span><br><span class="line"></span><br><span class="line"><span class="rule"><span class="attribute">background</span>:<span class="value"> <span class="function">repeating-linear-gradient</span>(<span class="number">45deg</span>, <span class="hexcolor">#2b2b2b</span> <span class="number">0%</span>, <span class="hexcolor">#2b2b2b</span> <span class="number">10%</span>, <span class="hexcolor">#222222</span> <span class="number">0%</span>, <span class="hexcolor">#222222</span> <span class="number">50%</span>) <span class="number">0</span> / <span class="number">10px</span> <span class="number">10px</span></span></span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure>
-<hr>
-<h3 id="References:">References:</h3><p><a href="http://andreapaiola.name/2015-05-css-avengers/" target="_blank" rel="external">http://andreapaiola.name/2015-05-css-avengers/</a></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p><img src="http://i.imgur.com/iCBLZco.gif" alt=""></p>
-<blockquote>
-<p>Avengers assemble an SVG scalable logo!<br>Sort of virtual hologram Marvel Avengers card with 3D rotate animation, SVG scalable Avengers logo and Iron Man colors (red and gold) and a nice neon effect.<br>Pure CSS and an SVG Avengers logo.</p>
-</blockquote>
-<h3 id="HTML">HTML</h3><figure class="highlight stylus"><table><tr><td class="code"><pre><span class="line">&lt;<span class="tag">div</span> class=<span class="string">"card animate"</span>&gt;</span><br><span class="line">&lt;<span class="tag">img</span> src=<span class="string">"//upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Symbol_from_Marvel%27s_The_Avengers_logo.svg/191px-Symbol_from_Marvel%27s_The_Avengers_logo.svg.png"</span> <span class="attribute">width</span>=<span class="string">"191"</span> <span class="attribute">height</span>=<span class="string">"223"</span> /&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>]]>
-    
-    </summary>
-    
-      <category term="CSS" scheme="http://qunwang6.github.io/blog/tags/CSS/"/>
-    
-      <category term="CSS" scheme="http://qunwang6.github.io/blog/categories/CSS/"/>
-    
-  </entry>
-  
-  <entry>
     <title><![CDATA[Secret code in Ex Machina]]></title>
     <link href="http://qunwang6.github.io/blog/ExMachina/"/>
     <id>http://qunwang6.github.io/blog/ExMachina/</id>
@@ -660,6 +629,37 @@
     </summary>
     
       <category term="Python" scheme="http://qunwang6.github.io/blog/categories/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[CSS Avengers Card with 3D rotation and neon effect]]></title>
+    <link href="http://qunwang6.github.io/blog/CSS3D/"/>
+    <id>http://qunwang6.github.io/blog/CSS3D/</id>
+    <published>2015-05-16T16:00:00.000Z</published>
+    <updated>2015-06-03T13:13:52.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://i.imgur.com/iCBLZco.gif" alt=""></p>
+<blockquote>
+<p>Avengers assemble an SVG scalable logo!<br>Sort of virtual hologram Marvel Avengers card with 3D rotate animation, SVG scalable Avengers logo and Iron Man colors (red and gold) and a nice neon effect.<br>Pure CSS and an SVG Avengers logo.</p>
+</blockquote>
+<h3 id="HTML">HTML</h3><figure class="highlight stylus"><table><tr><td class="code"><pre><span class="line">&lt;<span class="tag">div</span> class=<span class="string">"card animate"</span>&gt;</span><br><span class="line">&lt;<span class="tag">img</span> src=<span class="string">"//upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Symbol_from_Marvel%27s_The_Avengers_logo.svg/191px-Symbol_from_Marvel%27s_The_Avengers_logo.svg.png"</span> <span class="attribute">width</span>=<span class="string">"191"</span> <span class="attribute">height</span>=<span class="string">"223"</span> /&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+<h3 id="CSS">CSS</h3><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="tag">html</span>,<span class="tag">body</span><span class="rules">&#123;</span><br><span class="line"><span class="rule"><span class="attribute">background</span>:<span class="value"><span class="hexcolor">#252527</span></span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">color</span>:<span class="value"><span class="hexcolor">#fff</span></span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">margin</span>:<span class="value"><span class="number">0</span></span></span>;<span class="rule"><span class="attribute">padding</span>:<span class="value"><span class="number">0</span></span></span>;</span><br><span class="line"></span><br><span class="line"><span class="rule"><span class="attribute">display</span>:<span class="value">block</span></span>;<span class="rule"><span class="attribute">overflow</span>:<span class="value">hidden</span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">width</span>:<span class="value"><span class="number">100%</span></span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">height</span>:<span class="value"><span class="number">100%</span></span></span>;</span><br><span class="line"></span><br><span class="line">&#125;</span></span><br><span class="line"><span class="tag">img</span><span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">display</span>:<span class="value">block</span></span>;</span><br><span class="line"><span class="comment">/*</span><br><span class="line">  width:191px;height:223px;</span><br><span class="line">  */</span></span><br><span class="line">  <span class="rule"><span class="attribute">color</span>:<span class="value"><span class="hexcolor">#fff</span></span></span>;<span class="rule"><span class="attribute">background</span>:<span class="value">transparent</span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">100%</span></span></span>; <span class="rule"><span class="attribute">height</span>:<span class="value"> auto</span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">margin</span>:<span class="value"><span class="number">0</span></span></span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="rule"><span class="attribute">transform</span>:<span class="value"><span class="function">rotate3d</span>(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>)</span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">-webkit-transform</span>:<span class="value"><span class="function">rotate3d</span>(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>)</span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">-moz-transform</span>:<span class="value"><span class="function">rotate3d</span>(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>)</span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">-o-transform</span>:<span class="value"><span class="function">rotate3d</span>(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>)</span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">-ms-transform</span>:<span class="value"><span class="function">rotate3d</span>(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>)</span></span>;</span><br><span class="line"></span><br><span class="line">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="class">.animate</span><span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">animation</span>:<span class="value">spin <span class="number">4s</span> linear infinite</span></span>;</span><br><span class="line">    <span class="rule"><span class="attribute">-webkit-animation</span>:<span class="value">spin <span class="number">4s</span> linear infinite</span></span>;</span><br><span class="line">    <span class="rule"><span class="attribute">-moz-animation</span>:<span class="value">spin <span class="number">4s</span> linear infinite</span></span>;</span><br><span class="line">    <span class="rule"><span class="attribute">-o-animation</span>:<span class="value">spin <span class="number">4s</span> linear infinite</span></span>;</span><br><span class="line">    <span class="rule"><span class="attribute">-ms-animation</span>:<span class="value">spin <span class="number">4s</span> linear infinite</span></span>;</span><br><span class="line"></span><br><span class="line">&#125;</span></span><br><span class="line"><span class="at_rule">@<span class="keyword">keyframes</span> spin </span>&#123; 100% <span class="rules">&#123; <span class="rule"><span class="attribute">transform</span>:<span class="value"><span class="function">rotateY</span>(<span class="number">360deg</span>)</span></span>; &#125;</span> &#125;</span><br><span class="line"><span class="at_rule">@<span class="keyword">-webkit-keyframes</span> spin </span>&#123; 100% <span class="rules">&#123; <span class="rule"><span class="attribute">-webkit-transform</span>:<span class="value"> <span class="function">rotateY</span>(<span class="number">360deg</span>)</span></span>; &#125;</span> &#125;</span><br><span class="line"><span class="at_rule">@<span class="keyword">-moz-keyframes</span> spin </span>&#123; 100% <span class="rules">&#123; <span class="rule"><span class="attribute">-moz-transform</span>:<span class="value"> <span class="function">rotateY</span>(<span class="number">360deg</span>)</span></span>; &#125;</span> &#125;</span><br><span class="line"><span class="at_rule">@<span class="keyword">-o-keyframes</span> spin </span>&#123; 100% <span class="rules">&#123; <span class="rule"><span class="attribute">-o-transform</span>:<span class="value"><span class="function">rotateY</span>(<span class="number">360deg</span>)</span></span>; &#125;</span> &#125;</span><br><span class="line"><span class="at_rule">@<span class="keyword">-ms-keyframes</span> spin </span>&#123; 100% <span class="rules">&#123; <span class="rule"><span class="attribute">-ms-transform</span>:<span class="value"><span class="function">rotateY</span>(<span class="number">360deg</span>)</span></span>; &#125;</span> &#125;</span><br><span class="line"></span><br><span class="line"><span class="class">.card</span><span class="rules">&#123;</span><br><span class="line"></span><br><span class="line">  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">50%</span></span></span>;<span class="rule"><span class="attribute">max-width</span>:<span class="value"><span class="number">150px</span></span></span>; <span class="rule"><span class="attribute">height</span>:<span class="value"> auto</span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">30%</span> auto</span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">padding</span>:<span class="value"><span class="number">20%</span> <span class="number">10%</span></span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">border-radius</span>:<span class="value"><span class="number">10px</span></span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">background</span>:<span class="value"><span class="hexcolor">#ED1C24</span></span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">background</span>:<span class="value"> <span class="function">rgb</span>(<span class="number">180</span>,<span class="number">112</span>,<span class="number">107</span>)</span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">background</span>:<span class="value"> <span class="function">-moz-linear-gradient</span>(top,  <span class="function">rgba</span>(<span class="number">180</span>,<span class="number">112</span>,<span class="number">107</span>,<span class="number">1</span>) <span class="number">0%</span>, <span class="function">rgba</span>(<span class="number">144</span>,<span class="number">53</span>,<span class="number">39</span>,<span class="number">1</span>) <span class="number">100%</span>)</span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">background</span>:<span class="value"> <span class="function">-webkit-gradient</span>(linear, left top, left bottom, <span class="function">color-stop</span>(<span class="number">0%</span>,<span class="function">rgba</span>(<span class="number">180</span>,<span class="number">112</span>,<span class="number">107</span>,<span class="number">1</span>)), <span class="function">color-stop</span>(<span class="number">100%</span>,<span class="function">rgba</span>(<span class="number">144</span>,<span class="number">53</span>,<span class="number">39</span>,<span class="number">1</span>)))</span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">background</span>:<span class="value"> <span class="function">-webkit-linear-gradient</span>(top,  <span class="function">rgba</span>(<span class="number">180</span>,<span class="number">112</span>,<span class="number">107</span>,<span class="number">1</span>) <span class="number">0%</span>,<span class="function">rgba</span>(<span class="number">144</span>,<span class="number">53</span>,<span class="number">39</span>,<span class="number">1</span>) <span class="number">100%</span>)</span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">background</span>:<span class="value"> <span class="function">-o-linear-gradient</span>(top,  <span class="function">rgba</span>(<span class="number">180</span>,<span class="number">112</span>,<span class="number">107</span>,<span class="number">1</span>) <span class="number">0%</span>,<span class="function">rgba</span>(<span class="number">144</span>,<span class="number">53</span>,<span class="number">39</span>,<span class="number">1</span>) <span class="number">100%</span>)</span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">background</span>:<span class="value"> <span class="function">-ms-linear-gradient</span>(top,  <span class="function">rgba</span>(<span class="number">180</span>,<span class="number">112</span>,<span class="number">107</span>,<span class="number">1</span>) <span class="number">0%</span>,<span class="function">rgba</span>(<span class="number">144</span>,<span class="number">53</span>,<span class="number">39</span>,<span class="number">1</span>) <span class="number">100%</span>)</span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">background</span>:<span class="value"> <span class="function">linear-gradient</span>(to bottom,  <span class="function">rgba</span>(<span class="number">180</span>,<span class="number">112</span>,<span class="number">107</span>,<span class="number">1</span>) <span class="number">0%</span>,<span class="function">rgba</span>(<span class="number">144</span>,<span class="number">53</span>,<span class="number">39</span>,<span class="number">1</span>) <span class="number">100%</span>)</span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">filter</span>:<span class="value"> progid:DXImageTransform.Microsoft.<span class="function">gradient</span>( startColorstr=<span class="string">'#b4706b'</span>, endColorstr=<span class="string">'#903527'</span>,GradientType=<span class="number">0</span> )</span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">opacity</span>:<span class="value"><span class="number">0.75</span></span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">transform-style</span>:<span class="value"> preserve-<span class="number">3</span>d</span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">-webkit-transform-style</span>:<span class="value"> preserve-<span class="number">3</span>d</span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">-moz-transform-style</span>:<span class="value"> preserve-<span class="number">3</span>d</span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">-o-transform-style</span>:<span class="value"> preserve-<span class="number">3</span>d</span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">-ms-transform-style</span>:<span class="value"> preserve-<span class="number">3</span>d</span></span>;</span><br><span class="line">    <span class="rule"><span class="attribute">border</span>:<span class="value"> <span class="number">5px</span> solid <span class="hexcolor">#D8C160</span></span></span>;</span><br><span class="line">    <span class="rule"><span class="attribute">box-shadow</span>:<span class="value"> <span class="number">0</span> <span class="number">0</span> <span class="number">30px</span> <span class="hexcolor">#EEE5CD</span></span></span>;</span><br><span class="line"></span><br><span class="line">&#125;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="tag">body</span><span class="rules">&#123;</span><br><span class="line"></span><br><span class="line"><span class="rule"><span class="attribute">perspective-origin</span>:<span class="value"> <span class="number">0%</span> <span class="number">0%</span></span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">-webkit-perspective-origin</span>:<span class="value"> <span class="number">0%</span> <span class="number">0%</span></span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">-moz-perspective-origin</span>:<span class="value"> <span class="number">0%</span> <span class="number">0%</span></span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">-o-perspective-origin</span>:<span class="value"> <span class="number">0%</span> <span class="number">0%</span></span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">-ms-perspective-origin</span>:<span class="value"> <span class="number">0%</span> <span class="number">0%</span></span></span>;</span><br><span class="line"></span><br><span class="line">  <span class="rule"><span class="attribute">perspective</span>:<span class="value"> <span class="number">1200px</span></span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">-webkit-perspective</span>:<span class="value"> <span class="number">1200px</span></span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">-moz-perspective</span>:<span class="value"> <span class="number">2800px</span></span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">-o-perspective</span>:<span class="value"> <span class="number">1200px</span></span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">-ms-perspective</span>:<span class="value"> <span class="number">1200px</span></span></span>;</span><br><span class="line"></span><br><span class="line"><span class="rule"><span class="attribute">background</span>:<span class="value"> <span class="function">repeating-linear-gradient</span>(<span class="number">45deg</span>, <span class="hexcolor">#2b2b2b</span> <span class="number">0%</span>, <span class="hexcolor">#2b2b2b</span> <span class="number">10%</span>, <span class="hexcolor">#222222</span> <span class="number">0%</span>, <span class="hexcolor">#222222</span> <span class="number">50%</span>) <span class="number">0</span> / <span class="number">10px</span> <span class="number">10px</span></span></span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure>
+<hr>
+<h3 id="References:">References:</h3><p><a href="http://andreapaiola.name/2015-05-css-avengers/" target="_blank" rel="external">http://andreapaiola.name/2015-05-css-avengers/</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="http://i.imgur.com/iCBLZco.gif" alt=""></p>
+<blockquote>
+<p>Avengers assemble an SVG scalable logo!<br>Sort of virtual hologram Marvel Avengers card with 3D rotate animation, SVG scalable Avengers logo and Iron Man colors (red and gold) and a nice neon effect.<br>Pure CSS and an SVG Avengers logo.</p>
+</blockquote>
+<h3 id="HTML">HTML</h3><figure class="highlight stylus"><table><tr><td class="code"><pre><span class="line">&lt;<span class="tag">div</span> class=<span class="string">"card animate"</span>&gt;</span><br><span class="line">&lt;<span class="tag">img</span> src=<span class="string">"//upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Symbol_from_Marvel%27s_The_Avengers_logo.svg/191px-Symbol_from_Marvel%27s_The_Avengers_logo.svg.png"</span> <span class="attribute">width</span>=<span class="string">"191"</span> <span class="attribute">height</span>=<span class="string">"223"</span> /&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>]]>
+    
+    </summary>
+    
+      <category term="CSS" scheme="http://qunwang6.github.io/blog/tags/CSS/"/>
+    
+      <category term="CSS" scheme="http://qunwang6.github.io/blog/categories/CSS/"/>
     
   </entry>
   
@@ -821,86 +821,24 @@
   </entry>
   
   <entry>
-    <title><![CDATA[用DSLConverter将Lingvo词典.DSL格式转换成MAC OSX可用的格式]]></title>
-    <link href="http://qunwang6.github.io/blog/lingvo2osx/"/>
-    <id>http://qunwang6.github.io/blog/lingvo2osx/</id>
+    <title><![CDATA[password generator]]></title>
+    <link href="http://qunwang6.github.io/blog/PasswordGenerator/"/>
+    <id>http://qunwang6.github.io/blog/PasswordGenerator/</id>
     <published>2015-05-07T16:00:00.000Z</published>
-    <updated>2015-06-03T13:13:45.000Z</updated>
-    <content type="html"><![CDATA[<h3 id="转换">转换</h3><p>下载.DSL to OS X/iOS dictionary converter<br><a href="https://github.com/svintuss/DSLConverter" target="_blank" rel="external">https://github.com/svintuss/DSLConverter</a></p>
-<h4 id="windows_xp环境下：">windows xp环境下：</h4><ul>
-<li>安装Python3,(Python2.7会出现以下错误)<blockquote>
-<p>import urllib.parse<br>ImportError: No module named parse<br>(<em>The urllib.parse library is the Python 3 equivalent of the urlparse library used in Python 2.</em>)</p>
-</blockquote>
-</li>
-</ul>
-<ul>
-<li>安装pytidylib：下载pytidylib源文件，直接编译安装<code>python setup.py install</code>；或者用easy_install安装，直接在终端里输入安装命令：<code>easy_install pytidylib</code></li>
-<li>下载tidylib.dll，将tidylib.dll文件放到到Python目录下（前提Python路径已添加到系统路径里），其他系统路径应该也可以如：system32目录。</li>
-<li>转换:<br><code>python dslconverter_auto.py &lt;dictionary.dsl&gt;</code></li>
-</ul>
-<h4 id="MAC_OSX环境下：">MAC OSX环境下：</h4><ul>
-<li>安装Python3 <code>brew install python3</code><br><em>(MAC OSX 10.9.4是默认安装了Python2.7，而DSLConverter里的代码是给Python3用的，python可以多版本并存）</em></li>
-<li>安装pytidylib,下载pytidylib源文件，直接用Python3编译安装， <code>python3 setup.py install</code>。<em>（注意：如果用<code>easy_install pytidylib</code>命令安装，pytidylib会被安装到Python2.7目录下。）</em></li>
-<li>转换:<br><code>python3 dslconverter_auto.py &lt;dictionary.dsl&gt;</code></li>
-</ul>
+    <updated>2015-06-03T13:13:43.000Z</updated>
+    <content type="html"><![CDATA[<h3 id="CODE">CODE</h3><figure class="highlight swift"><table><tr><td class="code"><pre><span class="line"><span class="comment">// Playground - noun: a place where people can play</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> <span class="type">UIKit</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//Step 1.</span></span><br><span class="line"><span class="keyword">var</span> pwCharacters =     [<span class="string">"a"</span>,<span class="string">"b"</span>,<span class="string">"c"</span>,<span class="string">"d"</span>,<span class="string">"e"</span>,<span class="string">"f"</span>,<span class="string">"g"</span>,<span class="string">"h"</span>,<span class="string">"i"</span>,<span class="string">"j"</span>,<span class="string">"k"</span>,<span class="string">"l"</span>,<span class="string">"m"</span>,<span class="string">"n"</span>,<span class="string">"o"</span>,<span class="string">"p"</span>,<span class="string">"q"</span>,<span class="string">"r"</span>,<span class="string">"s"</span>,<span class="string">"t"</span>,<span class="string">"u"</span>,<span class="string">"v"</span>,<span class="string">"w"</span>,<span class="string">"x"</span>,<span class="string">"y"</span>,<span class="string">"z"</span>,<span class="string">"1"</span>,<span class="string">"2"</span>,<span class="string">"3"</span>,<span class="string">"4"</span>,<span class="string">"5"</span>,<span class="string">"6"</span>,<span class="string">"7"</span>,<span class="string">"8"</span>,<span class="string">"9"</span>,<span class="string">"0"</span>,<span class="string">"A"</span>,<span class="string">"B"</span>,<span class="string">"C"</span>,<span class="string">"D"</span>,<span class="string">"E"</span>,<span class="string">"F"</span>,<span class="string">"G"</span>,<span class="string">"H"</span>,<span class="string">"I"</span>,<span class="string">"J"</span>,<span class="string">"K"</span>,<span class="string">"L"</span>,<span class="string">"M"</span>,<span class="string">"N"</span>,<span class="string">"O"</span>,<span class="string">"P"</span>,<span class="string">"Q"</span>,<span class="string">"R"</span>,<span class="string">"S"</span>,<span class="string">"T"</span>,<span class="string">"U"</span>,<span class="string">"V"</span>,<span class="string">"W"</span>,<span class="string">"X"</span>,<span class="string">"Y"</span>,<span class="string">"Z"</span>,<span class="string">"!"</span>,<span class="string">"@"</span>,<span class="string">"#"</span>,<span class="string">"$"</span>,<span class="string">"%"</span>,<span class="string">"^"</span>,<span class="string">"&amp;"</span>,<span class="string">"*"</span>]</span><br><span class="line"></span><br><span class="line"><span class="comment">//Step 2.</span></span><br><span class="line"><span class="func"><span class="keyword">func</span> <span class="title">randomPassword</span><span class="params">(passwordLength: Int)</span></span> -&gt; <span class="type">String</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">var</span> password = <span class="string">""</span></span><br><span class="line">    <span class="keyword">var</span> unsignedArrayCount = <span class="type">UInt32</span>(pwCharacters.<span class="built_in">count</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> <span class="keyword">var</span> i = <span class="number">0</span>; i &lt; passwordLength; i++ &#123;</span><br><span class="line">        <span class="keyword">var</span> unsignedRandomNumber = arc4random_uniform(unsignedArrayCount)</span><br><span class="line">        <span class="keyword">var</span> randomNumber = <span class="type">Int</span>(unsignedRandomNumber)</span><br><span class="line">        password += pwCharacters[randomNumber]</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> password</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//Step 3</span></span><br><span class="line"><span class="comment">//任意生成1000位密码</span></span><br><span class="line">randomPassword(<span class="number">1000</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">//任意生成15密码</span></span><br><span class="line"><span class="keyword">var</span> password = <span class="string">"<span class="subst">\(randomPassword(<span class="number">5</span>)</span>)-<span class="subst">\(randomPassword(<span class="number">5</span>)</span>)-<span class="subst">\(randomPassword(<span class="number">5</span>)</span>)"</span></span><br></pre></td></tr></table></figure>
 <hr>
-<a id="more"></a>
-<h3 id="编译">编译</h3><ul>
-<li>下载Auxilliary Tools for Xcode:<br>打开Xcode：选择Xcode-&gt;Open Developer Tool-&gt;More Developer Tools登录苹果开发中心，下载Auxilliary Tools for Xcode</li>
-<li>解压出Dictionary Development Kit保存备用，该文件夹有模板、文档、示例，Mac系统词典所有的秘密都在里面。(模板文件在Dictionary Development Kit\project_templates)，<em>最好放在<code>/Volumes/Macintosh HD/Applications/Utilities/DictionaryDevelopmentKit/</code>（没有空 格）</em></li>
-<li>在Makefile里设置好相关参数和路径，如DICT_NAME是生成文件的名称，DICT_BUILD_TOOL_DIR是Dictionary Development Kit的路径，如果错了就不能生成文件。</li>
-<li>编辑模板文件中的Info.plist文件，Bundle name是在Mac字典程序工具栏下面显示的标签名，Bundle identifier需确保名称的唯一性。</li>
-<li>根据模板格式编辑Dictionary.xml、Dictionary.css，如果有图片则放置在OtherResources/Images目录下.</li>
-<li>打开终端，cd进入模板文件目录，输入<code>make</code>，稍等一段时间，即可生成字典文件,将object目录下生成的dictionary文件拷贝至 ~/Library/Dictionaries，打开字典程序，即可看到生成的字典。<br>或者直接用<code>make &amp;&amp; make install</code>这个命令，生成词典后直接安装到了~/Library/Dictionaries。</li>
-</ul>
-<hr>
-<h3 id="参考">参考</h3><ul>
-<li>Windows下Python2.7搭建lxml环境(simplejson+tidylib+libxml2+lxml)：<br><a href="http://www.dzwanli.com.cn/?p=127" target="_blank" rel="external">http://www.dzwanli.com.cn/?p=127</a></li>
-<li>请教关于 tidylib 的错误问题 ：<br><a href="http://python.6.x6.nabble.com/CPyUG-84982-tidylib-td2871364.html" target="_blank" rel="external">http://python.6.x6.nabble.com/CPyUG-84982-tidylib-td2871364.html</a></li>
-<li>HTML Tidy for Windows：<br><a href="http://www.paehl.com/open_source/?HTML_Tidy_for_Windows" target="_blank" rel="external">http://www.paehl.com/open_source/?HTML_Tidy_for_Windows</a></li>
-<li>PyTidyLib: A Python Interface to HTML Tidy：<br><a href="http://countergram.com/open-source/pytidylib/docs/index.html#installing-html-tidy" target="_blank" rel="external">http://countergram.com/open-source/pytidylib/docs/index.html#installing-html-tidy</a></li>
-<li>Can’t install pip due to “ImportError: No module named parse”：<br><a href="http://stackoverflow.com/questions/15011205/cant-install-pip-due-to-importerror-no-module-named-parse" target="_blank" rel="external">http://stackoverflow.com/questions/15011205/cant-install-pip-due-to-importerror-no-module-named-parse</a></li>
-<li>关于mac词典制作的思考和实践 ：<br><a href="http://coffeejp.com/bbs/thread-383364-1-1.html" target="_blank" rel="external">http://coffeejp.com/bbs/thread-383364-1-1.html</a></li>
-<li>英辞郎をOSX10.9.2にインストール<br><a href="http://oshiete.goo.ne.jp/qa/8581257.html" target="_blank" rel="external">http://oshiete.goo.ne.jp/qa/8581257.html</a></li>
-<li>How can I create a dictionary for Mac OS X?：<br><a href="http://apple.stackexchange.com/questions/80099/how-can-i-create-a-dictionary-for-mac-os-x" target="_blank" rel="external">http://apple.stackexchange.com/questions/80099/how-can-i-create-a-dictionary-for-mac-os-x</a></li>
-<li>mac 自带的python到3.3 支持最新的gaogent3.0<br><a href="https://code.google.com/p/goagent/issues/detail?id=9553" target="_blank" rel="external">https://code.google.com/p/goagent/issues/detail?id=9553</a></li>
-</ul>
-<pre><code>Register <span class="operator">a</span> free developer account <span class="operator">and</span> download <span class="operator">the</span> auxiliary tools package <span class="built_in">from</span> developer.apple.com/downloads
-Move <span class="operator">the</span> Dictionary Development Kit <span class="built_in">folder</span> <span class="built_in">to</span> /Applications/Utilities/DictionaryDevelopmentKit/ (<span class="keyword">without</span> <span class="operator">the</span> spaces), <span class="operator">and</span> copy <span class="operator">the</span> project_templates <span class="built_in">folder</span> <span class="built_in">to</span> ~/Desktop/
-Open ~/Desktop/project_templates/Makefile <span class="operator">and</span> change DICT_BUILD_TOOL_DIR <span class="built_in">from</span> /DevTools/Utilities/Dictionary Development Kit <span class="built_in">to</span> /Applications/Utilities/DictionaryDevelopmentKit
-cd ~/Desktop/project_templates/; make &amp;&amp; make install
-</code></pre>]]></content>
+<h3 id="References">References</h3><p><a href="http://www.mav3r1ck.io/one-thousand-character-password/" target="_blank" rel="external">One Thousand Character Password</a></p>
+]]></content>
     <summary type="html">
-    <![CDATA[<h3 id="转换">转换</h3><p>下载.DSL to OS X/iOS dictionary converter<br><a href="https://github.com/svintuss/DSLConverter">https://github.com/svintuss/DSLConverter</a></p>
-<h4 id="windows_xp环境下：">windows xp环境下：</h4><ul>
-<li>安装Python3,(Python2.7会出现以下错误)<blockquote>
-<p>import urllib.parse<br>ImportError: No module named parse<br>(<em>The urllib.parse library is the Python 3 equivalent of the urlparse library used in Python 2.</em>)</p>
-</blockquote>
-</li>
-</ul>
-<ul>
-<li>安装pytidylib：下载pytidylib源文件，直接编译安装<code>python setup.py install</code>；或者用easy_install安装，直接在终端里输入安装命令：<code>easy_install pytidylib</code></li>
-<li>下载tidylib.dll，将tidylib.dll文件放到到Python目录下（前提Python路径已添加到系统路径里），其他系统路径应该也可以如：system32目录。</li>
-<li>转换:<br><code>python dslconverter_auto.py &lt;dictionary.dsl&gt;</code></li>
-</ul>
-<h4 id="MAC_OSX环境下：">MAC OSX环境下：</h4><ul>
-<li>安装Python3 <code>brew install python3</code><br><em>(MAC OSX 10.9.4是默认安装了Python2.7，而DSLConverter里的代码是给Python3用的，python可以多版本并存）</em></li>
-<li>安装pytidylib,下载pytidylib源文件，直接用Python3编译安装， <code>python3 setup.py install</code>。<em>（注意：如果用<code>easy_install pytidylib</code>命令安装，pytidylib会被安装到Python2.7目录下。）</em></li>
-<li>转换:<br><code>python3 dslconverter_auto.py &lt;dictionary.dsl&gt;</code></li>
-</ul>
-<hr>]]>
-    
+    <![CDATA[<h3 id="CODE">CODE</h3><figure class="highlight swift"><table><tr><td class="code"><pre><span class="line"><span class="comment">// Playgrou]]>
     </summary>
     
-      <category term="OS X" scheme="http://qunwang6.github.io/blog/tags/OS-X/"/>
+      <category term="Swift" scheme="http://qunwang6.github.io/blog/tags/Swift/"/>
     
-      <category term="Python" scheme="http://qunwang6.github.io/blog/tags/Python/"/>
+      <category term="password" scheme="http://qunwang6.github.io/blog/tags/password/"/>
     
-      <category term="dictionary" scheme="http://qunwang6.github.io/blog/tags/dictionary/"/>
-    
-      <category term="lingvo" scheme="http://qunwang6.github.io/blog/tags/lingvo/"/>
-    
-      <category term="dictionary" scheme="http://qunwang6.github.io/blog/categories/dictionary/"/>
+      <category term="Swift" scheme="http://qunwang6.github.io/blog/categories/Swift/"/>
     
   </entry>
   
@@ -1101,24 +1039,86 @@ sed -<span class="tag">i</span> <span class="string">""</span> <span class="stri
   </entry>
   
   <entry>
-    <title><![CDATA[password generator]]></title>
-    <link href="http://qunwang6.github.io/blog/PasswordGenerator/"/>
-    <id>http://qunwang6.github.io/blog/PasswordGenerator/</id>
+    <title><![CDATA[用DSLConverter将Lingvo词典.DSL格式转换成MAC OSX可用的格式]]></title>
+    <link href="http://qunwang6.github.io/blog/lingvo2osx/"/>
+    <id>http://qunwang6.github.io/blog/lingvo2osx/</id>
     <published>2015-05-07T16:00:00.000Z</published>
-    <updated>2015-06-03T13:13:43.000Z</updated>
-    <content type="html"><![CDATA[<h3 id="CODE">CODE</h3><figure class="highlight swift"><table><tr><td class="code"><pre><span class="line"><span class="comment">// Playground - noun: a place where people can play</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> <span class="type">UIKit</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//Step 1.</span></span><br><span class="line"><span class="keyword">var</span> pwCharacters =     [<span class="string">"a"</span>,<span class="string">"b"</span>,<span class="string">"c"</span>,<span class="string">"d"</span>,<span class="string">"e"</span>,<span class="string">"f"</span>,<span class="string">"g"</span>,<span class="string">"h"</span>,<span class="string">"i"</span>,<span class="string">"j"</span>,<span class="string">"k"</span>,<span class="string">"l"</span>,<span class="string">"m"</span>,<span class="string">"n"</span>,<span class="string">"o"</span>,<span class="string">"p"</span>,<span class="string">"q"</span>,<span class="string">"r"</span>,<span class="string">"s"</span>,<span class="string">"t"</span>,<span class="string">"u"</span>,<span class="string">"v"</span>,<span class="string">"w"</span>,<span class="string">"x"</span>,<span class="string">"y"</span>,<span class="string">"z"</span>,<span class="string">"1"</span>,<span class="string">"2"</span>,<span class="string">"3"</span>,<span class="string">"4"</span>,<span class="string">"5"</span>,<span class="string">"6"</span>,<span class="string">"7"</span>,<span class="string">"8"</span>,<span class="string">"9"</span>,<span class="string">"0"</span>,<span class="string">"A"</span>,<span class="string">"B"</span>,<span class="string">"C"</span>,<span class="string">"D"</span>,<span class="string">"E"</span>,<span class="string">"F"</span>,<span class="string">"G"</span>,<span class="string">"H"</span>,<span class="string">"I"</span>,<span class="string">"J"</span>,<span class="string">"K"</span>,<span class="string">"L"</span>,<span class="string">"M"</span>,<span class="string">"N"</span>,<span class="string">"O"</span>,<span class="string">"P"</span>,<span class="string">"Q"</span>,<span class="string">"R"</span>,<span class="string">"S"</span>,<span class="string">"T"</span>,<span class="string">"U"</span>,<span class="string">"V"</span>,<span class="string">"W"</span>,<span class="string">"X"</span>,<span class="string">"Y"</span>,<span class="string">"Z"</span>,<span class="string">"!"</span>,<span class="string">"@"</span>,<span class="string">"#"</span>,<span class="string">"$"</span>,<span class="string">"%"</span>,<span class="string">"^"</span>,<span class="string">"&amp;"</span>,<span class="string">"*"</span>]</span><br><span class="line"></span><br><span class="line"><span class="comment">//Step 2.</span></span><br><span class="line"><span class="func"><span class="keyword">func</span> <span class="title">randomPassword</span><span class="params">(passwordLength: Int)</span></span> -&gt; <span class="type">String</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">var</span> password = <span class="string">""</span></span><br><span class="line">    <span class="keyword">var</span> unsignedArrayCount = <span class="type">UInt32</span>(pwCharacters.<span class="built_in">count</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> <span class="keyword">var</span> i = <span class="number">0</span>; i &lt; passwordLength; i++ &#123;</span><br><span class="line">        <span class="keyword">var</span> unsignedRandomNumber = arc4random_uniform(unsignedArrayCount)</span><br><span class="line">        <span class="keyword">var</span> randomNumber = <span class="type">Int</span>(unsignedRandomNumber)</span><br><span class="line">        password += pwCharacters[randomNumber]</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> password</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//Step 3</span></span><br><span class="line"><span class="comment">//任意生成1000位密码</span></span><br><span class="line">randomPassword(<span class="number">1000</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">//任意生成15密码</span></span><br><span class="line"><span class="keyword">var</span> password = <span class="string">"<span class="subst">\(randomPassword(<span class="number">5</span>)</span>)-<span class="subst">\(randomPassword(<span class="number">5</span>)</span>)-<span class="subst">\(randomPassword(<span class="number">5</span>)</span>)"</span></span><br></pre></td></tr></table></figure>
+    <updated>2015-06-03T13:13:45.000Z</updated>
+    <content type="html"><![CDATA[<h3 id="转换">转换</h3><p>下载.DSL to OS X/iOS dictionary converter<br><a href="https://github.com/svintuss/DSLConverter" target="_blank" rel="external">https://github.com/svintuss/DSLConverter</a></p>
+<h4 id="windows_xp环境下：">windows xp环境下：</h4><ul>
+<li>安装Python3,(Python2.7会出现以下错误)<blockquote>
+<p>import urllib.parse<br>ImportError: No module named parse<br>(<em>The urllib.parse library is the Python 3 equivalent of the urlparse library used in Python 2.</em>)</p>
+</blockquote>
+</li>
+</ul>
+<ul>
+<li>安装pytidylib：下载pytidylib源文件，直接编译安装<code>python setup.py install</code>；或者用easy_install安装，直接在终端里输入安装命令：<code>easy_install pytidylib</code></li>
+<li>下载tidylib.dll，将tidylib.dll文件放到到Python目录下（前提Python路径已添加到系统路径里），其他系统路径应该也可以如：system32目录。</li>
+<li>转换:<br><code>python dslconverter_auto.py &lt;dictionary.dsl&gt;</code></li>
+</ul>
+<h4 id="MAC_OSX环境下：">MAC OSX环境下：</h4><ul>
+<li>安装Python3 <code>brew install python3</code><br><em>(MAC OSX 10.9.4是默认安装了Python2.7，而DSLConverter里的代码是给Python3用的，python可以多版本并存）</em></li>
+<li>安装pytidylib,下载pytidylib源文件，直接用Python3编译安装， <code>python3 setup.py install</code>。<em>（注意：如果用<code>easy_install pytidylib</code>命令安装，pytidylib会被安装到Python2.7目录下。）</em></li>
+<li>转换:<br><code>python3 dslconverter_auto.py &lt;dictionary.dsl&gt;</code></li>
+</ul>
 <hr>
-<h3 id="References">References</h3><p><a href="http://www.mav3r1ck.io/one-thousand-character-password/" target="_blank" rel="external">One Thousand Character Password</a></p>
-]]></content>
+<a id="more"></a>
+<h3 id="编译">编译</h3><ul>
+<li>下载Auxilliary Tools for Xcode:<br>打开Xcode：选择Xcode-&gt;Open Developer Tool-&gt;More Developer Tools登录苹果开发中心，下载Auxilliary Tools for Xcode</li>
+<li>解压出Dictionary Development Kit保存备用，该文件夹有模板、文档、示例，Mac系统词典所有的秘密都在里面。(模板文件在Dictionary Development Kit\project_templates)，<em>最好放在<code>/Volumes/Macintosh HD/Applications/Utilities/DictionaryDevelopmentKit/</code>（没有空 格）</em></li>
+<li>在Makefile里设置好相关参数和路径，如DICT_NAME是生成文件的名称，DICT_BUILD_TOOL_DIR是Dictionary Development Kit的路径，如果错了就不能生成文件。</li>
+<li>编辑模板文件中的Info.plist文件，Bundle name是在Mac字典程序工具栏下面显示的标签名，Bundle identifier需确保名称的唯一性。</li>
+<li>根据模板格式编辑Dictionary.xml、Dictionary.css，如果有图片则放置在OtherResources/Images目录下.</li>
+<li>打开终端，cd进入模板文件目录，输入<code>make</code>，稍等一段时间，即可生成字典文件,将object目录下生成的dictionary文件拷贝至 ~/Library/Dictionaries，打开字典程序，即可看到生成的字典。<br>或者直接用<code>make &amp;&amp; make install</code>这个命令，生成词典后直接安装到了~/Library/Dictionaries。</li>
+</ul>
+<hr>
+<h3 id="参考">参考</h3><ul>
+<li>Windows下Python2.7搭建lxml环境(simplejson+tidylib+libxml2+lxml)：<br><a href="http://www.dzwanli.com.cn/?p=127" target="_blank" rel="external">http://www.dzwanli.com.cn/?p=127</a></li>
+<li>请教关于 tidylib 的错误问题 ：<br><a href="http://python.6.x6.nabble.com/CPyUG-84982-tidylib-td2871364.html" target="_blank" rel="external">http://python.6.x6.nabble.com/CPyUG-84982-tidylib-td2871364.html</a></li>
+<li>HTML Tidy for Windows：<br><a href="http://www.paehl.com/open_source/?HTML_Tidy_for_Windows" target="_blank" rel="external">http://www.paehl.com/open_source/?HTML_Tidy_for_Windows</a></li>
+<li>PyTidyLib: A Python Interface to HTML Tidy：<br><a href="http://countergram.com/open-source/pytidylib/docs/index.html#installing-html-tidy" target="_blank" rel="external">http://countergram.com/open-source/pytidylib/docs/index.html#installing-html-tidy</a></li>
+<li>Can’t install pip due to “ImportError: No module named parse”：<br><a href="http://stackoverflow.com/questions/15011205/cant-install-pip-due-to-importerror-no-module-named-parse" target="_blank" rel="external">http://stackoverflow.com/questions/15011205/cant-install-pip-due-to-importerror-no-module-named-parse</a></li>
+<li>关于mac词典制作的思考和实践 ：<br><a href="http://coffeejp.com/bbs/thread-383364-1-1.html" target="_blank" rel="external">http://coffeejp.com/bbs/thread-383364-1-1.html</a></li>
+<li>英辞郎をOSX10.9.2にインストール<br><a href="http://oshiete.goo.ne.jp/qa/8581257.html" target="_blank" rel="external">http://oshiete.goo.ne.jp/qa/8581257.html</a></li>
+<li>How can I create a dictionary for Mac OS X?：<br><a href="http://apple.stackexchange.com/questions/80099/how-can-i-create-a-dictionary-for-mac-os-x" target="_blank" rel="external">http://apple.stackexchange.com/questions/80099/how-can-i-create-a-dictionary-for-mac-os-x</a></li>
+<li>mac 自带的python到3.3 支持最新的gaogent3.0<br><a href="https://code.google.com/p/goagent/issues/detail?id=9553" target="_blank" rel="external">https://code.google.com/p/goagent/issues/detail?id=9553</a></li>
+</ul>
+<pre><code>Register <span class="operator">a</span> free developer account <span class="operator">and</span> download <span class="operator">the</span> auxiliary tools package <span class="built_in">from</span> developer.apple.com/downloads
+Move <span class="operator">the</span> Dictionary Development Kit <span class="built_in">folder</span> <span class="built_in">to</span> /Applications/Utilities/DictionaryDevelopmentKit/ (<span class="keyword">without</span> <span class="operator">the</span> spaces), <span class="operator">and</span> copy <span class="operator">the</span> project_templates <span class="built_in">folder</span> <span class="built_in">to</span> ~/Desktop/
+Open ~/Desktop/project_templates/Makefile <span class="operator">and</span> change DICT_BUILD_TOOL_DIR <span class="built_in">from</span> /DevTools/Utilities/Dictionary Development Kit <span class="built_in">to</span> /Applications/Utilities/DictionaryDevelopmentKit
+cd ~/Desktop/project_templates/; make &amp;&amp; make install
+</code></pre>]]></content>
     <summary type="html">
-    <![CDATA[<h3 id="CODE">CODE</h3><figure class="highlight swift"><table><tr><td class="code"><pre><span class="line"><span class="comment">// Playgrou]]>
+    <![CDATA[<h3 id="转换">转换</h3><p>下载.DSL to OS X/iOS dictionary converter<br><a href="https://github.com/svintuss/DSLConverter">https://github.com/svintuss/DSLConverter</a></p>
+<h4 id="windows_xp环境下：">windows xp环境下：</h4><ul>
+<li>安装Python3,(Python2.7会出现以下错误)<blockquote>
+<p>import urllib.parse<br>ImportError: No module named parse<br>(<em>The urllib.parse library is the Python 3 equivalent of the urlparse library used in Python 2.</em>)</p>
+</blockquote>
+</li>
+</ul>
+<ul>
+<li>安装pytidylib：下载pytidylib源文件，直接编译安装<code>python setup.py install</code>；或者用easy_install安装，直接在终端里输入安装命令：<code>easy_install pytidylib</code></li>
+<li>下载tidylib.dll，将tidylib.dll文件放到到Python目录下（前提Python路径已添加到系统路径里），其他系统路径应该也可以如：system32目录。</li>
+<li>转换:<br><code>python dslconverter_auto.py &lt;dictionary.dsl&gt;</code></li>
+</ul>
+<h4 id="MAC_OSX环境下：">MAC OSX环境下：</h4><ul>
+<li>安装Python3 <code>brew install python3</code><br><em>(MAC OSX 10.9.4是默认安装了Python2.7，而DSLConverter里的代码是给Python3用的，python可以多版本并存）</em></li>
+<li>安装pytidylib,下载pytidylib源文件，直接用Python3编译安装， <code>python3 setup.py install</code>。<em>（注意：如果用<code>easy_install pytidylib</code>命令安装，pytidylib会被安装到Python2.7目录下。）</em></li>
+<li>转换:<br><code>python3 dslconverter_auto.py &lt;dictionary.dsl&gt;</code></li>
+</ul>
+<hr>]]>
+    
     </summary>
     
-      <category term="Swift" scheme="http://qunwang6.github.io/blog/tags/Swift/"/>
+      <category term="OS X" scheme="http://qunwang6.github.io/blog/tags/OS-X/"/>
     
-      <category term="password" scheme="http://qunwang6.github.io/blog/tags/password/"/>
+      <category term="Python" scheme="http://qunwang6.github.io/blog/tags/Python/"/>
     
-      <category term="Swift" scheme="http://qunwang6.github.io/blog/categories/Swift/"/>
+      <category term="dictionary" scheme="http://qunwang6.github.io/blog/tags/dictionary/"/>
+    
+      <category term="lingvo" scheme="http://qunwang6.github.io/blog/tags/lingvo/"/>
+    
+      <category term="dictionary" scheme="http://qunwang6.github.io/blog/categories/dictionary/"/>
     
   </entry>
   
