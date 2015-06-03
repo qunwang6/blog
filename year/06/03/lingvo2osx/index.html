@@ -1,0 +1,608 @@
+<!doctype html>
+<html class="theme-next use-motion theme-next-mist">
+<head>
+  
+
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+  <meta name="google-site-verification" content="p8qifHQZCR7Sv5rGvYC9OGZZxk3bA3Kfr8UUZZZeSoI" />
+
+
+
+
+
+  <link rel="stylesheet" type="text/css" href="/blog/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5"/>
+
+
+<link rel="stylesheet" type="text/css" href="/blog/css/main.css?v=0.4.2"/>
+
+
+
+
+  <meta name="keywords" content="OS X,Python,dictionary,lingvo," />
+
+
+
+  <link rel="alternate" href="/blog/atom.xml" title="Zero to One" type="application/atom+xml" />
+
+
+
+  <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.2" />
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var CONFIG = {
+    scheme: 'Mist',
+    analytics: {
+      baidu: '',
+      google: ''
+    },
+    sidebar: 'hide'
+  };
+</script>
+
+
+
+
+  <title> 用DSLConverter将Lingvo词典.DSL格式转换成MAC OSX可用的格式 // Zero to One </title>
+</head>
+
+<body>
+<!--[if lte IE 8]> <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'> <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://7u2nvr.com1.z0.glb.clouddn.com/picouterie.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today or use other browser ,like chrome firefox safari." style='margin-left:auto;margin-right:auto;display: block;'/></a></div> <![endif]-->
+  <div class="container one-column page-post-detail">
+    <div class="headband"></div>
+
+    <div id="header" class="header">
+      <div class="header-inner">
+        <h1 class="site-meta">
+  <span class="logo-line-before"><i></i></span>
+  <a href="/blog/" class="brand">
+      <span class="logo">
+        <i class="icon-logo"></i>
+      </span>
+      <span class="site-title">Zero to One</span>
+  </a>
+  <span class="logo-line-after"><i></i></span>
+</h1>
+
+
+  <ul id="menu" class="menu">
+     
+    
+      
+      <li class="menu-item menu-item-home">
+        <a href="/blog/">
+          <i class="menu-item-icon icon-home"></i> <br />
+          首页
+        </a>
+      </li>
+    
+      
+      <li class="menu-item menu-item-categories">
+        <a href="/blog/categories">
+          <i class="menu-item-icon icon-categories"></i> <br />
+          分类
+        </a>
+      </li>
+    
+      
+      <li class="menu-item menu-item-archives">
+        <a href="/blog/archives">
+          <i class="menu-item-icon icon-archives"></i> <br />
+          归档
+        </a>
+      </li>
+    
+      
+      <li class="menu-item menu-item-tags">
+        <a href="/blog/tags">
+          <i class="menu-item-icon icon-tags"></i> <br />
+          标签
+        </a>
+      </li>
+    
+  </ul>
+
+
+      </div>
+    </div>
+
+    <div id="main" class="main">
+      <div class="main-inner">
+        <div id="content" class="content">
+          
+
+  <div id="posts" class="posts-expand">
+    
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
+              用DSLConverter将Lingvo词典.DSL格式转换成MAC OSX可用的格式
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于 2015-06-03
+        </span>
+
+        
+          <span class="post-category">
+            &nbsp; | &nbsp; 分类于
+            
+              <a href="/blog/categories/dictionary/">dictionary</a>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+        
+      </div>
+    </div>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        <h3 id="转换">转换</h3><p>下载.DSL to OS X/iOS dictionary converter<br><a href="https://github.com/svintuss/DSLConverter" target="_blank" rel="external">https://github.com/svintuss/DSLConverter</a></p>
+<h4 id="windows_xp环境下：">windows xp环境下：</h4><ul>
+<li>安装Python3,(Python2.7会出现以下错误)<blockquote>
+<p>import urllib.parse<br>ImportError: No module named parse<br>(<em>The urllib.parse library is the Python 3 equivalent of the urlparse library used in Python 2.</em>)</p>
+</blockquote>
+</li>
+</ul>
+<ul>
+<li>安装pytidylib：下载pytidylib源文件，直接编译安装<code>python setup.py install</code>；或者用easy_install安装，直接在终端里输入安装命令：<code>easy_install pytidylib</code></li>
+<li>下载tidylib.dll，将tidylib.dll文件放到到Python目录下（前提Python路径已添加到系统路径里），其他系统路径应该也可以如：system32目录。</li>
+<li>转换:<br><code>python dslconverter_auto.py &lt;dictionary.dsl&gt;</code></li>
+</ul>
+<h4 id="MAC_OSX环境下：">MAC OSX环境下：</h4><ul>
+<li>安装Python3 <code>brew install python3</code><br><em>(MAC OSX 10.9.4是默认安装了Python2.7，而DSLConverter里的代码是给Python3用的，python可以多版本并存）</em></li>
+<li>安装pytidylib,下载pytidylib源文件，直接用Python3编译安装， <code>python3 setup.py install</code>。<em>（注意：如果用<code>easy_install pytidylib</code>命令安装，pytidylib会被安装到Python2.7目录下。）</em></li>
+<li>转换:<br><code>python3 dslconverter_auto.py &lt;dictionary.dsl&gt;</code></li>
+</ul>
+<hr>
+<a id="more"></a>
+<h3 id="编译">编译</h3><ul>
+<li>下载Auxilliary Tools for Xcode:<br>打开Xcode：选择Xcode-&gt;Open Developer Tool-&gt;More Developer Tools登录苹果开发中心，下载Auxilliary Tools for Xcode</li>
+<li>解压出Dictionary Development Kit保存备用，该文件夹有模板、文档、示例，Mac系统词典所有的秘密都在里面。(模板文件在Dictionary Development Kit\project_templates)，<em>最好放在<code>/Volumes/Macintosh HD/Applications/Utilities/DictionaryDevelopmentKit/</code>（没有空 格）</em></li>
+<li>在Makefile里设置好相关参数和路径，如DICT_NAME是生成文件的名称，DICT_BUILD_TOOL_DIR是Dictionary Development Kit的路径，如果错了就不能生成文件。</li>
+<li>编辑模板文件中的Info.plist文件，Bundle name是在Mac字典程序工具栏下面显示的标签名，Bundle identifier需确保名称的唯一性。</li>
+<li>根据模板格式编辑Dictionary.xml、Dictionary.css，如果有图片则放置在OtherResources/Images目录下.</li>
+<li>打开终端，cd进入模板文件目录，输入<code>make</code>，稍等一段时间，即可生成字典文件,将object目录下生成的dictionary文件拷贝至 ~/Library/Dictionaries，打开字典程序，即可看到生成的字典。<br>或者直接用<code>make &amp;&amp; make install</code>这个命令，生成词典后直接安装到了~/Library/Dictionaries。</li>
+</ul>
+<hr>
+<h3 id="参考">参考</h3><ul>
+<li>Windows下Python2.7搭建lxml环境(simplejson+tidylib+libxml2+lxml)：<br><a href="http://www.dzwanli.com.cn/?p=127" target="_blank" rel="external">http://www.dzwanli.com.cn/?p=127</a></li>
+<li>请教关于 tidylib 的错误问题 ：<br><a href="http://python.6.x6.nabble.com/CPyUG-84982-tidylib-td2871364.html" target="_blank" rel="external">http://python.6.x6.nabble.com/CPyUG-84982-tidylib-td2871364.html</a></li>
+<li>HTML Tidy for Windows：<br><a href="http://www.paehl.com/open_source/?HTML_Tidy_for_Windows" target="_blank" rel="external">http://www.paehl.com/open_source/?HTML_Tidy_for_Windows</a></li>
+<li>PyTidyLib: A Python Interface to HTML Tidy：<br><a href="http://countergram.com/open-source/pytidylib/docs/index.html#installing-html-tidy" target="_blank" rel="external">http://countergram.com/open-source/pytidylib/docs/index.html#installing-html-tidy</a></li>
+<li>Can’t install pip due to “ImportError: No module named parse”：<br><a href="http://stackoverflow.com/questions/15011205/cant-install-pip-due-to-importerror-no-module-named-parse" target="_blank" rel="external">http://stackoverflow.com/questions/15011205/cant-install-pip-due-to-importerror-no-module-named-parse</a></li>
+<li>关于mac词典制作的思考和实践 ：<br><a href="http://coffeejp.com/bbs/thread-383364-1-1.html" target="_blank" rel="external">http://coffeejp.com/bbs/thread-383364-1-1.html</a></li>
+<li>英辞郎をOSX10.9.2にインストール<br><a href="http://oshiete.goo.ne.jp/qa/8581257.html" target="_blank" rel="external">http://oshiete.goo.ne.jp/qa/8581257.html</a></li>
+<li>How can I create a dictionary for Mac OS X?：<br><a href="http://apple.stackexchange.com/questions/80099/how-can-i-create-a-dictionary-for-mac-os-x" target="_blank" rel="external">http://apple.stackexchange.com/questions/80099/how-can-i-create-a-dictionary-for-mac-os-x</a></li>
+<li>mac 自带的python到3.3 支持最新的gaogent3.0<br><a href="https://code.google.com/p/goagent/issues/detail?id=9553" target="_blank" rel="external">https://code.google.com/p/goagent/issues/detail?id=9553</a></li>
+</ul>
+<pre><code>Register <span class="operator">a</span> free developer account <span class="operator">and</span> download <span class="operator">the</span> auxiliary tools package <span class="built_in">from</span> developer.apple.com/downloads
+Move <span class="operator">the</span> Dictionary Development Kit <span class="built_in">folder</span> <span class="built_in">to</span> /Applications/Utilities/DictionaryDevelopmentKit/ (<span class="keyword">without</span> <span class="operator">the</span> spaces), <span class="operator">and</span> copy <span class="operator">the</span> project_templates <span class="built_in">folder</span> <span class="built_in">to</span> ~/Desktop/
+Open ~/Desktop/project_templates/Makefile <span class="operator">and</span> change DICT_BUILD_TOOL_DIR <span class="built_in">from</span> /DevTools/Utilities/Dictionary Development Kit <span class="built_in">to</span> /Applications/Utilities/DictionaryDevelopmentKit
+cd ~/Desktop/project_templates/; make &amp;&amp; make install
+</code></pre>
+      
+    </div>
+
+    <div class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/blog/tags/OS-X/"> #OS X </a>
+          
+            <a href="/blog/tags/Python/"> #Python </a>
+          
+            <a href="/blog/tags/dictionary/"> #dictionary </a>
+          
+            <a href="/blog/tags/lingvo/"> #lingvo </a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/blog/year/06/03/pdf2htmlEX/">pdf2htmlEX</a>
+            
+          </div>
+
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/blog/year/06/03/iOSDeveloperTips/">iOS developer tips</a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </div>
+  </div>
+
+
+
+    
+      <div class="comments" id="comments">
+        
+      </div>
+    
+  </div>
+
+
+        </div>
+
+        
+      </div>
+
+
+      
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <div class="site-overview">
+        <div class="site-author motion-element">
+          <img class="site-author-image" src="/blog/images/default_avatar.jpg" alt="Qun Wang" />
+          <p class="site-author-name">Qun Wang</p>
+        </div>
+        <p class="site-description motion-element"></p>
+        <div class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/blog/archives">
+              <span class="site-state-item-count">25</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          <div class="site-state-item site-state-categories">
+            <a href="/blog/categories">
+              <span class="site-state-item-count">14</span>
+              <span class="site-state-item-name">分类</span>
+              </a>
+          </div>
+
+          <div class="site-state-item site-state-tags">
+            <a href="/blog/tags">
+              <span class="site-state-item-count">24</span>
+              <span class="site-state-item-name">标签</span>
+              </a>
+          </div>
+
+        </div>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/blog/atom.xml">
+              <i class="menu-item-icon icon-feed"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+              <a href="https://github.com/qunwang6" target="_blank">GitHub</a>
+            </span>
+            
+              <span class="links-of-author-item">
+              <a href="https://twitter.com/qunwang6" target="_blank">Twitter</a>
+            </span>
+            
+              <span class="links-of-author-item">
+              <a href="mailto:qunwang6@gmail.com" target="_blank">Gmail</a>
+            </span>
+            
+          
+        </div>
+
+        
+        
+
+      </div>
+
+      
+        <div class="post-toc-wrap sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator"></div>
+          <div class="post-toc">
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#转换"><span class="nav-number">1.</span> <span class="nav-text">转换</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#windows_xp环境下："><span class="nav-number">1.1.</span> <span class="nav-text">windows xp环境下：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#MAC_OSX环境下："><span class="nav-number">1.2.</span> <span class="nav-text">MAC OSX环境下：</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#编译"><span class="nav-number">2.</span> <span class="nav-text">编译</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#参考"><span class="nav-number">3.</span> <span class="nav-text">参考</span></a></li></ol></div>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator"></div>
+        </div>
+      
+
+    </div>
+  </div>
+
+
+    </div>
+
+    <div id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">
+  
+  &copy; &nbsp; 
+  2015
+  <span class="with-love">
+    <i class="icon-heart"></i>
+  </span>
+  <span class="author">Qun Wang</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+
+
+      </div>
+    </div>
+
+    <div class="back-to-top"></div>
+  </div>
+
+  <script type="text/javascript" src="/blog/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  
+
+  
+  <script type="text/javascript" src="/blog/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript" src="/blog/js/fancy-box.js"></script>
+
+
+  <script type="text/javascript" src="/blog/js/helpers.js"></script>
+  
+
+  <script type="text/javascript" src="/blog/vendors/velocity/velocity.min.js"></script>
+  <script type="text/javascript" src="/blog/vendors/velocity/velocity.ui.min.js"></script>
+
+  <script type="text/javascript" src="/blog/js/motion_global.js" id="motion.global"></script>
+
+
+
+
+  
+  
+<script type="text/javascript" src="/blog/js/bootstrap.scrollspy.js" id="bootstrap.scrollspy.custom"></script>
+
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var $sidebarInner = $('.sidebar-inner');
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.didShow', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+          var self = this;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      $(indicator).velocity('stop').velocity({
+        opacity: action === 'show' ? 0.4 : 0
+      }, { duration: 100 });
+    }
+
+  });
+</script>
+
+
+  <script type="text/javascript" id="sidebar.nav">
+    $(document).ready(function () {
+      var html = $('html');
+
+      $('.sidebar-nav li').on('click', function () {
+        var item = $(this);
+        var activeTabClassName = 'sidebar-nav-active';
+        var activePanelClassName = 'sidebar-panel-active';
+        if (item.hasClass(activeTabClassName)) {
+          return;
+        }
+
+        var currentTarget = $('.' + activePanelClassName);
+        var target = $('.' + item.data('target'));
+
+        currentTarget.velocity('transition.slideUpOut', 200, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', 200)
+            .addClass(activePanelClassName);
+        });
+
+        item.siblings().removeClass(activeTabClassName);
+        item.addClass(activeTabClassName);
+      });
+
+      $('.post-toc a').on('click', function (e) {
+        e.preventDefault();
+        var offset = $(escapeSelector(this.getAttribute('href'))).offset().top;
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        });
+      });
+
+      // Expand sidebar on post detail page by default, when post has a toc.
+      var $tocContent = $('.post-toc-content');
+      if (isDesktop() && CONFIG.sidebar === 'post') {
+        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+          displaySidebar();
+        }
+      }
+    });
+  </script>
+
+
+
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      if (CONFIG.sidebar === 'always') {
+        displaySidebar();
+      }
+    });
+  </script>
+
+  
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for (i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+  
+  
+  
+
+  
+
+
+
+
+  
+  
+
+</body>
+</html>

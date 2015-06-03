@@ -16,8 +16,8 @@
   
   <entry>
     <title><![CDATA[A Programmer's Rantings]]></title>
-    <link href="http://qunwang6.github.io/blog/programmersRantings/"/>
-    <id>http://qunwang6.github.io/blog/programmersRantings/</id>
+    <link href="http://qunwang6.github.io/blog/year/06/03/programmersRantings/"/>
+    <id>http://qunwang6.github.io/blog/year/06/03/programmersRantings/</id>
     <published>2015-06-03T12:00:42.000Z</published>
     <updated>2015-06-03T12:00:42.000Z</updated>
     <content type="html"><![CDATA[<h2 id="language">language</h2><ul>
@@ -141,8 +141,8 @@
   
   <entry>
     <title><![CDATA[Swift Style guide]]></title>
-    <link href="http://qunwang6.github.io/blog/SwiftStyleGuide/"/>
-    <id>http://qunwang6.github.io/blog/SwiftStyleGuide/</id>
+    <link href="http://qunwang6.github.io/blog/year/06/03/SwiftStyleGuide/"/>
+    <id>http://qunwang6.github.io/blog/year/06/03/SwiftStyleGuide/</id>
     <published>2015-06-03T11:04:10.000Z</published>
     <updated>2015-05-25T16:10:17.000Z</updated>
     <content type="html"><![CDATA[<p>A guide to our Swift style and conventions.</p>
@@ -256,8 +256,8 @@
   
   <entry>
     <title><![CDATA[Sublime 3笔记]]></title>
-    <link href="http://qunwang6.github.io/blog/sublime/"/>
-    <id>http://qunwang6.github.io/blog/sublime/</id>
+    <link href="http://qunwang6.github.io/blog/year/06/03/sublime/"/>
+    <id>http://qunwang6.github.io/blog/year/06/03/sublime/</id>
     <published>2015-06-03T11:04:10.000Z</published>
     <updated>2015-05-23T15:38:00.000Z</updated>
     <content type="html"><![CDATA[<h2 id="Package_Control">Package Control</h2><p><a href="https://packagecontrol.io/installation#st3" target="_blank" rel="external">Package Control</a></p>
@@ -304,8 +304,8 @@
   
   <entry>
     <title><![CDATA[App store最新审核标准(2015.3)]]></title>
-    <link href="http://qunwang6.github.io/blog/AppstoreStandard/"/>
-    <id>http://qunwang6.github.io/blog/AppstoreStandard/</id>
+    <link href="http://qunwang6.github.io/blog/year/06/03/AppstoreStandard/"/>
+    <id>http://qunwang6.github.io/blog/year/06/03/AppstoreStandard/</id>
     <published>2015-06-03T11:04:10.000Z</published>
     <updated>2015-05-01T13:26:57.000Z</updated>
     <content type="html"><![CDATA[<blockquote>
@@ -751,8 +751,8 @@
   
   <entry>
     <title><![CDATA[pdf2htmlEX]]></title>
-    <link href="http://qunwang6.github.io/blog/pdf2htmlEX/"/>
-    <id>http://qunwang6.github.io/blog/pdf2htmlEX/</id>
+    <link href="http://qunwang6.github.io/blog/year/06/03/pdf2htmlEX/"/>
+    <id>http://qunwang6.github.io/blog/year/06/03/pdf2htmlEX/</id>
     <published>2015-06-03T11:04:10.000Z</published>
     <updated>2015-04-29T14:12:15.000Z</updated>
     <content type="html"><![CDATA[<ul>
@@ -808,8 +808,8 @@
   
   <entry>
     <title><![CDATA[用DSLConverter将Lingvo词典.DSL格式转换成MAC OSX可用的格式]]></title>
-    <link href="http://qunwang6.github.io/blog/lingvo2osx/"/>
-    <id>http://qunwang6.github.io/blog/lingvo2osx/</id>
+    <link href="http://qunwang6.github.io/blog/year/06/03/lingvo2osx/"/>
+    <id>http://qunwang6.github.io/blog/year/06/03/lingvo2osx/</id>
     <published>2015-06-03T11:04:10.000Z</published>
     <updated>2015-05-08T15:13:56.000Z</updated>
     <content type="html"><![CDATA[<h3 id="转换">转换</h3><p>下载.DSL to OS X/iOS dictionary converter<br><a href="https://github.com/svintuss/DSLConverter" target="_blank" rel="external">https://github.com/svintuss/DSLConverter</a></p>
@@ -892,8 +892,8 @@ cd ~/Desktop/project_templates/; make &amp;&amp; make install
   
   <entry>
     <title><![CDATA[iOS developer tips]]></title>
-    <link href="http://qunwang6.github.io/blog/iOSDeveloperTips/"/>
-    <id>http://qunwang6.github.io/blog/iOSDeveloperTips/</id>
+    <link href="http://qunwang6.github.io/blog/year/06/03/iOSDeveloperTips/"/>
+    <id>http://qunwang6.github.io/blog/year/06/03/iOSDeveloperTips/</id>
     <published>2015-06-03T11:04:10.000Z</published>
     <updated>2015-06-03T06:42:25.000Z</updated>
     <content type="html"><![CDATA[<h3 id="Start_Developing_iOS_Apps_Today">Start Developing iOS Apps Today</h3><p><a href="https://developer.apple.com/library/ios/referencelibrary/GettingStarted/RoadMapiOS/" target="_blank" rel="external">Start Developing iOS Apps Today: Setup</a></p>
@@ -989,8 +989,8 @@ cd ~/Desktop/project_templates/; make &amp;&amp; make install
   
   <entry>
     <title><![CDATA[iOS 开发流程笔记]]></title>
-    <link href="http://qunwang6.github.io/blog/iOSDevelopNote/"/>
-    <id>http://qunwang6.github.io/blog/iOSDevelopNote/</id>
+    <link href="http://qunwang6.github.io/blog/year/06/03/iOSDevelopNote/"/>
+    <id>http://qunwang6.github.io/blog/year/06/03/iOSDevelopNote/</id>
     <published>2015-06-03T11:04:10.000Z</published>
     <updated>2015-05-01T13:27:14.000Z</updated>
     <content type="html"><![CDATA[<ul>
@@ -1178,8 +1178,8 @@ cd ~/Desktop/project_templates/; make &amp;&amp; make install
   
   <entry>
     <title><![CDATA[HTTP2]]></title>
-    <link href="http://qunwang6.github.io/blog/http2/"/>
-    <id>http://qunwang6.github.io/blog/http2/</id>
+    <link href="http://qunwang6.github.io/blog/year/06/03/http2/"/>
+    <id>http://qunwang6.github.io/blog/year/06/03/http2/</id>
     <published>2015-06-03T11:04:10.000Z</published>
     <updated>2015-05-31T07:16:04.000Z</updated>
     <content type="html"><![CDATA[<h3 id="learning">learning</h3><blockquote>
@@ -1228,8 +1228,8 @@ cd ~/Desktop/project_templates/; make &amp;&amp; make install
   
   <entry>
     <title><![CDATA[Code vs. Poetry]]></title>
-    <link href="http://qunwang6.github.io/blog/codeVSpoetry/"/>
-    <id>http://qunwang6.github.io/blog/codeVSpoetry/</id>
+    <link href="http://qunwang6.github.io/blog/year/06/03/codeVSpoetry/"/>
+    <id>http://qunwang6.github.io/blog/year/06/03/codeVSpoetry/</id>
     <published>2015-06-03T11:04:10.000Z</published>
     <updated>2015-05-09T10:06:11.000Z</updated>
     <content type="html"><![CDATA[<p>David Plotz did an interesting <a href="http://www.slate.com/articles/podcasts/working/2014/12/google_software_engineer_nina_kang_talks_about_the_differences_between_writing.html" target="_blank" rel="external">interview with Google engineer Nina Kang</a> for the <a href="http://www.slate.com/articles/podcasts/working.html" target="_blank" rel="external">Working podcast</a>. Here’s an excerpt (edited for clarity):<br>T:大卫.普拉茲向在Working podcast工作的Google工程师康芯寧做了一次有趣的采访。这是谈话摘录（经过后期编辑润色）:</p>
@@ -1282,8 +1282,8 @@ cd ~/Desktop/project_templates/; make &amp;&amp; make install
   
   <entry>
     <title><![CDATA[Wordnik]]></title>
-    <link href="http://qunwang6.github.io/blog/Wordnik/"/>
-    <id>http://qunwang6.github.io/blog/Wordnik/</id>
+    <link href="http://qunwang6.github.io/blog/year/06/03/Wordnik/"/>
+    <id>http://qunwang6.github.io/blog/year/06/03/Wordnik/</id>
     <published>2015-06-03T11:04:10.000Z</published>
     <updated>2015-05-01T14:15:32.000Z</updated>
     <content type="html"><![CDATA[<h3 id="Wordnik-Definition-Finder"><a href="https://github.com/williamrchr/Wordnik-Definition-Finder" target="_blank" rel="external">Wordnik-Definition-Finder</a></h3><blockquote>
@@ -1329,8 +1329,8 @@ cd ~/Desktop/project_templates/; make &amp;&amp; make install
   
   <entry>
     <title><![CDATA[The Joel Test]]></title>
-    <link href="http://qunwang6.github.io/blog/TheJoelTest/"/>
-    <id>http://qunwang6.github.io/blog/TheJoelTest/</id>
+    <link href="http://qunwang6.github.io/blog/year/06/03/TheJoelTest/"/>
+    <id>http://qunwang6.github.io/blog/year/06/03/TheJoelTest/</id>
     <published>2015-06-03T11:04:10.000Z</published>
     <updated>2015-05-07T16:19:29.000Z</updated>
     <content type="html"><![CDATA[<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="operator"><span class="keyword">Do</span> you <span class="keyword">use</span> source control?</span><br><span class="line">Can you make a build <span class="keyword">in</span> one step?</span><br><span class="line"><span class="keyword">Do</span> you make daily builds?</span><br><span class="line"><span class="keyword">Do</span> you have a bug <span class="keyword">database</span>?</span><br><span class="line"><span class="keyword">Do</span> you fix bugs <span class="keyword">before</span> writing new code?</span><br><span class="line"><span class="keyword">Do</span> you have an up-<span class="keyword">to</span>-<span class="built_in">date</span> schedule?</span><br><span class="line"><span class="keyword">Do</span> you have a spec?</span><br><span class="line"><span class="keyword">Do</span> programmers have quiet working conditions?</span><br><span class="line"><span class="keyword">Do</span> you <span class="keyword">use</span> the best tools money can buy?</span><br><span class="line"><span class="keyword">Do</span> you have testers?</span><br><span class="line"><span class="keyword">Do</span> new candidates <span class="keyword">write</span> code during their interview?</span><br><span class="line"><span class="keyword">Do</span> you <span class="keyword">do</span> hallway usability testing?</span></span><br></pre></td></tr></table></figure>
@@ -1347,8 +1347,8 @@ cd ~/Desktop/project_templates/; make &amp;&amp; make install
   
   <entry>
     <title><![CDATA[xpinyin]]></title>
-    <link href="http://qunwang6.github.io/blog/xpinyin/"/>
-    <id>http://qunwang6.github.io/blog/xpinyin/</id>
+    <link href="http://qunwang6.github.io/blog/year/06/03/xpinyin/"/>
+    <id>http://qunwang6.github.io/blog/year/06/03/xpinyin/</id>
     <published>2015-06-03T11:04:10.000Z</published>
     <updated>2015-04-29T14:12:10.000Z</updated>
     <content type="html"><![CDATA[<ul>
@@ -1370,8 +1370,8 @@ cd ~/Desktop/project_templates/; make &amp;&amp; make install
   
   <entry>
     <title><![CDATA[Swift 语言指南]]></title>
-    <link href="http://qunwang6.github.io/blog/SwiftGuide/"/>
-    <id>http://qunwang6.github.io/blog/SwiftGuide/</id>
+    <link href="http://qunwang6.github.io/blog/year/06/03/SwiftGuide/"/>
+    <id>http://qunwang6.github.io/blog/year/06/03/SwiftGuide/</id>
     <published>2015-06-03T11:04:10.000Z</published>
     <updated>2015-05-01T14:11:09.000Z</updated>
     <content type="html"><![CDATA[<p>这份指南汇集了 Swift 语言主流学习资源，并以开发者的视角整理编排。</p>
@@ -2578,8 +2578,8 @@ cd ~/Desktop/project_templates/; make &amp;&amp; make install
   
   <entry>
     <title><![CDATA[SpaceMonkey]]></title>
-    <link href="http://qunwang6.github.io/blog/SpaceMonkey/"/>
-    <id>http://qunwang6.github.io/blog/SpaceMonkey/</id>
+    <link href="http://qunwang6.github.io/blog/year/06/03/SpaceMonkey/"/>
+    <id>http://qunwang6.github.io/blog/year/06/03/SpaceMonkey/</id>
     <published>2015-06-03T11:04:10.000Z</published>
     <updated>2015-05-17T01:25:15.000Z</updated>
     <content type="html"><![CDATA[<h3 id="项目">项目</h3><p><a href="http://www.raywenderlich.com/94649/sprite-kit-kids-swift" target="_blank" rel="external">Sprite Kit for Kids with Swift </a></p>
@@ -2617,8 +2617,8 @@ cd ~/Desktop/project_templates/; make &amp;&amp; make install
   
   <entry>
     <title><![CDATA[QR Code]]></title>
-    <link href="http://qunwang6.github.io/blog/QrCode/"/>
-    <id>http://qunwang6.github.io/blog/QrCode/</id>
+    <link href="http://qunwang6.github.io/blog/year/06/03/QrCode/"/>
+    <id>http://qunwang6.github.io/blog/year/06/03/QrCode/</id>
     <published>2015-06-03T11:04:10.000Z</published>
     <updated>2015-04-29T14:12:14.000Z</updated>
     <content type="html"><![CDATA[<h3 id="开源项目">开源项目</h3><p><a href="https://github.com/lincolnloop/python-qrcode" target="_blank" rel="external">python-qrcode</a></p>
@@ -2699,8 +2699,8 @@ from qrcode<span class="class">.image</span><span class="class">.pure</span> imp
   
   <entry>
     <title><![CDATA[password generator]]></title>
-    <link href="http://qunwang6.github.io/blog/PasswordGenerator/"/>
-    <id>http://qunwang6.github.io/blog/PasswordGenerator/</id>
+    <link href="http://qunwang6.github.io/blog/year/06/03/PasswordGenerator/"/>
+    <id>http://qunwang6.github.io/blog/year/06/03/PasswordGenerator/</id>
     <published>2015-06-03T11:04:10.000Z</published>
     <updated>2015-05-08T14:48:52.000Z</updated>
     <content type="html"><![CDATA[<h3 id="CODE">CODE</h3><figure class="highlight swift"><table><tr><td class="code"><pre><span class="line"><span class="comment">// Playground - noun: a place where people can play</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> <span class="type">UIKit</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//Step 1.</span></span><br><span class="line"><span class="keyword">var</span> pwCharacters =     [<span class="string">"a"</span>,<span class="string">"b"</span>,<span class="string">"c"</span>,<span class="string">"d"</span>,<span class="string">"e"</span>,<span class="string">"f"</span>,<span class="string">"g"</span>,<span class="string">"h"</span>,<span class="string">"i"</span>,<span class="string">"j"</span>,<span class="string">"k"</span>,<span class="string">"l"</span>,<span class="string">"m"</span>,<span class="string">"n"</span>,<span class="string">"o"</span>,<span class="string">"p"</span>,<span class="string">"q"</span>,<span class="string">"r"</span>,<span class="string">"s"</span>,<span class="string">"t"</span>,<span class="string">"u"</span>,<span class="string">"v"</span>,<span class="string">"w"</span>,<span class="string">"x"</span>,<span class="string">"y"</span>,<span class="string">"z"</span>,<span class="string">"1"</span>,<span class="string">"2"</span>,<span class="string">"3"</span>,<span class="string">"4"</span>,<span class="string">"5"</span>,<span class="string">"6"</span>,<span class="string">"7"</span>,<span class="string">"8"</span>,<span class="string">"9"</span>,<span class="string">"0"</span>,<span class="string">"A"</span>,<span class="string">"B"</span>,<span class="string">"C"</span>,<span class="string">"D"</span>,<span class="string">"E"</span>,<span class="string">"F"</span>,<span class="string">"G"</span>,<span class="string">"H"</span>,<span class="string">"I"</span>,<span class="string">"J"</span>,<span class="string">"K"</span>,<span class="string">"L"</span>,<span class="string">"M"</span>,<span class="string">"N"</span>,<span class="string">"O"</span>,<span class="string">"P"</span>,<span class="string">"Q"</span>,<span class="string">"R"</span>,<span class="string">"S"</span>,<span class="string">"T"</span>,<span class="string">"U"</span>,<span class="string">"V"</span>,<span class="string">"W"</span>,<span class="string">"X"</span>,<span class="string">"Y"</span>,<span class="string">"Z"</span>,<span class="string">"!"</span>,<span class="string">"@"</span>,<span class="string">"#"</span>,<span class="string">"$"</span>,<span class="string">"%"</span>,<span class="string">"^"</span>,<span class="string">"&amp;"</span>,<span class="string">"*"</span>]</span><br><span class="line"></span><br><span class="line"><span class="comment">//Step 2.</span></span><br><span class="line"><span class="func"><span class="keyword">func</span> <span class="title">randomPassword</span><span class="params">(passwordLength: Int)</span></span> -&gt; <span class="type">String</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">var</span> password = <span class="string">""</span></span><br><span class="line">    <span class="keyword">var</span> unsignedArrayCount = <span class="type">UInt32</span>(pwCharacters.<span class="built_in">count</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> <span class="keyword">var</span> i = <span class="number">0</span>; i &lt; passwordLength; i++ &#123;</span><br><span class="line">        <span class="keyword">var</span> unsignedRandomNumber = arc4random_uniform(unsignedArrayCount)</span><br><span class="line">        <span class="keyword">var</span> randomNumber = <span class="type">Int</span>(unsignedRandomNumber)</span><br><span class="line">        password += pwCharacters[randomNumber]</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> password</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//Step 3</span></span><br><span class="line"><span class="comment">//任意生成1000位密码</span></span><br><span class="line">randomPassword(<span class="number">1000</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">//任意生成15密码</span></span><br><span class="line"><span class="keyword">var</span> password = <span class="string">"<span class="subst">\(randomPassword(<span class="number">5</span>)</span>)-<span class="subst">\(randomPassword(<span class="number">5</span>)</span>)-<span class="subst">\(randomPassword(<span class="number">5</span>)</span>)"</span></span><br></pre></td></tr></table></figure>
@@ -2721,8 +2721,8 @@ from qrcode<span class="class">.image</span><span class="class">.pure</span> imp
   
   <entry>
     <title><![CDATA[\BGL\DSL\MDX\CD\ ===> OS X dictionary]]></title>
-    <link href="http://qunwang6.github.io/blog/OSXDictionary/"/>
-    <id>http://qunwang6.github.io/blog/OSXDictionary/</id>
+    <link href="http://qunwang6.github.io/blog/year/06/03/OSXDictionary/"/>
+    <id>http://qunwang6.github.io/blog/year/06/03/OSXDictionary/</id>
     <published>2015-06-03T11:04:10.000Z</published>
     <updated>2015-05-08T15:03:27.000Z</updated>
     <content type="html"><![CDATA[<h3 id="开源项目：PYGLOSSARY">开源项目：PYGLOSSARY</h3><ul>
@@ -2915,8 +2915,8 @@ sed -<span class="tag">i</span> <span class="string">""</span> <span class="stri
   
   <entry>
     <title><![CDATA[Help Sheet]]></title>
-    <link href="http://qunwang6.github.io/blog/HelpSheet/"/>
-    <id>http://qunwang6.github.io/blog/HelpSheet/</id>
+    <link href="http://qunwang6.github.io/blog/year/06/03/HelpSheet/"/>
+    <id>http://qunwang6.github.io/blog/year/06/03/HelpSheet/</id>
     <published>2015-06-03T11:04:10.000Z</published>
     <updated>2015-05-31T04:03:58.000Z</updated>
     <content type="html"><![CDATA[<ul>
@@ -2939,8 +2939,8 @@ sed -<span class="tag">i</span> <span class="string">""</span> <span class="stri
   
   <entry>
     <title><![CDATA[Hello World]]></title>
-    <link href="http://qunwang6.github.io/blog/HelloWorld/"/>
-    <id>http://qunwang6.github.io/blog/HelloWorld/</id>
+    <link href="http://qunwang6.github.io/blog/year/06/03/HelloWorld/"/>
+    <id>http://qunwang6.github.io/blog/year/06/03/HelloWorld/</id>
     <published>2015-06-03T11:04:10.000Z</published>
     <updated>2015-05-10T08:57:30.000Z</updated>
     <content type="html"><![CDATA[<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
