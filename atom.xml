@@ -4,7 +4,7 @@
   
   <link href="/blog/atom.xml" rel="self"/>
   <link href="http://qunwang6.github.io/blog/"/>
-  <updated>2015-06-03T15:03:38.000Z</updated>
+  <updated>2015-06-06T13:50:37.000Z</updated>
   <id>http://qunwang6.github.io/blog/</id>
   
   <author>
@@ -13,6 +13,43 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[baidu OCR]]></title>
+    <link href="http://qunwang6.github.io/blog/baiduOCR/"/>
+    <id>http://qunwang6.github.io/blog/baiduOCR/</id>
+    <published>2015-06-05T16:00:00.000Z</published>
+    <updated>2015-06-06T13:50:37.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="百度OCR文字识别API_for_Python">百度OCR文字识别API for Python</h2><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"># <span class="tag">-</span>*<span class="tag">-</span> <span class="rule"><span class="attribute">coding</span>:<span class="value"> utf-<span class="number">8</span> -*-</span><br><span class="line">import sys, urllib, urllib2, json</span><br><span class="line">f = <span class="function">open</span>(<span class="string">"test.txt"</span>,<span class="string">"w"</span>)</span><br><span class="line">url = <span class="string">'http://apis.baidu.com/apistore/idlocr/ocr'</span></span><br><span class="line"></span><br><span class="line">data = &#123;&#125;</span><br><span class="line">data[<span class="string">'fromdevice'</span>] = <span class="string">"pc"</span></span><br><span class="line">data[<span class="string">'clientip'</span>] = <span class="string">"10.10.10.0"</span></span><br><span class="line">data[<span class="string">'detecttype'</span>] = <span class="string">"LocateRecognize"</span></span><br><span class="line">data[<span class="string">'languagetype'</span>] = <span class="string">"CHN_ENG"</span></span><br><span class="line">data[<span class="string">'imagetype'</span>] = <span class="string">"1"</span>  #`<span class="number">2</span>`代表图片原文件（只支持JPG）</span><br><span class="line">data[<span class="string">'image'</span>] = <span class="string">""</span>    ##image base64 data</span><br><span class="line"></span><br><span class="line">decoded_data = urllib.<span class="function">urlencode</span>(data)</span><br><span class="line">req = urllib2.<span class="function">Request</span>(url, data = decoded_data)</span><br><span class="line"></span><br><span class="line">req.<span class="function">add_header</span>(<span class="string">"Content-Type"</span>, <span class="string">"application/x-www-form-urlencoded"</span>)</span><br><span class="line">req.<span class="function">add_header</span>(<span class="string">"apikey"</span>, <span class="string">"自己的apikey"</span>)</span><br><span class="line"></span><br><span class="line">resp = urllib2.<span class="function">urlopen</span>(req)</span><br><span class="line">content = resp.<span class="function">read</span>()</span><br><span class="line"><span class="function">if</span>(content):</span><br><span class="line">    <span class="function">print</span>(content)</span><br><span class="line">    f.<span class="function">write</span>(content)</span></span></span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+<h2 id="image_convert_to_base64_code">image convert to base64 code</h2><figure class="highlight stata"><table><tr><td class="code"><pre><span class="line">openssl base64 &lt; image.jpg | tr -<span class="keyword">d</span> '\<span class="keyword">n</span>' | pbcopy</span><br><span class="line"></span><br><span class="line"><span class="keyword">cat</span> image.jpg | openssl base64 | tr -<span class="keyword">d</span> '\<span class="keyword">n</span>' | pbcopy</span><br><span class="line"></span><br><span class="line">openssl base64 -<span class="keyword">in</span> <span class="keyword">out</span>.jpg -<span class="keyword">out</span> filename.b64</span><br></pre></td></tr></table></figure>
+<blockquote>
+<ul>
+<li><code>data:image/png;base64,{base64 image code}</code>//直接复制到浏览器地址栏回车</li>
+<li><code>&lt;img src=&quot;data:image/jpg;base64,{base64 image code}/&gt;</code>//或者网页里嵌入</li>
+</ul>
+</blockquote>
+<h2 id="References:">References:</h2><ul>
+<li><a href="http://apistore.baidu.com/apiworks/servicedetail/146.html" target="_blank" rel="external">百度OCR文字识别_工具_API服务_API服务_API Store</a></li>
+<li>apikey <a href="http://apistore.baidu.com/astore/toolshttpproxy?apiId=usa-&amp;isAworks=1" target="_blank" rel="external">API调试工具_API Store</a></li>
+<li><a href="https://github.com/JeremyWei/baidu-ocr" target="_blank" rel="external">JeremyWei/baidu-ocr</a></li>
+<li><a href="http://superuser.com/questions/120796/os-x-base64-encode-via-command-line" target="_blank" rel="external">osx - OS X: Base64 encode via command line - Super User</a></li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h2 id="百度OCR文字识别API_for_Python">百度OCR文字识别API for Python</h2><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"># <span class="tag">-</span>*<span class="tag">-</span> <span class="rule"><span class="attribute">coding</span>:<span class="value"> utf-<span class="number">8</span> -*-</span><br><span class="line">import sys, urllib, urllib2, json</span><br><span class="line">f = <span class="function">open</span>(<span class="string">"test.txt"</span>,<span class="string">"w"</span>)</span><br><span class="line">url = <span class="string">'http://apis.baidu.com/apistore/idlocr/ocr'</span></span><br><span class="line"></span><br><span class="line">data = &#123;&#125;</span><br><span class="line">data[<span class="string">'fromdevice'</span>] = <span class="string">"pc"</span></span><br><span class="line">data[<span class="string">'clientip'</span>] = <span class="string">"10.10.10.0"</span></span><br><span class="line">data[<span class="string">'detecttype'</span>] = <span class="string">"LocateRecognize"</span></span><br><span class="line">data[<span class="string">'languagetype'</span>] = <span class="string">"CHN_ENG"</span></span><br><span class="line">data[<span class="string">'imagetype'</span>] = <span class="string">"1"</span>  #`<span class="number">2</span>`代表图片原文件（只支持JPG）</span><br><span class="line">data[<span class="string">'image'</span>] = <span class="string">""</span>    ##image base64 data</span><br><span class="line"></span><br><span class="line">decoded_data = urllib.<span class="function">urlencode</span>(data)</span><br><span class="line">req = urllib2.<span class="function">Request</span>(url, data = decoded_data)</span><br><span class="line"></span><br><span class="line">req.<span class="function">add_header</span>(<span class="string">"Content-Type"</span>, <span class="string">"application/x-www-form-urlencoded"</span>)</span><br><span class="line">req.<span class="function">add_header</span>(<span class="string">"apikey"</span>, <span class="string">"自己的apikey"</span>)</span><br><span class="line"></span><br><span class="line">resp = urllib2.<span class="function">urlopen</span>(req)</span><br><span class="line">content = resp.<span class="function">read</span>()</span><br><span class="line"><span class="function">if</span>(content):</span><br><span class="line">    <span class="function">print</span>(content)</span><br><span class="line">    f.<span class="function">write</span>(content)</span></span></span><br></pre></td></tr></table></figure>]]>
+    
+    </summary>
+    
+      <category term="OCR" scheme="http://qunwang6.github.io/blog/tags/OCR/"/>
+    
+      <category term="Python" scheme="http://qunwang6.github.io/blog/tags/Python/"/>
+    
+      <category term="base64" scheme="http://qunwang6.github.io/blog/tags/base64/"/>
+    
+      <category term="OCR" scheme="http://qunwang6.github.io/blog/categories/OCR/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[CNNIC证书]]></title>
@@ -599,40 +636,6 @@
   </entry>
   
   <entry>
-    <title><![CDATA[Secret code in Ex Machina]]></title>
-    <link href="http://qunwang6.github.io/blog/ExMachina/"/>
-    <id>http://qunwang6.github.io/blog/ExMachina/</id>
-    <published>2015-05-16T16:00:00.000Z</published>
-    <updated>2015-06-03T13:13:52.000Z</updated>
-    <content type="html"><![CDATA[<p><img src="http://i.imgur.com/C44iJeR.jpg" alt=""></p>
-<h3 id="Code">Code</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#BlueBook code decryption</span></span><br><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">sieve</span><span class="params">(n)</span>:</span></span><br><span class="line">    x = [<span class="number">1</span>] * n</span><br><span class="line">    x[<span class="number">1</span>] = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">2</span>,n/<span class="number">2</span>):</span><br><span class="line">            j = <span class="number">2</span> * i</span><br><span class="line">            <span class="keyword">while</span> j &lt; n:</span><br><span class="line">                    x[j]=<span class="number">0</span></span><br><span class="line">                    j = j+i</span><br><span class="line">    <span class="keyword">return</span> x</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">prime</span><span class="params">(n,x)</span>:</span></span><br><span class="line">    i = <span class="number">1</span></span><br><span class="line">    j = <span class="number">1</span></span><br><span class="line">    <span class="keyword">while</span> j &lt;= n:</span><br><span class="line">            <span class="keyword">if</span> x[i] == <span class="number">1</span>:</span><br><span class="line">                    j = j + <span class="number">1</span></span><br><span class="line">            i = i + <span class="number">1</span></span><br><span class="line">    <span class="keyword">return</span> i - <span class="number">1</span></span><br><span class="line">x=sieve(<span class="number">10000</span>)</span><br><span class="line">code = [<span class="number">1206</span>,<span class="number">301</span>,<span class="number">384</span>,<span class="number">5</span>]</span><br><span class="line">key =[<span class="number">1</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">2</span>,]</span><br><span class="line"></span><br><span class="line">sys.stdout.write(<span class="string">""</span>.join(chr(i) <span class="keyword">for</span> i <span class="keyword">in</span> [<span class="number">73</span>,<span class="number">83</span>,<span class="number">66</span>,<span class="number">78</span>,<span class="number">32</span>,<span class="number">61</span>,<span class="number">32</span>]))</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range (<span class="number">0</span>,<span class="number">4</span>):</span><br><span class="line">    sys.stdout.write(str(prime(code[i],x)-key[i]))</span><br><span class="line"></span><br><span class="line"><span class="keyword">print</span></span><br></pre></td></tr></table></figure>
-<a id="more"></a>
-<p>Which when you run with python2.7 you get the following:</p>
-<blockquote>
-<p>ISBN = 9780199226559</p>
-</blockquote>
-<p>Which is <a href="http://www.amazon.com/Embodiment-inner-life-Cognition-Consciousness/dp/0199226555" target="_blank" rel="external">Embodiment and the inner life: Cognition and Consciousness in the Space of Possible Minds</a>. and so now I have a lot more respect for the Director.</p>
-<blockquote>
-<p>for anyone wondering, the isbn number is generated by concatenating the 1206th 301st 384th and 5th prime number of which each was subtracted 1, 1, 2, 2 …i.e.<br>The 1,206th prime is 9,781. -1<br>The 301st prime is 1,993. -1<br>The 384th prime is 2,657. -2<br>The 5th prime is 11. -2<br>= 9780 1992 2655 9<br>73,83,66,78,32,61,32 are the ascii characters for ‘ISBN = ‘<br>sieve is a reference to <a href="http://en.wikipedia.org/wiki/Sieve_of_Eratosthenes" target="_blank" rel="external">http://en.wikipedia.org/wiki/Sieve_of_Eratosthenes</a> which is used to reduce the number of prime candidates (here from 1 to 10000).</p>
-</blockquote>
-<hr>
-<h3 id="References:">References:</h3><ul>
-<li><a href="http://www.v2ex.com/t/191613#reply37" target="_blank" rel="external">v2ex</a></li>
-<li><a href="http://moviecode.tumblr.com/" target="_blank" rel="external">Source Code in TV and Films</a></li>
-<li><a href="http://www.reddit.com/r/movies/comments/365f9b/secret_code_in_ex_machina/" target="_blank" rel="external">reddit.com</a></li>
-</ul>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p><img src="http://i.imgur.com/C44iJeR.jpg" alt=""></p>
-<h3 id="Code">Code</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#BlueBook code decryption</span></span><br><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">sieve</span><span class="params">(n)</span>:</span></span><br><span class="line">    x = [<span class="number">1</span>] * n</span><br><span class="line">    x[<span class="number">1</span>] = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">2</span>,n/<span class="number">2</span>):</span><br><span class="line">            j = <span class="number">2</span> * i</span><br><span class="line">            <span class="keyword">while</span> j &lt; n:</span><br><span class="line">                    x[j]=<span class="number">0</span></span><br><span class="line">                    j = j+i</span><br><span class="line">    <span class="keyword">return</span> x</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">prime</span><span class="params">(n,x)</span>:</span></span><br><span class="line">    i = <span class="number">1</span></span><br><span class="line">    j = <span class="number">1</span></span><br><span class="line">    <span class="keyword">while</span> j &lt;= n:</span><br><span class="line">            <span class="keyword">if</span> x[i] == <span class="number">1</span>:</span><br><span class="line">                    j = j + <span class="number">1</span></span><br><span class="line">            i = i + <span class="number">1</span></span><br><span class="line">    <span class="keyword">return</span> i - <span class="number">1</span></span><br><span class="line">x=sieve(<span class="number">10000</span>)</span><br><span class="line">code = [<span class="number">1206</span>,<span class="number">301</span>,<span class="number">384</span>,<span class="number">5</span>]</span><br><span class="line">key =[<span class="number">1</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">2</span>,]</span><br><span class="line"></span><br><span class="line">sys.stdout.write(<span class="string">""</span>.join(chr(i) <span class="keyword">for</span> i <span class="keyword">in</span> [<span class="number">73</span>,<span class="number">83</span>,<span class="number">66</span>,<span class="number">78</span>,<span class="number">32</span>,<span class="number">61</span>,<span class="number">32</span>]))</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range (<span class="number">0</span>,<span class="number">4</span>):</span><br><span class="line">    sys.stdout.write(str(prime(code[i],x)-key[i]))</span><br><span class="line"></span><br><span class="line"><span class="keyword">print</span></span><br></pre></td></tr></table></figure>]]>
-    
-    </summary>
-    
-      <category term="Python" scheme="http://qunwang6.github.io/blog/categories/Python/"/>
-    
-  </entry>
-  
-  <entry>
     <title><![CDATA[CSS Avengers Card with 3D rotation and neon effect]]></title>
     <link href="http://qunwang6.github.io/blog/CSS3D/"/>
     <id>http://qunwang6.github.io/blog/CSS3D/</id>
@@ -699,6 +702,40 @@
       <category term="debug" scheme="http://qunwang6.github.io/blog/tags/debug/"/>
     
       <category term="Swift" scheme="http://qunwang6.github.io/blog/categories/Swift/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Secret code in Ex Machina]]></title>
+    <link href="http://qunwang6.github.io/blog/ExMachina/"/>
+    <id>http://qunwang6.github.io/blog/ExMachina/</id>
+    <published>2015-05-16T16:00:00.000Z</published>
+    <updated>2015-06-03T13:13:52.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://i.imgur.com/C44iJeR.jpg" alt=""></p>
+<h3 id="Code">Code</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#BlueBook code decryption</span></span><br><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">sieve</span><span class="params">(n)</span>:</span></span><br><span class="line">    x = [<span class="number">1</span>] * n</span><br><span class="line">    x[<span class="number">1</span>] = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">2</span>,n/<span class="number">2</span>):</span><br><span class="line">            j = <span class="number">2</span> * i</span><br><span class="line">            <span class="keyword">while</span> j &lt; n:</span><br><span class="line">                    x[j]=<span class="number">0</span></span><br><span class="line">                    j = j+i</span><br><span class="line">    <span class="keyword">return</span> x</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">prime</span><span class="params">(n,x)</span>:</span></span><br><span class="line">    i = <span class="number">1</span></span><br><span class="line">    j = <span class="number">1</span></span><br><span class="line">    <span class="keyword">while</span> j &lt;= n:</span><br><span class="line">            <span class="keyword">if</span> x[i] == <span class="number">1</span>:</span><br><span class="line">                    j = j + <span class="number">1</span></span><br><span class="line">            i = i + <span class="number">1</span></span><br><span class="line">    <span class="keyword">return</span> i - <span class="number">1</span></span><br><span class="line">x=sieve(<span class="number">10000</span>)</span><br><span class="line">code = [<span class="number">1206</span>,<span class="number">301</span>,<span class="number">384</span>,<span class="number">5</span>]</span><br><span class="line">key =[<span class="number">1</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">2</span>,]</span><br><span class="line"></span><br><span class="line">sys.stdout.write(<span class="string">""</span>.join(chr(i) <span class="keyword">for</span> i <span class="keyword">in</span> [<span class="number">73</span>,<span class="number">83</span>,<span class="number">66</span>,<span class="number">78</span>,<span class="number">32</span>,<span class="number">61</span>,<span class="number">32</span>]))</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range (<span class="number">0</span>,<span class="number">4</span>):</span><br><span class="line">    sys.stdout.write(str(prime(code[i],x)-key[i]))</span><br><span class="line"></span><br><span class="line"><span class="keyword">print</span></span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+<p>Which when you run with python2.7 you get the following:</p>
+<blockquote>
+<p>ISBN = 9780199226559</p>
+</blockquote>
+<p>Which is <a href="http://www.amazon.com/Embodiment-inner-life-Cognition-Consciousness/dp/0199226555" target="_blank" rel="external">Embodiment and the inner life: Cognition and Consciousness in the Space of Possible Minds</a>. and so now I have a lot more respect for the Director.</p>
+<blockquote>
+<p>for anyone wondering, the isbn number is generated by concatenating the 1206th 301st 384th and 5th prime number of which each was subtracted 1, 1, 2, 2 …i.e.<br>The 1,206th prime is 9,781. -1<br>The 301st prime is 1,993. -1<br>The 384th prime is 2,657. -2<br>The 5th prime is 11. -2<br>= 9780 1992 2655 9<br>73,83,66,78,32,61,32 are the ascii characters for ‘ISBN = ‘<br>sieve is a reference to <a href="http://en.wikipedia.org/wiki/Sieve_of_Eratosthenes" target="_blank" rel="external">http://en.wikipedia.org/wiki/Sieve_of_Eratosthenes</a> which is used to reduce the number of prime candidates (here from 1 to 10000).</p>
+</blockquote>
+<hr>
+<h3 id="References:">References:</h3><ul>
+<li><a href="http://www.v2ex.com/t/191613#reply37" target="_blank" rel="external">v2ex</a></li>
+<li><a href="http://moviecode.tumblr.com/" target="_blank" rel="external">Source Code in TV and Films</a></li>
+<li><a href="http://www.reddit.com/r/movies/comments/365f9b/secret_code_in_ex_machina/" target="_blank" rel="external">reddit.com</a></li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="http://i.imgur.com/C44iJeR.jpg" alt=""></p>
+<h3 id="Code">Code</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#BlueBook code decryption</span></span><br><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">sieve</span><span class="params">(n)</span>:</span></span><br><span class="line">    x = [<span class="number">1</span>] * n</span><br><span class="line">    x[<span class="number">1</span>] = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">2</span>,n/<span class="number">2</span>):</span><br><span class="line">            j = <span class="number">2</span> * i</span><br><span class="line">            <span class="keyword">while</span> j &lt; n:</span><br><span class="line">                    x[j]=<span class="number">0</span></span><br><span class="line">                    j = j+i</span><br><span class="line">    <span class="keyword">return</span> x</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">prime</span><span class="params">(n,x)</span>:</span></span><br><span class="line">    i = <span class="number">1</span></span><br><span class="line">    j = <span class="number">1</span></span><br><span class="line">    <span class="keyword">while</span> j &lt;= n:</span><br><span class="line">            <span class="keyword">if</span> x[i] == <span class="number">1</span>:</span><br><span class="line">                    j = j + <span class="number">1</span></span><br><span class="line">            i = i + <span class="number">1</span></span><br><span class="line">    <span class="keyword">return</span> i - <span class="number">1</span></span><br><span class="line">x=sieve(<span class="number">10000</span>)</span><br><span class="line">code = [<span class="number">1206</span>,<span class="number">301</span>,<span class="number">384</span>,<span class="number">5</span>]</span><br><span class="line">key =[<span class="number">1</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">2</span>,]</span><br><span class="line"></span><br><span class="line">sys.stdout.write(<span class="string">""</span>.join(chr(i) <span class="keyword">for</span> i <span class="keyword">in</span> [<span class="number">73</span>,<span class="number">83</span>,<span class="number">66</span>,<span class="number">78</span>,<span class="number">32</span>,<span class="number">61</span>,<span class="number">32</span>]))</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range (<span class="number">0</span>,<span class="number">4</span>):</span><br><span class="line">    sys.stdout.write(str(prime(code[i],x)-key[i]))</span><br><span class="line"></span><br><span class="line"><span class="keyword">print</span></span><br></pre></td></tr></table></figure>]]>
+    
+    </summary>
+    
+      <category term="Python" scheme="http://qunwang6.github.io/blog/categories/Python/"/>
     
   </entry>
   
@@ -799,46 +836,6 @@
       <category term="poetry" scheme="http://qunwang6.github.io/blog/tags/poetry/"/>
     
       <category term="code" scheme="http://qunwang6.github.io/blog/categories/code/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[The Joel Test]]></title>
-    <link href="http://qunwang6.github.io/blog/TheJoelTest/"/>
-    <id>http://qunwang6.github.io/blog/TheJoelTest/</id>
-    <published>2015-05-07T16:00:00.000Z</published>
-    <updated>2015-06-03T13:13:32.000Z</updated>
-    <content type="html"><![CDATA[<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="operator"><span class="keyword">Do</span> you <span class="keyword">use</span> source control?</span><br><span class="line">Can you make a build <span class="keyword">in</span> one step?</span><br><span class="line"><span class="keyword">Do</span> you make daily builds?</span><br><span class="line"><span class="keyword">Do</span> you have a bug <span class="keyword">database</span>?</span><br><span class="line"><span class="keyword">Do</span> you fix bugs <span class="keyword">before</span> writing new code?</span><br><span class="line"><span class="keyword">Do</span> you have an up-<span class="keyword">to</span>-<span class="built_in">date</span> schedule?</span><br><span class="line"><span class="keyword">Do</span> you have a spec?</span><br><span class="line"><span class="keyword">Do</span> programmers have quiet working conditions?</span><br><span class="line"><span class="keyword">Do</span> you <span class="keyword">use</span> the best tools money can buy?</span><br><span class="line"><span class="keyword">Do</span> you have testers?</span><br><span class="line"><span class="keyword">Do</span> new candidates <span class="keyword">write</span> code during their interview?</span><br><span class="line"><span class="keyword">Do</span> you <span class="keyword">do</span> hallway usability testing?</span></span><br></pre></td></tr></table></figure>
-]]></content>
-    <summary type="html">
-    <![CDATA[<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="operator"><span class="keyword">Do</span> you]]>
-    </summary>
-    
-      <category term="program" scheme="http://qunwang6.github.io/blog/tags/program/"/>
-    
-      <category term="program" scheme="http://qunwang6.github.io/blog/categories/program/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[password generator]]></title>
-    <link href="http://qunwang6.github.io/blog/PasswordGenerator/"/>
-    <id>http://qunwang6.github.io/blog/PasswordGenerator/</id>
-    <published>2015-05-07T16:00:00.000Z</published>
-    <updated>2015-06-03T13:13:43.000Z</updated>
-    <content type="html"><![CDATA[<h3 id="CODE">CODE</h3><figure class="highlight swift"><table><tr><td class="code"><pre><span class="line"><span class="comment">// Playground - noun: a place where people can play</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> <span class="type">UIKit</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//Step 1.</span></span><br><span class="line"><span class="keyword">var</span> pwCharacters =     [<span class="string">"a"</span>,<span class="string">"b"</span>,<span class="string">"c"</span>,<span class="string">"d"</span>,<span class="string">"e"</span>,<span class="string">"f"</span>,<span class="string">"g"</span>,<span class="string">"h"</span>,<span class="string">"i"</span>,<span class="string">"j"</span>,<span class="string">"k"</span>,<span class="string">"l"</span>,<span class="string">"m"</span>,<span class="string">"n"</span>,<span class="string">"o"</span>,<span class="string">"p"</span>,<span class="string">"q"</span>,<span class="string">"r"</span>,<span class="string">"s"</span>,<span class="string">"t"</span>,<span class="string">"u"</span>,<span class="string">"v"</span>,<span class="string">"w"</span>,<span class="string">"x"</span>,<span class="string">"y"</span>,<span class="string">"z"</span>,<span class="string">"1"</span>,<span class="string">"2"</span>,<span class="string">"3"</span>,<span class="string">"4"</span>,<span class="string">"5"</span>,<span class="string">"6"</span>,<span class="string">"7"</span>,<span class="string">"8"</span>,<span class="string">"9"</span>,<span class="string">"0"</span>,<span class="string">"A"</span>,<span class="string">"B"</span>,<span class="string">"C"</span>,<span class="string">"D"</span>,<span class="string">"E"</span>,<span class="string">"F"</span>,<span class="string">"G"</span>,<span class="string">"H"</span>,<span class="string">"I"</span>,<span class="string">"J"</span>,<span class="string">"K"</span>,<span class="string">"L"</span>,<span class="string">"M"</span>,<span class="string">"N"</span>,<span class="string">"O"</span>,<span class="string">"P"</span>,<span class="string">"Q"</span>,<span class="string">"R"</span>,<span class="string">"S"</span>,<span class="string">"T"</span>,<span class="string">"U"</span>,<span class="string">"V"</span>,<span class="string">"W"</span>,<span class="string">"X"</span>,<span class="string">"Y"</span>,<span class="string">"Z"</span>,<span class="string">"!"</span>,<span class="string">"@"</span>,<span class="string">"#"</span>,<span class="string">"$"</span>,<span class="string">"%"</span>,<span class="string">"^"</span>,<span class="string">"&amp;"</span>,<span class="string">"*"</span>]</span><br><span class="line"></span><br><span class="line"><span class="comment">//Step 2.</span></span><br><span class="line"><span class="func"><span class="keyword">func</span> <span class="title">randomPassword</span><span class="params">(passwordLength: Int)</span></span> -&gt; <span class="type">String</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">var</span> password = <span class="string">""</span></span><br><span class="line">    <span class="keyword">var</span> unsignedArrayCount = <span class="type">UInt32</span>(pwCharacters.<span class="built_in">count</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> <span class="keyword">var</span> i = <span class="number">0</span>; i &lt; passwordLength; i++ &#123;</span><br><span class="line">        <span class="keyword">var</span> unsignedRandomNumber = arc4random_uniform(unsignedArrayCount)</span><br><span class="line">        <span class="keyword">var</span> randomNumber = <span class="type">Int</span>(unsignedRandomNumber)</span><br><span class="line">        password += pwCharacters[randomNumber]</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> password</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//Step 3</span></span><br><span class="line"><span class="comment">//任意生成1000位密码</span></span><br><span class="line">randomPassword(<span class="number">1000</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">//任意生成15密码</span></span><br><span class="line"><span class="keyword">var</span> password = <span class="string">"<span class="subst">\(randomPassword(<span class="number">5</span>)</span>)-<span class="subst">\(randomPassword(<span class="number">5</span>)</span>)-<span class="subst">\(randomPassword(<span class="number">5</span>)</span>)"</span></span><br></pre></td></tr></table></figure>
-<hr>
-<h3 id="References">References</h3><p><a href="http://www.mav3r1ck.io/one-thousand-character-password/" target="_blank" rel="external">One Thousand Character Password</a></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<h3 id="CODE">CODE</h3><figure class="highlight swift"><table><tr><td class="code"><pre><span class="line"><span class="comment">// Playgrou]]>
-    </summary>
-    
-      <category term="Swift" scheme="http://qunwang6.github.io/blog/tags/Swift/"/>
-    
-      <category term="password" scheme="http://qunwang6.github.io/blog/tags/password/"/>
-    
-      <category term="Swift" scheme="http://qunwang6.github.io/blog/categories/Swift/"/>
     
   </entry>
   
@@ -1123,191 +1120,42 @@ cd ~/Desktop/project_templates/; make &amp;&amp; make install
   </entry>
   
   <entry>
-    <title><![CDATA[iOS 开发流程笔记]]></title>
-    <link href="http://qunwang6.github.io/blog/iOSDevelopNote/"/>
-    <id>http://qunwang6.github.io/blog/iOSDevelopNote/</id>
-    <published>2015-04-30T16:00:00.000Z</published>
-    <updated>2015-06-03T13:13:47.000Z</updated>
-    <content type="html"><![CDATA[<ul>
-<li>[x] 证书知识及准备工作</li>
-<li>[x] 几种开发者帐号区别</li>
-<li>[x] 真机调试流程</li>
-<li>[x] 内测发布流程</li>
-<li>[ ] Appstore 上架流程</li>
-</ul>
-<a id="more"></a>
-<h2 id="证书知识及准备工作">证书知识及准备工作</h2><h3 id="基础问题答疑">基础问题答疑</h3><h4 id="什么是证书">什么是证书</h4><p>由 apple 官方颁发, 用以证明开发者身份的特殊文件, 在 iOS 开发中主要用于代码签名, 保障 iOS 生态的健康安全, 分为开发者证书和发布者证书</p>
-<h4 id="什么时候需要证书">什么时候需要证书</h4><p>只有在本机模拟器调试时无需代码签名, 当 App 需要在真机运行和发布时需要使用相应证书进行签名</p>
-<h4 id="证书如何获得">证书如何获得</h4><p>首先需要拥有相应权限的开发者帐号, 通过在本地生成配对的密钥, 向 <a href="https://developer.apple.com/ios/manage/overview/index.action" target="_blank" rel="external">provisioning portal</a> 提交公钥后换取, 后续证书在使用时会验证本地私钥</p>
-<h4 id="如何对代码进行签名">如何对代码进行签名</h4><p>在 xcode 中, 使用描述文件(provision profile 包含调试者证书, 授权设备清单, 应用ID), 在 <code>Build Settings</code> 中选择存于 <code>Keychain Access</code> 中的证书文件设置调试和发布任务时的代码签名</p>
-<h4 id="我生成的私钥如何共享给团队成员">我生成的私钥如何共享给团队成员</h4><p>在 <code>Keychain Access</code> 中找到导入的证书, 右击导出为包含私钥的 Personal Information Exchange(.p12)文件(导出时可以创建密码), 团队成员再导入 <code>p12</code> 证书后就完整包含了证书和私钥</p>
-<h3 id="各流程中证书的需求情况">各流程中证书的需求情况</h3><h4 id="模拟器调试">模拟器调试</h4><p>不需要</p>
-<h4 id="真机调试">真机调试</h4><ul>
-<li><p>描述文件(Provisioning Profiles)</p>
-</li>
-<li><p>开发者证书(ios_development.cer)</p>
-</li>
-</ul>
-<h4 id="打包和发布">打包和发布</h4><ul>
-<li><p>描述文件(Provisioning Profiles)</p>
-</li>
-<li><p>可用于发布的开发者证书(ios_distribution.cer)</p>
-</li>
-</ul>
-<h4 id="消息推送后端服务">消息推送后端服务</h4><ul>
-<li>apns 证书</li>
-</ul>
-<h3 id="开发中常见的证书及相关文件介绍">开发中常见的证书及相关文件介绍</h3><h4 id="CSR(certificate_request)_文件">CSR(certificate request) 文件</h4><p>用于换取证书的公钥文件, 实际是在本地基于 <code>RSA</code> 加密得到配对的密钥, 私钥存于 <code>Keychain Access</code> 用于签名, 公钥作为换取证书的凭证</p>
-<h5 id="生成方法">生成方法</h5><ul>
-<li><p>OSX 系统自带的 <strong>Keychain Access</strong></p>
-<ul>
-<li><p>选择 “Request a Certificate From a Certificate Authority…”</p>
-</li>
-<li><p>输入 email 等信息后保存为 <code>.certSigningRequest</code> 文件</p>
-</li>
-</ul>
-</li>
-<li><p>命令行下使用 <strong>openssl</strong> 生成</p>
-</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ openssl genrsa -out private.key <span class="number">2048</span></span><br><span class="line">$ openssl req -new -sha256 -key private.key -out my.certSigningRequest</span><br></pre></td></tr></table></figure>
-<h4 id="开发者证书">开发者证书</h4><p>由 apple 官方颁发, 用来证明开发者资格的证书文件, 分开发(ios_development.cer)和发布(ios_distribution.cer)两种</p>
-<p><code>cer</code> 证书跟开发机(私钥)绑定只能在拥有私钥的机器上使用, 如果要迁移机器需要导出为 <code>p12</code> 文件</p>
-<h5 id="生成方法-1">生成方法</h5><p>在 <a href="https://developer.apple.com/devcenter/ios/index.action" target="_blank" rel="external">开发者中心</a> “certificates” 面板中添加 <code>certificate</code> 并上传刚刚生成的 <code>CSR</code> 文件, 获取 <code>ios_development.cer</code></p>
-<h4 id="apns(Apple_Push_Notification_Service)_证书">apns(Apple Push Notification Service) 证书</h4><p>用于服务端消息推送, 类似 ssl 证书使用, 和 App 端的开发打包没有关系</p>
-<h5 id="生成方法-2">生成方法</h5><p>在 <a href="https://developer.apple.com/devcenter/ios/index.action" target="_blank" rel="external">开发者中心</a> “Identifiers” 面板中添加 <code>App ID</code> 并上传刚刚生成的 <code>CSR</code> 文件, 获取 <code>aps_production.cer</code></p>
-<h4 id="p12(Personal_Information_Exchange)_证书">p12(Personal Information Exchange) 证书</h4><p><code>p12</code> 证书实际是包含了 <code>cer</code> 证书及私钥信息, 可以分发给团队成员</p>
-<h5 id="生成方法-3">生成方法</h5><p>在 <strong>Keychain Access</strong> 中找到已经导入的 <code>cer</code> 证书, 点右键导出为 <code>p12</code> 格式</p>
-<h4 id="描述文件(Provisioning_Profiles)">描述文件(Provisioning Profiles)</h4><p>包含 <code>certificate</code> <code>appID</code> <code>devices id</code> 的文件用于在 xcode 调试打包时提供授权的配置信息</p>
-<h5 id="生成方法-4">生成方法</h5><ul>
-<li><p>在 <a href="https://developer.apple.com/devcenter/ios/index.action" target="_blank" rel="external">开发者中心</a> “Provisioning Profiles” 面板中添加 <code>iOS Provisioning Profiles</code> 并上传刚刚生成的 <code>CSR</code> 文件, 获取 <code>.mobileprovision</code> 文件</p>
-</li>
-<li><p>在 xcode 登录开发者帐号后可以连接开发者中心获取</p>
-</li>
-</ul>
-<h3 id="附录1:_开发准备相关的网址">附录1: 开发准备相关的网址</h3><blockquote>
-<p>开发者中心<br><a href="https://developer.apple.com/devcenter/ios/index.action" target="_blank" rel="external">https://developer.apple.com/devcenter/ios/index.action</a></p>
-<p>iOS 描述管理(配置证书、描述文件、推送服务)<br><a href="https://developer.apple.com/ios/manage/overview/index.action" target="_blank" rel="external">https://developer.apple.com/ios/manage/overview/index.action</a></p>
-<p>切换团队(在 web 界面上死活没有找到)<br><a href="https://developer.apple.com/account/selectTeam.action" target="_blank" rel="external">https://developer.apple.com/account/selectTeam.action</a></p>
-<p>iOS 上架 Appstore<br><a href="http://itunesconnect.apple.com/" target="_blank" rel="external">http://itunesconnect.apple.com/</a></p>
-</blockquote>
-<h2 id="几种开发者帐号区别">几种开发者帐号区别</h2><blockquote>
-<p>详见: <a href="https://developer.apple.com/programs/start/ios/" target="_blank" rel="external">https://developer.apple.com/programs/start/ios/</a></p>
-</blockquote>
-<ul>
-<li><a href="https://developer.apple.com/programs/ios/" target="_blank" rel="external">个人(individual)</a> <strong>$99</strong>/year</li>
-<li><a href="https://developer.apple.com/programs/ios/" target="_blank" rel="external">公司(company)</a> <strong>$99</strong>/year</li>
-<li><a href="https://developer.apple.com/programs/ios/enterprise/" target="_blank" rel="external">企业(enterprise)</a> <strong>$299</strong>/year</li>
-<li><a href="https://developer.apple.com/programs/start/university/" target="_blank" rel="external">大学(University)</a> <strong>free</strong></li>
-</ul>
-<h3 id="关键区别">关键区别</h3><ul>
-<li>个人帐号可以真机调试, 发布 appstore, 每年 最多为 100台设备分发</li>
-<li>公司帐号和个人帐号类似, 只有这两种帐号可以发布 appstore, 主要特权是可以添加多个开发者子账号, 但只允许主账号提交, 发布等操作, 在协同开发时比较灵活, 可以各自管理授权设备等</li>
-<li>企业帐号<strong>无法用于 appstore 发布</strong>, 但可以不通过 appstore 发布任意 iphone 都可以安装的应用</li>
-<li>大学帐号不能发布 appstore, 主要拥有真机调试的权限</li>
-</ul>
-<h2 id="真机调试流程">真机调试流程</h2><h3 id="基本概念">基本概念</h3><p>真机调试指 mac 连上 iphone, xcode 可以直接以这台 iphone 设备为 build target, 能在 iphone 里执行编译结果</p>
-<h3 id="条件和流程">条件和流程</h3><p>分为拥有独立开发者帐号(也包括公司帐号或企业帐号成员)和共享开发者帐号两种情况</p>
-<h4 id="拥有独立开发者帐号">拥有独立开发者帐号</h4><ul>
-<li><ol>
-<li>在 <a href="https://developer.apple.com/ios/manage/overview/index.action" target="_blank" rel="external">provisioning portal</a> 新建应用, 配置授权设备等</li>
-</ol>
-</li>
-<li><ol>
-<li>开发机上导入证书</li>
-</ol>
-</li>
-<li><ol>
-<li>在 xcode 上登录开发者帐号, 不需要准备描述文件, xcode 会自动生成(如果是公司帐号可以自动生成 <code>iOS Team Provisioning Profile</code>)</li>
-</ol>
-</li>
-</ul>
-<h4 id="共享开发者帐号">共享开发者帐号</h4><p>如果无法在 xcode 登录一个开发者帐号, 也可以通过他人对你手机和应用 id 的授权, 得到 <code>.mobileprovision</code> 描述文件再导入其含私钥的证书(<code>p12</code>) 即可, 具体步骤如下:</p>
-<ul>
-<li><ol>
-<li>获得手机的 <code>udid</code> (可以连上 mac, 在 itunes 中查看)</li>
-</ol>
-</li>
-<li><ol>
-<li>告知对方 <code>udid</code> (用以设备授权) 和 应用 id</li>
-</ol>
-</li>
-<li><ol>
-<li>得到对方生成的证书和描述文件后, 先导入 <code>p12</code> 证书, 再双击 <code>mobileprovision</code> 文件</li>
-</ol>
-</li>
-<li><ol>
-<li>连接手机, 在 xcode 中选择 build target 为已连接的手机</li>
-</ol>
-</li>
-</ul>
-<blockquote>
-<p>对刚入门的个人开发者而言, 可以在淘宝搜 <code>iOS真机调试</code> 花几元购买一份授权, 包含(<code>p12</code> 证书 和 <code>.mobileprovision</code> 描述文件)</p>
-</blockquote>
-<h2 id="内测发布流程">内测发布流程</h2><h3 id="基本概念-1">基本概念</h3><p>当 App 开发进行到一定程度, 需要更多的人参与测试, 需要谋求一种方式方便应用能安装进更多的设备中</p>
-<h3 id="实现条件">实现条件</h3><p>进行内测发布主要的关键点是:</p>
-<ul>
-<li><ol>
-<li>是如何将应用打包为 <code>.ipa</code></li>
-</ol>
-</li>
-</ul>
-<p>xcode6 以后, 个人/公司帐号无法对应用打包为 <code>.ipa</code>, 要么用 xcode5 打包要么拥有企业帐号级别的授权</p>
-<ul>
-<li><ol>
-<li>设备需不需要授权</li>
-</ol>
-</li>
-</ul>
-<p>个人/公司帐号权限只有在 <code>TestFlight</code> / 越狱渠道下完成不授权安装; 企业帐号授权可以在 <code>ad-hoc</code> / <code>in-house</code> 渠道下分发, 完成不授权设备安装</p>
-<h3 id="几种常见的分发途径">几种常见的分发途径</h3><ul>
-<li>ad-hoc</li>
-</ul>
-<p>打包时必须在登录企业帐号(或其成员)并已导入证书和描述文件的情况下, 任何用户(未授权)都可以在手机上用浏览器访问一个 url(例: itms-services://?action=download-manifest&amp;url=<a href="https://example.com/manifest.plist" target="_blank" rel="external">https://example.com/manifest.plist</a>) 完成安装</p>
-<p>最大的问题是安装量有 100 的上限, 无法作为一个量很大的分发渠道</p>
-<ul>
-<li>in-house</li>
-</ul>
-<p>针对企业内部用户进行分发, 相比 <code>ad-hoc</code> 无安装量上限</p>
-<blockquote>
-<p>iOS 8.1.3 开始不能企业证书 Iresign 方式重新签名的应用无法安装<br><a href="https://support.apple.com/en-us/HT204245" target="_blank" rel="external">https://support.apple.com/en-us/HT204245</a></p>
-</blockquote>
-<ul>
-<li>TestFlight</li>
-</ul>
-<p>仅支持 <strong>iOS8.0</strong> 以上, 不需要对设备 <code>udid</code> 进行授权, 适合个人 / 公司开发者, 在应用发布前可以开启 TestFlight Beta 测试并添加测试者的 iTunes Connect 帐号, 需要待测用户拥有 iTunes Connect 帐号并在设备安装 <code>TestFlight</code> 客户端</p>
-<p>这种方式非常便于推送应用更新和收集测试信息</p>
-<ul>
-<li>导出 ipa 包, 越狱安装</li>
-</ul>
-<p>如果测试设备都越狱了, 这种方式非常灵活简单, 只有能导出 ipa 包就能通过 <a href="http://www.itools.cn/" target="_blank" rel="external">itools</a> 等第三方工具安装</p>
-<h3 id="附录2:_常见分发渠道及工具地址">附录2: 常见分发渠道及工具地址</h3><blockquote>
-<p>fir-第三方应用托管平台<br><a href="http://fir.im/" target="_blank" rel="external">http://fir.im/</a></p>
-<p>TestFlight<br><a href="https://developer.apple.com/testflight/" target="_blank" rel="external">https://developer.apple.com/testflight/</a></p>
-<p>Agile-百度内部 ios 分发测试平台<br><a href="http://agile.baidu.com" target="_blank" rel="external">http://agile.baidu.com</a></p>
-<p>fir-分发相关工具<br><a href="http://fir.im/dev/tools" target="_blank" rel="external">http://fir.im/dev/tools</a></p>
-<p>itools<br><a href="http://www.itools.cn/" target="_blank" rel="external">http://www.itools.cn/</a></p>
-</blockquote>
-<h2 id="Appstore_上架流程">Appstore 上架流程</h2><p>@TODO</p>
-<h3 id="附录3:_App_store最新审核标准(2015-3)">附录3: App store最新审核标准(2015.3)</h3><blockquote>
-<p><a href="Appstore最新审核标准_2015-3.md">App store最新审核标准(2015.3) 中文翻译</a></p>
-<p><a href="https://developer.apple.com/app-store/review/guidelines" target="_blank" rel="external">App store最新审核标准(2015.3) 英文原版</a></p>
-</blockquote>
+    <title><![CDATA[The Joel Test]]></title>
+    <link href="http://qunwang6.github.io/blog/TheJoelTest/"/>
+    <id>http://qunwang6.github.io/blog/TheJoelTest/</id>
+    <published>2015-05-07T16:00:00.000Z</published>
+    <updated>2015-06-03T13:13:32.000Z</updated>
+    <content type="html"><![CDATA[<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="operator"><span class="keyword">Do</span> you <span class="keyword">use</span> source control?</span><br><span class="line">Can you make a build <span class="keyword">in</span> one step?</span><br><span class="line"><span class="keyword">Do</span> you make daily builds?</span><br><span class="line"><span class="keyword">Do</span> you have a bug <span class="keyword">database</span>?</span><br><span class="line"><span class="keyword">Do</span> you fix bugs <span class="keyword">before</span> writing new code?</span><br><span class="line"><span class="keyword">Do</span> you have an up-<span class="keyword">to</span>-<span class="built_in">date</span> schedule?</span><br><span class="line"><span class="keyword">Do</span> you have a spec?</span><br><span class="line"><span class="keyword">Do</span> programmers have quiet working conditions?</span><br><span class="line"><span class="keyword">Do</span> you <span class="keyword">use</span> the best tools money can buy?</span><br><span class="line"><span class="keyword">Do</span> you have testers?</span><br><span class="line"><span class="keyword">Do</span> new candidates <span class="keyword">write</span> code during their interview?</span><br><span class="line"><span class="keyword">Do</span> you <span class="keyword">do</span> hallway usability testing?</span></span><br></pre></td></tr></table></figure>
 ]]></content>
     <summary type="html">
-    <![CDATA[<ul>
-<li>[x] 证书知识及准备工作</li>
-<li>[x] 几种开发者帐号区别</li>
-<li>[x] 真机调试流程</li>
-<li>[x] 内测发布流程</li>
-<li>[ ] Appstore 上架流程</li>
-</ul>]]>
-    
+    <![CDATA[<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="operator"><span class="keyword">Do</span> you]]>
     </summary>
     
-      <category term="iOS" scheme="http://qunwang6.github.io/blog/tags/iOS/"/>
+      <category term="program" scheme="http://qunwang6.github.io/blog/tags/program/"/>
     
-      <category term="iOS" scheme="http://qunwang6.github.io/blog/categories/iOS/"/>
+      <category term="program" scheme="http://qunwang6.github.io/blog/categories/program/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[password generator]]></title>
+    <link href="http://qunwang6.github.io/blog/PasswordGenerator/"/>
+    <id>http://qunwang6.github.io/blog/PasswordGenerator/</id>
+    <published>2015-05-07T16:00:00.000Z</published>
+    <updated>2015-06-03T13:13:43.000Z</updated>
+    <content type="html"><![CDATA[<h3 id="CODE">CODE</h3><figure class="highlight swift"><table><tr><td class="code"><pre><span class="line"><span class="comment">// Playground - noun: a place where people can play</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> <span class="type">UIKit</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//Step 1.</span></span><br><span class="line"><span class="keyword">var</span> pwCharacters =     [<span class="string">"a"</span>,<span class="string">"b"</span>,<span class="string">"c"</span>,<span class="string">"d"</span>,<span class="string">"e"</span>,<span class="string">"f"</span>,<span class="string">"g"</span>,<span class="string">"h"</span>,<span class="string">"i"</span>,<span class="string">"j"</span>,<span class="string">"k"</span>,<span class="string">"l"</span>,<span class="string">"m"</span>,<span class="string">"n"</span>,<span class="string">"o"</span>,<span class="string">"p"</span>,<span class="string">"q"</span>,<span class="string">"r"</span>,<span class="string">"s"</span>,<span class="string">"t"</span>,<span class="string">"u"</span>,<span class="string">"v"</span>,<span class="string">"w"</span>,<span class="string">"x"</span>,<span class="string">"y"</span>,<span class="string">"z"</span>,<span class="string">"1"</span>,<span class="string">"2"</span>,<span class="string">"3"</span>,<span class="string">"4"</span>,<span class="string">"5"</span>,<span class="string">"6"</span>,<span class="string">"7"</span>,<span class="string">"8"</span>,<span class="string">"9"</span>,<span class="string">"0"</span>,<span class="string">"A"</span>,<span class="string">"B"</span>,<span class="string">"C"</span>,<span class="string">"D"</span>,<span class="string">"E"</span>,<span class="string">"F"</span>,<span class="string">"G"</span>,<span class="string">"H"</span>,<span class="string">"I"</span>,<span class="string">"J"</span>,<span class="string">"K"</span>,<span class="string">"L"</span>,<span class="string">"M"</span>,<span class="string">"N"</span>,<span class="string">"O"</span>,<span class="string">"P"</span>,<span class="string">"Q"</span>,<span class="string">"R"</span>,<span class="string">"S"</span>,<span class="string">"T"</span>,<span class="string">"U"</span>,<span class="string">"V"</span>,<span class="string">"W"</span>,<span class="string">"X"</span>,<span class="string">"Y"</span>,<span class="string">"Z"</span>,<span class="string">"!"</span>,<span class="string">"@"</span>,<span class="string">"#"</span>,<span class="string">"$"</span>,<span class="string">"%"</span>,<span class="string">"^"</span>,<span class="string">"&amp;"</span>,<span class="string">"*"</span>]</span><br><span class="line"></span><br><span class="line"><span class="comment">//Step 2.</span></span><br><span class="line"><span class="func"><span class="keyword">func</span> <span class="title">randomPassword</span><span class="params">(passwordLength: Int)</span></span> -&gt; <span class="type">String</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">var</span> password = <span class="string">""</span></span><br><span class="line">    <span class="keyword">var</span> unsignedArrayCount = <span class="type">UInt32</span>(pwCharacters.<span class="built_in">count</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> <span class="keyword">var</span> i = <span class="number">0</span>; i &lt; passwordLength; i++ &#123;</span><br><span class="line">        <span class="keyword">var</span> unsignedRandomNumber = arc4random_uniform(unsignedArrayCount)</span><br><span class="line">        <span class="keyword">var</span> randomNumber = <span class="type">Int</span>(unsignedRandomNumber)</span><br><span class="line">        password += pwCharacters[randomNumber]</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> password</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//Step 3</span></span><br><span class="line"><span class="comment">//任意生成1000位密码</span></span><br><span class="line">randomPassword(<span class="number">1000</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">//任意生成15密码</span></span><br><span class="line"><span class="keyword">var</span> password = <span class="string">"<span class="subst">\(randomPassword(<span class="number">5</span>)</span>)-<span class="subst">\(randomPassword(<span class="number">5</span>)</span>)-<span class="subst">\(randomPassword(<span class="number">5</span>)</span>)"</span></span><br></pre></td></tr></table></figure>
+<hr>
+<h3 id="References">References</h3><p><a href="http://www.mav3r1ck.io/one-thousand-character-password/" target="_blank" rel="external">One Thousand Character Password</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h3 id="CODE">CODE</h3><figure class="highlight swift"><table><tr><td class="code"><pre><span class="line"><span class="comment">// Playgrou]]>
+    </summary>
+    
+      <category term="Swift" scheme="http://qunwang6.github.io/blog/tags/Swift/"/>
+    
+      <category term="password" scheme="http://qunwang6.github.io/blog/tags/password/"/>
+    
+      <category term="Swift" scheme="http://qunwang6.github.io/blog/categories/Swift/"/>
     
   </entry>
   

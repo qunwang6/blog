@@ -301,6 +301,81 @@
           
           
             
+              <a class="post-title-link" href="/blog/ExMachina/">
+                Secret code in Ex Machina
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于 2015-05-17
+        </span>
+
+        
+          <span class="post-category">
+            &nbsp; | &nbsp; 分类于
+            
+              <a href="/blog/categories/Python/">Python</a>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+        
+      </div>
+    </div>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <p><img src="http://i.imgur.com/C44iJeR.jpg" alt=""></p>
+<h3 id="Code">Code</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#BlueBook code decryption</span></span><br><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">sieve</span><span class="params">(n)</span>:</span></span><br><span class="line">    x = [<span class="number">1</span>] * n</span><br><span class="line">    x[<span class="number">1</span>] = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">2</span>,n/<span class="number">2</span>):</span><br><span class="line">            j = <span class="number">2</span> * i</span><br><span class="line">            <span class="keyword">while</span> j &lt; n:</span><br><span class="line">                    x[j]=<span class="number">0</span></span><br><span class="line">                    j = j+i</span><br><span class="line">    <span class="keyword">return</span> x</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">prime</span><span class="params">(n,x)</span>:</span></span><br><span class="line">    i = <span class="number">1</span></span><br><span class="line">    j = <span class="number">1</span></span><br><span class="line">    <span class="keyword">while</span> j &lt;= n:</span><br><span class="line">            <span class="keyword">if</span> x[i] == <span class="number">1</span>:</span><br><span class="line">                    j = j + <span class="number">1</span></span><br><span class="line">            i = i + <span class="number">1</span></span><br><span class="line">    <span class="keyword">return</span> i - <span class="number">1</span></span><br><span class="line">x=sieve(<span class="number">10000</span>)</span><br><span class="line">code = [<span class="number">1206</span>,<span class="number">301</span>,<span class="number">384</span>,<span class="number">5</span>]</span><br><span class="line">key =[<span class="number">1</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">2</span>,]</span><br><span class="line"></span><br><span class="line">sys.stdout.write(<span class="string">""</span>.join(chr(i) <span class="keyword">for</span> i <span class="keyword">in</span> [<span class="number">73</span>,<span class="number">83</span>,<span class="number">66</span>,<span class="number">78</span>,<span class="number">32</span>,<span class="number">61</span>,<span class="number">32</span>]))</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range (<span class="number">0</span>,<span class="number">4</span>):</span><br><span class="line">    sys.stdout.write(str(prime(code[i],x)-key[i]))</span><br><span class="line"></span><br><span class="line"><span class="keyword">print</span></span><br></pre></td></tr></table></figure>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/blog/ExMachina/#more">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <div class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </div>
+  </div>
+
+
+    
+      
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
               <a class="post-title-link" href="/blog/CherylsBirthday/">
                 When is Cheryl’s birthday?
               </a>
@@ -461,162 +536,6 @@
             <a href="/blog/tags/code/"> #code </a>
           
             <a href="/blog/tags/poetry/"> #poetry </a>
-          
-        </div>
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </div>
-  </div>
-
-
-    
-      
-
-  <div class="post post-type-normal ">
-    <div class="post-header">
-
-      
-      
-        <h1 class="post-title">
-          
-          
-            
-              <a class="post-title-link" href="/blog/TheJoelTest/">
-                The Joel Test
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于 2015-05-08
-        </span>
-
-        
-          <span class="post-category">
-            &nbsp; | &nbsp; 分类于
-            
-              <a href="/blog/categories/program/">program</a>
-
-              
-              
-
-            
-          </span>
-        
-
-        
-          
-        
-      </div>
-    </div>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="operator"><span class="keyword">Do</span> you <span class="keyword">use</span> source control?</span><br><span class="line">Can you make a build <span class="keyword">in</span> one step?</span><br><span class="line"><span class="keyword">Do</span> you make daily builds?</span><br><span class="line"><span class="keyword">Do</span> you have a bug <span class="keyword">database</span>?</span><br><span class="line"><span class="keyword">Do</span> you fix bugs <span class="keyword">before</span> writing new code?</span><br><span class="line"><span class="keyword">Do</span> you have an up-<span class="keyword">to</span>-<span class="built_in">date</span> schedule?</span><br><span class="line"><span class="keyword">Do</span> you have a spec?</span><br><span class="line"><span class="keyword">Do</span> programmers have quiet working conditions?</span><br><span class="line"><span class="keyword">Do</span> you <span class="keyword">use</span> the best tools money can buy?</span><br><span class="line"><span class="keyword">Do</span> you have testers?</span><br><span class="line"><span class="keyword">Do</span> new candidates <span class="keyword">write</span> code during their interview?</span><br><span class="line"><span class="keyword">Do</span> you <span class="keyword">do</span> hallway usability testing?</span></span><br></pre></td></tr></table></figure>
-
-        
-      
-    </div>
-
-    <div class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/blog/tags/program/"> #program </a>
-          
-        </div>
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </div>
-  </div>
-
-
-    
-      
-
-  <div class="post post-type-normal ">
-    <div class="post-header">
-
-      
-      
-        <h1 class="post-title">
-          
-          
-            
-              <a class="post-title-link" href="/blog/PasswordGenerator/">
-                password generator
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于 2015-05-08
-        </span>
-
-        
-          <span class="post-category">
-            &nbsp; | &nbsp; 分类于
-            
-              <a href="/blog/categories/Swift/">Swift</a>
-
-              
-              
-
-            
-          </span>
-        
-
-        
-          
-        
-      </div>
-    </div>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <h3 id="CODE">CODE</h3><figure class="highlight swift"><table><tr><td class="code"><pre><span class="line"><span class="comment">// Playground - noun: a place where people can play</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> <span class="type">UIKit</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//Step 1.</span></span><br><span class="line"><span class="keyword">var</span> pwCharacters =     [<span class="string">"a"</span>,<span class="string">"b"</span>,<span class="string">"c"</span>,<span class="string">"d"</span>,<span class="string">"e"</span>,<span class="string">"f"</span>,<span class="string">"g"</span>,<span class="string">"h"</span>,<span class="string">"i"</span>,<span class="string">"j"</span>,<span class="string">"k"</span>,<span class="string">"l"</span>,<span class="string">"m"</span>,<span class="string">"n"</span>,<span class="string">"o"</span>,<span class="string">"p"</span>,<span class="string">"q"</span>,<span class="string">"r"</span>,<span class="string">"s"</span>,<span class="string">"t"</span>,<span class="string">"u"</span>,<span class="string">"v"</span>,<span class="string">"w"</span>,<span class="string">"x"</span>,<span class="string">"y"</span>,<span class="string">"z"</span>,<span class="string">"1"</span>,<span class="string">"2"</span>,<span class="string">"3"</span>,<span class="string">"4"</span>,<span class="string">"5"</span>,<span class="string">"6"</span>,<span class="string">"7"</span>,<span class="string">"8"</span>,<span class="string">"9"</span>,<span class="string">"0"</span>,<span class="string">"A"</span>,<span class="string">"B"</span>,<span class="string">"C"</span>,<span class="string">"D"</span>,<span class="string">"E"</span>,<span class="string">"F"</span>,<span class="string">"G"</span>,<span class="string">"H"</span>,<span class="string">"I"</span>,<span class="string">"J"</span>,<span class="string">"K"</span>,<span class="string">"L"</span>,<span class="string">"M"</span>,<span class="string">"N"</span>,<span class="string">"O"</span>,<span class="string">"P"</span>,<span class="string">"Q"</span>,<span class="string">"R"</span>,<span class="string">"S"</span>,<span class="string">"T"</span>,<span class="string">"U"</span>,<span class="string">"V"</span>,<span class="string">"W"</span>,<span class="string">"X"</span>,<span class="string">"Y"</span>,<span class="string">"Z"</span>,<span class="string">"!"</span>,<span class="string">"@"</span>,<span class="string">"#"</span>,<span class="string">"$"</span>,<span class="string">"%"</span>,<span class="string">"^"</span>,<span class="string">"&amp;"</span>,<span class="string">"*"</span>]</span><br><span class="line"></span><br><span class="line"><span class="comment">//Step 2.</span></span><br><span class="line"><span class="func"><span class="keyword">func</span> <span class="title">randomPassword</span><span class="params">(passwordLength: Int)</span></span> -&gt; <span class="type">String</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">var</span> password = <span class="string">""</span></span><br><span class="line">    <span class="keyword">var</span> unsignedArrayCount = <span class="type">UInt32</span>(pwCharacters.<span class="built_in">count</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> <span class="keyword">var</span> i = <span class="number">0</span>; i &lt; passwordLength; i++ &#123;</span><br><span class="line">        <span class="keyword">var</span> unsignedRandomNumber = arc4random_uniform(unsignedArrayCount)</span><br><span class="line">        <span class="keyword">var</span> randomNumber = <span class="type">Int</span>(unsignedRandomNumber)</span><br><span class="line">        password += pwCharacters[randomNumber]</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> password</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//Step 3</span></span><br><span class="line"><span class="comment">//任意生成1000位密码</span></span><br><span class="line">randomPassword(<span class="number">1000</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">//任意生成15密码</span></span><br><span class="line"><span class="keyword">var</span> password = <span class="string">"<span class="subst">\(randomPassword(<span class="number">5</span>)</span>)-<span class="subst">\(randomPassword(<span class="number">5</span>)</span>)-<span class="subst">\(randomPassword(<span class="number">5</span>)</span>)"</span></span><br></pre></td></tr></table></figure>
-<hr>
-<h3 id="References">References</h3><p><a href="http://www.mav3r1ck.io/one-thousand-character-password/" target="_blank" rel="external">One Thousand Character Password</a></p>
-
-        
-      
-    </div>
-
-    <div class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/blog/tags/Swift/"> #Swift </a>
-          
-            <a href="/blog/tags/password/"> #password </a>
           
         </div>
       
@@ -843,8 +762,8 @@
           
           
             
-              <a class="post-title-link" href="/blog/iOSDevelopNote/">
-                iOS 开发流程笔记
+              <a class="post-title-link" href="/blog/TheJoelTest/">
+                The Joel Test
               </a>
             
           
@@ -853,14 +772,14 @@
 
       <div class="post-meta">
         <span class="post-time">
-          发表于 2015-05-01
+          发表于 2015-05-08
         </span>
 
         
           <span class="post-category">
             &nbsp; | &nbsp; 分类于
             
-              <a href="/blog/categories/iOS/">iOS</a>
+              <a href="/blog/categories/program/">program</a>
 
               
               
@@ -882,18 +801,8 @@
 
       
         
-          <ul>
-<li>[x] 证书知识及准备工作</li>
-<li>[x] 几种开发者帐号区别</li>
-<li>[x] 真机调试流程</li>
-<li>[x] 内测发布流程</li>
-<li>[ ] Appstore 上架流程</li>
-</ul>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/blog/iOSDevelopNote/#more">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          <figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="operator"><span class="keyword">Do</span> you <span class="keyword">use</span> source control?</span><br><span class="line">Can you make a build <span class="keyword">in</span> one step?</span><br><span class="line"><span class="keyword">Do</span> you make daily builds?</span><br><span class="line"><span class="keyword">Do</span> you have a bug <span class="keyword">database</span>?</span><br><span class="line"><span class="keyword">Do</span> you fix bugs <span class="keyword">before</span> writing new code?</span><br><span class="line"><span class="keyword">Do</span> you have an up-<span class="keyword">to</span>-<span class="built_in">date</span> schedule?</span><br><span class="line"><span class="keyword">Do</span> you have a spec?</span><br><span class="line"><span class="keyword">Do</span> programmers have quiet working conditions?</span><br><span class="line"><span class="keyword">Do</span> you <span class="keyword">use</span> the best tools money can buy?</span><br><span class="line"><span class="keyword">Do</span> you have testers?</span><br><span class="line"><span class="keyword">Do</span> new candidates <span class="keyword">write</span> code during their interview?</span><br><span class="line"><span class="keyword">Do</span> you <span class="keyword">do</span> hallway usability testing?</span></span><br></pre></td></tr></table></figure>
+
         
       
     </div>
@@ -902,7 +811,87 @@
       
         <div class="post-tags">
           
-            <a href="/blog/tags/iOS/"> #iOS </a>
+            <a href="/blog/tags/program/"> #program </a>
+          
+        </div>
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </div>
+  </div>
+
+
+    
+      
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
+              <a class="post-title-link" href="/blog/PasswordGenerator/">
+                password generator
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于 2015-05-08
+        </span>
+
+        
+          <span class="post-category">
+            &nbsp; | &nbsp; 分类于
+            
+              <a href="/blog/categories/Swift/">Swift</a>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+        
+      </div>
+    </div>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <h3 id="CODE">CODE</h3><figure class="highlight swift"><table><tr><td class="code"><pre><span class="line"><span class="comment">// Playground - noun: a place where people can play</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> <span class="type">UIKit</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//Step 1.</span></span><br><span class="line"><span class="keyword">var</span> pwCharacters =     [<span class="string">"a"</span>,<span class="string">"b"</span>,<span class="string">"c"</span>,<span class="string">"d"</span>,<span class="string">"e"</span>,<span class="string">"f"</span>,<span class="string">"g"</span>,<span class="string">"h"</span>,<span class="string">"i"</span>,<span class="string">"j"</span>,<span class="string">"k"</span>,<span class="string">"l"</span>,<span class="string">"m"</span>,<span class="string">"n"</span>,<span class="string">"o"</span>,<span class="string">"p"</span>,<span class="string">"q"</span>,<span class="string">"r"</span>,<span class="string">"s"</span>,<span class="string">"t"</span>,<span class="string">"u"</span>,<span class="string">"v"</span>,<span class="string">"w"</span>,<span class="string">"x"</span>,<span class="string">"y"</span>,<span class="string">"z"</span>,<span class="string">"1"</span>,<span class="string">"2"</span>,<span class="string">"3"</span>,<span class="string">"4"</span>,<span class="string">"5"</span>,<span class="string">"6"</span>,<span class="string">"7"</span>,<span class="string">"8"</span>,<span class="string">"9"</span>,<span class="string">"0"</span>,<span class="string">"A"</span>,<span class="string">"B"</span>,<span class="string">"C"</span>,<span class="string">"D"</span>,<span class="string">"E"</span>,<span class="string">"F"</span>,<span class="string">"G"</span>,<span class="string">"H"</span>,<span class="string">"I"</span>,<span class="string">"J"</span>,<span class="string">"K"</span>,<span class="string">"L"</span>,<span class="string">"M"</span>,<span class="string">"N"</span>,<span class="string">"O"</span>,<span class="string">"P"</span>,<span class="string">"Q"</span>,<span class="string">"R"</span>,<span class="string">"S"</span>,<span class="string">"T"</span>,<span class="string">"U"</span>,<span class="string">"V"</span>,<span class="string">"W"</span>,<span class="string">"X"</span>,<span class="string">"Y"</span>,<span class="string">"Z"</span>,<span class="string">"!"</span>,<span class="string">"@"</span>,<span class="string">"#"</span>,<span class="string">"$"</span>,<span class="string">"%"</span>,<span class="string">"^"</span>,<span class="string">"&amp;"</span>,<span class="string">"*"</span>]</span><br><span class="line"></span><br><span class="line"><span class="comment">//Step 2.</span></span><br><span class="line"><span class="func"><span class="keyword">func</span> <span class="title">randomPassword</span><span class="params">(passwordLength: Int)</span></span> -&gt; <span class="type">String</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">var</span> password = <span class="string">""</span></span><br><span class="line">    <span class="keyword">var</span> unsignedArrayCount = <span class="type">UInt32</span>(pwCharacters.<span class="built_in">count</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> <span class="keyword">var</span> i = <span class="number">0</span>; i &lt; passwordLength; i++ &#123;</span><br><span class="line">        <span class="keyword">var</span> unsignedRandomNumber = arc4random_uniform(unsignedArrayCount)</span><br><span class="line">        <span class="keyword">var</span> randomNumber = <span class="type">Int</span>(unsignedRandomNumber)</span><br><span class="line">        password += pwCharacters[randomNumber]</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> password</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//Step 3</span></span><br><span class="line"><span class="comment">//任意生成1000位密码</span></span><br><span class="line">randomPassword(<span class="number">1000</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">//任意生成15密码</span></span><br><span class="line"><span class="keyword">var</span> password = <span class="string">"<span class="subst">\(randomPassword(<span class="number">5</span>)</span>)-<span class="subst">\(randomPassword(<span class="number">5</span>)</span>)-<span class="subst">\(randomPassword(<span class="number">5</span>)</span>)"</span></span><br></pre></td></tr></table></figure>
+<hr>
+<h3 id="References">References</h3><p><a href="http://www.mav3r1ck.io/one-thousand-character-password/" target="_blank" rel="external">One Thousand Character Password</a></p>
+
+        
+      
+    </div>
+
+    <div class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/blog/tags/Swift/"> #Swift </a>
+          
+            <a href="/blog/tags/password/"> #password </a>
           
         </div>
       
@@ -1048,21 +1037,21 @@
         <div class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/blog/archives">
-              <span class="site-state-item-count">26</span>
+              <span class="site-state-item-count">27</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
           <div class="site-state-item site-state-categories">
             <a href="/blog/categories">
-              <span class="site-state-item-count">14</span>
+              <span class="site-state-item-count">15</span>
               <span class="site-state-item-name">分类</span>
               </a>
           </div>
 
           <div class="site-state-item site-state-tags">
             <a href="/blog/tags">
-              <span class="site-state-item-count">24</span>
+              <span class="site-state-item-count">26</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>

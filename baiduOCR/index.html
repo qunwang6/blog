@@ -22,7 +22,7 @@
 
 
 
-  <meta name="keywords" content="Swift,password," />
+  <meta name="keywords" content="OCR,Python,base64," />
 
 
 
@@ -48,7 +48,7 @@
 
 
 
-  <title> password generator // Zero to One </title>
+  <title> baidu OCR // Zero to One </title>
 </head>
 
 <body>
@@ -128,7 +128,7 @@
           
           
             
-              password generator
+              baidu OCR
             
           
         </h1>
@@ -136,14 +136,14 @@
 
       <div class="post-meta">
         <span class="post-time">
-          发表于 2015-05-08
+          发表于 2015-06-06
         </span>
 
         
           <span class="post-category">
             &nbsp; | &nbsp; 分类于
             
-              <a href="/blog/categories/Swift/">Swift</a>
+              <a href="/blog/categories/OCR/">OCR</a>
 
               
               
@@ -164,9 +164,21 @@
       
 
       
-        <h3 id="CODE">CODE</h3><figure class="highlight swift"><table><tr><td class="code"><pre><span class="line"><span class="comment">// Playground - noun: a place where people can play</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> <span class="type">UIKit</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//Step 1.</span></span><br><span class="line"><span class="keyword">var</span> pwCharacters =     [<span class="string">"a"</span>,<span class="string">"b"</span>,<span class="string">"c"</span>,<span class="string">"d"</span>,<span class="string">"e"</span>,<span class="string">"f"</span>,<span class="string">"g"</span>,<span class="string">"h"</span>,<span class="string">"i"</span>,<span class="string">"j"</span>,<span class="string">"k"</span>,<span class="string">"l"</span>,<span class="string">"m"</span>,<span class="string">"n"</span>,<span class="string">"o"</span>,<span class="string">"p"</span>,<span class="string">"q"</span>,<span class="string">"r"</span>,<span class="string">"s"</span>,<span class="string">"t"</span>,<span class="string">"u"</span>,<span class="string">"v"</span>,<span class="string">"w"</span>,<span class="string">"x"</span>,<span class="string">"y"</span>,<span class="string">"z"</span>,<span class="string">"1"</span>,<span class="string">"2"</span>,<span class="string">"3"</span>,<span class="string">"4"</span>,<span class="string">"5"</span>,<span class="string">"6"</span>,<span class="string">"7"</span>,<span class="string">"8"</span>,<span class="string">"9"</span>,<span class="string">"0"</span>,<span class="string">"A"</span>,<span class="string">"B"</span>,<span class="string">"C"</span>,<span class="string">"D"</span>,<span class="string">"E"</span>,<span class="string">"F"</span>,<span class="string">"G"</span>,<span class="string">"H"</span>,<span class="string">"I"</span>,<span class="string">"J"</span>,<span class="string">"K"</span>,<span class="string">"L"</span>,<span class="string">"M"</span>,<span class="string">"N"</span>,<span class="string">"O"</span>,<span class="string">"P"</span>,<span class="string">"Q"</span>,<span class="string">"R"</span>,<span class="string">"S"</span>,<span class="string">"T"</span>,<span class="string">"U"</span>,<span class="string">"V"</span>,<span class="string">"W"</span>,<span class="string">"X"</span>,<span class="string">"Y"</span>,<span class="string">"Z"</span>,<span class="string">"!"</span>,<span class="string">"@"</span>,<span class="string">"#"</span>,<span class="string">"$"</span>,<span class="string">"%"</span>,<span class="string">"^"</span>,<span class="string">"&amp;"</span>,<span class="string">"*"</span>]</span><br><span class="line"></span><br><span class="line"><span class="comment">//Step 2.</span></span><br><span class="line"><span class="func"><span class="keyword">func</span> <span class="title">randomPassword</span><span class="params">(passwordLength: Int)</span></span> -&gt; <span class="type">String</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">var</span> password = <span class="string">""</span></span><br><span class="line">    <span class="keyword">var</span> unsignedArrayCount = <span class="type">UInt32</span>(pwCharacters.<span class="built_in">count</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> <span class="keyword">var</span> i = <span class="number">0</span>; i &lt; passwordLength; i++ &#123;</span><br><span class="line">        <span class="keyword">var</span> unsignedRandomNumber = arc4random_uniform(unsignedArrayCount)</span><br><span class="line">        <span class="keyword">var</span> randomNumber = <span class="type">Int</span>(unsignedRandomNumber)</span><br><span class="line">        password += pwCharacters[randomNumber]</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> password</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//Step 3</span></span><br><span class="line"><span class="comment">//任意生成1000位密码</span></span><br><span class="line">randomPassword(<span class="number">1000</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">//任意生成15密码</span></span><br><span class="line"><span class="keyword">var</span> password = <span class="string">"<span class="subst">\(randomPassword(<span class="number">5</span>)</span>)-<span class="subst">\(randomPassword(<span class="number">5</span>)</span>)-<span class="subst">\(randomPassword(<span class="number">5</span>)</span>)"</span></span><br></pre></td></tr></table></figure>
-<hr>
-<h3 id="References">References</h3><p><a href="http://www.mav3r1ck.io/one-thousand-character-password/" target="_blank" rel="external">One Thousand Character Password</a></p>
+        <h2 id="百度OCR文字识别API_for_Python">百度OCR文字识别API for Python</h2><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"># <span class="tag">-</span>*<span class="tag">-</span> <span class="rule"><span class="attribute">coding</span>:<span class="value"> utf-<span class="number">8</span> -*-</span><br><span class="line">import sys, urllib, urllib2, json</span><br><span class="line">f = <span class="function">open</span>(<span class="string">"test.txt"</span>,<span class="string">"w"</span>)</span><br><span class="line">url = <span class="string">'http://apis.baidu.com/apistore/idlocr/ocr'</span></span><br><span class="line"></span><br><span class="line">data = &#123;&#125;</span><br><span class="line">data[<span class="string">'fromdevice'</span>] = <span class="string">"pc"</span></span><br><span class="line">data[<span class="string">'clientip'</span>] = <span class="string">"10.10.10.0"</span></span><br><span class="line">data[<span class="string">'detecttype'</span>] = <span class="string">"LocateRecognize"</span></span><br><span class="line">data[<span class="string">'languagetype'</span>] = <span class="string">"CHN_ENG"</span></span><br><span class="line">data[<span class="string">'imagetype'</span>] = <span class="string">"1"</span>  #`<span class="number">2</span>`代表图片原文件（只支持JPG）</span><br><span class="line">data[<span class="string">'image'</span>] = <span class="string">""</span>    ##image base64 data</span><br><span class="line"></span><br><span class="line">decoded_data = urllib.<span class="function">urlencode</span>(data)</span><br><span class="line">req = urllib2.<span class="function">Request</span>(url, data = decoded_data)</span><br><span class="line"></span><br><span class="line">req.<span class="function">add_header</span>(<span class="string">"Content-Type"</span>, <span class="string">"application/x-www-form-urlencoded"</span>)</span><br><span class="line">req.<span class="function">add_header</span>(<span class="string">"apikey"</span>, <span class="string">"自己的apikey"</span>)</span><br><span class="line"></span><br><span class="line">resp = urllib2.<span class="function">urlopen</span>(req)</span><br><span class="line">content = resp.<span class="function">read</span>()</span><br><span class="line"><span class="function">if</span>(content):</span><br><span class="line">    <span class="function">print</span>(content)</span><br><span class="line">    f.<span class="function">write</span>(content)</span></span></span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+<h2 id="image_convert_to_base64_code">image convert to base64 code</h2><figure class="highlight stata"><table><tr><td class="code"><pre><span class="line">openssl base64 &lt; image.jpg | tr -<span class="keyword">d</span> '\<span class="keyword">n</span>' | pbcopy</span><br><span class="line"></span><br><span class="line"><span class="keyword">cat</span> image.jpg | openssl base64 | tr -<span class="keyword">d</span> '\<span class="keyword">n</span>' | pbcopy</span><br><span class="line"></span><br><span class="line">openssl base64 -<span class="keyword">in</span> <span class="keyword">out</span>.jpg -<span class="keyword">out</span> filename.b64</span><br></pre></td></tr></table></figure>
+<blockquote>
+<ul>
+<li><code>data:image/png;base64,{base64 image code}</code>//直接复制到浏览器地址栏回车</li>
+<li><code>&lt;img src=&quot;data:image/jpg;base64,{base64 image code}/&gt;</code>//或者网页里嵌入</li>
+</ul>
+</blockquote>
+<h2 id="References:">References:</h2><ul>
+<li><a href="http://apistore.baidu.com/apiworks/servicedetail/146.html" target="_blank" rel="external">百度OCR文字识别_工具_API服务_API服务_API Store</a></li>
+<li>apikey <a href="http://apistore.baidu.com/astore/toolshttpproxy?apiId=usa-&amp;isAworks=1" target="_blank" rel="external">API调试工具_API Store</a></li>
+<li><a href="https://github.com/JeremyWei/baidu-ocr" target="_blank" rel="external">JeremyWei/baidu-ocr</a></li>
+<li><a href="http://superuser.com/questions/120796/os-x-base64-encode-via-command-line" target="_blank" rel="external">osx - OS X: Base64 encode via command line - Super User</a></li>
+</ul>
 
       
     </div>
@@ -175,9 +187,11 @@
       
         <div class="post-tags">
           
-            <a href="/blog/tags/Swift/"> #Swift </a>
+            <a href="/blog/tags/OCR/"> #OCR </a>
           
-            <a href="/blog/tags/password/"> #password </a>
+            <a href="/blog/tags/Python/"> #Python </a>
+          
+            <a href="/blog/tags/base64/"> #base64 </a>
           
         </div>
       
@@ -186,13 +200,11 @@
         <div class="post-nav">
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/blog/TheJoelTest/">The Joel Test</a>
-            
           </div>
 
           <div class="post-nav-next post-nav-item">
             
-              <a href="/blog/Wordnik/">Wordnik</a>
+              <a href="/blog/CNNICCertificate/">CNNIC证书</a>
             
           </div>
         </div>
@@ -311,7 +323,7 @@
           <div class="post-toc">
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#CODE"><span class="nav-number">1.</span> <span class="nav-text">CODE</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#References"><span class="nav-number">2.</span> <span class="nav-text">References</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#百度OCR文字识别API_for_Python"><span class="nav-number">1.</span> <span class="nav-text">百度OCR文字识别API for Python</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#image_convert_to_base64_code"><span class="nav-number">2.</span> <span class="nav-text">image convert to base64 code</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#References:"><span class="nav-number">3.</span> <span class="nav-text">References:</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>
