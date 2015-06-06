@@ -22,7 +22,7 @@
 
 
 
-  <meta name="keywords" content="OCR,Python,base64," />
+  <meta name="keywords" content="GFW,Privoxy," />
 
 
 
@@ -48,7 +48,7 @@
 
 
 
-  <title> baidu OCR // Zero to One </title>
+  <title> Privoxy // Zero to One </title>
 </head>
 
 <body>
@@ -128,7 +128,7 @@
           
           
             
-              baidu OCR
+              Privoxy
             
           
         </h1>
@@ -143,7 +143,7 @@
           <span class="post-category">
             &nbsp; | &nbsp; 分类于
             
-              <a href="/blog/categories/OCR/">OCR</a>
+              <a href="/blog/categories/GFW/">GFW</a>
 
               
               
@@ -164,21 +164,40 @@
       
 
       
-        <h2 id="百度OCR文字识别API_for_Python">百度OCR文字识别API for Python</h2><figure class="highlight haskell"><table><tr><td class="code"><pre><span class="line"><span class="preprocessor">#!/usr/bin/env python</span></span><br><span class="line"><span class="preprocessor"># -*- coding: utf-8 -*-</span></span><br><span class="line"><span class="import"><span class="keyword">import</span> sys, urllib, urllib2, json</span></span><br><span class="line"><span class="title">f</span> = open(<span class="string">"test.txt"</span>,<span class="string">"w"</span>)</span><br><span class="line"><span class="title">url</span> = 'http://apis.baidu.com/apistore/idlocr/ocr'</span><br><span class="line"></span><br><span class="line"><span class="typedef"><span class="keyword">data</span> = <span class="container">&#123;&#125;</span></span></span><br><span class="line"><span class="typedef"><span class="keyword">data</span>['fromdevice'] = "pc"</span></span><br><span class="line"><span class="typedef"><span class="keyword">data</span>['clientip'] = "10.10.10.0"</span></span><br><span class="line"><span class="typedef"><span class="keyword">data</span>['detecttype'] = "<span class="type">LocateRecognize</span>"</span></span><br><span class="line"><span class="typedef"><span class="keyword">data</span>['languagetype'] = "<span class="type">CHN_ENG</span>"</span></span><br><span class="line"><span class="typedef"><span class="keyword">data</span>['imagetype'] = "1"  #`2`代表图片原文件（只支持<span class="type">JPG</span>）</span></span><br><span class="line"><span class="typedef"><span class="keyword">data</span>['image'] = ""    ##image base64 <span class="keyword">data</span></span></span><br><span class="line"></span><br><span class="line"><span class="title">decoded_data</span> = urllib.urlencode(<span class="typedef"><span class="keyword">data</span>)</span></span><br><span class="line"><span class="title">req</span> = urllib2.<span class="type">Request</span>(url, <span class="typedef"><span class="keyword">data</span> = decoded_data)</span></span><br><span class="line"></span><br><span class="line"><span class="title">req</span>.add_header(<span class="string">"Content-Type"</span>, <span class="string">"application/x-www-form-urlencoded"</span>)</span><br><span class="line"><span class="title">req</span>.add_header(<span class="string">"apikey"</span>, <span class="string">"自己的apikey"</span>)</span><br><span class="line"></span><br><span class="line"><span class="title">resp</span> = urllib2.urlopen(req)</span><br><span class="line"><span class="title">content</span> = resp.read()</span><br><span class="line"><span class="title">if</span>(content):</span><br><span class="line">    print(content)</span><br><span class="line">    f.write(content)</span><br></pre></td></tr></table></figure>
-<a id="more"></a>
-<h2 id="image_convert_to_base64_code">image convert to base64 code</h2><figure class="highlight stata"><table><tr><td class="code"><pre><span class="line">openssl base64 &lt; image.jpg | tr -<span class="keyword">d</span> '\<span class="keyword">n</span>' | pbcopy</span><br><span class="line"></span><br><span class="line"><span class="keyword">cat</span> image.jpg | openssl base64 | tr -<span class="keyword">d</span> '\<span class="keyword">n</span>' | pbcopy</span><br><span class="line"></span><br><span class="line">openssl base64 -<span class="keyword">in</span> <span class="keyword">out</span>.jpg -<span class="keyword">out</span> filename.b64</span><br></pre></td></tr></table></figure>
+        <h2 id="USAGE:">USAGE:</h2><ul>
+<li><p><a href="http://www.privoxy.org/" target="_blank" rel="external">Privoxy - Home Page</a></p>
+</li>
+<li><p><a href="https://velaciela.ms/privoxy_share_proxy" target="_blank" rel="external">使用Privoxy建立代理中心，共享任意代理资源 - Velaciela</a></p>
+</li>
+<li><a href="http://www.lainme.com/doku.php/blog/2011/04/privoxy_%E5%B9%BF%E5%91%8A%E8%BF%87%E6%BB%A4%E5%92%8C%E8%87%AA%E5%8A%A8%E4%BB%A3%E7%90%86%E5%88%87%E6%8D%A2" target="_blank" rel="external">privoxy——广告过滤和自动代理切换 [Lainme’s Blog]</a></li>
+<li><a href="http://bbs.kafan.cn/thread-1736776-1-1.html" target="_blank" rel="external">privoxy过滤规则<em>浏览器讨论区</em>软件区 卡饭论坛 - 互助分享 - 大气谦和!</a></li>
+<li><a href="https://fengqi.me/unix/328.html" target="_blank" rel="external">[总结]利用 Privoxy 让命令行下的 wget 和 curl 等命令实现自动代理 - 幸福飞过海</a></li>
+<li><a href="http://www.haodaima.net/art/2815814" target="_blank" rel="external">给MACosx(终端)也插上翻墙的翅膀—Privoxy使用手记 - 好代码编程网</a></li>
+<li><a href="http://program-think.blogspot.com/2014/12/gfw-privoxy.html" target="_blank" rel="external">如何用 Privoxy 辅助翻墙？ @ 编程随想的博客</a></li>
+</ul>
+<h2 id="<!-more->"><a id="more"></a></h2><h2 id="CONFIG">CONFIG</h2><h3 id="修改配置文件">修改配置文件</h3><p><code>/usr/local/etc/privoxy/config</code></p>
+<figure class="highlight stylus"><table><tr><td class="code"><pre><span class="line">listen-<span class="tag">address</span>  <span class="number">127.0</span>.<span class="number">0.1</span>:<span class="number">8118</span></span><br><span class="line">forward-socks5t   /               <span class="number">127.0</span>.<span class="number">0.1</span>:<span class="number">1080</span> .</span><br></pre></td></tr></table></figure>
+<p><strong><code>#</code>要去掉，注意ip后的<code>.</code></strong></p>
+<p>设置成内网全局代理，共享给手机用，要设置成<code>listen-address  0.0.0.0:8118</code></p>
 <blockquote>
 <ul>
-<li><code>data:image/png;base64,{base64 image code}</code>//直接复制到浏览器地址栏回车</li>
-<li><code>&lt;img src=&quot;data:image/jpg;base64,{base64 image code}/&gt;</code>//或者网页里嵌入</li>
+<li>其网络路径为：<br>手机—–HTTP—-[服务器（192.168.1.102：8118）—-Privoxy—Socks5——服务器内部127.0.0.1：8080]——加密数据—–[某防火墙]—–加密数据—-Shadowsocks服务器—–目标网站.Privoxy 的监听端口号，默认是 8118，默认绑定的地址是 127.0.0.1（这个地址代表“当前系统”）。</li>
+<li>由于默认是绑定在 <code>127.0.0.1</code> 这个地址，所以只有当前系统的软件才可以连接到 Privoxy 的监听端口。如果你希望其它操作系统的软件也可以连接到 Privoxy 的监听端口，可以修改绑定的地址，把 <code>127.0.0.1</code> 改为 <code>0.0.0.0</code> 表示绑定在“任意地址”。</li>
 </ul>
 </blockquote>
-<h2 id="References:">References:</h2><ul>
-<li><a href="http://apistore.baidu.com/apiworks/servicedetail/146.html" target="_blank" rel="external">百度OCR文字识别_工具_API服务_API服务_API Store</a></li>
-<li>apikey <a href="http://apistore.baidu.com/astore/toolshttpproxy?apiId=usa-&amp;isAworks=1" target="_blank" rel="external">API调试工具_API Store</a></li>
-<li><a href="https://github.com/JeremyWei/baidu-ocr" target="_blank" rel="external">JeremyWei/baidu-ocr</a></li>
-<li><a href="http://superuser.com/questions/120796/os-x-base64-encode-via-command-line" target="_blank" rel="external">osx - OS X: Base64 encode via command line - Super User</a></li>
-</ul>
+<h3 id="启动privoxy">启动privoxy</h3><p><code>/usr/local/sbin/privoxy /usr/local/etc/privoxy/config</code><br>或者<br><code>sudo /Applications/Privoxy/startPrivoxy.sh</code></p>
+<blockquote>
+<p>为了检验你的浏览器是否正确配置了Privoxy的代理，你可以在浏览器的地址栏输入 <code>http://p.p/</code>并回车。如果浏览器的页面上出现Privoxy的相关信息，说明你的浏览器已经走Privoxy的 HTTP 代理</p>
+</blockquote>
+<h3 id="关闭privoxy">关闭privoxy</h3><p><code>sudo /Applications/Privoxy/stopPrivoxy.sh</code></p>
+<h3 id="开机启动">开机启动</h3><blockquote>
+<p>sudo launchctl load /Library/LaunchAgents/local.privoxy.plist</p>
+</blockquote>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="pi">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span></span><br><span class="line"><span class="doctype">&lt;!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">plist</span> <span class="attribute">version</span>=<span class="value">"1.0"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">dict</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">key</span>&gt;</span>Label<span class="tag">&lt;/<span class="title">key</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">string</span>&gt;</span>local.arcueid.privoxy<span class="tag">&lt;/<span class="title">string</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">key</span>&gt;</span>ProgramArguments<span class="tag">&lt;/<span class="title">key</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">array</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">string</span>&gt;</span>/usr/local/sbin/privoxy<span class="tag">&lt;/<span class="title">string</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">string</span>&gt;</span>--no-daemon<span class="tag">&lt;/<span class="title">string</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">string</span>&gt;</span>/usr/local/etc/privoxy/config<span class="tag">&lt;/<span class="title">string</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="title">array</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">key</span>&gt;</span>RunAtLoad<span class="tag">&lt;/<span class="title">key</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">true</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">key</span>&gt;</span>KeepAlive<span class="tag">&lt;/<span class="title">key</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">true</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">key</span>&gt;</span>StandardErrorPath<span class="tag">&lt;/<span class="title">key</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">string</span>&gt;</span>/usr/local/Cellar/privoxy/3.0.19/sbin/privoxy.log<span class="tag">&lt;/<span class="title">string</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">key</span>&gt;</span>StandardOutPath<span class="tag">&lt;/<span class="title">key</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">string</span>&gt;</span>/usr/local/Cellar/privoxy/3.0.19/sbin/privoxy.log<span class="tag">&lt;/<span class="title">string</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">dict</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">plist</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="命令验证privoxy启动">命令验证privoxy启动</h3><blockquote>
+<p>一是用ps查看是否有privoxy进程，二是查看privoxy默认监听的8118端口是否已经打开。</p>
+</blockquote>
+<figure class="highlight gradle"><table><tr><td class="code"><pre><span class="line">[tangqiao LaunchAgents]$ps aux  | <span class="keyword">grep</span> privoxy</span><br><span class="line">tangqiao       <span class="number">25641</span>   <span class="number">0.3</span>  <span class="number">0.0</span>  <span class="number">2436516</span>    <span class="number">492</span> s001  U+    <span class="number">5</span>:<span class="number">31</span>下午   <span class="number">0</span>:<span class="number">00.00</span> <span class="keyword">grep</span> --color=auto privoxy</span><br><span class="line">root           <span class="number">17984</span>   <span class="number">0.0</span>  <span class="number">0.2</span>  <span class="number">2477764</span>  <span class="number">17452</span>   ??  Ss   <span class="number">10</span>:<span class="number">13</span>上午   <span class="number">0</span>:<span class="number">50.28</span> <span class="regexp">/usr/</span>local<span class="regexp">/Cellar/</span>privoxy<span class="regexp">/3.0.19/</span>sbin<span class="regexp">/privoxy --no-daemon /u</span>sr<span class="regexp">/local/</span>etc<span class="regexp">/privoxy/</span>config</span><br><span class="line">[tangqiao LaunchAgents]$netstat -an | <span class="keyword">grep</span> <span class="number">8118</span></span><br><span class="line">tcp4       <span class="number">0</span>      <span class="number">0</span>  <span class="number">127.0</span>.<span class="number">0.1</span>.<span class="number">8118</span>         *.*                    LISTEN</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -187,11 +206,9 @@
       
         <div class="post-tags">
           
-            <a href="/blog/tags/OCR/"> #OCR </a>
+            <a href="/blog/tags/GFW/"> #GFW </a>
           
-            <a href="/blog/tags/Python/"> #Python </a>
-          
-            <a href="/blog/tags/base64/"> #base64 </a>
+            <a href="/blog/tags/Privoxy/"> #Privoxy </a>
           
         </div>
       
@@ -200,13 +217,11 @@
         <div class="post-nav">
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/blog/Privoxy/">Privoxy</a>
-            
           </div>
 
           <div class="post-nav-next post-nav-item">
             
-              <a href="/blog/CNNICCertificate/">CNNIC证书</a>
+              <a href="/blog/baiduOCR/">baidu OCR</a>
             
           </div>
         </div>
@@ -325,7 +340,7 @@
           <div class="post-toc">
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#百度OCR文字识别API_for_Python"><span class="nav-number">1.</span> <span class="nav-text">百度OCR文字识别API for Python</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#image_convert_to_base64_code"><span class="nav-number">2.</span> <span class="nav-text">image convert to base64 code</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#References:"><span class="nav-number">3.</span> <span class="nav-text">References:</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#USAGE:"><span class="nav-number">1.</span> <span class="nav-text">USAGE:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#<!-more->"><span class="nav-number">2.</span> <span class="nav-text"></span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CONFIG"><span class="nav-number">3.</span> <span class="nav-text">CONFIG</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#修改配置文件"><span class="nav-number">3.1.</span> <span class="nav-text">修改配置文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#启动privoxy"><span class="nav-number">3.2.</span> <span class="nav-text">启动privoxy</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#关闭privoxy"><span class="nav-number">3.3.</span> <span class="nav-text">关闭privoxy</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#开机启动"><span class="nav-number">3.4.</span> <span class="nav-text">开机启动</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#命令验证privoxy启动"><span class="nav-number">3.5.</span> <span class="nav-text">命令验证privoxy启动</span></a></li></ol></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>
