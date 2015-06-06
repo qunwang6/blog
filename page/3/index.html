@@ -130,8 +130,8 @@
           
           
             
-              <a class="post-title-link" href="/blog/Wordnik/">
-                Wordnik
+              <a class="post-title-link" href="/blog/PasswordGenerator/">
+                password generator
               </a>
             
           
@@ -140,14 +140,14 @@
 
       <div class="post-meta">
         <span class="post-time">
-          发表于 2015-05-01
+          发表于 2015-05-08
         </span>
 
         
           <span class="post-category">
             &nbsp; | &nbsp; 分类于
             
-              <a href="/blog/categories/dictionary/">dictionary</a>
+              <a href="/blog/categories/Swift/">Swift</a>
 
               
               
@@ -169,22 +169,10 @@
 
       
         
-          <h3 id="Wordnik-Definition-Finder"><a href="https://github.com/williamrchr/Wordnik-Definition-Finder">Wordnik-Definition-Finder</a></h3><blockquote>
-<p>This is a Python program that pulls definitions from a list and outputs them to a text file.<br>There are two versions, one with a GUI, and one with a CLI (command line interface). Choose<br>whichever seems most appropriate for you.<br>To read words from a text file, the following configuration should be used:<br>word1,word2,word3<br>Otherwise, the program will not be able to parse your file and most likely crash.</p>
-</blockquote>
-<p>从文本文件中读取单词，再从wordnik.com网站获取单词释义。</p>
-<h3 id="Usage:">Usage:</h3><ul>
-<li><code>easy_install wordnik</code></li>
-<li>命令行版本<br><code>python definitions-finder-cli.py</code><br>单词表放在text.txt。</li>
-<li>图形界面版本需要安装wxpython<figure class="highlight gradle"><table><tr><td class="code"><pre><span class="line">brew install wxpython</span><br><span class="line">mkdir -p ~<span class="regexp">/Library/</span>Python<span class="regexp">/2.7/</span>lib<span class="regexp">/python/</span>site-packages</span><br><span class="line">echo <span class="string">"import site; site.addsitedir('$(brew --prefix)/lib/python2.7/site-packages')"</span> &gt;&gt; ~<span class="regexp">/Library/</span>Python<span class="regexp">/2.7/</span>lib<span class="regexp">/python/</span>site-packages<span class="regexp">/homebrew.pth</span></span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>另一种方法：
-          <div class="post-more-link text-center">
-            <a class="btn" href="/blog/Wordnik/#more">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          <h3 id="CODE">CODE</h3><figure class="highlight swift"><table><tr><td class="code"><pre><span class="line"><span class="comment">// Playground - noun: a place where people can play</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> <span class="type">UIKit</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//Step 1.</span></span><br><span class="line"><span class="keyword">var</span> pwCharacters =     [<span class="string">"a"</span>,<span class="string">"b"</span>,<span class="string">"c"</span>,<span class="string">"d"</span>,<span class="string">"e"</span>,<span class="string">"f"</span>,<span class="string">"g"</span>,<span class="string">"h"</span>,<span class="string">"i"</span>,<span class="string">"j"</span>,<span class="string">"k"</span>,<span class="string">"l"</span>,<span class="string">"m"</span>,<span class="string">"n"</span>,<span class="string">"o"</span>,<span class="string">"p"</span>,<span class="string">"q"</span>,<span class="string">"r"</span>,<span class="string">"s"</span>,<span class="string">"t"</span>,<span class="string">"u"</span>,<span class="string">"v"</span>,<span class="string">"w"</span>,<span class="string">"x"</span>,<span class="string">"y"</span>,<span class="string">"z"</span>,<span class="string">"1"</span>,<span class="string">"2"</span>,<span class="string">"3"</span>,<span class="string">"4"</span>,<span class="string">"5"</span>,<span class="string">"6"</span>,<span class="string">"7"</span>,<span class="string">"8"</span>,<span class="string">"9"</span>,<span class="string">"0"</span>,<span class="string">"A"</span>,<span class="string">"B"</span>,<span class="string">"C"</span>,<span class="string">"D"</span>,<span class="string">"E"</span>,<span class="string">"F"</span>,<span class="string">"G"</span>,<span class="string">"H"</span>,<span class="string">"I"</span>,<span class="string">"J"</span>,<span class="string">"K"</span>,<span class="string">"L"</span>,<span class="string">"M"</span>,<span class="string">"N"</span>,<span class="string">"O"</span>,<span class="string">"P"</span>,<span class="string">"Q"</span>,<span class="string">"R"</span>,<span class="string">"S"</span>,<span class="string">"T"</span>,<span class="string">"U"</span>,<span class="string">"V"</span>,<span class="string">"W"</span>,<span class="string">"X"</span>,<span class="string">"Y"</span>,<span class="string">"Z"</span>,<span class="string">"!"</span>,<span class="string">"@"</span>,<span class="string">"#"</span>,<span class="string">"$"</span>,<span class="string">"%"</span>,<span class="string">"^"</span>,<span class="string">"&amp;"</span>,<span class="string">"*"</span>]</span><br><span class="line"></span><br><span class="line"><span class="comment">//Step 2.</span></span><br><span class="line"><span class="func"><span class="keyword">func</span> <span class="title">randomPassword</span><span class="params">(passwordLength: Int)</span></span> -&gt; <span class="type">String</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">var</span> password = <span class="string">""</span></span><br><span class="line">    <span class="keyword">var</span> unsignedArrayCount = <span class="type">UInt32</span>(pwCharacters.<span class="built_in">count</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> <span class="keyword">var</span> i = <span class="number">0</span>; i &lt; passwordLength; i++ &#123;</span><br><span class="line">        <span class="keyword">var</span> unsignedRandomNumber = arc4random_uniform(unsignedArrayCount)</span><br><span class="line">        <span class="keyword">var</span> randomNumber = <span class="type">Int</span>(unsignedRandomNumber)</span><br><span class="line">        password += pwCharacters[randomNumber]</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> password</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//Step 3</span></span><br><span class="line"><span class="comment">//任意生成1000位密码</span></span><br><span class="line">randomPassword(<span class="number">1000</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">//任意生成15密码</span></span><br><span class="line"><span class="keyword">var</span> password = <span class="string">"<span class="subst">\(randomPassword(<span class="number">5</span>)</span>)-<span class="subst">\(randomPassword(<span class="number">5</span>)</span>)-<span class="subst">\(randomPassword(<span class="number">5</span>)</span>)"</span></span><br></pre></td></tr></table></figure>
+<hr>
+<h3 id="References">References</h3><p><a href="http://www.mav3r1ck.io/one-thousand-character-password/" target="_blank" rel="external">One Thousand Character Password</a></p>
+
         
       
     </div>
@@ -193,9 +181,9 @@
       
         <div class="post-tags">
           
-            <a href="/blog/tags/Python/"> #Python </a>
+            <a href="/blog/tags/Swift/"> #Swift </a>
           
-            <a href="/blog/tags/dictionary/"> #dictionary </a>
+            <a href="/blog/tags/password/"> #password </a>
           
         </div>
       
@@ -364,6 +352,98 @@
         <div class="post-tags">
           
             <a href="/blog/tags/iOS/"> #iOS </a>
+          
+        </div>
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </div>
+  </div>
+
+
+    
+      
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
+              <a class="post-title-link" href="/blog/Wordnik/">
+                Wordnik
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于 2015-05-01
+        </span>
+
+        
+          <span class="post-category">
+            &nbsp; | &nbsp; 分类于
+            
+              <a href="/blog/categories/dictionary/">dictionary</a>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+        
+      </div>
+    </div>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <h3 id="Wordnik-Definition-Finder"><a href="https://github.com/williamrchr/Wordnik-Definition-Finder">Wordnik-Definition-Finder</a></h3><blockquote>
+<p>This is a Python program that pulls definitions from a list and outputs them to a text file.<br>There are two versions, one with a GUI, and one with a CLI (command line interface). Choose<br>whichever seems most appropriate for you.<br>To read words from a text file, the following configuration should be used:<br>word1,word2,word3<br>Otherwise, the program will not be able to parse your file and most likely crash.</p>
+</blockquote>
+<p>从文本文件中读取单词，再从wordnik.com网站获取单词释义。</p>
+<h3 id="Usage:">Usage:</h3><ul>
+<li><code>easy_install wordnik</code></li>
+<li>命令行版本<br><code>python definitions-finder-cli.py</code><br>单词表放在text.txt。</li>
+<li>图形界面版本需要安装wxpython<figure class="highlight gradle"><table><tr><td class="code"><pre><span class="line">brew install wxpython</span><br><span class="line">mkdir -p ~<span class="regexp">/Library/</span>Python<span class="regexp">/2.7/</span>lib<span class="regexp">/python/</span>site-packages</span><br><span class="line">echo <span class="string">"import site; site.addsitedir('$(brew --prefix)/lib/python2.7/site-packages')"</span> &gt;&gt; ~<span class="regexp">/Library/</span>Python<span class="regexp">/2.7/</span>lib<span class="regexp">/python/</span>site-packages<span class="regexp">/homebrew.pth</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>另一种方法：
+          <div class="post-more-link text-center">
+            <a class="btn" href="/blog/Wordnik/#more">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <div class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/blog/tags/Python/"> #Python </a>
+          
+            <a href="/blog/tags/dictionary/"> #dictionary </a>
           
         </div>
       
@@ -804,7 +884,7 @@
         <div class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/blog/archives">
-              <span class="site-state-item-count">28</span>
+              <span class="site-state-item-count">29</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
