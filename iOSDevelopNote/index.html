@@ -206,7 +206,7 @@
 <li><p>命令行下使用 <strong>openssl</strong> 生成</p>
 </li>
 </ul>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ openssl genrsa -out private.key <span class="number">2048</span></span><br><span class="line">$ openssl req -new -sha256 -key private.key -out my.certSigningRequest</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ openssl genrsa -out private.key <span class="number">2048</span></span><br><span class="line">$ openssl req -new -sha256 -key private.key -out my.certSigningRequest</span><br></pre></td></tr></table></figure>
 <h4 id="开发者证书">开发者证书</h4><p>由 apple 官方颁发, 用来证明开发者资格的证书文件, 分开发(ios_development.cer)和发布(ios_distribution.cer)两种</p>
 <p><code>cer</code> 证书跟开发机(私钥)绑定只能在拥有私钥的机器上使用, 如果要迁移机器需要导出为 <code>p12</code> 文件</p>
 <h5 id="生成方法-1">生成方法</h5><p>在 <a href="https://developer.apple.com/devcenter/ios/index.action" target="_blank" rel="external">开发者中心</a> “certificates” 面板中添加 <code>certificate</code> 并上传刚刚生成的 <code>CSR</code> 文件, 获取 <code>ios_development.cer</code></p>
