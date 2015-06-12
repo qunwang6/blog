@@ -130,6 +130,97 @@
           
           
             
+              <a class="post-title-link" href="/blog/javascriptcodepices/">
+                JavaScript代码片段
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于 2015-06-12
+        </span>
+
+        
+          <span class="post-category">
+            &nbsp; | &nbsp; 分类于
+            
+              <a href="/blog/categories/JavaScript/">JavaScript</a>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+        
+      </div>
+    </div>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <h2 id="编辑器">编辑器</h2><p>在html5中新多了一个特性，叫做<code>contenteditable,</code>这个特性可以让html里的一个元素变成可编辑状态。因此，我们可以通过这个属性来构造一个简单的文本编辑器。<br>在浏览器里新建一个标签页输入网址<br><code>data:text/html,&lt;html contenteditable&gt;</code><br>你会发现你的浏览界面变成了一个简单的文本编辑器。</p>
+<blockquote>
+<p>montas 的改造：You can use textarea and make it “invisible” if you want autofocus.</p>
+</blockquote>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">data:text/<span class="tag">html</span>, &lt;<span class="tag">textarea</span> style=<span class="string">"font-size: 1.5em; width: 100%; height: 100%; border: none; outline: none"</span> autofocus /&gt;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>bgrins 的改造：编辑内容时，自动变换背景颜色；停止后变换白色。</p>
+</blockquote>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">data:text/html, <span class="tag">&lt;<span class="title">html</span>&gt;</span><span class="tag">&lt;<span class="title">head</span>&gt;</span><span class="tag">&lt;<span class="title">style</span> <span class="attribute">type</span>=<span class="value">"text/css"</span>&gt;</span><span class="css"> <span class="tag">html</span> <span class="rules">&#123; <span class="rule"><span class="attribute">font-family</span>:<span class="value"> <span class="string">"Open Sans"</span> &#125; * &#123; -webkit-transition: all linear <span class="number">1s</span></span></span>; &#125;</span></span><span class="tag">&lt;/<span class="title">style</span>&gt;</span><span class="tag">&lt;<span class="title">script</span>&gt;</span><span class="javascript"><span class="built_in">window</span>.onload=<span class="function"><span class="keyword">function</span><span class="params">()</span></span>&#123;<span class="keyword">var</span> e=<span class="literal">false</span>;<span class="keyword">var</span> t=<span class="number">0</span>;setInterval(<span class="function"><span class="keyword">function</span><span class="params">()</span></span>&#123;<span class="keyword">if</span>(!e)&#123;t=<span class="built_in">Math</span>.round(<span class="built_in">Math</span>.max(<span class="number">0</span>,t-<span class="built_in">Math</span>.max(t/<span class="number">3</span>,<span class="number">1</span>)))&#125;<span class="keyword">var</span> n=(<span class="number">255</span>-t*<span class="number">2</span>).toString(<span class="number">16</span>);<span class="built_in">document</span>.body.style.backgroundColor=<span class="string">"#ff"</span>+n+<span class="string">""</span>+n&#125;,<span class="number">1e3</span>);<span class="keyword">var</span> n=<span class="literal">null</span>;<span class="built_in">document</span>.onkeydown=<span class="function"><span class="keyword">function</span><span class="params">()</span></span>&#123;t=<span class="built_in">Math</span>.min(<span class="number">128</span>,t+<span class="number">2</span>);e=<span class="literal">true</span>;clearTimeout(n);n=setTimeout(<span class="function"><span class="keyword">function</span><span class="params">()</span></span>&#123;e=<span class="literal">false</span>&#125;,<span class="number">1500</span>)&#125;&#125;</span><span class="tag">&lt;/<span class="title">script</span>&gt;</span><span class="tag">&lt;/<span class="title">head</span>&gt;</span><span class="tag">&lt;<span class="title">body</span> <span class="attribute">contenteditable</span> <span class="attribute">style</span>=<span class="value">"font-size:2rem;line-height:1.4;max-width:60rem;margin:0 auto;padding:4rem;"</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>fvsch 的改造：</p>
+</blockquote>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/blog/javascriptcodepices/#more">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <div class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/blog/tags/JavaScript/"> #JavaScript </a>
+          
+        </div>
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </div>
+  </div>
+
+
+    
+      
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
               <a class="post-title-link" href="/blog/iOSDeveloperTips/">
                 iOS developer tips
               </a>
@@ -755,86 +846,6 @@
           
           
             
-              <a class="post-title-link" href="/blog/HelpSheet/">
-                Help Sheet
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于 2015-05-31
-        </span>
-
-        
-          <span class="post-category">
-            &nbsp; | &nbsp; 分类于
-            
-              <a href="/blog/categories/Sheet/">Sheet</a>
-
-              
-              
-
-            
-          </span>
-        
-
-        
-          
-        
-      </div>
-    </div>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <ul>
-<li><a href="http://kachibito.net/wp-content/uploads/2009/08/wp-cheat1.html" target="_blank" rel="external">WP Help Sheet</a></li>
-<li><a href="https://github.com/tiimgreen/github-cheat-sheet" target="_blank" rel="external">tiimgreen/github-cheat-sheet</a><!--next page-->
-</li>
-</ul>
-
-        
-      
-    </div>
-
-    <div class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/blog/tags/Sheet/"> #Sheet </a>
-          
-        </div>
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </div>
-  </div>
-
-
-    
-      
-
-  <div class="post post-type-normal ">
-    <div class="post-header">
-
-      
-      
-        <h1 class="post-title">
-          
-          
-            
               <a class="post-title-link" href="/blog/FrontendKnowledgeStructure/">
                 Frontend Knowledge Structure
               </a>
@@ -915,8 +926,8 @@
           
           
             
-              <a class="post-title-link" href="/blog/SwiftStyleGuide/">
-                Swift Style guide
+              <a class="post-title-link" href="/blog/HelpSheet/">
+                Help Sheet
               </a>
             
           
@@ -925,14 +936,14 @@
 
       <div class="post-meta">
         <span class="post-time">
-          发表于 2015-05-26
+          发表于 2015-05-31
         </span>
 
         
           <span class="post-category">
             &nbsp; | &nbsp; 分类于
             
-              <a href="/blog/categories/Swift/">Swift</a>
+              <a href="/blog/categories/Sheet/">Sheet</a>
 
               
               
@@ -954,30 +965,12 @@
 
       
         
-          <p>A guide to our Swift style and conventions.</p>
-<p>This is an attempt to encourage patterns that accomplish the following goals (in<br>rough priority order):</p>
-<ol>
-<li>Increased rigor, and decreased likelihood of programmer error</li>
-<li>Increased clarity of intent</li>
-<li>Reduced verbosity</li>
-<li>Fewer debates about aesthetics</li>
-</ol>
-<p>If you have suggestions, please see our <a href="CONTRIBUTING.md">contribution guidelines</a>,<br>then open a pull request. :zap:</p>
-<hr>
-<h4 id="Whitespace">Whitespace</h4><ul>
-<li>Tabs, not spaces.</li>
-<li>End files with a newline.</li>
-<li>Make liberal use of vertical whitespace to divide code into logical chunks.</li>
-<li>Don’t leave trailing whitespace.<ul>
-<li>Not even leading indentation on blank lines.</li>
-</ul>
+          <ul>
+<li><a href="http://kachibito.net/wp-content/uploads/2009/08/wp-cheat1.html" target="_blank" rel="external">WP Help Sheet</a></li>
+<li><a href="https://github.com/tiimgreen/github-cheat-sheet" target="_blank" rel="external">tiimgreen/github-cheat-sheet</a><!--next page-->
 </li>
 </ul>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/blog/SwiftStyleGuide/#more">
-              阅读全文 &raquo;
-            </a>
-          </div>
+
         
       
     </div>
@@ -986,7 +979,7 @@
       
         <div class="post-tags">
           
-            <a href="/blog/tags/Swift/"> #Swift </a>
+            <a href="/blog/tags/Sheet/"> #Sheet </a>
           
         </div>
       
@@ -1040,21 +1033,21 @@
         <div class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/blog/archives">
-              <span class="site-state-item-count">29</span>
+              <span class="site-state-item-count">30</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
           <div class="site-state-item site-state-categories">
             <a href="/blog/categories">
-              <span class="site-state-item-count">15</span>
+              <span class="site-state-item-count">16</span>
               <span class="site-state-item-name">分类</span>
               </a>
           </div>
 
           <div class="site-state-item site-state-tags">
             <a href="/blog/tags">
-              <span class="site-state-item-count">27</span>
+              <span class="site-state-item-count">28</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>

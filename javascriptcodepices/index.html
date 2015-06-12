@@ -1,0 +1,601 @@
+<!doctype html>
+<html class="theme-next use-motion theme-next-mist">
+<head>
+  
+
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+  <meta name="google-site-verification" content="p8qifHQZCR7Sv5rGvYC9OGZZxk3bA3Kfr8UUZZZeSoI" />
+
+
+
+
+
+  <link rel="stylesheet" type="text/css" href="/blog/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5"/>
+
+
+<link rel="stylesheet" type="text/css" href="/blog/css/main.css?v=0.4.2"/>
+
+
+
+
+  <meta name="keywords" content="JavaScript," />
+
+
+
+  <link rel="alternate" href="/blog/atom.xml" title="Zero to One" type="application/atom+xml" />
+
+
+
+  <link rel="shorticon icon" type="image/x-icon" href="/blog/images/favicon.ico?v=0.4.2" />
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var CONFIG = {
+    scheme: 'Mist',
+    analytics: {
+      baidu: '',
+      google: 'UA-62454921-1'
+    },
+    sidebar: 'hide'
+  };
+</script>
+
+
+
+
+  <title> JavaScript代码片段 // Zero to One </title>
+</head>
+
+<body>
+<!--[if lte IE 8]> <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'> <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://7u2nvr.com1.z0.glb.clouddn.com/picouterie.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today or use other browser ,like chrome firefox safari." style='margin-left:auto;margin-right:auto;display: block;'/></a></div> <![endif]-->
+  <div class="container one-column page-post-detail">
+    <div class="headband"></div>
+
+    <div id="header" class="header">
+      <div class="header-inner">
+        <h1 class="site-meta">
+  <span class="logo-line-before"><i></i></span>
+  <a href="/blog/" class="brand">
+      <span class="logo">
+        <i class="icon-logo"></i>
+      </span>
+      <span class="site-title">Zero to One</span>
+  </a>
+  <span class="logo-line-after"><i></i></span>
+</h1>
+
+
+  <ul id="menu" class="menu">
+     
+    
+      
+      <li class="menu-item menu-item-home">
+        <a href="/blog/">
+          <i class="menu-item-icon icon-home"></i> <br />
+          首页
+        </a>
+      </li>
+    
+      
+      <li class="menu-item menu-item-categories">
+        <a href="/blog/categories">
+          <i class="menu-item-icon icon-categories"></i> <br />
+          分类
+        </a>
+      </li>
+    
+      
+      <li class="menu-item menu-item-archives">
+        <a href="/blog/archives">
+          <i class="menu-item-icon icon-archives"></i> <br />
+          归档
+        </a>
+      </li>
+    
+      
+      <li class="menu-item menu-item-tags">
+        <a href="/blog/tags">
+          <i class="menu-item-icon icon-tags"></i> <br />
+          标签
+        </a>
+      </li>
+    
+  </ul>
+
+
+      </div>
+    </div>
+
+    <div id="main" class="main">
+      <div class="main-inner">
+        <div id="content" class="content">
+          
+
+  <div id="posts" class="posts-expand">
+    
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
+              JavaScript代码片段
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于 2015-06-12
+        </span>
+
+        
+          <span class="post-category">
+            &nbsp; | &nbsp; 分类于
+            
+              <a href="/blog/categories/JavaScript/">JavaScript</a>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+        
+      </div>
+    </div>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        <h2 id="编辑器">编辑器</h2><p>在html5中新多了一个特性，叫做<code>contenteditable,</code>这个特性可以让html里的一个元素变成可编辑状态。因此，我们可以通过这个属性来构造一个简单的文本编辑器。<br>在浏览器里新建一个标签页输入网址<br><code>data:text/html,&lt;html contenteditable&gt;</code><br>你会发现你的浏览界面变成了一个简单的文本编辑器。</p>
+<blockquote>
+<p>montas 的改造：You can use textarea and make it “invisible” if you want autofocus.</p>
+</blockquote>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">data:text/<span class="tag">html</span>, &lt;<span class="tag">textarea</span> style=<span class="string">"font-size: 1.5em; width: 100%; height: 100%; border: none; outline: none"</span> autofocus /&gt;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>bgrins 的改造：编辑内容时，自动变换背景颜色；停止后变换白色。</p>
+</blockquote>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">data:text/html, <span class="tag">&lt;<span class="title">html</span>&gt;</span><span class="tag">&lt;<span class="title">head</span>&gt;</span><span class="tag">&lt;<span class="title">style</span> <span class="attribute">type</span>=<span class="value">"text/css"</span>&gt;</span><span class="css"> <span class="tag">html</span> <span class="rules">&#123; <span class="rule"><span class="attribute">font-family</span>:<span class="value"> <span class="string">"Open Sans"</span> &#125; * &#123; -webkit-transition: all linear <span class="number">1s</span></span></span>; &#125;</span></span><span class="tag">&lt;/<span class="title">style</span>&gt;</span><span class="tag">&lt;<span class="title">script</span>&gt;</span><span class="javascript"><span class="built_in">window</span>.onload=<span class="function"><span class="keyword">function</span><span class="params">()</span></span>&#123;<span class="keyword">var</span> e=<span class="literal">false</span>;<span class="keyword">var</span> t=<span class="number">0</span>;setInterval(<span class="function"><span class="keyword">function</span><span class="params">()</span></span>&#123;<span class="keyword">if</span>(!e)&#123;t=<span class="built_in">Math</span>.round(<span class="built_in">Math</span>.max(<span class="number">0</span>,t-<span class="built_in">Math</span>.max(t/<span class="number">3</span>,<span class="number">1</span>)))&#125;<span class="keyword">var</span> n=(<span class="number">255</span>-t*<span class="number">2</span>).toString(<span class="number">16</span>);<span class="built_in">document</span>.body.style.backgroundColor=<span class="string">"#ff"</span>+n+<span class="string">""</span>+n&#125;,<span class="number">1e3</span>);<span class="keyword">var</span> n=<span class="literal">null</span>;<span class="built_in">document</span>.onkeydown=<span class="function"><span class="keyword">function</span><span class="params">()</span></span>&#123;t=<span class="built_in">Math</span>.min(<span class="number">128</span>,t+<span class="number">2</span>);e=<span class="literal">true</span>;clearTimeout(n);n=setTimeout(<span class="function"><span class="keyword">function</span><span class="params">()</span></span>&#123;e=<span class="literal">false</span>&#125;,<span class="number">1500</span>)&#125;&#125;</span><span class="tag">&lt;/<span class="title">script</span>&gt;</span><span class="tag">&lt;/<span class="title">head</span>&gt;</span><span class="tag">&lt;<span class="title">body</span> <span class="attribute">contenteditable</span> <span class="attribute">style</span>=<span class="value">"font-size:2rem;line-height:1.4;max-width:60rem;margin:0 auto;padding:4rem;"</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>fvsch 的改造：</p>
+</blockquote>
+<a id="more"></a>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">data:text/<span class="tag">html</span>, &lt;<span class="tag">body</span> contenteditable style=<span class="string">"font-size:2rem;line-height:1.4;max-width:60rem;margin:0 auto;padding:4rem;"</span>&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="Ruby_代码高亮的编辑器">Ruby 代码高亮的编辑器</h3><p><a href="https://gist.github.com/jakeonrails/4666256" target="_blank" rel="external">This bookmarklet gives you a code editor in your browser with a single click.</a></p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">data:text/html, <span class="tag">&lt;<span class="title">style</span> <span class="attribute">type</span>=<span class="value">"text/css"</span>&gt;</span><span class="css"><span class="id">#e</span><span class="rules">&#123;<span class="rule"><span class="attribute">position</span>:<span class="value">absolute</span></span>;<span class="rule"><span class="attribute">top</span>:<span class="value"><span class="number">0</span></span></span>;<span class="rule"><span class="attribute">right</span>:<span class="value"><span class="number">0</span></span></span>;<span class="rule"><span class="attribute">bottom</span>:<span class="value"><span class="number">0</span></span></span>;<span class="rule"><span class="attribute">left</span>:<span class="value"><span class="number">0</span></span></span>;&#125;</span></span><span class="tag">&lt;/<span class="title">style</span>&gt;</span><span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"e"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span><span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"http://d1n0x3qji82z53.cloudfront.net/src-min-noconflict/ace.js"</span> <span class="attribute">type</span>=<span class="value">"text/javascript"</span> <span class="attribute">charset</span>=<span class="value">"utf-8"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span><span class="tag">&lt;<span class="title">script</span>&gt;</span><span class="stata"><span class="keyword">var</span> <span class="keyword">e</span>=ace.<span class="keyword">edit</span>(<span class="string">"e"</span>);<span class="keyword">e</span>.setTheme(<span class="string">"ace/theme/monokai"</span>);<span class="keyword">e</span>.getSession().setMode(<span class="string">"ace/mode/ruby"</span>);</span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>如果把上面的 ace/mode/ruby 改成 ace/mode/python，那么就得到了一个 Python 版的编辑器咯。其他语言依此类推。</p>
+</blockquote>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">改造成支持其他语言语法高亮的，可把 ace/mode/ruby 替换为：</span><br><span class="line"> https://gist.github.com/4670615</span><br><span class="line"></span><br><span class="line">For other language: Instead of ace/mode/ruby, <span class="operator"><span class="keyword">Use</span></span><br><span class="line"></span><br><span class="line">Markdown -&gt; ace/<span class="keyword">mode</span>/markdown</span><br><span class="line">Python -&gt; ace/<span class="keyword">mode</span>/python</span><br><span class="line">C/C++ -&gt; ace/<span class="keyword">mode</span>/c_cpp</span><br><span class="line">Javscript -&gt; ace/<span class="keyword">mode</span>/javascript</span><br><span class="line">Java -&gt; ace/<span class="keyword">mode</span>/java</span><br><span class="line">Scala- -&gt; ace/<span class="keyword">mode</span>/scala</span><br><span class="line">CoffeeScript -&gt; ace/<span class="keyword">mode</span>/coffee</span><br><span class="line"><span class="keyword">and</span></span><br><span class="line">css, html, php, latex, tex, sh, <span class="keyword">sql</span>, lua, clojure, dart, typescript, <span class="keyword">go</span>, groovy, json, jsp, less, lisp,</span><br><span class="line">lucene, perl, powershell, scss, textile, <span class="keyword">xml</span>, yaml, xquery, liquid, diff</span><br><span class="line"><span class="keyword">and</span> many more...</span><br><span class="line"></span><br><span class="line"><span class="keyword">For</span> other theme: Instead <span class="keyword">of</span> ace/theme/monokai, <span class="keyword">Use</span></span><br><span class="line"></span><br><span class="line">Eclipse -&gt; ace/theme/eclipse</span><br><span class="line">TextMate -&gt; ace/theme/textmate</span><br><span class="line"><span class="keyword">and</span></span><br><span class="line">xcode, vibrant_ink, solarized_dark, solarized_light, tomorrow, tomorrow_night, tomorrow_night_blue, twilight, tomorrow_night_eighties, pastel_on_dark</span><br><span class="line"><span class="keyword">and</span> <span class="keyword">some</span> more....</span></span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="修改网页">修改网页</h2><blockquote>
+<p>打开chrome的console控制台,输入<br><code>document.body.contentEditable=&#39;true&#39;;</code></p>
+</blockquote>
+<h3 id="将网页进行反转">将网页进行反转</h3><p>只需要在css文件里增加如下代码：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">html</span><span class="rules">&#123;</span><br><span class="line"> 	<span class="rule"><span class="attribute">filter</span>:<span class="value">fliph</span></span>;</span><br><span class="line"> 	&#125;</span><span class="comment">/*ie fliph(水平翻转滤镜)，还有flipv垂直翻转滤镜*/</span></span><br><span class="line"> 	<span class="tag">body</span><span class="rules">&#123;</span><br><span class="line"> 	<span class="rule"><span class="attribute">-webkit-transform</span>:<span class="value"> <span class="function">rotateY</span>(<span class="number">180deg</span>)</span></span>;</span><br><span class="line"> 	<span class="rule"><span class="attribute">transform</span>:<span class="value"> <span class="function">rotateY</span>(<span class="number">180deg</span>)</span></span>;</span><br><span class="line"> 	<span class="rule"><span class="attribute">-moz-transform</span>:<span class="value"> <span class="function">skew</span>(<span class="number">0deg</span>, <span class="number">180deg</span>) <span class="function">scale</span>(-<span class="number">1</span>, <span class="number">1</span>)</span></span>;</span><br><span class="line"> 	<span class="rule"><span class="attribute">-o-transform</span>:<span class="value"> <span class="function">skew</span>(<span class="number">0deg</span>, <span class="number">180deg</span>) <span class="function">scale</span>(-<span class="number">1</span>, <span class="number">1</span>)</span></span>;</span><br><span class="line"> 	&#125;</span></span><br></pre></td></tr></table></figure>
+<p> 如果想让网页只旋转10度，则可以这样写：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="tag">body</span> <span class="rules">&#123;</span><br><span class="line">	<span class="rule"><span class="attribute">transform</span>:<span class="value"> <span class="function">rotate</span>(-<span class="number">10deg</span>)</span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">-moz-transform</span>:<span class="value"> <span class="function">rotate</span>(-<span class="number">10deg</span>)</span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">-webkit-transform</span>:<span class="value"> <span class="function">rotate</span>(-<span class="number">10deg</span>)</span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">-o-transform</span>:<span class="value"> <span class="function">rotate</span>(-<span class="number">10deg</span>)</span></span>;</span><br><span class="line">	&#125;</span></span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="书签栏代码">书签栏代码</h2><h3 id="SyncUI_–_跨设备同步测试">SyncUI – 跨设备同步测试</h3><p><a href="https://syncui.com/" target="_blank" rel="external">https://syncui.com/</a></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">javascript:(<span class="function"><span class="keyword">function</span> <span class="params">(w, d, nmsp, st)</span> </span>&#123; w[nmsp] = w[nmsp] || <span class="function"><span class="keyword">function</span><span class="params">()</span> </span>&#123;(w[nmsp].q = w[nmsp].q || []).push(<span class="built_in">arguments</span>); &#125;; <span class="keyword">var</span> s = d.createElement(st), fst =d.getElementsByTagName(<span class="string">'head'</span>)[<span class="number">0</span>]; s.async = <span class="number">1</span>; s.src = <span class="string">"//syncui.com/hub?v="</span> + (<span class="keyword">new</span> <span class="built_in">Date</span>()).getTime(); fst.appendChild(s); &#125;)(<span class="built_in">window</span>, <span class="built_in">document</span>, <span class="string">"syncui"</span>, <span class="string">"script"</span>);syncui(<span class="string">"//your id"</span>);</span><br></pre></td></tr></table></figure>
+<h3 id="For_instapaper">For instapaper</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">javascript:<span class="function"><span class="keyword">function</span> <span class="title">iprl5</span><span class="params">()</span></span>&#123;<span class="keyword">var</span> d=<span class="built_in">document</span>,z=d.createElement(<span class="string">'scr'</span>+<span class="string">'ipt'</span>),b=d.body,l=d.location;<span class="keyword">try</span>&#123;<span class="keyword">if</span>(!b)<span class="keyword">throw</span>(<span class="number">0</span>);d.title=<span class="string">'(Saving...) '</span>+d.title;z.setAttribute(<span class="string">'src'</span>,l.protocol+<span class="string">'//www.instapaper.com/j/iOpUfQYWDESe?u='</span>+<span class="built_in">encodeURIComponent</span>(l.href)+<span class="string">'&amp;t='</span>+(<span class="keyword">new</span> <span class="built_in">Date</span>().getTime()));b.appendChild(z);&#125;<span class="keyword">catch</span>(e)&#123;alert(<span class="string">'Please wait until the page has loaded.'</span>);&#125;&#125;iprl5();<span class="keyword">void</span>(<span class="number">0</span>)</span><br></pre></td></tr></table></figure>
+<h3 id="For_evernote">For evernote</h3><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">javascript:(function()&#123;EN<span class="emphasis">_CLIP_</span>HOST='http://www.evernote.com';try&#123;var%20x=document.createElement('SCRIPT');x.type='text/javascript';x.src=EN<span class="emphasis">_CLIP_</span>HOST+'/public/bookmarkClipper.js?'+(new%20Date().getTime()/100000);document.getElementsByTagName('head')[0].appendChild(x);&#125;catch(e)&#123;location.href=EN<span class="emphasis">_CLIP_</span>HOST+'/clip.action?url='+encodeURIComponent(location.href)+'&amp;title='+encodeURIComponent(document.title);&#125;&#125;)();</span><br><span class="line">javascript:(function(F,i,r,e,b,u,g,L,I,T,E)&#123;if(F.getElementById(b))return;E=F[<span class="link_label">i+'NS'</span>]&amp;&amp;F.documentElement.namespaceURI;E=E?F[<span class="link_label">i+'NS'</span>](<span class="link_url">E,’script’</span>):F[<span class="link_label">i</span>](<span class="link_url">‘script’</span>);E[<span class="link_label">r</span>](<span class="link_url">‘id’,b</span>);E[<span class="link_label">r</span>](<span class="link_url">‘src’,I+g+T</span>);E[<span class="link_label">r</span>](<span class="link_url">b,u</span>);(F[<span class="link_label">e</span>](<span class="link_url">‘head’</span>)[<span class="link_label">0</span>]||F[<span class="link_label">e</span>](<span class="link_url">‘body’</span>)[<span class="link_label">0</span>]).appendChild(E);E=new%20Image;E[<span class="link_label">r</span>](<span class="link_url">‘src’,I+L</span>);&#125;)(document,’createElement’,'setAttribute’,'getElementsByTagName’,'FirebugLite’,’4′,’firebug-lite.js’,'releases/lite/latest/skin/xp/sprite.png’,'https://getfirebug.com/’,'#startOpened’);</span><br></pre></td></tr></table></figure>
+<h3 id="Google翻译">Google翻译</h3><figure class="highlight mel"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">javascript:(function()&#123;var<span class="variable">%20s</span><span class="variable">%20</span>=<span class="variable">%20document</span>.createElement(<span class="string">'script'</span>);<span class="variable">%20s</span>.type<span class="variable">%20</span>=<span class="variable">%20</span><span class="string">'text/javascript'</span>;<span class="variable">%20s</span>.src<span class="variable">%20</span>=<span class="variable">%20</span><span class="string">'http://labs.microsofttranslator.com/bookmarklet/default.aspx?f=js&amp;to=zh-chs'</span>;<span class="variable">%20document</span>.body.insertBefore(s,<span class="variable">%20document</span>.body.firstChild);&#125;)()</span><br></pre></td></tr></table></figure>
+<h3 id="Remarkerbe">Remarkerbe</h3><p><a href="http://remarker.be/" target="_blank" rel="external">Remarkerbe</a></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">javascript:(<span class="function"><span class="keyword">function</span><span class="params">()</span></span>&#123;<span class="keyword">var</span>%<span class="number">20</span>createElement=<span class="function"><span class="keyword">function</span><span class="params">(tag,attrs)</span></span>&#123;<span class="keyword">var</span>%<span class="number">20</span>elem=<span class="built_in">document</span>.createElement(tag);<span class="keyword">for</span>(<span class="keyword">var</span>%<span class="number">20</span>key%<span class="number">20</span><span class="keyword">in</span>%<span class="number">20</span>attrs)&#123;elem.setAttribute(key,attrs[key]);&#125;;<span class="keyword">return</span>%<span class="number">20</span>elem;&#125;;<span class="keyword">var</span>%<span class="number">20</span>loadJS=<span class="function"><span class="keyword">function</span><span class="params">(src,success)</span></span>&#123;<span class="keyword">var</span>%<span class="number">20</span>domScript=createElement(<span class="string">'script'</span>,&#123;<span class="string">'src'</span>:src,<span class="string">'type'</span>:<span class="string">'text/javascript'</span>&#125;);success=success||<span class="function"><span class="keyword">function</span><span class="params">()</span></span>&#123;&#125;;domScript.onload=domScript.onreadystatechange=<span class="function"><span class="keyword">function</span><span class="params">()</span></span>&#123;<span class="keyword">if</span>(!<span class="keyword">this</span>.readyState||<span class="string">'loaded'</span>===<span class="keyword">this</span>.readyState||<span class="string">'complete'</span>===<span class="keyword">this</span>.readyState)&#123;success();<span class="keyword">this</span>.onload=<span class="keyword">this</span>.onreadystatechange=<span class="literal">null</span>;<span class="keyword">this</span>.parentNode.removeChild(<span class="keyword">this</span>);&#125;;&#125;;<span class="built_in">document</span>.body.appendChild(domScript);&#125;;loadJS(<span class="string">'http://code.jquery.com/jquery-1.8.1.min.js'</span>,<span class="function"><span class="keyword">function</span><span class="params">()</span></span>&#123;loadJS(<span class="string">'http://remarker.be/js/markalbe.js'</span>);&#125;);&#125;());</span><br></pre></td></tr></table></figure>
+<h3 id="让图片飞起来">让图片飞起来</h3><figure class="highlight nix"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">javascript:<span class="variable">R=</span><span class="number">0</span>; <span class="variable">x1=</span>.<span class="number">1</span>; <span class="variable">y1=</span>.<span class="number">05</span>; <span class="variable">x2=</span>.<span class="number">25</span>; <span class="variable">y2=</span>.<span class="number">24</span>; <span class="variable">x3=</span><span class="number">1.6</span>; <span class="variable">y3=</span>.<span class="number">24</span>; <span class="variable">x4=</span><span class="number">300</span>; <span class="variable">y4=</span><span class="number">200</span>; <span class="variable">x5=</span><span class="number">300</span>; <span class="variable">y5=</span><span class="number">200</span>; var <span class="variable">DI=</span> document.getElementsByTagName(<span class="string">"img"</span>); <span class="variable">DIL=</span>DI.length; function A()&#123;for(<span class="variable">i=</span><span class="number">0</span>; i&lt;DIL; i++)&#123;<span class="variable">DIS=</span>DI[ i ].style; DIS.<span class="variable">position=</span>'absolute'; DIS.<span class="variable">left=</span>Math.sin(R*x1+i*x2+x3)*x4+x5+<span class="string">"px"</span>; DIS.<span class="variable">top=</span>Math.cos(R*y1+i*y2+y3)*y4+y5+<span class="string">"px"</span>&#125;R++&#125;<span class="variable">tag=</span>setInterval('A()',<span class="number">5</span> );document.<span class="variable">onmousedown=</span>function()&#123;clearInterval(tag);for(<span class="variable">i=</span><span class="number">0</span>; i&lt;DIL; i++)&#123;DI[i].style.<span class="variable">position=</span><span class="string">"static"</span>;&#125;&#125;; void(<span class="number">0</span>)</span><br></pre></td></tr></table></figure>
+<h3 id="让网页可编辑">让网页可编辑</h3><figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">javascript</span>:<span class="built_in">document</span>.body.contentEditable=<span class="string">'true'</span>; <span class="built_in">document</span>.designMode=<span class="string">'on'</span>; <span class="reserved">void</span>(<span class="number">0</span>);</span><br></pre></td></tr></table></figure>
+<h3 id="网页射击游戏">网页射击游戏</h3><blockquote>
+<p>这个游戏可以在任何网页里面玩，把下面代码粘贴到地址栏回车，按空格键进行射击，W键可前进，A、D键或者方向键可改变射击方向。</p>
+</blockquote>
+<figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">javascript</span>:<span class="reserved">var</span>%<span class="number">20</span>s%<span class="number">20</span>=%<span class="number">20</span><span class="built_in">document</span>.createElement(<span class="string">'script'</span>);s.type=<span class="string">'text/javascript'</span>;<span class="built_in">document</span>.body.appendChild(s);s.src=<span class="string">'http://erkie.github.com/asteroids.min.js'</span>;<span class="reserved">void</span>(<span class="number">0</span>);</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    <div class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/blog/tags/JavaScript/"> #JavaScript </a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/blog/iOSDeveloperTips/">iOS developer tips</a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </div>
+  </div>
+
+
+
+    
+      <div class="comments" id="comments">
+        
+      </div>
+    
+  </div>
+
+
+        </div>
+
+        
+      </div>
+
+
+      
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <div class="site-overview">
+        <div class="site-author motion-element">
+          <img class="site-author-image" src="/blog/images/default_avatar.jpg" alt="Qun Wang" />
+          <p class="site-author-name">Qun Wang</p>
+        </div>
+        <p class="site-description motion-element"></p>
+        <div class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/blog/archives">
+              <span class="site-state-item-count">30</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          <div class="site-state-item site-state-categories">
+            <a href="/blog/categories">
+              <span class="site-state-item-count">16</span>
+              <span class="site-state-item-name">分类</span>
+              </a>
+          </div>
+
+          <div class="site-state-item site-state-tags">
+            <a href="/blog/tags">
+              <span class="site-state-item-count">28</span>
+              <span class="site-state-item-name">标签</span>
+              </a>
+          </div>
+
+        </div>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/blog/atom.xml">
+              <i class="menu-item-icon icon-feed"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+              <a href="https://github.com/qunwang6" target="_blank">GitHub</a>
+            </span>
+            
+              <span class="links-of-author-item">
+              <a href="https://twitter.com/qunwang6" target="_blank">Twitter</a>
+            </span>
+            
+              <span class="links-of-author-item">
+              <a href="mailto:qunwang6@gmail.com" target="_blank">Gmail</a>
+            </span>
+            
+          
+        </div>
+
+        
+        
+
+      </div>
+
+      
+        <div class="post-toc-wrap sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator"></div>
+          <div class="post-toc">
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#编辑器"><span class="nav-number">1.</span> <span class="nav-text">编辑器</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Ruby_代码高亮的编辑器"><span class="nav-number">1.1.</span> <span class="nav-text">Ruby 代码高亮的编辑器</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#修改网页"><span class="nav-number">2.</span> <span class="nav-text">修改网页</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#将网页进行反转"><span class="nav-number">2.1.</span> <span class="nav-text">将网页进行反转</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#书签栏代码"><span class="nav-number">3.</span> <span class="nav-text">书签栏代码</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#SyncUI_–_跨设备同步测试"><span class="nav-number">3.1.</span> <span class="nav-text">SyncUI – 跨设备同步测试</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#For_instapaper"><span class="nav-number">3.2.</span> <span class="nav-text">For instapaper</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#For_evernote"><span class="nav-number">3.3.</span> <span class="nav-text">For evernote</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Google翻译"><span class="nav-number">3.4.</span> <span class="nav-text">Google翻译</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Remarkerbe"><span class="nav-number">3.5.</span> <span class="nav-text">Remarkerbe</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#让图片飞起来"><span class="nav-number">3.6.</span> <span class="nav-text">让图片飞起来</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#让网页可编辑"><span class="nav-number">3.7.</span> <span class="nav-text">让网页可编辑</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#网页射击游戏"><span class="nav-number">3.8.</span> <span class="nav-text">网页射击游戏</span></a></li></ol></li></ol></div>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator"></div>
+        </div>
+      
+
+    </div>
+  </div>
+
+
+    </div>
+
+    <div id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">
+  
+  &copy; &nbsp; 
+  2015
+  <span class="with-love">
+    <i class="icon-heart"></i>
+  </span>
+  <span class="author">Qun Wang</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+
+
+      </div>
+    </div>
+
+    <div class="back-to-top"></div>
+  </div>
+
+  <script type="text/javascript" src="/blog/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  
+
+  
+  <script type="text/javascript" src="/blog/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript" src="/blog/js/fancy-box.js"></script>
+
+
+  <script type="text/javascript" src="/blog/js/helpers.js"></script>
+  
+
+  <script type="text/javascript" src="/blog/vendors/velocity/velocity.min.js"></script>
+  <script type="text/javascript" src="/blog/vendors/velocity/velocity.ui.min.js"></script>
+
+  <script type="text/javascript" src="/blog/js/motion_global.js" id="motion.global"></script>
+
+
+
+
+  
+  
+<script type="text/javascript" src="/blog/js/bootstrap.scrollspy.js" id="bootstrap.scrollspy.custom"></script>
+
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var $sidebarInner = $('.sidebar-inner');
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.didShow', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+          var self = this;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      $(indicator).velocity('stop').velocity({
+        opacity: action === 'show' ? 0.4 : 0
+      }, { duration: 100 });
+    }
+
+  });
+</script>
+
+
+  <script type="text/javascript" id="sidebar.nav">
+    $(document).ready(function () {
+      var html = $('html');
+
+      $('.sidebar-nav li').on('click', function () {
+        var item = $(this);
+        var activeTabClassName = 'sidebar-nav-active';
+        var activePanelClassName = 'sidebar-panel-active';
+        if (item.hasClass(activeTabClassName)) {
+          return;
+        }
+
+        var currentTarget = $('.' + activePanelClassName);
+        var target = $('.' + item.data('target'));
+
+        currentTarget.velocity('transition.slideUpOut', 200, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', 200)
+            .addClass(activePanelClassName);
+        });
+
+        item.siblings().removeClass(activeTabClassName);
+        item.addClass(activeTabClassName);
+      });
+
+      $('.post-toc a').on('click', function (e) {
+        e.preventDefault();
+        var offset = $(escapeSelector(this.getAttribute('href'))).offset().top;
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        });
+      });
+
+      // Expand sidebar on post detail page by default, when post has a toc.
+      var $tocContent = $('.post-toc-content');
+      if (isDesktop() && CONFIG.sidebar === 'post') {
+        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+          displaySidebar();
+        }
+      }
+    });
+  </script>
+
+
+
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      if (CONFIG.sidebar === 'always') {
+        displaySidebar();
+      }
+    });
+  </script>
+
+  
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for (i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+  
+  
+  
+
+  
+
+
+
+
+  
+  
+  <script type="text/javascript" src="/blog/js/analytics_google-analytics.js"></script>
+
+
+</body>
+</html>
