@@ -164,8 +164,7 @@
       
 
       
-        <p><code>首发于pdawiki</code></p>
-<h3 id="开源项目：PYGLOSSARY">开源项目：PYGLOSSARY</h3><ul>
+        <h3 id="开源项目：PYGLOSSARY">开源项目：PYGLOSSARY</h3><ul>
 <li><a href="https://github.com/ilius/pyglossary" target="_blank" rel="external">PYGLOSSARY</a></li>
 <li><a href="https://bitbucket.org/james_taylor/python-lzo-static" target="_blank" rel="external">python-lzo</a></li>
 </ul>
@@ -193,22 +192,15 @@
 </blockquote>
 <p>可以在编译前不加入图片、语音文件，在编译完成后将图片、语音文件复制到xxx.dictionary/Contents目录下。</p>
 <hr>
-<h3 id="DSL_===&gt;_OSX-dictionary">DSL ===&gt; OSX.dictionary</h3><ol>
-<li><p>Convert DSL from UTF-16 to UTF-8:</p>
+<h3 id="DSL_===&gt;_OSX-dictionary">DSL ===&gt; OSX.dictionary</h3><p>1.Convert DSL from UTF-16 to UTF-8:</p>
 <pre><code>iconv -f UTF-<span class="number">16</span> -t UTF-<span class="number">8</span> dict_utf16<span class="class">.dsl</span> &gt; dict_utf8.dsl
-</code></pre></li>
-<li><p>Using pyGlossary python project, convert UTF-8 DSL to AppleDict XML:</p>
+</code></pre><p>2.Using pyGlossary python project, convert UTF-8 DSL to AppleDict XML:</p>
 <pre><code>python pyglossary.pyw --<span class="keyword">read</span>-<span class="keyword">format</span>=ABBYYLingvoDSL --<span class="keyword">write</span>-<span class="keyword">format</span>=AppleDict dict_utf8.dsl dict.xml
 </code></pre><p><strong>lingvo格式.dsl转换成可发音的词典。(注意修改命令参数)</strong>↓</p>
 <blockquote>
-<p>audio conversion is optional, “no” by default. The following command works,<br>~/Development/pyglossary/pyglossary.pyw —read-option=”audio=yes” test.dsl test.xml<br>make &amp;&amp; make install</p>
+<p>audio conversion is optional, “no” by default. The following command works,<br>~/Development/pyglossary/pyglossary.pyw —read-option=”audio=yes” test.dsl test.xml<br>make &amp;&amp; make install<br><code>python /Applications/Utilities/DictionaryDevelopmentKit/pyglossary/pyglossary.pyw --read-options=&quot;audio=yes&quot; --write-format=AppleDict ldoce55.dsl ldoce55.xml</code></p>
 </blockquote>
-</li>
-</ol>
-<pre><code>python /Applications/Utilities/DictionaryDevelopmentKit/pyglossary/pyglossary<span class="class">.pyw</span> --read-options=<span class="string">"audio=yes"</span> --write-format=AppleDict ldoce55<span class="class">.dsl</span> ldoce55.xml
-</code></pre><ol>
-<li>Using Command Line Tools for Xcode and Dictionary Development Kit:<br><code>make</code><br><code>make install</code></li>
-</ol>
+<p>3.Using Command Line Tools for Xcode and Dictionary Development Kit:<br><code>make</code><br><code>make install</code></p>
 <hr>
 <h3 id="MDX_===&gt;_OSX-dictionary">MDX ===&gt; OSX.dictionary</h3><ul>
 <li>转换</li>
@@ -348,7 +340,7 @@ sed -<span class="tag">i</span> <span class="string">""</span> <span class="stri
         <div class="post-nav">
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/blog/TheJoelTest/">The Joel Test</a>
+              <a href="/blog/codeVSpoetry/">Code vs. Poetry</a>
             
           </div>
 
@@ -414,7 +406,7 @@ sed -<span class="tag">i</span> <span class="string">""</span> <span class="stri
         <div class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/blog/archives">
-              <span class="site-state-item-count">30</span>
+              <span class="site-state-item-count">31</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
