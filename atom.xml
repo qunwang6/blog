@@ -4,7 +4,7 @@
   
   <link href="/blog/atom.xml" rel="self"/>
   <link href="http://qunwang6.github.io/blog/"/>
-  <updated>2015-06-15T13:03:35.000Z</updated>
+  <updated>2015-06-19T12:33:18.000Z</updated>
   <id>http://qunwang6.github.io/blog/</id>
   
   <author>
@@ -19,8 +19,8 @@
     <link href="http://qunwang6.github.io/blog/readlang/"/>
     <id>http://qunwang6.github.io/blog/readlang/</id>
     <published>2015-06-14T16:00:00.000Z</published>
-    <updated>2015-06-15T13:03:35.000Z</updated>
-    <content type="html"><![CDATA[<h3 id="以前学习笔记是这么做的">以前学习笔记是这么做的</h3><p><img src="http://mmbiz.qpic.cn/mmbiz/fP6mpkS1UNL7mA28RzjHs041bS61KCJ84OvNSBeymXnsHIc2KZWB06jPLQ20eWYyQQGdyLHsSswGgLdxfBRiahg/640?wx_fmt=jpeg&amp;wxfrom=5" alt=""></p>
+    <updated>2015-06-19T12:33:18.000Z</updated>
+    <content type="html"><![CDATA[<h3 id="以前学习笔记是这么做的">以前学习笔记是这么做的</h3><p><img src="http://www.pdawiki.com/forum/data/attachment/album/201506/15/095044rfriwixjivavxjvx.jpg" alt=""></p>
 <h3 id="现在可以这样">现在可以这样</h3><p><img src="http://www.pdawiki.com/forum/data/attachment/album/201506/15/095035lv797cwjy4kwkwpp.gif" alt=""></p>
 <blockquote>
 <p>不过网站是不保存笔记数据的，若要保存，可借助evernote.</p>
@@ -39,7 +39,7 @@
 <figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">http:</span><span class="comment">//www.wordreference.com/enzh/&#123;&#123;query&#125;&#125;</span></span><br><span class="line"><span class="string">http:</span><span class="comment">//www.vocabulary.com/dictionary/&#123;&#123;query&#125;&#125;</span></span><br><span class="line"><span class="string">http:</span><span class="comment">//www.oxfordlearnersdictionaries.com/us/definition/english/&#123;&#123;query&#125;&#125;</span></span><br></pre></td></tr></table></figure>
 ]]></content>
     <summary type="html">
-    <![CDATA[<h3 id="以前学习笔记是这么做的">以前学习笔记是这么做的</h3><p><img src="http://mmbiz.qpic.cn/mmbiz/fP6mpkS1UNL7mA28RzjHs041bS61KCJ84OvNSBeymXnsHIc2KZWB06jPLQ20eWY]]>
+    <![CDATA[<h3 id="以前学习笔记是这么做的">以前学习笔记是这么做的</h3><p><img src="http://www.pdawiki.com/forum/data/attachment/album/201506/15/095044rfriwixjivavxjvx.jpg" a]]>
     </summary>
     
       <category term="note" scheme="http://qunwang6.github.io/blog/tags/note/"/>
@@ -124,7 +124,7 @@
     <link href="http://qunwang6.github.io/blog/iOSDeveloperTips/"/>
     <id>http://qunwang6.github.io/blog/iOSDeveloperTips/</id>
     <published>2015-06-08T16:00:00.000Z</published>
-    <updated>2015-06-15T01:15:57.000Z</updated>
+    <updated>2015-06-16T01:09:45.000Z</updated>
     <content type="html"><![CDATA[<h3 id="List_of_iOS_Top_1000_Libraries">List of iOS Top 1000 Libraries</h3><p><a href="https://github.com/iamdaiyuan/ios_top_1000" target="_blank" rel="external">iamdaiyuan/ios_top_1000</a></p>
 <h3 id="Start_Developing_iOS_Apps_Today">Start Developing iOS Apps Today</h3><p><a href="https://developer.apple.com/library/ios/referencelibrary/GettingStarted/RoadMapiOS/" target="_blank" rel="external">Start Developing iOS Apps Today: Setup</a></p>
 <h3 id="网页版_constraints_代码生成工具">网页版 constraints 代码生成工具</h3><p><a href="http://constraints.icodeforlove.com/" target="_blank" rel="external">iOS/Mac Autolayout Constraints</a></p>
@@ -209,6 +209,7 @@
 <p>为 App 生成各种大小 Logo 的网站。支持 Android, iOS, WatchKit</p>
 </blockquote>
 <p><a href="http://makeappicon.com/" target="_blank" rel="external">Makeappicon - Generate app icons of all sizes with a click!</a></p>
+<h3 id="iOS9_GUI_template">iOS9 GUI template</h3><p><a href="http://codemotionapps.com/free-ios9-gui-template-for-illustrator/" target="_blank" rel="external">Free Vector iOS9 GUI template for illustrator - Codemotion</a></p>
 <hr>
 <h3 id="Xcode_6-3_for_OS_X_10-9">Xcode 6.3 for OS X 10.9</h3><p><a href="https://github.com/landonf/XcodePostFacto" target="_blank" rel="external">landonf/XcodePostFacto</a></p>
 <blockquote>
