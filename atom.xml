@@ -4,7 +4,7 @@
   
   <link href="/blog/atom.xml" rel="self"/>
   <link href="http://qunwang6.github.io/blog/"/>
-  <updated>2015-06-24T15:44:23.000Z</updated>
+  <updated>2015-06-24T16:40:13.000Z</updated>
   <id>http://qunwang6.github.io/blog/</id>
   
   <author>
@@ -13,6 +13,157 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[iOS developer tips]]></title>
+    <link href="http://qunwang6.github.io/blog/iOSDeveloperTips/"/>
+    <id>http://qunwang6.github.io/blog/iOSDeveloperTips/</id>
+    <published>2015-06-24T16:00:00.000Z</published>
+    <updated>2015-06-24T16:40:13.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="learning">learning</h2><h3 id="Start_Developing_iOS_Apps_Today">Start Developing iOS Apps Today</h3><p><a href="https://developer.apple.com/library/ios/referencelibrary/GettingStarted/RoadMapiOS/" target="_blank" rel="external">Start Developing iOS Apps Today: Setup</a></p>
+<h3 id="网页版_constraints_代码生成工具">网页版 constraints 代码生成工具</h3><p><a href="http://constraints.icodeforlove.com/" target="_blank" rel="external">iOS/Mac Autolayout Constraints</a></p>
+<h3 id="Create_Custom_Keyboard_for_iOS_8">Create Custom Keyboard for iOS 8</h3><p>Alexei Baboulevitch is developing a custom keyboard for iOS 8 with Swift:</p>
+<pre><code>– No bitmaps! Everything <span class="keyword">is</span> rendered <span class="keyword">using</span> CoreGraphics.
+– <span class="keyword">Dynamic</span> layouts! All the keys are laid <span class="keyword">out</span> programmatically.
+– Auto-capitalization, period shortcut, keyboard clicks.
+</code></pre><p><a href="https://github.com/archagon/tasty-imitation-keyboard" target="_blank" rel="external">tasty-imitation-keyboard</a></p>
+<h3 id="TestFlight——完美的iOS_app测试方案">TestFlight——完美的iOS app测试方案</h3><p><a href="http://onevcat.com/2012/01/testflight/" target="_blank" rel="external">介绍</a></p>
+<a id="more"></a>
+<hr>
+<h2 id="doc">doc</h2><h3 id="Xcode_6-3_for_OS_X_10-9">Xcode 6.3 for OS X 10.9</h3><p><a href="https://github.com/landonf/XcodePostFacto" target="_blank" rel="external">landonf/XcodePostFacto</a></p>
+<blockquote>
+<p>到 <a href="https://github.com/landonf/XcodePostFacto" target="_blank" rel="external">https://github.com/landonf/XcodePostFacto</a> 下好 XcodePostFacto 的源码之后，在 Xcode 中打开，去菜单栏选择 Product - Scheme - xpf-bootstrap，再点 Build。<br>在左侧 Sidebar 找到 Products 文件夹，展开，右键点 xpf-bootstrap.framework，选择在 Finder 中显示。<br>然后打开 Terminal，env DYLD_INSERT_LIBRARIES=(编译好 framework 的绝对路径)/xpf-bootstrap.framework/xpf-bootstrap /Applications/Xcode.app/Contents/MacOS/Xcode<br>可以在 Mavericks 下写 Apple Watch/iOS 8.3 的 app 了</p>
+</blockquote>
+<h3 id="Xcode_7">Xcode 7</h3><ul>
+<li><a href="http://adcdownload.apple.com/WWDC_2015/Xcode_7_beta/Xcode_7_beta_Release_Notes.pdf" target="_blank" rel="external">Xcode 7 beta Release Notes - Xcode_7_beta_Release_Notes.pdf</a></li>
+</ul>
+<h3 id="What’s_new_in_Xcode_7">What’s new in Xcode 7</h3><p><a href="https://news.ycombinator.com/item?id=9681697" target="_blank" rel="external">What’s new in Xcode 7 | Hacker News</a></p>
+<h3 id="Swift_2-0">Swift 2.0</h3><ul>
+<li><a href="http://www.csdn.net/article/2015-06-09/2824909-xcode-7-beta-and-swift" target="_blank" rel="external">Xcode 7 beta发布，Swift 2.0带来哪些新变化？-CSDN.NET</a></li>
+<li><a href="http://www.raywenderlich.com/108522/whats-new-in-swift-2" target="_blank" rel="external">What’s New in Swift 2 - Ray Wenderlich</a></li>
+<li><a href="http://ebb.org/bkuhn/blog/2015/06/15/apple-is-not-our-friend.html" target="_blank" rel="external">Why Greet Apple’s Swift 2.0 With Open Arms? - Bradley M. Kuhn ( Brad ) ( bkuhn )</a></li>
+</ul>
+<h3 id="iOS_8-3_to_iOS_9-0_API_Differences">iOS 8.3 to iOS 9.0 API Differences</h3><p> <a href="https://developer.apple.com/library/prerelease/ios/releasenotes/General/iOS90APIDiffs/index.html#//apple_ref/doc/uid/TP40016222" target="_blank" rel="external">iOS 8.3 to iOS 9.0 API Differences</a></p>
+<hr>
+<h2 id="Libraries">Libraries</h2><h3 id="List_of_iOS_Top_1000_Libraries">List of iOS Top 1000 Libraries</h3><p><a href="https://github.com/iamdaiyuan/ios_top_1000" target="_blank" rel="external">iamdaiyuan/ios_top_1000</a></p>
+<h3 id="27_iOS_open_source_libraries">27 iOS open source libraries</h3><p><a href="https://medium.com/ios-os-x-development/27-ios-open-source-libraries-to-skyrocket-your-development-301b67d3124c" target="_blank" rel="external">27 iOS open source libraries to skyrocket your development. — iOS App Development — Medium</a></p>
+<h3 id="Flappy_Bird_in_Swift">Flappy Bird in Swift</h3><p><a href="https://github.com/fullstackio/FlappySwift" target="_blank" rel="external">FlappySwift</a></p>
+<h3 id="Gesture_recognizer_tool">Gesture recognizer tool</h3><p><a href="https://github.com/didierbrun/DBPathRecognizer" target="_blank" rel="external">DBPathRecognizer</a></p>
+<h3 id="Open_Source_Weather_App_in_Swift">Open Source Weather App in Swift</h3><p><a href="https://github.com/Mav3r1ck/Project-RainMan" target="_blank" rel="external">Project-RainMan</a></p>
+<h3 id="Convert_UIImage_to_ASCII">Convert UIImage to ASCII</h3><p><a href="https://github.com/bkoc/BKAsciiImage" target="_blank" rel="external">BKAsciiImage</a></p>
+<h3 id="KZPlayground">KZPlayground</h3><p><a href="https://github.com/krzysztofzablocki/KZPlayground" target="_blank" rel="external">Playgrounds for Objective-C</a></p>
+<h3 id="Flipping_Menu">Flipping Menu</h3><p>Flipping menu system written in Swift. Uses @IBDesignable for quick and easy implementation.<br><a href="https://github.com/ziligy/JGFlipMenu" target="_blank" rel="external">JGFlipMenu</a></p>
+<h3 id="Researching_ResearchKit">Researching ResearchKit</h3><p><a href="http://petersteinberger.com/blog/2015/researching-researchkit/" target="_blank" rel="external">Researching ResearchKit</a></p>
+<h3 id="移动开发支付SDK">移动开发支付SDK</h3><p><a href="https://pingxx.com/?features" target="_blank" rel="external">Ping++</a></p>
+<h3 id="Microsoft_TouchDevelop">Microsoft TouchDevelop</h3><p><a href="https://github.com/Microsoft/TouchDevelop" target="_blank" rel="external">TouchDevelop</a></p>
+<blockquote>
+<p>TouchDevelop is a touch-friendly app creation environment for iPad, iPhone, Android, Windows, Mac, Linux. Our mobile-friendly editor makes coding fun, even on your phone or tablet!</p>
+</blockquote>
+<h3 id="Apple_Beta_版软件计划">Apple Beta 版软件计划</h3><p><a href="https://appleseed.apple.com/sp/betaprogram/welcome?locale=zh" target="_blank" rel="external">Apple Beta 版软件计划</a></p>
+<h3 id="Duet_Display_的运行原理">Duet Display 的运行原理</h3><p><strong> <a href="https://github.com/rsms/peertalk" target="_blank" rel="external">PeerTalk</a> </strong></p>
+<blockquote>
+<p>由瑞典技术人员 <a href="http://rsms.me/about/" target="_blank" rel="external">Rasmus Andersson</a>开发的一种可通过 USB 基座和 TCP 协议，实现 iOS / Mac 间通讯的 Cocoa（Objective-C）库，这是 Duet Display 实现「通过数据线输出视频」的核心技术，也是与同类应用在实现方式上最大的差别。和原始的设备通讯原理相比，PeerTalk 可以在 <code>热插拔</code>状态下，实现自动断开和连接的效果.</p>
+</blockquote>
+<p><strong> <a href="https://theiphonewiki.com/wiki/Usbmux" target="_blank" rel="external">usbmux</a> </strong></p>
+<blockquote>
+<p>iTunes / iOS 设备间进行同步的 usbmux 系统和只有通过逆向所得的私有 API</p>
+</blockquote>
+<p><strong> <a href="https://github.com/zakk4223/CocoaSplit" target="_blank" rel="external">CocoaSplit</a> </strong></p>
+<blockquote>
+<p>CocoaSplit，一种用于视频流媒体服务的技术，有网友通过它成功地实现了 YouTube 视频直播，而 Duet Display 的 Mac 客户端就用了 CocoaSplit</p>
+</blockquote>
+<p><strong> <a href="https://github.com/BradLarson/GPUImage" target="_blank" rel="external">GPUImage</a> </strong></p>
+<blockquote>
+<p>GPUImage，一个由 Brad Larson 托管在 Github 上的基于 BSD 开源的 iOS 库，主要用于实现滤镜、摄像头实时滤镜等图像效果（很多「滤镜」软件都使用了这一技术），由于其处理效果是基于 GPU（图形处理器）而不是 CPU（中央处理器）的，所以一般情况下，它的处理性能更好。那么在 Duet Display 这款软件中，GPUImage 的作用发挥在了视频输出上，以便让 iOS 端的显示效果更好。</p>
+</blockquote>
+<ul>
+<li>References:<a href="http://sspai.com/27806" target="_blank" rel="external">一款刚上架的屏幕拓展应用为何迅速走红？浅谈 Duet Display 背后的技术 - 少数派 - 高质量的应用推荐媒体</a></li>
+</ul>
+<h3 id="Swift_HTTP_for_Humans">Swift HTTP for Humans</h3><p><a href="https://github.com/JustHTTP/Just" target="_blank" rel="external">JustHTTP/Just</a></p>
+<h3 id="Layers_based_charts_library_for_iOS">Layers based charts library for iOS</h3><p><a href="https://github.com/i-schuetz/SwiftCharts" target="_blank" rel="external">i-schuetz/SwiftCharts</a></p>
+<h3 id="EasyIOS">EasyIOS</h3><p><a href="https://github.com/EasyIOS/EasyIOS-Swift" target="_blank" rel="external">EasyIOS/EasyIOS-Swift</a><br>MVVM+HTML+LiveLoad 来开发 IOS<br><a href="http://www.v2ex.com/t/194118#reply16" target="_blank" rel="external">EasyIOS-Swift 版本发布， MVVM+HTML+LiveLoad 来开发 IOS - V2EX</a></p>
+<h3 id="background_images">background images</h3><ul>
+<li><a href="https://github.com/qrohlf/trianglify" target="_blank" rel="external">qrohlf/trianglify</a></li>
+<li><a href="https://github.com/qrohlf/trianglify-generator" target="_blank" rel="external">qrohlf/trianglify-generator</a></li>
+<li><a href="http://qrohlf.com/trianglify-generator/" target="_blank" rel="external">Trianglify Generator</a></li>
+<li><a href="http://qrohlf.com/trianglify/" target="_blank" rel="external">Trianglify by @qrohlf</a></li>
+</ul>
+<h3 id="ResearchKit">ResearchKit</h3><blockquote>
+<p>requires Xcode 6.3 or newer</p>
+</blockquote>
+<ul>
+<li><a href="https://github.com/ResearchKit/ResearchKit" target="_blank" rel="external">ResearchKit/ResearchKit</a></li>
+<li><a href="http://www.raywenderlich.com/104575/researchkit-tutorial-with-swift" target="_blank" rel="external">ResearchKit Tutorial with Swift: Getting Started - Ray Wenderlich</a></li>
+</ul>
+<h3 id="Microsoft_Project_Oxford_Home">Microsoft Project Oxford Home</h3><p><a href="http://www.projectoxford.ai/" target="_blank" rel="external">Microsoft Project Oxford Home</a></p>
+<h3 id="A_message_bar_for_iOS_written_in_Swift">A message bar for iOS written in Swift</h3><p><a href="https://github.com/exchangegroup/Dodo" target="_blank" rel="external">exchangegroup/Dodo</a></p>
+<h3 id="Open_Source_iOS_Game_created_in_SpriteKit_with_Swift">Open Source iOS Game created in SpriteKit with Swift</h3><p><a href="https://github.com/Mav3r1ck/Orbit7" target="_blank" rel="external">Mav3r1ck/Orbit7</a></p>
+<hr>
+<h3 id="EasyAnimation">EasyAnimation</h3><p><a href="https://github.com/icanzilb/EasyAnimation" target="_blank" rel="external">icanzilb/EasyAnimation</a></p>
+<h3 id="让人眼前一亮的刷新">让人眼前一亮的刷新</h3><p><a href="https://github.com/MartinRGB/Replace-iOS" target="_blank" rel="external">MartinRGB/Replace-iOS</a></p>
+<h3 id="An_iOS_refresh_control_with_gear_animation">An iOS refresh control with gear animation</h3><p><a href="https://github.com/micazeve/MAGearRefreshControl" target="_blank" rel="external">micazeve/MAGearRefreshControl</a></p>
+<hr>
+<h2 id="GUI">GUI</h2><h3 id="iOS9_GUI_template">iOS9 GUI template</h3><p><a href="http://codemotionapps.com/free-ios9-gui-template-for-illustrator/" target="_blank" rel="external">Free Vector iOS9 GUI template for illustrator - Codemotion</a></p>
+<h3 id="iOS_9_UIKit_for_Sketch">iOS 9 UIKit for Sketch</h3><ul>
+<li><a href="https://github.com/philipamour/ios9-uikit" target="_blank" rel="external">philipamour/ios9-uikit</a></li>
+</ul>
+<h3 id="Free_to-do_app_UI_kit_for_Photoshop_and_Sketch">Free to-do app UI kit for Photoshop and Sketch</h3><ul>
+<li><a href="http://www.invisionapp.com/do" target="_blank" rel="external">Free to-do app UI kit for Photoshop and Sketch</a></li>
+</ul>
+<h3 id="font">font</h3><p><a href="https://github.com/supermarin/YosemiteSanFranciscoFont" target="_blank" rel="external">supermarin/YosemiteSanFranciscoFont</a></p>
+<hr>
+<h2 id="Tools">Tools</h2><h3 id="跨平台开发">跨平台开发</h3><ul>
+<li><a href="http://xamarin.com/" target="_blank" rel="external">Mobile App Development &amp; App Creation Software - Xamarin</a></li>
+<li><a href="https://github.com/xamarin" target="_blank" rel="external">Xamarin</a></li>
+<li><a href="http://www.microsoft.com/taiwan/vstudio/Xamarin/" target="_blank" rel="external">Xamarin 跨平台 App 開發 | Visual Studio + C# + Xamarin = iOS / Android / Windows App</a></li>
+<li><a href="http://www.buildinsider.net/enterprise/sansanreport/0601" target="_blank" rel="external">10分間で分かった気になれるXamarin概要 - Build Insider</a></li>
+</ul>
+<h3 id="常用开发软件">常用开发软件</h3><ul>
+<li><a href="http://www.paintcodeapp.com/origami" target="_blank" rel="external">PaintCode</a></li>
+<li><a href="https://affinity.serif.com/en-gb/" target="_blank" rel="external">Affinity Designer - Professional graphic design software for the Mac</a></li>
+</ul>
+<h3 id="Visual_Studio_Code">Visual Studio Code</h3><p><a href="https://code.visualstudio.com/" target="_blank" rel="external">Visual Studio Code - Code Editing. Redefined.</a></p>
+<h3 id="图标生成">图标生成</h3><blockquote>
+<p>为 App 生成各种大小 Logo 的网站。支持 Android, iOS, WatchKit</p>
+</blockquote>
+<p><a href="http://makeappicon.com/" target="_blank" rel="external">Makeappicon - Generate app icons of all sizes with a click!</a></p>
+<hr>
+<h2 id="Watch">Watch</h2><h3 id="Apple_Watch">Apple Watch</h3><ul>
+<li><a href="http://www.totem.training/swift-ios-tips-tricks-tutorials-blog/apple-watch-lessons-learned" target="_blank" rel="external">WatchKit Lessons Learned — Swift + iOS 8 Developer Training</a></li>
+<li><a href="http://blog.mikeswanson.com/post/118262770484/watchkit-controller-life-cycle" target="_blank" rel="external">Mike Swanson’s Blog • WatchKit Controller Life Cycle</a></li>
+<li><a href="http://blog.mikeswanson.com/post/117807821714/watchkit-development-tips" target="_blank" rel="external">Mike Swanson’s Blog • WatchKit Development Tips</a></li>
+<li><a href="http://blog.mikeswanson.com/post/118580394879/watchkit-image-tips" target="_blank" rel="external">Mike Swanson’s Blog • WatchKit Image Tips</a></li>
+</ul>
+<hr>
+<h2 id="Visual_Programing">Visual Programing</h2><h3 id="可视化编程">可视化编程</h3><ul>
+<li><a href="https://itunes.apple.com/app/toy-engine/id993811069?mt=8" target="_blank" rel="external">Toy Engine - Make Games With Visual Scripting on the App Store on iTunes</a></li>
+</ul>
+<hr>
+<h2 id="References">References</h2><ul>
+<li><a href="http://iosdevelopertips.com/" target="_blank" rel="external">iOS developer tips</a></li>
+<li><a href="http://www.totem.training/swift-ios-tips-tricks-tutorials-blog/" target="_blank" rel="external">Swift and iOS 8 Tips, Tricks, and Tutorials Blog — Swift + iOS 8 Developer Training</a></li>
+<li><a href="http://blog.mikeswanson.com/" target="_blank" rel="external">Mike Swanson’s Blog</a></li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h2 id="learning">learning</h2><h3 id="Start_Developing_iOS_Apps_Today">Start Developing iOS Apps Today</h3><p><a href="https://developer.apple.com/library/ios/referencelibrary/GettingStarted/RoadMapiOS/">Start Developing iOS Apps Today: Setup</a></p>
+<h3 id="网页版_constraints_代码生成工具">网页版 constraints 代码生成工具</h3><p><a href="http://constraints.icodeforlove.com/">iOS/Mac Autolayout Constraints</a></p>
+<h3 id="Create_Custom_Keyboard_for_iOS_8">Create Custom Keyboard for iOS 8</h3><p>Alexei Baboulevitch is developing a custom keyboard for iOS 8 with Swift:</p>
+<pre><code>– No bitmaps! Everything <span class="keyword">is</span> rendered <span class="keyword">using</span> CoreGraphics.
+– <span class="keyword">Dynamic</span> layouts! All the keys are laid <span class="keyword">out</span> programmatically.
+– Auto-capitalization, period shortcut, keyboard clicks.
+</code></pre><p><a href="https://github.com/archagon/tasty-imitation-keyboard">tasty-imitation-keyboard</a></p>
+<h3 id="TestFlight——完美的iOS_app测试方案">TestFlight——完美的iOS app测试方案</h3><p><a href="http://onevcat.com/2012/01/testflight/">介绍</a></p>]]>
+    
+    </summary>
+    
+      <category term="Swift" scheme="http://qunwang6.github.io/blog/tags/Swift/"/>
+    
+      <category term="iOS" scheme="http://qunwang6.github.io/blog/tags/iOS/"/>
+    
+      <category term="iOS" scheme="http://qunwang6.github.io/blog/categories/iOS/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Lua]]></title>
@@ -167,148 +318,6 @@
   </entry>
   
   <entry>
-    <title><![CDATA[iOS developer tips]]></title>
-    <link href="http://qunwang6.github.io/blog/iOSDeveloperTips/"/>
-    <id>http://qunwang6.github.io/blog/iOSDeveloperTips/</id>
-    <published>2015-06-08T16:00:00.000Z</published>
-    <updated>2015-06-24T09:59:25.000Z</updated>
-    <content type="html"><![CDATA[<h3 id="List_of_iOS_Top_1000_Libraries">List of iOS Top 1000 Libraries</h3><p><a href="https://github.com/iamdaiyuan/ios_top_1000" target="_blank" rel="external">iamdaiyuan/ios_top_1000</a></p>
-<h3 id="27_iOS_open_source_libraries">27 iOS open source libraries</h3><p><a href="https://medium.com/ios-os-x-development/27-ios-open-source-libraries-to-skyrocket-your-development-301b67d3124c" target="_blank" rel="external">27 iOS open source libraries to skyrocket your development. — iOS App Development — Medium</a></p>
-<h3 id="Start_Developing_iOS_Apps_Today">Start Developing iOS Apps Today</h3><p><a href="https://developer.apple.com/library/ios/referencelibrary/GettingStarted/RoadMapiOS/" target="_blank" rel="external">Start Developing iOS Apps Today: Setup</a></p>
-<h3 id="网页版_constraints_代码生成工具">网页版 constraints 代码生成工具</h3><p><a href="http://constraints.icodeforlove.com/" target="_blank" rel="external">iOS/Mac Autolayout Constraints</a></p>
-<h3 id="Create_Custom_Keyboard_for_iOS_8">Create Custom Keyboard for iOS 8</h3><p>Alexei Baboulevitch is developing a custom keyboard for iOS 8 with Swift:</p>
-<pre><code>– No bitmaps! Everything <span class="keyword">is</span> rendered <span class="keyword">using</span> CoreGraphics.
-– <span class="keyword">Dynamic</span> layouts! All the keys are laid <span class="keyword">out</span> programmatically.
-– Auto-capitalization, period shortcut, keyboard clicks.
-</code></pre><p><a href="https://github.com/archagon/tasty-imitation-keyboard" target="_blank" rel="external">tasty-imitation-keyboard</a></p>
-<h3 id="Flappy_Bird_in_Swift">Flappy Bird in Swift</h3><p><a href="https://github.com/fullstackio/FlappySwift" target="_blank" rel="external">FlappySwift</a></p>
-<h3 id="Gesture_recognizer_tool">Gesture recognizer tool</h3><p><a href="https://github.com/didierbrun/DBPathRecognizer" target="_blank" rel="external">DBPathRecognizer</a><br><a id="more"></a></p>
-<h3 id="Open_Source_Weather_App_in_Swift">Open Source Weather App in Swift</h3><p><a href="https://github.com/Mav3r1ck/Project-RainMan" target="_blank" rel="external">Project-RainMan</a></p>
-<h3 id="Convert_UIImage_to_ASCII">Convert UIImage to ASCII</h3><p><a href="https://github.com/bkoc/BKAsciiImage" target="_blank" rel="external">BKAsciiImage</a></p>
-<h3 id="KZPlayground">KZPlayground</h3><p><a href="https://github.com/krzysztofzablocki/KZPlayground" target="_blank" rel="external">Playgrounds for Objective-C</a></p>
-<h3 id="Flipping_Menu">Flipping Menu</h3><p>Flipping menu system written in Swift. Uses @IBDesignable for quick and easy implementation.<br><a href="https://github.com/ziligy/JGFlipMenu" target="_blank" rel="external">JGFlipMenu</a></p>
-<h3 id="TestFlight——完美的iOS_app测试方案">TestFlight——完美的iOS app测试方案</h3><p><a href="http://onevcat.com/2012/01/testflight/" target="_blank" rel="external">介绍</a></p>
-<h3 id="Researching_ResearchKit">Researching ResearchKit</h3><p><a href="http://petersteinberger.com/blog/2015/researching-researchkit/" target="_blank" rel="external">Researching ResearchKit</a></p>
-<h3 id="移动开发支付SDK">移动开发支付SDK</h3><p><a href="https://pingxx.com/?features" target="_blank" rel="external">Ping++</a></p>
-<h3 id="Microsoft_TouchDevelop">Microsoft TouchDevelop</h3><p><a href="https://github.com/Microsoft/TouchDevelop" target="_blank" rel="external">TouchDevelop</a></p>
-<blockquote>
-<p>TouchDevelop is a touch-friendly app creation environment for iPad, iPhone, Android, Windows, Mac, Linux. Our mobile-friendly editor makes coding fun, even on your phone or tablet!</p>
-</blockquote>
-<h3 id="Apple_Beta_版软件计划">Apple Beta 版软件计划</h3><p><a href="https://appleseed.apple.com/sp/betaprogram/welcome?locale=zh" target="_blank" rel="external">Apple Beta 版软件计划</a></p>
-<h3 id="Duet_Display_的运行原理">Duet Display 的运行原理</h3><p><strong> <a href="https://github.com/rsms/peertalk" target="_blank" rel="external">PeerTalk</a> </strong></p>
-<blockquote>
-<p>由瑞典技术人员 <a href="http://rsms.me/about/" target="_blank" rel="external">Rasmus Andersson</a>开发的一种可通过 USB 基座和 TCP 协议，实现 iOS / Mac 间通讯的 Cocoa（Objective-C）库，这是 Duet Display 实现「通过数据线输出视频」的核心技术，也是与同类应用在实现方式上最大的差别。和原始的设备通讯原理相比，PeerTalk 可以在 <code>热插拔</code>状态下，实现自动断开和连接的效果.</p>
-</blockquote>
-<p><strong> <a href="https://theiphonewiki.com/wiki/Usbmux" target="_blank" rel="external">usbmux</a> </strong></p>
-<blockquote>
-<p>iTunes / iOS 设备间进行同步的 usbmux 系统和只有通过逆向所得的私有 API</p>
-</blockquote>
-<p><strong> <a href="https://github.com/zakk4223/CocoaSplit" target="_blank" rel="external">CocoaSplit</a> </strong></p>
-<blockquote>
-<p>CocoaSplit，一种用于视频流媒体服务的技术，有网友通过它成功地实现了 YouTube 视频直播，而 Duet Display 的 Mac 客户端就用了 CocoaSplit</p>
-</blockquote>
-<p><strong> <a href="https://github.com/BradLarson/GPUImage" target="_blank" rel="external">GPUImage</a> </strong></p>
-<blockquote>
-<p>GPUImage，一个由 Brad Larson 托管在 Github 上的基于 BSD 开源的 iOS 库，主要用于实现滤镜、摄像头实时滤镜等图像效果（很多「滤镜」软件都使用了这一技术），由于其处理效果是基于 GPU（图形处理器）而不是 CPU（中央处理器）的，所以一般情况下，它的处理性能更好。那么在 Duet Display 这款软件中，GPUImage 的作用发挥在了视频输出上，以便让 iOS 端的显示效果更好。</p>
-</blockquote>
-<ul>
-<li>References:<a href="http://sspai.com/27806" target="_blank" rel="external">一款刚上架的屏幕拓展应用为何迅速走红？浅谈 Duet Display 背后的技术 - 少数派 - 高质量的应用推荐媒体</a></li>
-</ul>
-<h3 id="font">font</h3><p><a href="https://github.com/supermarin/YosemiteSanFranciscoFont" target="_blank" rel="external">supermarin/YosemiteSanFranciscoFont</a></p>
-<h3 id="Apple_Watch">Apple Watch</h3><ul>
-<li><a href="http://www.totem.training/swift-ios-tips-tricks-tutorials-blog/apple-watch-lessons-learned" target="_blank" rel="external">WatchKit Lessons Learned — Swift + iOS 8 Developer Training</a></li>
-<li><a href="http://blog.mikeswanson.com/post/118262770484/watchkit-controller-life-cycle" target="_blank" rel="external">Mike Swanson’s Blog • WatchKit Controller Life Cycle</a></li>
-<li><a href="http://blog.mikeswanson.com/post/117807821714/watchkit-development-tips" target="_blank" rel="external">Mike Swanson’s Blog • WatchKit Development Tips</a></li>
-<li><a href="http://blog.mikeswanson.com/post/118580394879/watchkit-image-tips" target="_blank" rel="external">Mike Swanson’s Blog • WatchKit Image Tips</a></li>
-</ul>
-<h3 id="Swift_HTTP_for_Humans">Swift HTTP for Humans</h3><p><a href="https://github.com/JustHTTP/Just" target="_blank" rel="external">JustHTTP/Just</a></p>
-<h3 id="Layers_based_charts_library_for_iOS">Layers based charts library for iOS</h3><p><a href="https://github.com/i-schuetz/SwiftCharts" target="_blank" rel="external">i-schuetz/SwiftCharts</a></p>
-<h3 id="EasyIOS">EasyIOS</h3><p><a href="https://github.com/EasyIOS/EasyIOS-Swift" target="_blank" rel="external">EasyIOS/EasyIOS-Swift</a><br>MVVM+HTML+LiveLoad 来开发 IOS<br><a href="http://www.v2ex.com/t/194118#reply16" target="_blank" rel="external">EasyIOS-Swift 版本发布， MVVM+HTML+LiveLoad 来开发 IOS - V2EX</a></p>
-<h3 id="background_images">background images</h3><ul>
-<li><a href="https://github.com/qrohlf/trianglify" target="_blank" rel="external">qrohlf/trianglify</a></li>
-<li><a href="https://github.com/qrohlf/trianglify-generator" target="_blank" rel="external">qrohlf/trianglify-generator</a></li>
-<li><a href="http://qrohlf.com/trianglify-generator/" target="_blank" rel="external">Trianglify Generator</a></li>
-<li><a href="http://qrohlf.com/trianglify/" target="_blank" rel="external">Trianglify by @qrohlf</a></li>
-</ul>
-<h3 id="ResearchKit">ResearchKit</h3><blockquote>
-<p>requires Xcode 6.3 or newer</p>
-</blockquote>
-<ul>
-<li><a href="https://github.com/ResearchKit/ResearchKit" target="_blank" rel="external">ResearchKit/ResearchKit</a></li>
-<li><a href="http://www.raywenderlich.com/104575/researchkit-tutorial-with-swift" target="_blank" rel="external">ResearchKit Tutorial with Swift: Getting Started - Ray Wenderlich</a></li>
-</ul>
-<h3 id="iOS_8-3_to_iOS_9-0_API_Differences">iOS 8.3 to iOS 9.0 API Differences</h3><p> <a href="https://developer.apple.com/library/prerelease/ios/releasenotes/General/iOS90APIDiffs/index.html#//apple_ref/doc/uid/TP40016222" target="_blank" rel="external">iOS 8.3 to iOS 9.0 API Differences</a></p>
-<h3 id="Free_to-do_app_UI_kit_for_Photoshop_and_Sketch">Free to-do app UI kit for Photoshop and Sketch</h3><ul>
-<li><a href="http://www.invisionapp.com/do" target="_blank" rel="external">Free to-do app UI kit for Photoshop and Sketch</a></li>
-</ul>
-<h3 id="让人眼前一亮的刷新">让人眼前一亮的刷新</h3><p><a href="https://github.com/MartinRGB/Replace-iOS" target="_blank" rel="external">MartinRGB/Replace-iOS</a></p>
-<h3 id="Microsoft_Project_Oxford_Home">Microsoft Project Oxford Home</h3><p><a href="http://www.projectoxford.ai/" target="_blank" rel="external">Microsoft Project Oxford Home</a></p>
-<h3 id="EasyAnimation">EasyAnimation</h3><p><a href="https://github.com/icanzilb/EasyAnimation" target="_blank" rel="external">icanzilb/EasyAnimation</a></p>
-<h3 id="A_message_bar_for_iOS_written_in_Swift">A message bar for iOS written in Swift</h3><p><a href="https://github.com/exchangegroup/Dodo" target="_blank" rel="external">exchangegroup/Dodo</a></p>
-<h3 id="An_iOS_refresh_control_with_gear_animation">An iOS refresh control with gear animation</h3><p><a href="https://github.com/micazeve/MAGearRefreshControl" target="_blank" rel="external">micazeve/MAGearRefreshControl</a></p>
-<hr>
-<h3 id="跨平台开发">跨平台开发</h3><ul>
-<li><a href="http://xamarin.com/" target="_blank" rel="external">Mobile App Development &amp; App Creation Software - Xamarin</a></li>
-<li><a href="https://github.com/xamarin" target="_blank" rel="external">Xamarin</a></li>
-<li><a href="http://www.microsoft.com/taiwan/vstudio/Xamarin/" target="_blank" rel="external">Xamarin 跨平台 App 開發 | Visual Studio + C# + Xamarin = iOS / Android / Windows App</a></li>
-<li><a href="http://www.buildinsider.net/enterprise/sansanreport/0601" target="_blank" rel="external">10分間で分かった気になれるXamarin概要 - Build Insider</a></li>
-</ul>
-<h3 id="常用开发软件">常用开发软件</h3><ul>
-<li><a href="http://www.paintcodeapp.com/origami" target="_blank" rel="external">PaintCode</a></li>
-<li><a href="https://affinity.serif.com/en-gb/" target="_blank" rel="external">Affinity Designer - Professional graphic design software for the Mac</a></li>
-</ul>
-<h3 id="Visual_Studio_Code">Visual Studio Code</h3><p><a href="https://code.visualstudio.com/" target="_blank" rel="external">Visual Studio Code - Code Editing. Redefined.</a></p>
-<h3 id="图标生成">图标生成</h3><blockquote>
-<p>为 App 生成各种大小 Logo 的网站。支持 Android, iOS, WatchKit</p>
-</blockquote>
-<p><a href="http://makeappicon.com/" target="_blank" rel="external">Makeappicon - Generate app icons of all sizes with a click!</a></p>
-<h3 id="iOS9_GUI_template">iOS9 GUI template</h3><p><a href="http://codemotionapps.com/free-ios9-gui-template-for-illustrator/" target="_blank" rel="external">Free Vector iOS9 GUI template for illustrator - Codemotion</a></p>
-<h3 id="iOS_9_UIKit_for_Sketch">iOS 9 UIKit for Sketch</h3><ul>
-<li><a href="https://github.com/philipamour/ios9-uikit" target="_blank" rel="external">philipamour/ios9-uikit</a></li>
-</ul>
-<hr>
-<h3 id="Xcode_6-3_for_OS_X_10-9">Xcode 6.3 for OS X 10.9</h3><p><a href="https://github.com/landonf/XcodePostFacto" target="_blank" rel="external">landonf/XcodePostFacto</a></p>
-<blockquote>
-<p>到 <a href="https://github.com/landonf/XcodePostFacto" target="_blank" rel="external">https://github.com/landonf/XcodePostFacto</a> 下好 XcodePostFacto 的源码之后，在 Xcode 中打开，去菜单栏选择 Product - Scheme - xpf-bootstrap，再点 Build。<br>在左侧 Sidebar 找到 Products 文件夹，展开，右键点 xpf-bootstrap.framework，选择在 Finder 中显示。<br>然后打开 Terminal，env DYLD_INSERT_LIBRARIES=(编译好 framework 的绝对路径)/xpf-bootstrap.framework/xpf-bootstrap /Applications/Xcode.app/Contents/MacOS/Xcode<br>可以在 Mavericks 下写 Apple Watch/iOS 8.3 的 app 了</p>
-</blockquote>
-<h3 id="Xcode_7">Xcode 7</h3><ul>
-<li><a href="http://adcdownload.apple.com/WWDC_2015/Xcode_7_beta/Xcode_7_beta_Release_Notes.pdf" target="_blank" rel="external">Xcode 7 beta Release Notes - Xcode_7_beta_Release_Notes.pdf</a></li>
-</ul>
-<hr>
-<h3 id="可视化编程">可视化编程</h3><ul>
-<li><a href="https://itunes.apple.com/app/toy-engine/id993811069?mt=8" target="_blank" rel="external">Toy Engine - Make Games With Visual Scripting on the App Store on iTunes</a></li>
-</ul>
-<hr>
-<h3 id="References">References</h3><ul>
-<li><a href="http://iosdevelopertips.com/" target="_blank" rel="external">iOS developer tips</a></li>
-<li><a href="http://www.totem.training/swift-ios-tips-tricks-tutorials-blog/" target="_blank" rel="external">Swift and iOS 8 Tips, Tricks, and Tutorials Blog — Swift + iOS 8 Developer Training</a></li>
-<li><a href="http://blog.mikeswanson.com/" target="_blank" rel="external">Mike Swanson’s Blog</a></li>
-</ul>
-]]></content>
-    <summary type="html">
-    <![CDATA[<h3 id="List_of_iOS_Top_1000_Libraries">List of iOS Top 1000 Libraries</h3><p><a href="https://github.com/iamdaiyuan/ios_top_1000">iamdaiyuan/ios_top_1000</a></p>
-<h3 id="27_iOS_open_source_libraries">27 iOS open source libraries</h3><p><a href="https://medium.com/ios-os-x-development/27-ios-open-source-libraries-to-skyrocket-your-development-301b67d3124c">27 iOS open source libraries to skyrocket your development. — iOS App Development — Medium</a></p>
-<h3 id="Start_Developing_iOS_Apps_Today">Start Developing iOS Apps Today</h3><p><a href="https://developer.apple.com/library/ios/referencelibrary/GettingStarted/RoadMapiOS/">Start Developing iOS Apps Today: Setup</a></p>
-<h3 id="网页版_constraints_代码生成工具">网页版 constraints 代码生成工具</h3><p><a href="http://constraints.icodeforlove.com/">iOS/Mac Autolayout Constraints</a></p>
-<h3 id="Create_Custom_Keyboard_for_iOS_8">Create Custom Keyboard for iOS 8</h3><p>Alexei Baboulevitch is developing a custom keyboard for iOS 8 with Swift:</p>
-<pre><code>– No bitmaps! Everything <span class="keyword">is</span> rendered <span class="keyword">using</span> CoreGraphics.
-– <span class="keyword">Dynamic</span> layouts! All the keys are laid <span class="keyword">out</span> programmatically.
-– Auto-capitalization, period shortcut, keyboard clicks.
-</code></pre><p><a href="https://github.com/archagon/tasty-imitation-keyboard">tasty-imitation-keyboard</a></p>
-<h3 id="Flappy_Bird_in_Swift">Flappy Bird in Swift</h3><p><a href="https://github.com/fullstackio/FlappySwift">FlappySwift</a></p>
-<h3 id="Gesture_recognizer_tool">Gesture recognizer tool</h3><p><a href="https://github.com/didierbrun/DBPathRecognizer">DBPathRecognizer</a><br>]]>
-    
-    </summary>
-    
-      <category term="Swift" scheme="http://qunwang6.github.io/blog/tags/Swift/"/>
-    
-      <category term="iOS" scheme="http://qunwang6.github.io/blog/tags/iOS/"/>
-    
-      <category term="iOS" scheme="http://qunwang6.github.io/blog/categories/iOS/"/>
-    
-  </entry>
-  
-  <entry>
     <title><![CDATA[Privoxy]]></title>
     <link href="http://qunwang6.github.io/blog/Privoxy/"/>
     <id>http://qunwang6.github.io/blog/Privoxy/</id>
@@ -424,7 +433,7 @@
     <link href="http://qunwang6.github.io/blog/baiduOCR/"/>
     <id>http://qunwang6.github.io/blog/baiduOCR/</id>
     <published>2015-06-05T16:00:00.000Z</published>
-    <updated>2015-06-06T13:54:13.000Z</updated>
+    <updated>2015-06-24T15:48:38.000Z</updated>
     <content type="html"><![CDATA[<h2 id="百度OCR文字识别API_for_Python">百度OCR文字识别API for Python</h2><figure class="highlight haskell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">#!/usr/bin/env python</span></span><br><span class="line"><span class="preprocessor"># -*- coding: utf-8 -*-</span></span><br><span class="line"><span class="import"><span class="keyword">import</span> sys, urllib, urllib2, json</span></span><br><span class="line"><span class="title">f</span> = open(<span class="string">"test.txt"</span>,<span class="string">"w"</span>)</span><br><span class="line"><span class="title">url</span> = 'http://apis.baidu.com/apistore/idlocr/ocr'</span><br><span class="line"></span><br><span class="line"><span class="typedef"><span class="keyword">data</span> = <span class="container">&#123;&#125;</span></span></span><br><span class="line"><span class="typedef"><span class="keyword">data</span>['fromdevice'] = "pc"</span></span><br><span class="line"><span class="typedef"><span class="keyword">data</span>['clientip'] = "10.10.10.0"</span></span><br><span class="line"><span class="typedef"><span class="keyword">data</span>['detecttype'] = "<span class="type">LocateRecognize</span>"</span></span><br><span class="line"><span class="typedef"><span class="keyword">data</span>['languagetype'] = "<span class="type">CHN_ENG</span>"</span></span><br><span class="line"><span class="typedef"><span class="keyword">data</span>['imagetype'] = "1"  #`2`代表图片原文件（只支持<span class="type">JPG</span>）</span></span><br><span class="line"><span class="typedef"><span class="keyword">data</span>['image'] = ""    ##image base64 <span class="keyword">data</span></span></span><br><span class="line"></span><br><span class="line"><span class="title">decoded_data</span> = urllib.urlencode(<span class="typedef"><span class="keyword">data</span>)</span></span><br><span class="line"><span class="title">req</span> = urllib2.<span class="type">Request</span>(url, <span class="typedef"><span class="keyword">data</span> = decoded_data)</span></span><br><span class="line"></span><br><span class="line"><span class="title">req</span>.add_header(<span class="string">"Content-Type"</span>, <span class="string">"application/x-www-form-urlencoded"</span>)</span><br><span class="line"><span class="title">req</span>.add_header(<span class="string">"apikey"</span>, <span class="string">"自己的apikey"</span>)</span><br><span class="line"></span><br><span class="line"><span class="title">resp</span> = urllib2.urlopen(req)</span><br><span class="line"><span class="title">content</span> = resp.read()</span><br><span class="line"><span class="title">if</span>(content):</span><br><span class="line">    print(content)</span><br><span class="line">    f.write(content)</span><br></pre></td></tr></table></figure>
 <a id="more"></a>
 <h2 id="image_convert_to_base64_code">image convert to base64 code</h2><figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">openssl base64 &lt; image.jpg | tr -<span class="keyword">d</span> '\<span class="keyword">n</span>' | pbcopy</span><br><span class="line"></span><br><span class="line"><span class="keyword">cat</span> image.jpg | openssl base64 | tr -<span class="keyword">d</span> '\<span class="keyword">n</span>' | pbcopy</span><br><span class="line"></span><br><span class="line">openssl base64 -<span class="keyword">in</span> <span class="keyword">out</span>.jpg -<span class="keyword">out</span> filename.b64</span><br></pre></td></tr></table></figure>
