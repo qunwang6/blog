@@ -4,7 +4,7 @@
   
   <link href="/blog/atom.xml" rel="self"/>
   <link href="http://qunwang6.github.io/blog/"/>
-  <updated>2015-06-24T15:40:54.000Z</updated>
+  <updated>2015-06-24T15:44:23.000Z</updated>
   <id>http://qunwang6.github.io/blog/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://qunwang6.github.io/blog/lua/"/>
     <id>http://qunwang6.github.io/blog/lua/</id>
     <published>2015-06-23T16:00:00.000Z</published>
-    <updated>2015-06-24T15:40:54.000Z</updated>
+    <updated>2015-06-24T15:44:23.000Z</updated>
     <content type="html"><![CDATA[<h3 id="about">about</h3><blockquote>
 <p>Lua（英语发音：/ˈluːə/）程序设计语言是一个简洁、轻量、可扩展的脚本语言，是葡萄牙语中“Lua”（月亮）的意思。类似语言Julia,R。</p>
 </blockquote>
@@ -31,13 +31,6 @@
 <li><code>make macosx test</code> <code>make install</code></li>
 <li><code>brew install lua</code></li>
 </ul>
-<h3 id="doc">doc</h3><ul>
-<li><a href="http://cloudwu.github.io/lua53doc/manual.html" target="_blank" rel="external">Lua 5.3 参考手册</a></li>
-</ul>
-<h3 id="plugs">plugs</h3><ul>
-<li>sublilme3 Lua dev</li>
-<li>sublilme3 Lua Love</li>
-</ul>
 <figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[Errno <span class="number">2</span>] No such file or <span class="string">directory:</span> <span class="string">'lua'</span></span><br><span class="line">[<span class="string">cmd:</span> [<span class="string">'lua'</span>, <span class="string">'/Users/qunwang6/Desktop/hello.lua'</span>]]</span><br><span class="line">[<span class="string">dir:</span> <span class="regexp">/Users/</span>qunwang6/Desktop]</span><br><span class="line">[<span class="string">path:</span> <span class="regexp">/usr/</span><span class="string">bin:</span><span class="regexp">/bin:/</span>usr<span class="regexp">/sbin:/</span>sbin]</span><br><span class="line">[Finished]</span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>因为 lua默认安装在usr／local／bin里面，而不是usr／bin里面；可以创建一个usr/bin的外链；<br>也可以通过安装fix mac path的包来解决。</p>
@@ -45,6 +38,13 @@
 <ul>
 <li><a href="https://github.com/int3h/SublimeFixMacPath" target="_blank" rel="external">int3h/SublimeFixMacPath</a><code>？</code></li>
 <li><code>sudo ln /usr/local/bin/lua /usr/bin/</code></li>
+</ul>
+<h3 id="doc">doc</h3><ul>
+<li><a href="http://cloudwu.github.io/lua53doc/manual.html" target="_blank" rel="external">Lua 5.3 参考手册</a></li>
+</ul>
+<h3 id="plugs">plugs</h3><ul>
+<li>sublilme3 Lua dev</li>
+<li>sublilme3 Lua Love</li>
 </ul>
 ]]></content>
     <summary type="html">
