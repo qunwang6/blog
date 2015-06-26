@@ -130,8 +130,98 @@
           
           
             
-              <a class="post-title-link" href="/blog/OSXDictionary/">
-                \BGL\DSL\MDX\CD\ ===> OS X dictionary
+              <a class="post-title-link" href="/blog/codeVSpoetry/">
+                Code vs. Poetry
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于 2015-05-09
+        </span>
+
+        
+          <span class="post-category">
+            &nbsp; | &nbsp; 分类于
+            
+              <a href="/blog/categories/code/">code</a>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+        
+      </div>
+    </div>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <p>David Plotz did an interesting <a href="http://www.slate.com/articles/podcasts/working/2014/12/google_software_engineer_nina_kang_talks_about_the_differences_between_writing.html">interview with Google engineer Nina Kang</a> for the <a href="http://www.slate.com/articles/podcasts/working.html">Working podcast</a>. Here’s an excerpt (edited for clarity):<br>T:大卫.普拉茲向在Working podcast工作的Google工程师康芯寧做了一次有趣的采访。这是谈话摘录（经过后期编辑润色）:</p>
+<p>Q: What is it when you’re writing code that makes particular code really good?<br>T: 是什么让你写特定代码时做得很好？</p>
+<p>A: It depends on the situation and the company. Google is a very collaborative company. There were almost a thousand programmers on Google Maps. To my mind, what makes code good is that it is almost anonymous. You shouldn’t be able to read that code and say, oh, Kevin down the hall wrote it. Because if it’s idiosyncratic in that way, it means that it’s not something that’s gonna be so easy for other people to modify. Everyone should write in a uniform enough style within a team that we can easily grasp each other’s code and modify it. And there are a couple of things that I look for when I’m looking at code. One of the things is how few lines would it take for it to be modified. Code that requires a lot of repetition, some people find that poetic, but I find that tedious. […]<br>T: 这要取决于所处的环境和所在的公司。Google是一家特别讲究合作的公司。Google地图的程序员差不多有一千多名。</p>
+<p>Q: Great word there, poetic. What does that mean when you say, some people find it poetic?</p>
+<p>A: Computer programmers pride ourselves on writing elegant code, or poetic code. But usually what that means is writing code the way the individual programmer thinks is good and that is incredibly subjective. … I think that poetic code is code that you can read [easily]. […]</p>
+<p>Q: Will great coders come up with very different solutions to a problem than non-great coders?</p>
+<p>A: Absolutely. Great coders come up with solutions that are usually more concise and more easily verified. I think that the key metric is, can someone else read this code and confirm that it works by building a mental model in their head of what the computer’s gonna do at different steps? There are certain things that are really simple, like finding out how many characters are in a line, that you could write in a way that would confuse everybody. But if your code is well written, people understand what it does and they can tell that it works right away.</p>
+<p>Q: So elegance, to your mind, corresponds with clarity and concision?</p>
+<p>A: Yes, absolutely, just like English.<br>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/blog/codeVSpoetry/#more">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <div class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/blog/tags/code/"> #code </a>
+          
+            <a href="/blog/tags/poetry/"> #poetry </a>
+          
+        </div>
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </div>
+  </div>
+
+
+    
+      
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
+              <a class="post-title-link" href="/blog/lingvo2osx/">
+                用DSLConverter将Lingvo词典.DSL格式转换成MAC OSX可用的格式
               </a>
             
           
@@ -169,19 +259,26 @@
 
       
         
-          <h3 id="开源项目：PYGLOSSARY">开源项目：PYGLOSSARY</h3><ul>
-<li><a href="https://github.com/ilius/pyglossary">PYGLOSSARY</a></li>
-<li><a href="https://bitbucket.org/james_taylor/python-lzo-static">python-lzo</a></li>
-</ul>
-<h3 id="准备好以下环境：">准备好以下环境：</h3><blockquote>
-<ul>
-<li>BeautifulSoup4 required to sanitize html contents.<br> <code>sudo easy_install beautifulsoup4 html5lib</code></li>
-<li>GNU make as part of <a href="http://developer.apple.com/downloads">Command Line Tools for Xcode.</a></li>
-<li>Dictionary Development Kit as part of <a href="http://developer.apple.com/downloads">Auxillary Tools for Xcode</a>.将Dictionary Development Kit解压到<strong>/Applications/Utilities/DictionaryDevelopmentKit/  </strong>（不含空格,中文名:应用程序/实用工具那里，也可以解压到其它地方。）</li>
-</ul>
+          <h3 id="转换">转换</h3><p>下载.DSL to OS X/iOS dictionary converter<br><a href="https://github.com/svintuss/DSLConverter">https://github.com/svintuss/DSLConverter</a></p>
+<h4 id="windows_xp环境下：">windows xp环境下：</h4><ul>
+<li>安装Python3,(Python2.7会出现以下错误)<blockquote>
+<p>import urllib.parse<br>ImportError: No module named parse<br>(<em>The urllib.parse library is the Python 3 equivalent of the urlparse library used in Python 2.</em>)</p>
 </blockquote>
+</li>
+</ul>
+<ul>
+<li>安装pytidylib：下载pytidylib源文件，直接编译安装<code>python setup.py install</code>；或者用easy_install安装，直接在终端里输入安装命令：<code>easy_install pytidylib</code></li>
+<li>下载tidylib.dll，将tidylib.dll文件放到到Python目录下（前提Python路径已添加到系统路径里），其他系统路径应该也可以如：system32目录。</li>
+<li>转换:<br><code>python dslconverter_auto.py &lt;dictionary.dsl&gt;</code></li>
+</ul>
+<h4 id="MAC_OSX环境下：">MAC OSX环境下：</h4><ul>
+<li>安装Python3 <code>brew install python3</code><br><em>(MAC OSX 10.9.4是默认安装了Python2.7，而DSLConverter里的代码是给Python3用的，python可以多版本并存）</em></li>
+<li>安装pytidylib,下载pytidylib源文件，直接用Python3编译安装， <code>python3 setup.py install</code>。<em>（注意：如果用<code>easy_install pytidylib</code>命令安装，pytidylib会被安装到Python2.7目录下。）</em></li>
+<li>转换:<br><code>python3 dslconverter_auto.py &lt;dictionary.dsl&gt;</code></li>
+</ul>
+<hr>
           <div class="post-more-link text-center">
-            <a class="btn" href="/blog/OSXDictionary/#more">
+            <a class="btn" href="/blog/lingvo2osx/#more">
               阅读全文 &raquo;
             </a>
           </div>
@@ -199,7 +296,7 @@
           
             <a href="/blog/tags/dictionary/"> #dictionary </a>
           
-            <a href="/blog/tags/iOS/"> #iOS </a>
+            <a href="/blog/tags/lingvo/"> #lingvo </a>
           
         </div>
       
@@ -306,6 +403,102 @@
           
           
             
+              <a class="post-title-link" href="/blog/OSXDictionary/">
+                \BGL\DSL\MDX\CD\ ===> OS X dictionary
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于 2015-05-08
+        </span>
+
+        
+          <span class="post-category">
+            &nbsp; | &nbsp; 分类于
+            
+              <a href="/blog/categories/dictionary/">dictionary</a>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+        
+      </div>
+    </div>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <h3 id="开源项目：PYGLOSSARY">开源项目：PYGLOSSARY</h3><ul>
+<li><a href="https://github.com/ilius/pyglossary">PYGLOSSARY</a></li>
+<li><a href="https://bitbucket.org/james_taylor/python-lzo-static">python-lzo</a></li>
+</ul>
+<h3 id="准备好以下环境：">准备好以下环境：</h3><blockquote>
+<ul>
+<li>BeautifulSoup4 required to sanitize html contents.<br> <code>sudo easy_install beautifulsoup4 html5lib</code></li>
+<li>GNU make as part of <a href="http://developer.apple.com/downloads">Command Line Tools for Xcode.</a></li>
+<li>Dictionary Development Kit as part of <a href="http://developer.apple.com/downloads">Auxillary Tools for Xcode</a>.将Dictionary Development Kit解压到<strong>/Applications/Utilities/DictionaryDevelopmentKit/  </strong>（不含空格,中文名:应用程序/实用工具那里，也可以解压到其它地方。）</li>
+</ul>
+</blockquote>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/blog/OSXDictionary/#more">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <div class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/blog/tags/OS-X/"> #OS X </a>
+          
+            <a href="/blog/tags/Python/"> #Python </a>
+          
+            <a href="/blog/tags/dictionary/"> #dictionary </a>
+          
+            <a href="/blog/tags/iOS/"> #iOS </a>
+          
+        </div>
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </div>
+  </div>
+
+
+    
+      
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
               <a class="post-title-link" href="/blog/TheJoelTest/">
                 The Joel Test
               </a>
@@ -382,8 +575,8 @@
           
           
             
-              <a class="post-title-link" href="/blog/lingvo2osx/">
-                用DSLConverter将Lingvo词典.DSL格式转换成MAC OSX可用的格式
+              <a class="post-title-link" href="/blog/SwiftGuide/">
+                Swift 语言指南
               </a>
             
           
@@ -392,14 +585,14 @@
 
       <div class="post-meta">
         <span class="post-time">
-          发表于 2015-05-08
+          发表于 2015-05-01
         </span>
 
         
           <span class="post-category">
             &nbsp; | &nbsp; 分类于
             
-              <a href="/blog/categories/dictionary/">dictionary</a>
+              <a href="/blog/categories/Swift/">Swift</a>
 
               
               
@@ -421,26 +614,14 @@
 
       
         
-          <h3 id="转换">转换</h3><p>下载.DSL to OS X/iOS dictionary converter<br><a href="https://github.com/svintuss/DSLConverter">https://github.com/svintuss/DSLConverter</a></p>
-<h4 id="windows_xp环境下：">windows xp环境下：</h4><ul>
-<li>安装Python3,(Python2.7会出现以下错误)<blockquote>
-<p>import urllib.parse<br>ImportError: No module named parse<br>(<em>The urllib.parse library is the Python 3 equivalent of the urlparse library used in Python 2.</em>)</p>
+          <p>这份指南汇集了 Swift 语言主流学习资源，并以开发者的视角整理编排。</p>
+<p>GitHub：<a href="https://github.com/ipader/SwiftGuide">ipader/SwiftGuide</a> ｜ 网站：<a href="http://dev.swiftguide.cn">http://dev.swiftguide.cn</a> ｜ <em>欢迎开发者一起<a href="https://github.com/ipader/SwiftGuide/pulls">维护</a>，或<a href="https://github.com/ipader/SwiftGuide/issues/new">反馈/投稿</a></em></p>
+<blockquote>
+<p>想了解关于该指南及 Swift 更多信息的同学，可以阅读短文《<a href="https://github.com/ipader/SwiftGuide/blob/master/2014%20letter.md">致 Swift 开发者</a>》。 想快速找到优秀开源项目的开发者，可以访问我们额外整理的<a href="https://github.com/ipader/SwiftGuide/blob/master/Featured.md">《Swift 开源项目精选》</a>。希望快速找到其中精选文章，可以访问<a href="https://github.com/ipader/SwiftGuide/blob/master/Featured-Articles.md">《Swift 文章精选》</a>。</p>
 </blockquote>
-</li>
-</ul>
-<ul>
-<li>安装pytidylib：下载pytidylib源文件，直接编译安装<code>python setup.py install</code>；或者用easy_install安装，直接在终端里输入安装命令：<code>easy_install pytidylib</code></li>
-<li>下载tidylib.dll，将tidylib.dll文件放到到Python目录下（前提Python路径已添加到系统路径里），其他系统路径应该也可以如：system32目录。</li>
-<li>转换:<br><code>python dslconverter_auto.py &lt;dictionary.dsl&gt;</code></li>
-</ul>
-<h4 id="MAC_OSX环境下：">MAC OSX环境下：</h4><ul>
-<li>安装Python3 <code>brew install python3</code><br><em>(MAC OSX 10.9.4是默认安装了Python2.7，而DSLConverter里的代码是给Python3用的，python可以多版本并存）</em></li>
-<li>安装pytidylib,下载pytidylib源文件，直接用Python3编译安装， <code>python3 setup.py install</code>。<em>（注意：如果用<code>easy_install pytidylib</code>命令安装，pytidylib会被安装到Python2.7目录下。）</em></li>
-<li>转换:<br><code>python3 dslconverter_auto.py &lt;dictionary.dsl&gt;</code></li>
-</ul>
-<hr>
+<p><span style="color:lightgray;font-size:12px"><a href="http://weibo.com/swiftlanguage">@SwiftLanguage</a> 更新于 2015-4-26，更新内容详见<a href="https://github.com/ipader/SwiftGuide/blob/master/weekly/2015-04-26.md">《2015-4-26 收录周报》</a></span></p>
           <div class="post-more-link text-center">
-            <a class="btn" href="/blog/lingvo2osx/#more">
+            <a class="btn" href="/blog/SwiftGuide/#more">
               阅读全文 &raquo;
             </a>
           </div>
@@ -452,13 +633,9 @@
       
         <div class="post-tags">
           
-            <a href="/blog/tags/OS-X/"> #OS X </a>
+            <a href="/blog/tags/Swift/"> #Swift </a>
           
-            <a href="/blog/tags/Python/"> #Python </a>
-          
-            <a href="/blog/tags/dictionary/"> #dictionary </a>
-          
-            <a href="/blog/tags/lingvo/"> #lingvo </a>
+            <a href="/blog/tags/iOS/"> #iOS </a>
           
         </div>
       
@@ -663,93 +840,6 @@
           
           
             
-              <a class="post-title-link" href="/blog/SwiftGuide/">
-                Swift 语言指南
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于 2015-05-01
-        </span>
-
-        
-          <span class="post-category">
-            &nbsp; | &nbsp; 分类于
-            
-              <a href="/blog/categories/Swift/">Swift</a>
-
-              
-              
-
-            
-          </span>
-        
-
-        
-          
-        
-      </div>
-    </div>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <p>这份指南汇集了 Swift 语言主流学习资源，并以开发者的视角整理编排。</p>
-<p>GitHub：<a href="https://github.com/ipader/SwiftGuide">ipader/SwiftGuide</a> ｜ 网站：<a href="http://dev.swiftguide.cn">http://dev.swiftguide.cn</a> ｜ <em>欢迎开发者一起<a href="https://github.com/ipader/SwiftGuide/pulls">维护</a>，或<a href="https://github.com/ipader/SwiftGuide/issues/new">反馈/投稿</a></em></p>
-<blockquote>
-<p>想了解关于该指南及 Swift 更多信息的同学，可以阅读短文《<a href="https://github.com/ipader/SwiftGuide/blob/master/2014%20letter.md">致 Swift 开发者</a>》。 想快速找到优秀开源项目的开发者，可以访问我们额外整理的<a href="https://github.com/ipader/SwiftGuide/blob/master/Featured.md">《Swift 开源项目精选》</a>。希望快速找到其中精选文章，可以访问<a href="https://github.com/ipader/SwiftGuide/blob/master/Featured-Articles.md">《Swift 文章精选》</a>。</p>
-</blockquote>
-<p><span style="color:lightgray;font-size:12px"><a href="http://weibo.com/swiftlanguage">@SwiftLanguage</a> 更新于 2015-4-26，更新内容详见<a href="https://github.com/ipader/SwiftGuide/blob/master/weekly/2015-04-26.md">《2015-4-26 收录周报》</a></span></p>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/blog/SwiftGuide/#more">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/blog/tags/Swift/"> #Swift </a>
-          
-            <a href="/blog/tags/iOS/"> #iOS </a>
-          
-        </div>
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </div>
-  </div>
-
-
-    
-      
-
-  <div class="post post-type-normal ">
-    <div class="post-header">
-
-      
-      
-        <h1 class="post-title">
-          
-          
-            
               <a class="post-title-link" href="/blog/AppstoreStandard/">
                 App store最新审核标准(2015.3)
               </a>
@@ -806,99 +896,6 @@
         <div class="post-tags">
           
             <a href="/blog/tags/iOS/"> #iOS </a>
-          
-        </div>
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </div>
-  </div>
-
-
-    
-      
-
-  <div class="post post-type-normal ">
-    <div class="post-header">
-
-      
-      
-        <h1 class="post-title">
-          
-          
-            
-              <a class="post-title-link" href="/blog/pdf2htmlEX/">
-                pdf2htmlEX
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于 2015-04-29
-        </span>
-
-        
-          <span class="post-category">
-            &nbsp; | &nbsp; 分类于
-            
-              <a href="/blog/categories/Python/">Python</a>
-
-              
-              
-
-            
-          </span>
-        
-
-        
-          
-        
-      </div>
-    </div>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <ul>
-<li><a href="https://github.com/coolwanglu/pdf2htmlEX">pdf2htmlEX</a></li>
-<li><a href="http://oku.edu.mie-u.ac.jp/~okumura/texwiki/?pdf2htmlEX">wiki日文</a></li>
-</ul>
-<h3 id="install">install</h3><ul>
-<li><code>brew install fontforge --HEAD</code></li>
-<li><code>brew tap homebrew/versions</code></li>
-<li><code>brew install pdf2htmlex</code></li>
-<li><code>brew install -v pdf2htmlex --HEAD</code></li>
-</ul>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/blog/pdf2htmlEX/#more">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/blog/tags/Python/"> #Python </a>
-          
-            <a href="/blog/tags/html/"> #html </a>
-          
-            <a href="/blog/tags/pdf/"> #pdf </a>
           
         </div>
       
@@ -1023,7 +1020,7 @@
         <div class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/blog/archives">
-              <span class="site-state-item-count">32</span>
+              <span class="site-state-item-count">33</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>

@@ -22,7 +22,7 @@
 
 
 
-  <meta name="keywords" content="Swift,debug," />
+  <meta name="keywords" content="dictionary," />
 
 
 
@@ -48,7 +48,7 @@
 
 
 
-  <title> SpaceMonkey // Zero to One </title>
+  <title> EPWING2TEXT // Zero to One </title>
 </head>
 
 <body>
@@ -128,7 +128,7 @@
           
           
             
-              SpaceMonkey
+              EPWING2TEXT
             
           
         </h1>
@@ -136,14 +136,14 @@
 
       <div class="post-meta">
         <span class="post-time">
-          发表于 2015-05-17
+          发表于 2015-06-26
         </span>
 
         
           <span class="post-category">
             &nbsp; | &nbsp; 分类于
             
-              <a href="/blog/categories/Swift/">Swift</a>
+              <a href="/blog/categories/dictionary/">dictionary</a>
 
               
               
@@ -164,20 +164,30 @@
       
 
       
-        <h3 id="项目">项目</h3><p><a href="http://www.raywenderlich.com/94649/sprite-kit-kids-swift" target="_blank" rel="external">Sprite Kit for Kids with Swift </a></p>
-<h3 id="编译错误">编译错误</h3><p>编译环境：<br>Xcode Version 6.2 (6C131e)<br>OS X 10.9.5<br><figure class="highlight nix"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">override func viewWillLayoutSubviews() &#123;</span><br><span class="line">    super.viewDidLoad()</span><br><span class="line"></span><br><span class="line">    <span class="keyword">let</span> <span class="variable">skView =</span> self.view as! SKView</span><br><span class="line">    <span class="keyword">if</span> skView.<span class="variable">scene =</span>= nil &#123;</span><br><span class="line"></span><br><span class="line">      <span class="keyword">let</span> <span class="variable">scene =</span> GameScene(size:skView.frame.size)</span><br><span class="line">      skView.<span class="variable">showsFPS =</span> <span class="constant">true</span></span><br><span class="line">      skView.<span class="variable">showsNodeCount =</span> <span class="constant">true</span></span><br><span class="line">      skView.<span class="variable">showsPhysics =</span> <span class="constant">true</span></span><br><span class="line">      skView.<span class="variable">ignoresSiblingOrder =</span> <span class="constant">true</span></span><br><span class="line">      scene.<span class="variable">scaleMode =</span> .AspectFill</span><br><span class="line">      skView.presentScene(scene)</span><br><span class="line"></span><br><span class="line">      playBackgroundMusic(<span class="string">"BackgroundMusic.mp3"</span>)</span><br><span class="line"></span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure></p>
-<p>错误信息</p>
+        <h2 id="epwing转text主要有3种方法：">epwing转text主要有3种方法：</h2><ul>
+<li>1.用ebdump（用ebdump提取epwing词典的文本图片等），不过这样提取出来格式不好分离出来，词条不好定位。</li>
+<li>2.<a href="http://homepage3.nifty.com/TaN/unicode/" target="_blank" rel="external">PDIC</a>,可以将epwing格式的词典转换为pdic格式，再从pdict格式中获取文本，转换过程中外字也可以替换掉，不过用PDIC提取，会有部分内容没有提取出来。方法见：<a href="https://skalldan.wordpress.com/2011/06/18/%E8%BE%9E%E6%9B%B8-app-%E3%82%92%E6%B4%BB%E7%94%A8%E3%81%99%E3%82%8B-2/" target="_blank" rel="external">link</a></li>
+<li>3.DDWIN 2.30 ,这里要介绍的方法，参考自：<a href="http://diamondsky.org/other/japanese/pdic.php" target="_blank" rel="external">http://diamondsky.org/other/japanese/pdic.php</a></li>
+</ul>
+<h3 id="工具：">工具：</h3><ul>
+<li><a href="http://homepage2.nifty.com/ddwin/" target="_blank" rel="external">DDWIN 2.30</a></li>
+<li><a href="http://pan.baidu.com/s/1i34DNZR" target="_blank" rel="external">外字文件</a></li>
+<li>文本编辑器：EmEditor</li>
+</ul>
+<h3 id="主要步骤：">主要步骤：</h3><ul>
+<li>1.用DDWIN获取文本，得到的文本格式每个词条以空行分开。</li>
+<li>2.将外字.map文件转换为.tsv格式</li>
+</ul>
+<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function_start"><span class="keyword">on</span></span>	[hA121]	@@u2019</span><br><span class="line"><span class="function_start"><span class="keyword">on</span></span>	[hA122]	@@u0192</span><br><span class="line"><span class="function_start"><span class="keyword">on</span></span>	[hA123]	@@u201E</span><br><span class="line"><span class="function_start"><span class="keyword">on</span></span>	[hA124]	@@u2020</span><br></pre></td></tr></table></figure>
 <blockquote>
-<p>Expected type after ‘as’</p>
+<p>间隔为tab,<code>@@</code>本来为<code>\</code>,不过批量替换时会被EmEditor过滤掉，所以用<code>@@</code>代替，最后再替换为<code>\</code></p>
 </blockquote>
-<a id="more"></a>
-<p>解决方法<br><code>as!</code>===&gt;<code>as</code></p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">override</span> <span class="func"><span class="keyword">func</span> <span class="title">touchesBegan</span><span class="params">(touches: Set&lt;NSObject&gt;, withEvent event: UIEvent)</span></span> &#123;</span><br><span class="line">  <span class="comment">// 1</span></span><br><span class="line">  <span class="keyword">if</span> (!gameOver) &#123;</span><br><span class="line">    <span class="keyword">if</span> player.physicsBody?.dynamic == <span class="built_in">false</span> &#123;</span><br><span class="line">      player.physicsBody?.dynamic = <span class="built_in">true</span></span><br><span class="line">      touchToBeginLabel.hidden = <span class="built_in">true</span></span><br><span class="line">      backgroundColor = <span class="type">SKColor</span>.blackColor()</span><br><span class="line"></span><br><span class="line">      runAction(<span class="type">SKAction</span>.repeatActionForever(</span><br><span class="line">        <span class="type">SKAction</span>.sequence([</span><br><span class="line">          <span class="type">SKAction</span>.runBlock(spawnEnemy),</span><br><span class="line">          <span class="type">SKAction</span>.waitForDuration(<span class="number">1.0</span>)])))</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 2</span></span><br><span class="line">    jumpPlayer()</span><br><span class="line"></span><br><span class="line">  &#125;</span><br><span class="line">    <span class="comment">// 3</span></span><br><span class="line">  <span class="keyword">else</span> <span class="keyword">if</span> (gameOver) &#123;</span><br><span class="line">    <span class="keyword">let</span> newScene = <span class="type">GameScene</span>(size: size)</span><br><span class="line">    newScene.scaleMode = scaleMode</span><br><span class="line">    <span class="keyword">let</span> reveal = <span class="type">SKTransition</span>.flipHorizontalWithDuration(<span class="number">0.5</span>)</span><br><span class="line">    view?.presentScene(newScene, transition: reveal)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>错误信息</p>
-<blockquote>
-<p>Use of undeclared type ‘Set’</p>
-</blockquote>
-<p>解决方法<br><code>Set&lt;NSObject&gt;</code>===&gt;<code>NSObject</code></p>
+<ul>
+<li>3.用EmEditor导入.tsv文件，批量将外字替换为通用字符(\u123)格式。</li>
+<li>4.将通用字符替换为Unicode。</li>
+</ul>
+<h3 id="效果：">效果：</h3><p>大部分的外字都可以替换掉，剩下少部分的是外字.map里没有收入的，可以手动替换掉。</p>
+<h2 id="详细转换过程见视频：">详细转换过程见视频：</h2><p><a href="http://pan.baidu.com/s/1i3GjjRv" target="_blank" rel="external">http://pan.baidu.com/s/1i3GjjRv</a></p>
 
       
     </div>
@@ -186,9 +196,7 @@
       
         <div class="post-tags">
           
-            <a href="/blog/tags/Swift/"> #Swift </a>
-          
-            <a href="/blog/tags/debug/"> #debug </a>
+            <a href="/blog/tags/dictionary/"> #dictionary </a>
           
         </div>
       
@@ -197,13 +205,11 @@
         <div class="post-nav">
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/blog/CSS3D/">CSS Avengers Card with 3D rotation and neon effect</a>
-            
           </div>
 
           <div class="post-nav-next post-nav-item">
             
-              <a href="/blog/ExMachina/">Secret code in Ex Machina</a>
+              <a href="/blog/iOSDeveloperTips/">iOS developer tips</a>
             
           </div>
         </div>
@@ -322,7 +328,7 @@
           <div class="post-toc">
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#项目"><span class="nav-number">1.</span> <span class="nav-text">项目</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#编译错误"><span class="nav-number">2.</span> <span class="nav-text">编译错误</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#epwing转text主要有3种方法："><span class="nav-number">1.</span> <span class="nav-text">epwing转text主要有3种方法：</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#工具："><span class="nav-number">1.1.</span> <span class="nav-text">工具：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#主要步骤："><span class="nav-number">1.2.</span> <span class="nav-text">主要步骤：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#效果："><span class="nav-number">1.3.</span> <span class="nav-text">效果：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#详细转换过程见视频："><span class="nav-number">2.</span> <span class="nav-text">详细转换过程见视频：</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>
