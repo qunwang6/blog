@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://qunwang6.github.io/blog/iOSDeveloperTips/</loc>
+    <lastmod>2015-07-20T04:05:17.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://qunwang6.github.io/blog/OSXDictionary/</loc>
     <lastmod>2015-07-02T13:07:49.000Z</lastmod>
   </url>
@@ -9,11 +14,6 @@
   <url>
     <loc>http://qunwang6.github.io/blog/epwing2test/</loc>
     <lastmod>2015-06-26T10:17:06.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://qunwang6.github.io/blog/iOSDeveloperTips/</loc>
-    <lastmod>2015-06-24T17:25:12.000Z</lastmod>
   </url>
   
   <url>

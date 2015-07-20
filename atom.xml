@@ -4,7 +4,7 @@
   
   <link href="/blog/atom.xml" rel="self"/>
   <link href="http://qunwang6.github.io/blog/"/>
-  <updated>2015-06-26T10:17:06.000Z</updated>
+  <updated>2015-07-20T04:05:17.000Z</updated>
   <id>http://qunwang6.github.io/blog/</id>
   
   <author>
@@ -15,54 +15,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title><![CDATA[EPWING2TEXT]]></title>
-    <link href="http://qunwang6.github.io/blog/epwing2test/"/>
-    <id>http://qunwang6.github.io/blog/epwing2test/</id>
-    <published>2015-06-25T16:00:00.000Z</published>
-    <updated>2015-06-26T10:17:06.000Z</updated>
-    <content type="html"><![CDATA[<h2 id="epwing转text主要有3种方法：">epwing转text主要有3种方法：</h2><ul>
-<li>1.用ebdump（用ebdump提取epwing词典的文本图片等），不过这样提取出来格式不好分离出来，词条不好定位。</li>
-<li>2.<a href="http://homepage3.nifty.com/TaN/unicode/" target="_blank" rel="external">PDIC</a>,可以将epwing格式的词典转换为pdic格式，再从pdict格式中获取文本，转换过程中外字也可以替换掉，不过用PDIC提取，会有部分内容没有提取出来。方法见：<a href="https://skalldan.wordpress.com/2011/06/18/%E8%BE%9E%E6%9B%B8-app-%E3%82%92%E6%B4%BB%E7%94%A8%E3%81%99%E3%82%8B-2/" target="_blank" rel="external">link</a></li>
-<li>3.DDWIN 2.30 ,这里要介绍的方法，参考自：<a href="http://diamondsky.org/other/japanese/pdic.php" target="_blank" rel="external">http://diamondsky.org/other/japanese/pdic.php</a></li>
-</ul>
-<h3 id="工具：">工具：</h3><ul>
-<li><a href="http://homepage2.nifty.com/ddwin/" target="_blank" rel="external">DDWIN 2.30</a></li>
-<li><a href="http://pan.baidu.com/s/1i34DNZR" target="_blank" rel="external">外字文件</a></li>
-<li>文本编辑器：EmEditor</li>
-</ul>
-<h3 id="主要步骤：">主要步骤：</h3><ul>
-<li>1.用DDWIN获取文本，得到的文本格式每个词条以空行分开。</li>
-<li>2.将外字.map文件转换为.tsv格式</li>
-</ul>
-<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function_start"><span class="keyword">on</span></span>	[hA121]	@@u2019</span><br><span class="line"><span class="function_start"><span class="keyword">on</span></span>	[hA122]	@@u0192</span><br><span class="line"><span class="function_start"><span class="keyword">on</span></span>	[hA123]	@@u201E</span><br><span class="line"><span class="function_start"><span class="keyword">on</span></span>	[hA124]	@@u2020</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>间隔为tab,<code>@@</code>本来为<code>\</code>,不过批量替换时会被EmEditor过滤掉，所以用<code>@@</code>代替，最后再替换为<code>\</code></p>
-</blockquote>
-<ul>
-<li>3.用EmEditor导入.tsv文件，批量将外字替换为通用字符(\u123)格式。</li>
-<li>4.将通用字符替换为Unicode。</li>
-</ul>
-<h3 id="效果：">效果：</h3><p>大部分的外字都可以替换掉，剩下少部分的是外字.map里没有收入的，可以手动替换掉。</p>
-<h2 id="详细转换过程见视频：">详细转换过程见视频：</h2><p><a href="http://pan.baidu.com/s/1i3GjjRv" target="_blank" rel="external">http://pan.baidu.com/s/1i3GjjRv</a></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<h2 id="epwing转text主要有3种方法：">epwing转text主要有3种方法：</h2><ul>
-<li>1.用ebdump（用ebdump提取epwing词典的文本图片等），不过这样提取出来格式不好分离出来，词条不好定位。</li>
-<li>2.<a href]]>
-    </summary>
-    
-      <category term="dictionary" scheme="http://qunwang6.github.io/blog/tags/dictionary/"/>
-    
-      <category term="dictionary" scheme="http://qunwang6.github.io/blog/categories/dictionary/"/>
-    
-  </entry>
-  
-  <entry>
     <title><![CDATA[iOS developer tips]]></title>
     <link href="http://qunwang6.github.io/blog/iOSDeveloperTips/"/>
     <id>http://qunwang6.github.io/blog/iOSDeveloperTips/</id>
-    <published>2015-06-24T16:00:00.000Z</published>
-    <updated>2015-06-24T17:25:12.000Z</updated>
+    <published>2015-07-19T16:00:00.000Z</published>
+    <updated>2015-07-20T04:05:17.000Z</updated>
     <content type="html"><![CDATA[<h2 id="documents">documents</h2><h3 id="Start_Developing_iOS_Apps_Today">Start Developing iOS Apps Today</h3><p><a href="https://developer.apple.com/library/ios/referencelibrary/GettingStarted/RoadMapiOS/" target="_blank" rel="external">Start Developing iOS Apps Today: Setup</a></p>
 <h3 id="Teaching_App_Development_with_Swift">Teaching App Development with Swift</h3><p><a href="https://swifteducation.github.io/teaching_app_development_with_swift/" target="_blank" rel="external">Teaching App Development with Swift - Swift Education</a></p>
 <h3 id="Create_Custom_Keyboard_for_iOS_8">Create Custom Keyboard for iOS 8</h3><p>Alexei Baboulevitch is developing a custom keyboard for iOS 8 with Swift:</p>
@@ -78,7 +35,11 @@
 <li><a href="http://oleb.net/blog/2014/04/understanding-uiscrollview/" target="_blank" rel="external">Understanding UIScrollView – Ole Begemann</a></li>
 <li><a href="http://oleb.net/blog/2015/06/c-callbacks-in-swift/" target="_blank" rel="external">C Callbacks in Swift – Ole Begemann</a></li>
 <li><a href="https://medium.com/bpxl-craft/from-objective-c-to-swift-a-journey-c8732c3a3c6" target="_blank" rel="external">From Objective-C to Swift: A Journey — BPXL Craft — Medium</a></li>
-<li><a href="http://www.raywenderlich.com/97936/address-book-tutorial-swift-ios" target="_blank" rel="external">Address Book Tutorial in Swift and iOS - Ray Wenderlich</a><a id="more"></a>
+<li><a href="http://www.raywenderlich.com/97936/address-book-tutorial-swift-ios" target="_blank" rel="external">Address Book Tutorial in Swift and iOS - Ray Wenderlich</a></li>
+<li><a href="https://github.com/objc-zen/objc-zen-book" target="_blank" rel="external">objc-zen/objc-zen-book</a></li>
+<li><a href="https://github.com/WildDylan/appleSample" target="_blank" rel="external">appleSample</a></li>
+<li><a href="https://github.com/burczyk/XcodeSwiftSnippets" target="_blank" rel="external">XcodeSwiftSnippets</a></li>
+<li><a href="http://khanlou.com/2015/06/why-i-dont-write-swift/" target="_blank" rel="external">Why I don’t write Swift | Khanlou.com</a><a id="more"></a>
 </li>
 </ul>
 <hr>
@@ -149,6 +110,7 @@
 <li><a href="https://github.com/ResearchKit/ResearchKit" target="_blank" rel="external">ResearchKit/ResearchKit</a></li>
 <li><a href="http://www.raywenderlich.com/104575/researchkit-tutorial-with-swift" target="_blank" rel="external">ResearchKit Tutorial with Swift: Getting Started - Ray Wenderlich</a></li>
 </ul>
+<h3 id="the_Swift_HTTP_library_use_a_so_esay_API">the Swift HTTP library use a so esay API</h3><p><a href="https://github.com/lcepy/STNetWork" target="_blank" rel="external">lcepy/STNetWork</a></p>
 <h3 id="Microsoft_Project_Oxford_Home">Microsoft Project Oxford Home</h3><p><a href="http://www.projectoxford.ai/" target="_blank" rel="external">Microsoft Project Oxford Home</a></p>
 <h3 id="A_message_bar_for_iOS_written_in_Swift">A message bar for iOS written in Swift</h3><p><a href="https://github.com/exchangegroup/Dodo" target="_blank" rel="external">exchangegroup/Dodo</a></p>
 <h3 id="Open_Source_iOS_Game_created_in_SpriteKit_with_Swift">Open Source iOS Game created in SpriteKit with Swift</h3><p><a href="https://github.com/Mav3r1ck/Orbit7" target="_blank" rel="external">Mav3r1ck/Orbit7</a></p>
@@ -156,6 +118,10 @@
 <h3 id="EasyAnimation">EasyAnimation</h3><p><a href="https://github.com/icanzilb/EasyAnimation" target="_blank" rel="external">icanzilb/EasyAnimation</a></p>
 <h3 id="让人眼前一亮的刷新">让人眼前一亮的刷新</h3><p><a href="https://github.com/MartinRGB/Replace-iOS" target="_blank" rel="external">MartinRGB/Replace-iOS</a></p>
 <h3 id="An_iOS_refresh_control_with_gear_animation">An iOS refresh control with gear animation</h3><p><a href="https://github.com/micazeve/MAGearRefreshControl" target="_blank" rel="external">micazeve/MAGearRefreshControl</a></p>
+<h3 id="UIStackView-Playground">UIStackView-Playground</h3><p><a href="https://github.com/jstart/UIStackView-Playground" target="_blank" rel="external">jstart/UIStackView-Playground</a></p>
+<blockquote>
+<p>A playground demonstrating some of the key features of UIStackView</p>
+</blockquote>
 <hr>
 <h2 id="GUI">GUI</h2><h3 id="iOS9_GUI_template">iOS9 GUI template</h3><p><a href="http://codemotionapps.com/free-ios9-gui-template-for-illustrator/" target="_blank" rel="external">Free Vector iOS9 GUI template for illustrator - Codemotion</a></p>
 <h3 id="iOS_9_UIKit_for_Sketch">iOS 9 UIKit for Sketch</h3><ul>
@@ -166,21 +132,24 @@
 </ul>
 <h3 id="font">font</h3><p><a href="https://github.com/supermarin/YosemiteSanFranciscoFont" target="_blank" rel="external">supermarin/YosemiteSanFranciscoFont</a></p>
 <hr>
+<h2 id="icon">icon</h2><h3 id="Automator_Workflows">Automator Workflows</h3><p><a href="https://github.com/sparanoid/automator-workflows#create-app-iconset" target="_blank" rel="external">sparanoid/automator-workflows</a></p>
+<h3 id="图标生成">图标生成</h3><blockquote>
+<p>为 App 生成各种大小 Logo 的网站。支持 Android, iOS, WatchKit</p>
+</blockquote>
+<p><a href="http://makeappicon.com/" target="_blank" rel="external">Makeappicon - Generate app icons of all sizes with a click!</a></p>
+<hr>
 <h2 id="Tools">Tools</h2><h3 id="跨平台开发">跨平台开发</h3><ul>
 <li><a href="http://xamarin.com/" target="_blank" rel="external">Mobile App Development &amp; App Creation Software - Xamarin</a></li>
 <li><a href="https://github.com/xamarin" target="_blank" rel="external">Xamarin</a></li>
 <li><a href="http://www.microsoft.com/taiwan/vstudio/Xamarin/" target="_blank" rel="external">Xamarin 跨平台 App 開發 | Visual Studio + C# + Xamarin = iOS / Android / Windows App</a></li>
 <li><a href="http://www.buildinsider.net/enterprise/sansanreport/0601" target="_blank" rel="external">10分間で分かった気になれるXamarin概要 - Build Insider</a></li>
+<li><a href="http://geek.csdn.net/news/detail/35933" target="_blank" rel="external">跨平台自动构建工具v1.0.2 发布 - 极客头条 - CSDN.NET</a></li>
 </ul>
 <h3 id="常用开发软件">常用开发软件</h3><ul>
 <li><a href="http://www.paintcodeapp.com/origami" target="_blank" rel="external">PaintCode</a></li>
 <li><a href="https://affinity.serif.com/en-gb/" target="_blank" rel="external">Affinity Designer - Professional graphic design software for the Mac</a></li>
 </ul>
 <h3 id="Visual_Studio_Code">Visual Studio Code</h3><p><a href="https://code.visualstudio.com/" target="_blank" rel="external">Visual Studio Code - Code Editing. Redefined.</a></p>
-<h3 id="图标生成">图标生成</h3><blockquote>
-<p>为 App 生成各种大小 Logo 的网站。支持 Android, iOS, WatchKit</p>
-</blockquote>
-<p><a href="http://makeappicon.com/" target="_blank" rel="external">Makeappicon - Generate app icons of all sizes with a click!</a></p>
 <h3 id="网页版_constraints_代码生成工具">网页版 constraints 代码生成工具</h3><p><a href="http://constraints.icodeforlove.com/" target="_blank" rel="external">iOS/Mac Autolayout Constraints</a></p>
 <hr>
 <h2 id="Watch">Watch</h2><h3 id="Apple_Watch">Apple Watch</h3><ul>
@@ -217,7 +186,11 @@
 <li><a href="http://oleb.net/blog/2014/04/understanding-uiscrollview/">Understanding UIScrollView – Ole Begemann</a></li>
 <li><a href="http://oleb.net/blog/2015/06/c-callbacks-in-swift/">C Callbacks in Swift – Ole Begemann</a></li>
 <li><a href="https://medium.com/bpxl-craft/from-objective-c-to-swift-a-journey-c8732c3a3c6">From Objective-C to Swift: A Journey — BPXL Craft — Medium</a></li>
-<li><a href="http://www.raywenderlich.com/97936/address-book-tutorial-swift-ios">Address Book Tutorial in Swift and iOS - Ray Wenderlich</a>]]>
+<li><a href="http://www.raywenderlich.com/97936/address-book-tutorial-swift-ios">Address Book Tutorial in Swift and iOS - Ray Wenderlich</a></li>
+<li><a href="https://github.com/objc-zen/objc-zen-book">objc-zen/objc-zen-book</a></li>
+<li><a href="https://github.com/WildDylan/appleSample">appleSample</a></li>
+<li><a href="https://github.com/burczyk/XcodeSwiftSnippets">XcodeSwiftSnippets</a></li>
+<li><a href="http://khanlou.com/2015/06/why-i-dont-write-swift/">Why I don’t write Swift | Khanlou.com</a>]]>
     
     </summary>
     
@@ -226,6 +199,49 @@
       <category term="iOS" scheme="http://qunwang6.github.io/blog/tags/iOS/"/>
     
       <category term="iOS" scheme="http://qunwang6.github.io/blog/categories/iOS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[EPWING2TEXT]]></title>
+    <link href="http://qunwang6.github.io/blog/epwing2test/"/>
+    <id>http://qunwang6.github.io/blog/epwing2test/</id>
+    <published>2015-06-25T16:00:00.000Z</published>
+    <updated>2015-06-26T10:17:06.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="epwing转text主要有3种方法：">epwing转text主要有3种方法：</h2><ul>
+<li>1.用ebdump（用ebdump提取epwing词典的文本图片等），不过这样提取出来格式不好分离出来，词条不好定位。</li>
+<li>2.<a href="http://homepage3.nifty.com/TaN/unicode/" target="_blank" rel="external">PDIC</a>,可以将epwing格式的词典转换为pdic格式，再从pdict格式中获取文本，转换过程中外字也可以替换掉，不过用PDIC提取，会有部分内容没有提取出来。方法见：<a href="https://skalldan.wordpress.com/2011/06/18/%E8%BE%9E%E6%9B%B8-app-%E3%82%92%E6%B4%BB%E7%94%A8%E3%81%99%E3%82%8B-2/" target="_blank" rel="external">link</a></li>
+<li>3.DDWIN 2.30 ,这里要介绍的方法，参考自：<a href="http://diamondsky.org/other/japanese/pdic.php" target="_blank" rel="external">http://diamondsky.org/other/japanese/pdic.php</a></li>
+</ul>
+<h3 id="工具：">工具：</h3><ul>
+<li><a href="http://homepage2.nifty.com/ddwin/" target="_blank" rel="external">DDWIN 2.30</a></li>
+<li><a href="http://pan.baidu.com/s/1i34DNZR" target="_blank" rel="external">外字文件</a></li>
+<li>文本编辑器：EmEditor</li>
+</ul>
+<h3 id="主要步骤：">主要步骤：</h3><ul>
+<li>1.用DDWIN获取文本，得到的文本格式每个词条以空行分开。</li>
+<li>2.将外字.map文件转换为.tsv格式</li>
+</ul>
+<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function_start"><span class="keyword">on</span></span>	[hA121]	@@u2019</span><br><span class="line"><span class="function_start"><span class="keyword">on</span></span>	[hA122]	@@u0192</span><br><span class="line"><span class="function_start"><span class="keyword">on</span></span>	[hA123]	@@u201E</span><br><span class="line"><span class="function_start"><span class="keyword">on</span></span>	[hA124]	@@u2020</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>间隔为tab,<code>@@</code>本来为<code>\</code>,不过批量替换时会被EmEditor过滤掉，所以用<code>@@</code>代替，最后再替换为<code>\</code></p>
+</blockquote>
+<ul>
+<li>3.用EmEditor导入.tsv文件，批量将外字替换为通用字符(\u123)格式。</li>
+<li>4.将通用字符替换为Unicode。</li>
+</ul>
+<h3 id="效果：">效果：</h3><p>大部分的外字都可以替换掉，剩下少部分的是外字.map里没有收入的，可以手动替换掉。</p>
+<h2 id="详细转换过程见视频：">详细转换过程见视频：</h2><p><a href="http://pan.baidu.com/s/1i3GjjRv" target="_blank" rel="external">http://pan.baidu.com/s/1i3GjjRv</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h2 id="epwing转text主要有3种方法：">epwing转text主要有3种方法：</h2><ul>
+<li>1.用ebdump（用ebdump提取epwing词典的文本图片等），不过这样提取出来格式不好分离出来，词条不好定位。</li>
+<li>2.<a href]]>
+    </summary>
+    
+      <category term="dictionary" scheme="http://qunwang6.github.io/blog/tags/dictionary/"/>
+    
+      <category term="dictionary" scheme="http://qunwang6.github.io/blog/categories/dictionary/"/>
     
   </entry>
   
