@@ -4,7 +4,7 @@
   
   <link href="/blog/atom.xml" rel="self"/>
   <link href="http://qunwang6.github.io/blog/"/>
-  <updated>2015-08-20T23:02:50.000Z</updated>
+  <updated>2015-08-20T23:06:35.000Z</updated>
   <id>http://qunwang6.github.io/blog/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://qunwang6.github.io/blog/http2/"/>
     <id>http://qunwang6.github.io/blog/http2/</id>
     <published>2015-08-20T16:00:00.000Z</published>
-    <updated>2015-08-20T23:02:50.000Z</updated>
+    <updated>2015-08-20T23:06:35.000Z</updated>
     <content type="html"><![CDATA[<h3 id="learning">learning</h3><blockquote>
 <p>SPDY是谷歌研制的提升HTTP速度的协议，是HTTP/2.0的基础.HTTP/2 基于 SPDY 而建，性能和特性较 HTTP/1.1 有了极大的提升.</p>
 </blockquote>
@@ -39,14 +39,13 @@
 <li><a href="https://wzyboy.im/post/1052.html" target="_blank" rel="external">使用 nghttpx 搭建 HTTP/2 代理 | wzyboy’s blog</a></li>
 </ul>
 <h3 id="其他">其他</h3><ul>
-<li><a href="http://www.williamlong.info/archives/3879.html" target="_blank" rel="external">访问Google的神器：Chrome的QUIC协议-月光博客</a><blockquote>
-<p><code>QUIC</code>协议的原理介绍：<br><code>TCP</code>、<code>UDP</code>都是计算机网络通信层的主要协议。<code>TCP</code>是面向连接的，更强调的是传输的可靠性，<code>UDP</code>是面向无连接的，也即在通信双方进行数据交换之前，无需建立连接,只要知道对方地址即可发送数据，由于<code>UDP</code>协议是无连接方式的协议，所以它的效率高，速度快，占资源少。<br>为了集合两者的优点，谷歌公司研制了一种UDP通信的改进版——<code>Quick UDP</code> Internet Connections（QUIC），快速UDP互联网连接。</p>
+<li><p><a href="http://www.williamlong.info/archives/3879.html" target="_blank" rel="external">访问Google的神器：Chrome的QUIC协议-月光博客</a></p>
+<blockquote>
+<p><code>QUIC</code>协议的原理介绍：<br><code>TCP</code>、<code>UDP</code>都是计算机网络通信层的主要协议。<code>TCP</code>是面向连接的，更强调的是传输的可靠性，<code>UDP</code>是面向无连接的，也即在通信双方进行数据交换之前，无需建立连接,只要知道对方地址即可发送数据，由于<code>UDP</code>协议是无连接方式的协议，所以它的效率高，速度快，占资源少。<br>为了集合两者的优点，谷歌公司研制了一种UDP通信的改进版——<code>Quick UDP</code> Internet Connections（QUIC），快速UDP互联网连接。<br><img src="http://www.williamlong.info/upload/3879_1.jpg" alt=""></p>
 </blockquote>
 </li>
-</ul>
-<p><img src="http://www.williamlong.info/upload/3879_1.jpg" alt=""></p>
-<ul>
-<li><a href="http://www.http2demo.io/" target="_blank" rel="external">HTTP/2 technology demo</a></li>
+<li><p><a href="http://www.http2demo.io/" target="_blank" rel="external">HTTP/2 technology demo</a></p>
+</li>
 </ul>
 ]]></content>
     <summary type="html">
