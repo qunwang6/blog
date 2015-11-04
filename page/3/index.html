@@ -130,6 +130,93 @@
           
           
             
+              <a class="post-title-link" href="/blog/SpaceMonkey/">
+                SpaceMonkey
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于 2015-05-17
+        </span>
+
+        
+          <span class="post-category">
+            &nbsp; | &nbsp; 分类于
+            
+              <a href="/blog/categories/Swift/">Swift</a>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+        
+      </div>
+    </div>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <h3 id="项目">项目</h3><p><a href="http://www.raywenderlich.com/94649/sprite-kit-kids-swift">Sprite Kit for Kids with Swift </a></p>
+<h3 id="编译错误">编译错误</h3><p>编译环境：<br>Xcode Version 6.2 (6C131e)<br>OS X 10.9.5<br><figure class="highlight nix"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">override func viewWillLayoutSubviews() &#123;</span><br><span class="line">    super.viewDidLoad()</span><br><span class="line"></span><br><span class="line">    <span class="keyword">let</span> <span class="variable">skView =</span> self.view as! SKView</span><br><span class="line">    <span class="keyword">if</span> skView.<span class="variable">scene =</span>= nil &#123;</span><br><span class="line"></span><br><span class="line">      <span class="keyword">let</span> <span class="variable">scene =</span> GameScene(size:skView.frame.size)</span><br><span class="line">      skView.<span class="variable">showsFPS =</span> <span class="constant">true</span></span><br><span class="line">      skView.<span class="variable">showsNodeCount =</span> <span class="constant">true</span></span><br><span class="line">      skView.<span class="variable">showsPhysics =</span> <span class="constant">true</span></span><br><span class="line">      skView.<span class="variable">ignoresSiblingOrder =</span> <span class="constant">true</span></span><br><span class="line">      scene.<span class="variable">scaleMode =</span> .AspectFill</span><br><span class="line">      skView.presentScene(scene)</span><br><span class="line"></span><br><span class="line">      playBackgroundMusic(<span class="string">"BackgroundMusic.mp3"</span>)</span><br><span class="line"></span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure></p>
+<p>错误信息</p>
+<blockquote>
+<p>Expected type after ‘as’</p>
+</blockquote>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/blog/SpaceMonkey/#more">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <div class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/blog/tags/Swift/"> #Swift </a>
+          
+            <a href="/blog/tags/debug/"> #debug </a>
+          
+        </div>
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </div>
+  </div>
+
+
+    
+      
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
               <a class="post-title-link" href="/blog/CherylsBirthday/">
                 When is Cheryl’s birthday?
               </a>
@@ -419,6 +506,82 @@
           
           
             
+              <a class="post-title-link" href="/blog/TheJoelTest/">
+                The Joel Test
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于 2015-05-08
+        </span>
+
+        
+          <span class="post-category">
+            &nbsp; | &nbsp; 分类于
+            
+              <a href="/blog/categories/program/">program</a>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+        
+      </div>
+    </div>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="operator"><span class="keyword">Do</span> you <span class="keyword">use</span> source control?</span><br><span class="line">Can you make a build <span class="keyword">in</span> one step?</span><br><span class="line"><span class="keyword">Do</span> you make daily builds?</span><br><span class="line"><span class="keyword">Do</span> you have a bug <span class="keyword">database</span>?</span><br><span class="line"><span class="keyword">Do</span> you fix bugs <span class="keyword">before</span> writing new code?</span><br><span class="line"><span class="keyword">Do</span> you have an up-<span class="keyword">to</span>-<span class="built_in">date</span> schedule?</span><br><span class="line"><span class="keyword">Do</span> you have a spec?</span><br><span class="line"><span class="keyword">Do</span> programmers have quiet working conditions?</span><br><span class="line"><span class="keyword">Do</span> you <span class="keyword">use</span> the best tools money can buy?</span><br><span class="line"><span class="keyword">Do</span> you have testers?</span><br><span class="line"><span class="keyword">Do</span> new candidates <span class="keyword">write</span> code during their interview?</span><br><span class="line"><span class="keyword">Do</span> you <span class="keyword">do</span> hallway usability testing?</span></span><br></pre></td></tr></table></figure>
+
+        
+      
+    </div>
+
+    <div class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/blog/tags/program/"> #program </a>
+          
+        </div>
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </div>
+  </div>
+
+
+    
+      
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
               <a class="post-title-link" href="/blog/OSXDictionary/">
                 \BGL\DSL\MDX\CD\ ===> OS X dictionary
               </a>
@@ -489,82 +652,6 @@
             <a href="/blog/tags/dictionary/"> #dictionary </a>
           
             <a href="/blog/tags/iOS/"> #iOS </a>
-          
-        </div>
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </div>
-  </div>
-
-
-    
-      
-
-  <div class="post post-type-normal ">
-    <div class="post-header">
-
-      
-      
-        <h1 class="post-title">
-          
-          
-            
-              <a class="post-title-link" href="/blog/TheJoelTest/">
-                The Joel Test
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于 2015-05-08
-        </span>
-
-        
-          <span class="post-category">
-            &nbsp; | &nbsp; 分类于
-            
-              <a href="/blog/categories/program/">program</a>
-
-              
-              
-
-            
-          </span>
-        
-
-        
-          
-        
-      </div>
-    </div>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="operator"><span class="keyword">Do</span> you <span class="keyword">use</span> source control?</span><br><span class="line">Can you make a build <span class="keyword">in</span> one step?</span><br><span class="line"><span class="keyword">Do</span> you make daily builds?</span><br><span class="line"><span class="keyword">Do</span> you have a bug <span class="keyword">database</span>?</span><br><span class="line"><span class="keyword">Do</span> you fix bugs <span class="keyword">before</span> writing new code?</span><br><span class="line"><span class="keyword">Do</span> you have an up-<span class="keyword">to</span>-<span class="built_in">date</span> schedule?</span><br><span class="line"><span class="keyword">Do</span> you have a spec?</span><br><span class="line"><span class="keyword">Do</span> programmers have quiet working conditions?</span><br><span class="line"><span class="keyword">Do</span> you <span class="keyword">use</span> the best tools money can buy?</span><br><span class="line"><span class="keyword">Do</span> you have testers?</span><br><span class="line"><span class="keyword">Do</span> new candidates <span class="keyword">write</span> code during their interview?</span><br><span class="line"><span class="keyword">Do</span> you <span class="keyword">do</span> hallway usability testing?</span></span><br></pre></td></tr></table></figure>
-
-        
-      
-    </div>
-
-    <div class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/blog/tags/program/"> #program </a>
           
         </div>
       
@@ -921,92 +1008,6 @@
 
 
     
-      
-
-  <div class="post post-type-normal ">
-    <div class="post-header">
-
-      
-      
-        <h1 class="post-title">
-          
-          
-            
-              <a class="post-title-link" href="/blog/iOSDevelopNote/">
-                iOS 开发流程笔记
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于 2015-05-01
-        </span>
-
-        
-          <span class="post-category">
-            &nbsp; | &nbsp; 分类于
-            
-              <a href="/blog/categories/iOS/">iOS</a>
-
-              
-              
-
-            
-          </span>
-        
-
-        
-          
-        
-      </div>
-    </div>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <ul>
-<li>[x] 证书知识及准备工作</li>
-<li>[x] 几种开发者帐号区别</li>
-<li>[x] 真机调试流程</li>
-<li>[x] 内测发布流程</li>
-<li>[ ] Appstore 上架流程</li>
-</ul>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/blog/iOSDevelopNote/#more">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/blog/tags/iOS/"> #iOS </a>
-          
-        </div>
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </div>
-  </div>
-
-
-    
   </div>
 
   
@@ -1045,7 +1046,7 @@
         <div class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/blog/archives">
-              <span class="site-state-item-count">34</span>
+              <span class="site-state-item-count">35</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
