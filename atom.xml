@@ -151,7 +151,7 @@
     <link href="http://qunwang6.github.io/blog/iOSDeveloperTips/"/>
     <id>http://qunwang6.github.io/blog/iOSDeveloperTips/</id>
     <published>2015-07-19T16:00:00.000Z</published>
-    <updated>2015-10-28T07:29:11.000Z</updated>
+    <updated>2015-11-21T06:58:06.000Z</updated>
     <content type="html"><![CDATA[<h2 id="documents">documents</h2><h3 id="中文版_Apple_官方_Swift_教程">中文版 Apple 官方 Swift 教程</h3><ul>
 <li><a href="https://github.com/numbbbbb/the-swift-programming-language-in-chinese" target="_blank" rel="external">numbbbbb/the-swift-programming-language-in-chinese</a></li>
 </ul>
@@ -179,6 +179,7 @@
 <h3 id="TestFlight——完美的iOS_app测试方案">TestFlight——完美的iOS app测试方案</h3><p><a href="http://onevcat.com/2012/01/testflight/" target="_blank" rel="external">介绍</a></p>
 <h3 id="The_official_Swift_style_guide_for_raywenderlich-com-">The official Swift style guide for raywenderlich.com.</h3><p><a href="https://github.com/raywenderlich/swift-style-guide" target="_blank" rel="external">raywenderlich/swift-style-guide</a></p>
 <h3 id="learning">learning</h3><ul>
+<li><a href="http://wuzhiwei.net/ios_dev_trap_and_solution/" target="_blank" rel="external">iOS游戏开发和提交的一些「坑」和「解决方案」 | Tim’s Blog</a></li>
 <li><a href="http://blog.fir.im/fir_im_weekly151027/" target="_blank" rel="external">fir.im Weekly - iOS开发中的Git流程</a></li>
 <li><a href="https://github.com/100mango/zen/blob/master/Swift%E5%AD%A6%E4%B9%A0%EF%BC%9A%E4%BB%8EObjective-C%E5%88%B0Swift/Swift%E5%AD%A6%E4%B9%A0%EF%BC%9A%E4%BB%8EObjective-C%E5%88%B0Swift.md" target="_blank" rel="external">zen/Swift学习：从Objective-C到Swift.md at master · 100mango/zen</a></li>
 <li><a href="http://oleb.net/blog/2014/07/swift-strings/" target="_blank" rel="external">Strings in Swift – Ole Begemann</a></li>
@@ -319,8 +320,7 @@
 <h3 id="3D_Force_Touch">3D Force Touch</h3><ul>
 <li><a href="https://medium.com/produkt-blog/3d-force-touch-beyond-peek-pop-c448edc2b1f5#.lyggax9pu" target="_blank" rel="external">3D Force Touch: beyond peek &amp; pop — Produkt Blog — Medium</a></li>
 </ul>
-<hr>
-<h2 id="GUI">GUI</h2><h3 id="iOS9_GUI_template">iOS9 GUI template</h3><p><a href="http://codemotionapps.com/free-ios9-gui-template-for-illustrator/" target="_blank" rel="external">Free Vector iOS9 GUI template for illustrator - Codemotion</a></p>
+<h3 id="f-lux">f.lux</h3><h2 id="*_Sideloading_f-lux_on_iOS_with_Xcode_7">* <a href="https://justgetflux.com/sideload/" target="_blank" rel="external">Sideloading f.lux on iOS with Xcode 7</a></h2><h2 id="GUI">GUI</h2><h3 id="iOS9_GUI_template">iOS9 GUI template</h3><p><a href="http://codemotionapps.com/free-ios9-gui-template-for-illustrator/" target="_blank" rel="external">Free Vector iOS9 GUI template for illustrator - Codemotion</a></p>
 <h3 id="iOS_9_UIKit_for_Sketch">iOS 9 UIKit for Sketch</h3><ul>
 <li><a href="https://github.com/philipamour/ios9-uikit" target="_blank" rel="external">philipamour/ios9-uikit</a></li>
 </ul>
@@ -375,6 +375,11 @@
 <hr>
 <h2 id="Visual_Programing">Visual Programing</h2><h3 id="可视化编程">可视化编程</h3><ul>
 <li><a href="https://itunes.apple.com/app/toy-engine/id993811069?mt=8" target="_blank" rel="external">Toy Engine - Make Games With Visual Scripting on the App Store on iTunes</a></li>
+</ul>
+<hr>
+<h2 id="其他">其他</h2><ul>
+<li><a href="http://www.v2ex.com/t/236858#reply0" target="_blank" rel="external">苹果私有 API 检查工具开源项目 - V2EX</a></li>
+<li><a href="http://www.jianshu.com/p/bf765cc7608c" target="_blank" rel="external">提高 iOS 开发效率的必备干货 - 简书</a></li>
 </ul>
 <hr>
 <h2 id="References">References</h2><ul>
@@ -460,7 +465,7 @@
     <link href="http://qunwang6.github.io/blog/lua/"/>
     <id>http://qunwang6.github.io/blog/lua/</id>
     <published>2015-06-23T16:00:00.000Z</published>
-    <updated>2015-06-24T15:44:23.000Z</updated>
+    <updated>2015-11-09T20:11:07.000Z</updated>
     <content type="html"><![CDATA[<h3 id="about">about</h3><blockquote>
 <p>Lua（英语发音：/ˈluːə/）程序设计语言是一个简洁、轻量、可扩展的脚本语言，是葡萄牙语中“Lua”（月亮）的意思。类似语言Julia,R。</p>
 </blockquote>
@@ -482,6 +487,7 @@
 </ul>
 <h3 id="doc">doc</h3><ul>
 <li><a href="http://cloudwu.github.io/lua53doc/manual.html" target="_blank" rel="external">Lua 5.3 参考手册</a></li>
+<li><a href="http://www.slideshare.net/ProteasWang/ioslua" target="_blank" rel="external">iOS中Lua脚本的应用</a></li>
 </ul>
 <h3 id="plugs">plugs</h3><ul>
 <li>sublilme3 Lua dev</li>
