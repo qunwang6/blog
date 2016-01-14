@@ -2,8 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://qunwang6.github.io/blog/torch/</loc>
+    <lastmod>2016-01-14T04:43:26.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://qunwang6.github.io/blog/iOSDeveloperTips/</loc>
-    <lastmod>2015-11-21T06:58:06.000Z</lastmod>
+    <lastmod>2015-12-18T02:09:14.000Z</lastmod>
   </url>
   
   <url>
@@ -92,12 +97,12 @@
   </url>
   
   <url>
-    <loc>http://qunwang6.github.io/blog/ExMachina/</loc>
+    <loc>http://qunwang6.github.io/blog/CSS3D/</loc>
     <lastmod>2015-06-03T13:13:52.000Z</lastmod>
   </url>
   
   <url>
-    <loc>http://qunwang6.github.io/blog/CSS3D/</loc>
+    <loc>http://qunwang6.github.io/blog/ExMachina/</loc>
     <lastmod>2015-06-03T13:13:52.000Z</lastmod>
   </url>
   
