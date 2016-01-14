@@ -4,7 +4,7 @@
   
   <link href="/blog/atom.xml" rel="self"/>
   <link href="http://qunwang6.github.io/blog/"/>
-  <updated>2016-01-14T04:43:26.000Z</updated>
+  <updated>2016-01-14T04:47:25.000Z</updated>
   <id>http://qunwang6.github.io/blog/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://qunwang6.github.io/blog/torch/"/>
     <id>http://qunwang6.github.io/blog/torch/</id>
     <published>2016-01-13T16:00:00.000Z</published>
-    <updated>2016-01-14T04:43:26.000Z</updated>
+    <updated>2016-01-14T04:47:25.000Z</updated>
     <content type="html"><![CDATA[<h3 id="doc">doc</h3><ul>
 <li><a href="http://torch.ch/" target="_blank" rel="external">Torch | Scientific computing for LuaJIT.</a><br><a href="http://torch.ch/docs/getting-started.html#_" target="_blank" rel="external">Torch | Getting started with Torch</a></li>
 <li><a href="https://github.com/torch" target="_blank" rel="external">Torch</a></li>
@@ -33,7 +33,7 @@
 <a id="more"></a>
 <h3 id="install_error">install error</h3><figure class="highlight vbnet"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Error</span>: could <span class="keyword">not</span> find ipython <span class="keyword">in</span> PATH. <span class="keyword">Do</span> you have it installed?</span><br></pre></td></tr></table></figure>
 <p>解决方法：</p>
-<figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">bash:</span></span><br><span class="line">~/.bash_profile</span><br><span class="line">~/.profile</span><br><span class="line">在上面两个文件里添加</span><br><span class="line">. <span class="regexp">/Users/</span>qunwang6<span class="regexp">/torch/</span>install<span class="regexp">/bin/</span>torch-activate</span><br><span class="line">最后终端运行</span><br><span class="line">source ~/.profile</span><br><span class="line">对终端bash起作用，iterm2 zsh不行。</span><br><span class="line"><span class="string">zsh:</span></span><br><span class="line">touch ~/.zshrc</span><br><span class="line">在~/.zshrc里添加</span><br><span class="line">. <span class="regexp">/Users/</span>qunwang6<span class="regexp">/torch/</span>install<span class="regexp">/bin/</span>torch-activate</span><br><span class="line">命令运行</span><br><span class="line">source ~/.zshrc</span><br></pre></td></tr></table></figure>
+<figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">bash:</span></span><br><span class="line">~/.bash_profile</span><br><span class="line">~/.profile</span><br><span class="line">在上面两个文件里添加</span><br><span class="line">. <span class="regexp">/Users/</span>你的用户名<span class="regexp">/torch/</span>install<span class="regexp">/bin/</span>torch-activate</span><br><span class="line">最后终端运行</span><br><span class="line">source ~/.profile</span><br><span class="line">对终端bash起作用，iterm2 zsh不行。</span><br><span class="line"><span class="string">zsh:</span></span><br><span class="line">touch ~/.zshrc</span><br><span class="line">在~/.zshrc里添加</span><br><span class="line">. <span class="regexp">/Users/</span>你的用户名<span class="regexp">/torch/</span>install<span class="regexp">/bin/</span>torch-activate</span><br><span class="line">命令运行</span><br><span class="line">source ~/.zshrc</span><br></pre></td></tr></table></figure>
 <ul>
 <li><a href="http://stackoverflow.com/questions/29584422/installing-torch7-ipython-installation-error-mac" target="_blank" rel="external">osx - Installing Torch7. iPython installation error (mac) - Stack Overflow</a></li>
 <li><a href="http://serverfault.com/questions/110065/what-profile-is-my-current-shell-using" target="_blank" rel="external">mac osx - What profile is my current shell using? - Server Fault</a></li>
