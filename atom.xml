@@ -4,7 +4,7 @@
   
   <link href="/blog/atom.xml" rel="self"/>
   <link href="http://qunwang6.github.io/blog/"/>
-  <updated>2017-03-19T15:09:23.000Z</updated>
+  <updated>2017-03-19T15:13:23.000Z</updated>
   <id>http://qunwang6.github.io/blog/</id>
   
   <author>
@@ -19,28 +19,37 @@
     <link href="http://qunwang6.github.io/blog/API%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
     <id>http://qunwang6.github.io/blog/API接口测试工具/</id>
     <published>2017-03-18T16:00:00.000Z</published>
-    <updated>2017-03-19T15:09:23.000Z</updated>
-    <content type="html"><![CDATA[<h3 id="常用API接口测试工具">常用API接口测试工具</h3><ul>
+    <updated>2017-03-19T15:13:23.000Z</updated>
+    <content type="html"><![CDATA[<h4 id="常用API接口测试工具">常用API接口测试工具</h4><ul>
 <li><a href="https://www.getpostman.com/" target="_blank" rel="external">Postman | Supercharge your API workflow</a></li>
 <li><a href="https://paw.cloud/teams" target="_blank" rel="external">Paw for Teams – The most advanced API tool for Mac</a></li>
 <li><a href="https://github.com/jkbrzt/httpie" target="_blank" rel="external">httpie: CLI HTTP client, user-friendly curl alternative with intuitive UI, JSON support, syntax highlighting, wget-like downloads, extensions, etc.</a></li>
 <li><a href="https://itunes.apple.com/jp/app/rested-simple-http-requests/id421879749?mt=12&amp;ign-mpt=uo%3D4" target="_blank" rel="external">RESTed - Simple HTTP Requests を Mac App Store で|已购</a></li>
 </ul>
-<h3 id="httpstat_终端里测试">httpstat 终端里测试</h3><ul>
+<h4 id="httpstat_终端里测试">httpstat 终端里测试</h4><ul>
 <li><a href="https://github.com/reorx/httpstat" target="_blank" rel="external">reorx/httpstat: curl statistics made simple</a></li>
 </ul>
-<h3 id="Runscope">Runscope</h3><ul>
+<a id="more"></a>
+<h4 id="Runscope">Runscope</h4><ul>
 <li><a href="https://www.runscope.com/docs" target="_blank" rel="external">Runscope Documentation · Runscope API Testing &amp; Monitoring</a></li>
 <li><a href="https://segmentfault.com/a/1190000006998640?utm_source=tuicool&amp;utm_medium=referral" target="_blank" rel="external">推荐一款API自动化测试工具——Runscope - 来生做个漫画家 - SegmentFault</a></li>
 </ul>
-<h3 id="HTTPLab">HTTPLab</h3><ul>
+<h4 id="HTTPLab">HTTPLab</h4><ul>
 <li><a href="https://github.com/gchaincl/httplab" target="_blank" rel="external">gchaincl/httplab: An interactive web server</a></li>
 <li><a href="http://www.softantenna.com/wp/review/httplab/" target="_blank" rel="external">HTTPLab - Go言語で作られたインタラクティブなHTTPサーバー</a></li>
 </ul>
 ]]></content>
     <summary type="html">
-    <![CDATA[<h3 id="常用API接口测试工具">常用API接口测试工具</h3><ul>
-<li><a href="https://www.getpostman.com/" target="_blank" rel="external">Postman | Supercharge you]]>
+    <![CDATA[<h4 id="常用API接口测试工具">常用API接口测试工具</h4><ul>
+<li><a href="https://www.getpostman.com/">Postman | Supercharge your API workflow</a></li>
+<li><a href="https://paw.cloud/teams">Paw for Teams – The most advanced API tool for Mac</a></li>
+<li><a href="https://github.com/jkbrzt/httpie">httpie: CLI HTTP client, user-friendly curl alternative with intuitive UI, JSON support, syntax highlighting, wget-like downloads, extensions, etc.</a></li>
+<li><a href="https://itunes.apple.com/jp/app/rested-simple-http-requests/id421879749?mt=12&amp;ign-mpt=uo%3D4">RESTed - Simple HTTP Requests を Mac App Store で|已购</a></li>
+</ul>
+<h4 id="httpstat_终端里测试">httpstat 终端里测试</h4><ul>
+<li><a href="https://github.com/reorx/httpstat">reorx/httpstat: curl statistics made simple</a></li>
+</ul>]]>
+    
     </summary>
     
       <category term="API" scheme="http://qunwang6.github.io/blog/tags/API/"/>
