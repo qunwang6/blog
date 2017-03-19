@@ -130,6 +130,102 @@
           
           
             
+              <a class="post-title-link" href="/blog/API接口测试工具/">
+                API接口测试工具
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于 2017-03-19
+        </span>
+
+        
+          <span class="post-category">
+            &nbsp; | &nbsp; 分类于
+            
+              <a href="/blog/categories/API/">API</a>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+        
+      </div>
+    </div>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <h3 id="常用API接口测试工具">常用API接口测试工具</h3><ul>
+<li><a href="https://www.getpostman.com/" target="_blank" rel="external">Postman | Supercharge your API workflow</a></li>
+<li><a href="https://paw.cloud/teams" target="_blank" rel="external">Paw for Teams – The most advanced API tool for Mac</a></li>
+<li><a href="https://github.com/jkbrzt/httpie" target="_blank" rel="external">httpie: CLI HTTP client, user-friendly curl alternative with intuitive UI, JSON support, syntax highlighting, wget-like downloads, extensions, etc.</a></li>
+<li><a href="https://itunes.apple.com/jp/app/rested-simple-http-requests/id421879749?mt=12&amp;ign-mpt=uo%3D4" target="_blank" rel="external">RESTed - Simple HTTP Requests を Mac App Store で|已购</a></li>
+</ul>
+<h3 id="httpstat_终端里测试">httpstat 终端里测试</h3><ul>
+<li><a href="https://github.com/reorx/httpstat" target="_blank" rel="external">reorx/httpstat: curl statistics made simple</a></li>
+</ul>
+<h3 id="Runscope">Runscope</h3><ul>
+<li><a href="https://www.runscope.com/docs" target="_blank" rel="external">Runscope Documentation · Runscope API Testing &amp; Monitoring</a></li>
+<li><a href="https://segmentfault.com/a/1190000006998640?utm_source=tuicool&amp;utm_medium=referral" target="_blank" rel="external">推荐一款API自动化测试工具——Runscope - 来生做个漫画家 - SegmentFault</a></li>
+</ul>
+<h3 id="HTTPLab">HTTPLab</h3><ul>
+<li><a href="https://github.com/gchaincl/httplab" target="_blank" rel="external">gchaincl/httplab: An interactive web server</a></li>
+<li><a href="http://www.softantenna.com/wp/review/httplab/" target="_blank" rel="external">HTTPLab - Go言語で作られたインタラクティブなHTTPサーバー</a></li>
+</ul>
+
+        
+      
+    </div>
+
+    <div class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/blog/tags/API/"> #API </a>
+          
+            <a href="/blog/tags/HTTP/"> #HTTP </a>
+          
+            <a href="/blog/tags/TOOL/"> #TOOL </a>
+          
+        </div>
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </div>
+  </div>
+
+
+    
+      
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
               <a class="post-title-link" href="/blog/Privoxy/">
                 Privoxy
               </a>
@@ -967,90 +1063,6 @@
 
 
     
-      
-
-  <div class="post post-type-normal ">
-    <div class="post-header">
-
-      
-      
-        <h1 class="post-title">
-          
-          
-            
-              <a class="post-title-link" href="/blog/baiduOCR/">
-                baidu OCR
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于 2015-06-06
-        </span>
-
-        
-          <span class="post-category">
-            &nbsp; | &nbsp; 分类于
-            
-              <a href="/blog/categories/OCR/">OCR</a>
-
-              
-              
-
-            
-          </span>
-        
-
-        
-          
-        
-      </div>
-    </div>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <h2 id="百度OCR文字识别API_for_Python">百度OCR文字识别API for Python</h2><figure class="highlight haskell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">#!/usr/bin/env python</span></span><br><span class="line"><span class="preprocessor"># -*- coding: utf-8 -*-</span></span><br><span class="line"><span class="import"><span class="keyword">import</span> sys, urllib, urllib2, json</span></span><br><span class="line"><span class="title">f</span> = open(<span class="string">"test.txt"</span>,<span class="string">"w"</span>)</span><br><span class="line"><span class="title">url</span> = 'http://apis.baidu.com/apistore/idlocr/ocr'</span><br><span class="line"></span><br><span class="line"><span class="typedef"><span class="keyword">data</span> = <span class="container">&#123;&#125;</span></span></span><br><span class="line"><span class="typedef"><span class="keyword">data</span>['fromdevice'] = "pc"</span></span><br><span class="line"><span class="typedef"><span class="keyword">data</span>['clientip'] = "10.10.10.0"</span></span><br><span class="line"><span class="typedef"><span class="keyword">data</span>['detecttype'] = "<span class="type">LocateRecognize</span>"</span></span><br><span class="line"><span class="typedef"><span class="keyword">data</span>['languagetype'] = "<span class="type">CHN_ENG</span>"</span></span><br><span class="line"><span class="typedef"><span class="keyword">data</span>['imagetype'] = "1"  #`2`代表图片原文件（只支持<span class="type">JPG</span>）</span></span><br><span class="line"><span class="typedef"><span class="keyword">data</span>['image'] = ""    ##image base64 <span class="keyword">data</span></span></span><br><span class="line"></span><br><span class="line"><span class="title">decoded_data</span> = urllib.urlencode(<span class="typedef"><span class="keyword">data</span>)</span></span><br><span class="line"><span class="title">req</span> = urllib2.<span class="type">Request</span>(url, <span class="typedef"><span class="keyword">data</span> = decoded_data)</span></span><br><span class="line"></span><br><span class="line"><span class="title">req</span>.add_header(<span class="string">"Content-Type"</span>, <span class="string">"application/x-www-form-urlencoded"</span>)</span><br><span class="line"><span class="title">req</span>.add_header(<span class="string">"apikey"</span>, <span class="string">"自己的apikey"</span>)</span><br><span class="line"></span><br><span class="line"><span class="title">resp</span> = urllib2.urlopen(req)</span><br><span class="line"><span class="title">content</span> = resp.read()</span><br><span class="line"><span class="title">if</span>(content):</span><br><span class="line">    print(content)</span><br><span class="line">    f.write(content)</span><br></pre></td></tr></table></figure>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/blog/baiduOCR/#more">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/blog/tags/OCR/"> #OCR </a>
-          
-            <a href="/blog/tags/Python/"> #Python </a>
-          
-            <a href="/blog/tags/base64/"> #base64 </a>
-          
-        </div>
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </div>
-  </div>
-
-
-    
   </div>
 
   
@@ -1089,21 +1101,21 @@
         <div class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/blog/archives">
-              <span class="site-state-item-count">35</span>
+              <span class="site-state-item-count">36</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
           <div class="site-state-item site-state-categories">
             <a href="/blog/categories">
-              <span class="site-state-item-count">18</span>
+              <span class="site-state-item-count">19</span>
               <span class="site-state-item-name">分类</span>
               </a>
           </div>
 
           <div class="site-state-item site-state-tags">
             <a href="/blog/tags">
-              <span class="site-state-item-count">33</span>
+              <span class="site-state-item-count">36</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>
