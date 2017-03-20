@@ -214,6 +214,81 @@
           
           
             
+              <a class="post-title-link" href="/blog/ExMachina/">
+                Secret code in Ex Machina
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于 2015-05-17
+        </span>
+
+        
+          <span class="post-category">
+            &nbsp; | &nbsp; 分类于
+            
+              <a href="/blog/categories/Python/">Python</a>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+        
+      </div>
+    </div>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <p><img src="http://i.imgur.com/C44iJeR.jpg" alt=""></p>
+<h3 id="Code">Code</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#BlueBook code decryption</span></span><br><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">sieve</span><span class="params">(n)</span>:</span></span><br><span class="line">    x = [<span class="number">1</span>] * n</span><br><span class="line">    x[<span class="number">1</span>] = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">2</span>,n/<span class="number">2</span>):</span><br><span class="line">            j = <span class="number">2</span> * i</span><br><span class="line">            <span class="keyword">while</span> j &lt; n:</span><br><span class="line">                    x[j]=<span class="number">0</span></span><br><span class="line">                    j = j+i</span><br><span class="line">    <span class="keyword">return</span> x</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">prime</span><span class="params">(n,x)</span>:</span></span><br><span class="line">    i = <span class="number">1</span></span><br><span class="line">    j = <span class="number">1</span></span><br><span class="line">    <span class="keyword">while</span> j &lt;= n:</span><br><span class="line">            <span class="keyword">if</span> x[i] == <span class="number">1</span>:</span><br><span class="line">                    j = j + <span class="number">1</span></span><br><span class="line">            i = i + <span class="number">1</span></span><br><span class="line">    <span class="keyword">return</span> i - <span class="number">1</span></span><br><span class="line">x=sieve(<span class="number">10000</span>)</span><br><span class="line">code = [<span class="number">1206</span>,<span class="number">301</span>,<span class="number">384</span>,<span class="number">5</span>]</span><br><span class="line">key =[<span class="number">1</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">2</span>,]</span><br><span class="line"></span><br><span class="line">sys.stdout.write(<span class="string">""</span>.join(chr(i) <span class="keyword">for</span> i <span class="keyword">in</span> [<span class="number">73</span>,<span class="number">83</span>,<span class="number">66</span>,<span class="number">78</span>,<span class="number">32</span>,<span class="number">61</span>,<span class="number">32</span>]))</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range (<span class="number">0</span>,<span class="number">4</span>):</span><br><span class="line">    sys.stdout.write(str(prime(code[i],x)-key[i]))</span><br><span class="line"></span><br><span class="line"><span class="keyword">print</span></span><br></pre></td></tr></table></figure>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/blog/ExMachina/#more">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <div class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </div>
+  </div>
+
+
+    
+      
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
               <a class="post-title-link" href="/blog/SpaceMonkey/">
                 SpaceMonkey
               </a>
@@ -487,6 +562,102 @@
           
           
             
+              <a class="post-title-link" href="/blog/OSXDictionary/">
+                \BGL\DSL\MDX\CD\ ===> OS X dictionary
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于 2015-05-08
+        </span>
+
+        
+          <span class="post-category">
+            &nbsp; | &nbsp; 分类于
+            
+              <a href="/blog/categories/dictionary/">dictionary</a>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+        
+      </div>
+    </div>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <h3 id="开源项目：PYGLOSSARY">开源项目：PYGLOSSARY</h3><ul>
+<li><a href="https://github.com/ilius/pyglossary">PYGLOSSARY</a></li>
+<li><a href="https://bitbucket.org/james_taylor/python-lzo-static">python-lzo</a></li>
+</ul>
+<h3 id="准备好以下环境：">准备好以下环境：</h3><blockquote>
+<ul>
+<li>BeautifulSoup4 required to sanitize html contents.<br> <code>sudo easy_install beautifulsoup4 html5lib</code></li>
+<li>GNU make as part of <a href="http://developer.apple.com/downloads">Command Line Tools for Xcode.</a></li>
+<li>Dictionary Development Kit as part of <a href="http://developer.apple.com/downloads">Auxillary Tools for Xcode</a>.将Dictionary Development Kit解压到<strong>/Applications/Utilities/DictionaryDevelopmentKit/  </strong>（不含空格,中文名:应用程序/实用工具那里，也可以解压到其它地方。）</li>
+</ul>
+</blockquote>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/blog/OSXDictionary/#more">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <div class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/blog/tags/OS-X/"> #OS X </a>
+          
+            <a href="/blog/tags/Python/"> #Python </a>
+          
+            <a href="/blog/tags/dictionary/"> #dictionary </a>
+          
+            <a href="/blog/tags/iOS/"> #iOS </a>
+          
+        </div>
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </div>
+  </div>
+
+
+    
+      
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
               <a class="post-title-link" href="/blog/lingvo2osx/">
                 用DSLConverter将Lingvo词典.DSL格式转换成MAC OSX可用的格式
               </a>
@@ -666,102 +837,6 @@
           
           
             
-              <a class="post-title-link" href="/blog/OSXDictionary/">
-                \BGL\DSL\MDX\CD\ ===> OS X dictionary
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于 2015-05-08
-        </span>
-
-        
-          <span class="post-category">
-            &nbsp; | &nbsp; 分类于
-            
-              <a href="/blog/categories/dictionary/">dictionary</a>
-
-              
-              
-
-            
-          </span>
-        
-
-        
-          
-        
-      </div>
-    </div>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <h3 id="开源项目：PYGLOSSARY">开源项目：PYGLOSSARY</h3><ul>
-<li><a href="https://github.com/ilius/pyglossary">PYGLOSSARY</a></li>
-<li><a href="https://bitbucket.org/james_taylor/python-lzo-static">python-lzo</a></li>
-</ul>
-<h3 id="准备好以下环境：">准备好以下环境：</h3><blockquote>
-<ul>
-<li>BeautifulSoup4 required to sanitize html contents.<br> <code>sudo easy_install beautifulsoup4 html5lib</code></li>
-<li>GNU make as part of <a href="http://developer.apple.com/downloads">Command Line Tools for Xcode.</a></li>
-<li>Dictionary Development Kit as part of <a href="http://developer.apple.com/downloads">Auxillary Tools for Xcode</a>.将Dictionary Development Kit解压到<strong>/Applications/Utilities/DictionaryDevelopmentKit/  </strong>（不含空格,中文名:应用程序/实用工具那里，也可以解压到其它地方。）</li>
-</ul>
-</blockquote>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/blog/OSXDictionary/#more">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/blog/tags/OS-X/"> #OS X </a>
-          
-            <a href="/blog/tags/Python/"> #Python </a>
-          
-            <a href="/blog/tags/dictionary/"> #dictionary </a>
-          
-            <a href="/blog/tags/iOS/"> #iOS </a>
-          
-        </div>
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </div>
-  </div>
-
-
-    
-      
-
-  <div class="post post-type-normal ">
-    <div class="post-header">
-
-      
-      
-        <h1 class="post-title">
-          
-          
-            
               <a class="post-title-link" href="/blog/PasswordGenerator/">
                 password generator
               </a>
@@ -816,93 +891,6 @@
             <a href="/blog/tags/Swift/"> #Swift </a>
           
             <a href="/blog/tags/password/"> #password </a>
-          
-        </div>
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </div>
-  </div>
-
-
-    
-      
-
-  <div class="post post-type-normal ">
-    <div class="post-header">
-
-      
-      
-        <h1 class="post-title">
-          
-          
-            
-              <a class="post-title-link" href="/blog/SwiftGuide/">
-                Swift 语言指南
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于 2015-05-01
-        </span>
-
-        
-          <span class="post-category">
-            &nbsp; | &nbsp; 分类于
-            
-              <a href="/blog/categories/Swift/">Swift</a>
-
-              
-              
-
-            
-          </span>
-        
-
-        
-          
-        
-      </div>
-    </div>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <p>这份指南汇集了 Swift 语言主流学习资源，并以开发者的视角整理编排。</p>
-<p>GitHub：<a href="https://github.com/ipader/SwiftGuide">ipader/SwiftGuide</a> ｜ 网站：<a href="http://dev.swiftguide.cn">http://dev.swiftguide.cn</a> ｜ <em>欢迎开发者一起<a href="https://github.com/ipader/SwiftGuide/pulls">维护</a>，或<a href="https://github.com/ipader/SwiftGuide/issues/new">反馈/投稿</a></em></p>
-<blockquote>
-<p>想了解关于该指南及 Swift 更多信息的同学，可以阅读短文《<a href="https://github.com/ipader/SwiftGuide/blob/master/2014%20letter.md">致 Swift 开发者</a>》。 想快速找到优秀开源项目的开发者，可以访问我们额外整理的<a href="https://github.com/ipader/SwiftGuide/blob/master/Featured.md">《Swift 开源项目精选》</a>。希望快速找到其中精选文章，可以访问<a href="https://github.com/ipader/SwiftGuide/blob/master/Featured-Articles.md">《Swift 文章精选》</a>。</p>
-</blockquote>
-<p><span style="color:lightgray;font-size:12px"><a href="http://weibo.com/swiftlanguage">@SwiftLanguage</a> 更新于 2015-4-26，更新内容详见<a href="https://github.com/ipader/SwiftGuide/blob/master/weekly/2015-04-26.md">《2015-4-26 收录周报》</a></span></p>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/blog/SwiftGuide/#more">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/blog/tags/Swift/"> #Swift </a>
-          
-            <a href="/blog/tags/iOS/"> #iOS </a>
           
         </div>
       
@@ -1048,21 +1036,21 @@
         <div class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/blog/archives">
-              <span class="site-state-item-count">36</span>
+              <span class="site-state-item-count">37</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
           <div class="site-state-item site-state-categories">
             <a href="/blog/categories">
-              <span class="site-state-item-count">19</span>
+              <span class="site-state-item-count">20</span>
               <span class="site-state-item-name">分类</span>
               </a>
           </div>
 
           <div class="site-state-item site-state-tags">
             <a href="/blog/tags">
-              <span class="site-state-item-count">36</span>
+              <span class="site-state-item-count">37</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>

@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://qunwang6.github.io/blog/FactorialInPrograms/</loc>
+    <lastmod>2017-03-20T08:51:20.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://qunwang6.github.io/blog/API%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/</loc>
     <lastmod>2017-03-19T15:15:10.000Z</lastmod>
   </url>
@@ -97,12 +102,12 @@
   </url>
   
   <url>
-    <loc>http://qunwang6.github.io/blog/ExMachina/</loc>
+    <loc>http://qunwang6.github.io/blog/CSS3D/</loc>
     <lastmod>2015-06-03T13:13:52.000Z</lastmod>
   </url>
   
   <url>
-    <loc>http://qunwang6.github.io/blog/CSS3D/</loc>
+    <loc>http://qunwang6.github.io/blog/ExMachina/</loc>
     <lastmod>2015-06-03T13:13:52.000Z</lastmod>
   </url>
   

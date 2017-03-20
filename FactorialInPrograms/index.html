@@ -1,0 +1,580 @@
+<!doctype html>
+<html class="theme-next use-motion theme-next-mist">
+<head>
+  
+
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+  <meta name="google-site-verification" content="p8qifHQZCR7Sv5rGvYC9OGZZxk3bA3Kfr8UUZZZeSoI" />
+
+
+
+
+
+  <link rel="stylesheet" type="text/css" href="/blog/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5"/>
+
+
+<link rel="stylesheet" type="text/css" href="/blog/css/main.css?v=0.4.2"/>
+
+
+
+
+  <meta name="keywords" content="algorithm," />
+
+
+
+  <link rel="alternate" href="/blog/atom.xml" title="Zero to One" type="application/atom+xml" />
+
+
+
+  <link rel="shorticon icon" type="image/x-icon" href="/blog/images/favicon.ico?v=0.4.2" />
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var CONFIG = {
+    scheme: 'Mist',
+    analytics: {
+      baidu: '',
+      google: 'UA-62454921-1'
+    },
+    sidebar: 'hide'
+  };
+</script>
+
+
+
+
+  <title> Factorial in Programs // Zero to One </title>
+</head>
+
+<body>
+<!--[if lte IE 8]> <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'> <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://7u2nvr.com1.z0.glb.clouddn.com/picouterie.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today or use other browser ,like chrome firefox safari." style='margin-left:auto;margin-right:auto;display: block;'/></a></div> <![endif]-->
+  <div class="container one-column page-post-detail">
+    <div class="headband"></div>
+
+    <div id="header" class="header">
+      <div class="header-inner">
+        <h1 class="site-meta">
+  <span class="logo-line-before"><i></i></span>
+  <a href="/blog/" class="brand">
+      <span class="logo">
+        <i class="icon-logo"></i>
+      </span>
+      <span class="site-title">Zero to One</span>
+  </a>
+  <span class="logo-line-after"><i></i></span>
+</h1>
+
+
+  <ul id="menu" class="menu">
+     
+    
+      
+      <li class="menu-item menu-item-home">
+        <a href="/blog/">
+          <i class="menu-item-icon icon-home"></i> <br />
+          首页
+        </a>
+      </li>
+    
+      
+      <li class="menu-item menu-item-categories">
+        <a href="/blog/categories">
+          <i class="menu-item-icon icon-categories"></i> <br />
+          分类
+        </a>
+      </li>
+    
+      
+      <li class="menu-item menu-item-archives">
+        <a href="/blog/archives">
+          <i class="menu-item-icon icon-archives"></i> <br />
+          归档
+        </a>
+      </li>
+    
+      
+      <li class="menu-item menu-item-tags">
+        <a href="/blog/tags">
+          <i class="menu-item-icon icon-tags"></i> <br />
+          标签
+        </a>
+      </li>
+    
+  </ul>
+
+
+      </div>
+    </div>
+
+    <div id="main" class="main">
+      <div class="main-inner">
+        <div id="content" class="content">
+          
+
+  <div id="posts" class="posts-expand">
+    
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
+              Factorial in Programs
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于 2017-03-20
+        </span>
+
+        
+          <span class="post-category">
+            &nbsp; | &nbsp; 分类于
+            
+              <a href="/blog/categories/algorithm/">algorithm</a>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+        
+      </div>
+    </div>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        <p><img src="https://cdn.programiz.com/sites/tutorial2program/files/factorial-number.jpg" alt=""></p>
+<h3 id="Factorial_in_Lua">Factorial in Lua</h3><figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">factorial</span><span class="params">(n)</span></span></span><br><span class="line">    <span class="keyword">if</span> (n == <span class="number">0</span>) <span class="keyword">then</span></span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span></span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">        <span class="keyword">return</span> n * factorial(n - <span class="number">1</span>)</span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> n = <span class="number">0</span>, <span class="number">16</span> <span class="keyword">do</span></span><br><span class="line">    <span class="built_in">io</span>.write(n, <span class="string">"! = "</span>, factorial(n), <span class="string">"\n"</span>)</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+<p>output:</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">0</span>! = <span class="number">1</span></span><br><span class="line"><span class="number">1</span>! = <span class="number">1</span></span><br><span class="line"><span class="number">2</span>! = <span class="number">2</span></span><br><span class="line"><span class="number">3</span>! = <span class="number">6</span></span><br><span class="line"><span class="number">4</span>! = <span class="number">24</span></span><br><span class="line"><span class="number">5</span>! = <span class="number">120</span></span><br><span class="line"><span class="number">6</span>! = <span class="number">720</span></span><br><span class="line"><span class="number">7</span>! = <span class="number">5040</span></span><br><span class="line"><span class="number">8</span>! = <span class="number">40320</span></span><br><span class="line"><span class="number">9</span>! = <span class="number">362880</span></span><br><span class="line"><span class="number">10</span>! = <span class="number">3628800</span></span><br><span class="line"><span class="number">11</span>! = <span class="number">39916800</span></span><br><span class="line"><span class="number">12</span>! = <span class="number">479001600</span></span><br><span class="line"><span class="number">13</span>! = <span class="number">6227020800</span></span><br><span class="line"><span class="number">14</span>! = <span class="number">87178291200</span></span><br><span class="line"><span class="number">15</span>! = <span class="number">1307674368000</span></span><br><span class="line"><span class="number">16</span>! = <span class="number">20922789888000</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- function closures are powerful</span></span><br><span class="line"></span><br><span class="line"><span class="comment">-- traditional fixed-point operator from functional programming</span></span><br><span class="line">Y = <span class="function"><span class="keyword">function</span> <span class="params">(g)</span></span></span><br><span class="line">      <span class="keyword">local</span> a = <span class="function"><span class="keyword">function</span> <span class="params">(f)</span></span> <span class="keyword">return</span> f(f) <span class="keyword">end</span></span><br><span class="line">      <span class="keyword">return</span> a(<span class="function"><span class="keyword">function</span> <span class="params">(f)</span></span></span><br><span class="line">                 <span class="keyword">return</span> g(<span class="function"><span class="keyword">function</span> <span class="params">(x)</span></span></span><br><span class="line">                             <span class="keyword">local</span> c=f(f)</span><br><span class="line">                             <span class="keyword">return</span> c(x)</span><br><span class="line">                           <span class="keyword">end</span>)</span><br><span class="line">               <span class="keyword">end</span>)</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">-- factorial without recursion</span></span><br><span class="line">F = <span class="function"><span class="keyword">function</span> <span class="params">(f)</span></span></span><br><span class="line">      <span class="keyword">return</span> <span class="function"><span class="keyword">function</span> <span class="params">(n)</span></span></span><br><span class="line">               <span class="keyword">if</span> n == <span class="number">0</span> <span class="keyword">then</span> <span class="keyword">return</span> <span class="number">1</span></span><br><span class="line">               <span class="keyword">else</span> <span class="keyword">return</span> n*f(n-<span class="number">1</span>) <span class="keyword">end</span></span><br><span class="line">             <span class="keyword">end</span></span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line"></span><br><span class="line">factorial = Y(F)   <span class="comment">-- factorial is the fixed point of F</span></span><br><span class="line"></span><br><span class="line"><span class="comment">-- now test it</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">test</span><span class="params">(x)</span></span></span><br><span class="line">	<span class="built_in">io</span>.write(x,<span class="string">"! = "</span>,factorial(x),<span class="string">"\n"</span>)</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> n=<span class="number">0</span>,<span class="number">16</span> <span class="keyword">do</span></span><br><span class="line">	test(n)</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+<h3 id="Factorial_in_Bash">Factorial in Bash</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">f=<span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (( n=<span class="number">1</span>; <span class="variable">$n</span>&lt;=<span class="number">17</span>; $((n++)) ));</span><br><span class="line"><span class="keyword">do</span></span><br><span class="line">  <span class="built_in">echo</span> <span class="string">"<span class="variable">$((n-1)</span>)! = <span class="variable">$f</span>"</span></span><br><span class="line">  f=$((f*n))</span><br><span class="line"><span class="keyword">done</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="title">factorial</span></span> ()</span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">local</span> num=<span class="variable">$1</span>;</span><br><span class="line">    <span class="keyword">if</span> [ <span class="variable">$num</span> = <span class="number">0</span> ]; <span class="keyword">then</span></span><br><span class="line">        <span class="built_in">echo</span> <span class="number">1</span></span><br><span class="line">        <span class="built_in">return</span> ;</span><br><span class="line">    <span class="keyword">fi</span>;</span><br><span class="line">    <span class="built_in">echo</span> $(( <span class="variable">$num</span> * $(factorial $(( <span class="variable">$num</span> - <span class="number">1</span> )) ) ))</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> ((n = <span class="number">0</span>; n &lt;= <span class="number">16</span>; n++))</span><br><span class="line"><span class="keyword">do</span></span><br><span class="line">    <span class="built_in">echo</span> <span class="string">"<span class="variable">$n</span>! = "</span> $(factorial $((<span class="variable">$n</span>)))</span><br><span class="line"><span class="keyword">done</span></span><br></pre></td></tr></table></figure>
+<h3 id="Factorial_in_Python">Factorial in Python</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">factorial</span><span class="params">(n)</span>:</span></span><br><span class="line">    <span class="keyword">if</span> n == <span class="number">0</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span></span><br><span class="line"></span><br><span class="line">    f = <span class="number">1</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>, n + <span class="number">1</span>):</span><br><span class="line">        f *= i</span><br><span class="line">    <span class="keyword">return</span> f</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> n <span class="keyword">in</span> range(<span class="number">16</span> + <span class="number">1</span>):</span><br><span class="line">    <span class="keyword">print</span> <span class="string">"%d! = %d"</span> % (n, factorial(n))</span><br></pre></td></tr></table></figure>
+<h3 id="Factorial_in_Dart">Factorial in Dart</h3><figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">main() &#123;</span><br><span class="line">  <span class="built_in">int</span> fact = <span class="number">1</span>;</span><br><span class="line">  <span class="keyword">for</span> (<span class="built_in">int</span> i = <span class="number">0</span>; i &lt;= <span class="number">16</span>; ++i, fact *= i) &#123;</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">'$i! = $fact'</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="Factorial_in_Java">Factorial in Java</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Factorial</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">static</span> <span class="keyword">long</span> <span class="title">factorial</span><span class="params">(<span class="keyword">int</span> n)</span></span><br><span class="line">    </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> ( n==<span class="number">0</span> ? <span class="number">1</span> : n*factorial(n-<span class="number">1</span>) );</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span><br><span class="line">    </span>&#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> n=<span class="number">0</span>; n&lt;=<span class="number">16</span>; n++)</span><br><span class="line">            System.out.println(n+<span class="string">"! = "</span>+factorial(n));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="Factorial_in_PHP">Factorial in PHP</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">&lt;?php</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">factorial</span><span class="params">(<span class="variable">$n</span>)</span></span><br><span class="line"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (<span class="variable">$n</span> == <span class="number">0</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="variable">$n</span> * factorial(<span class="variable">$n</span> - <span class="number">1</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (<span class="variable">$n</span> = <span class="number">0</span>; <span class="variable">$n</span> &lt;= <span class="number">16</span>; <span class="variable">$n</span>++) &#123;</span><br><span class="line">    <span class="keyword">echo</span> <span class="variable">$n</span> . <span class="string">"! = "</span> . factorial(<span class="variable">$n</span>) . <span class="string">"\n"</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="preprocessor">?&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="Factorial_in_Objective-C">Factorial in Objective-C</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">#<span class="keyword">include</span> &lt;stdio.h&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">unsigned</span> <span class="keyword">long</span> <span class="keyword">long</span> <span class="title">factorial</span><span class="params">(<span class="keyword">unsigned</span> <span class="keyword">long</span> <span class="keyword">long</span> n)</span></span><br><span class="line"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (n == <span class="number">0</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> n * factorial (n - <span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span><br><span class="line"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> n;</span><br><span class="line">    <span class="keyword">for</span> (n = <span class="number">0</span>; n &lt;= <span class="number">16</span>; n++) &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"%i! = %lld\n"</span>, n, factorial(n));</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="Factorial_in_C">Factorial in C</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">#<span class="keyword">include</span> &lt;stdio.h&gt;</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span><br><span class="line"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> n, i;</span><br><span class="line">    <span class="keyword">unsigned</span> <span class="keyword">long</span> <span class="keyword">long</span> factorial = <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"Enter an integer: "</span>);</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;n);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// show error if the user enters a negative integer</span></span><br><span class="line">    <span class="keyword">if</span> (n &lt; <span class="number">0</span>)</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"Error! Factorial of a negative number doesn't exist."</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">for</span>(i=<span class="number">1</span>; i&lt;=n; ++i)</span><br><span class="line">        &#123;</span><br><span class="line">            factorial *= i;              <span class="comment">// factorial = factorial*i;</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"Factorial of %d = %llu"</span>, n, factorial);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">#<span class="keyword">include</span> &lt;stdio.h&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">   <span class="keyword">int</span> loop;</span><br><span class="line">   <span class="keyword">int</span> factorial=<span class="number">1</span>;</span><br><span class="line">   <span class="keyword">int</span> number = <span class="number">5</span>;</span><br><span class="line"></span><br><span class="line">   <span class="keyword">for</span>(loop = <span class="number">1</span>; loop&lt;=number; loop++) &#123;</span><br><span class="line">      factorial = factorial * loop;</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="built_in">printf</span>(<span class="string">"Factorial of %d = %d \n"</span>, number, factorial);</span><br><span class="line"></span><br><span class="line">   <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line">/*  Example Program For Find Factorial Number In C Programming Language</span><br><span class="line">    little drops @ thiyagaraaj.com</span><br><span class="line">    Coded By:THIYAGARAAJ MP             */</span><br><span class="line"></span><br><span class="line">// Header Files</span><br><span class="line">#include&lt;stdio.h&gt;</span><br><span class="line">#include&lt;conio.h&gt;</span><br><span class="line"></span><br><span class="line">// define Function and Its Argument Type</span><br><span class="line">long factorial(long);</span><br><span class="line"></span><br><span class="line">//Main Function</span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">	// Variable Declaration for Factorial Function Input</span><br><span class="line">	long f;</span><br><span class="line"></span><br><span class="line">	printf("Enter the Number for Factorial Calculation :?);</span><br><span class="line">	scanf("%ld",&amp;f);</span><br><span class="line">	//factorial calculation</span><br><span class="line">	printf("The Factorial of %ld is %ld",f,factorial(f));</span><br><span class="line"></span><br><span class="line">	// Wait For Output Screen</span><br><span class="line">	getch();</span><br><span class="line">	//Main Function return Statement</span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// factorial Function</span><br><span class="line">long factorial(long n)</span><br><span class="line">&#123;</span><br><span class="line">	int counter;</span><br><span class="line">	long fact = 1;</span><br><span class="line"></span><br><span class="line">	//for Loop for Factorial Calculation Block</span><br><span class="line">	for (counter = 1; counter &lt;= n; counter++)</span><br><span class="line">	&#123;</span><br><span class="line">		fact = fact * counter;</span><br><span class="line">	&#125;</span><br><span class="line">	return fact;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="reference">reference</h3><ul>
+<li><a href="https://cdn.rawgit.com/vvanders/wasm_lua/d68f46a8/main.html" target="_blank" rel="external">Lua VM running in your browser</a></li>
+<li><a href="http://progopedia.com/example/factorial/26/" target="_blank" rel="external">Factorial - Example for versions Lua 5.0.3 - Progopedia - Encyclopedia of Programming Languages</a></li>
+<li><a href="http://progopedia.com/example/factorial/" target="_blank" rel="external">Factorial - example - Progopedia - Encyclopedia of Programming Languages</a></li>
+<li><a href="https://github.com/davidm/lua2c/blob/master/examples-lua/factorial.lua" target="_blank" rel="external">lua2c/factorial.lua at master · davidm/lua2c</a></li>
+</ul>
+
+      
+    </div>
+
+    <div class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/blog/tags/algorithm/"> #algorithm </a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/blog/API接口测试工具/">API接口测试工具</a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </div>
+  </div>
+
+
+
+    
+      <div class="comments" id="comments">
+        
+      </div>
+    
+  </div>
+
+
+        </div>
+
+        
+      </div>
+
+
+      
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <div class="site-overview">
+        <div class="site-author motion-element">
+          <img class="site-author-image" src="/blog/images/default_avatar.jpg" alt="Qun Wang" />
+          <p class="site-author-name">Qun Wang</p>
+        </div>
+        <p class="site-description motion-element"></p>
+        <div class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/blog/archives">
+              <span class="site-state-item-count">37</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          <div class="site-state-item site-state-categories">
+            <a href="/blog/categories">
+              <span class="site-state-item-count">20</span>
+              <span class="site-state-item-name">分类</span>
+              </a>
+          </div>
+
+          <div class="site-state-item site-state-tags">
+            <a href="/blog/tags">
+              <span class="site-state-item-count">37</span>
+              <span class="site-state-item-name">标签</span>
+              </a>
+          </div>
+
+        </div>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/blog/atom.xml">
+              <i class="menu-item-icon icon-feed"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+              <a href="https://github.com/qunwang6" target="_blank">GitHub</a>
+            </span>
+            
+              <span class="links-of-author-item">
+              <a href="https://twitter.com/qunwang6" target="_blank">Twitter</a>
+            </span>
+            
+              <span class="links-of-author-item">
+              <a href="mailto:qunwang6@gmail.com" target="_blank">Gmail</a>
+            </span>
+            
+          
+        </div>
+
+        
+        
+
+      </div>
+
+      
+        <div class="post-toc-wrap sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator"></div>
+          <div class="post-toc">
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Factorial_in_Lua"><span class="nav-number">1.</span> <span class="nav-text">Factorial in Lua</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Factorial_in_Bash"><span class="nav-number">2.</span> <span class="nav-text">Factorial in Bash</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Factorial_in_Python"><span class="nav-number">3.</span> <span class="nav-text">Factorial in Python</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Factorial_in_Dart"><span class="nav-number">4.</span> <span class="nav-text">Factorial in Dart</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Factorial_in_Java"><span class="nav-number">5.</span> <span class="nav-text">Factorial in Java</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Factorial_in_PHP"><span class="nav-number">6.</span> <span class="nav-text">Factorial in PHP</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Factorial_in_Objective-C"><span class="nav-number">7.</span> <span class="nav-text">Factorial in Objective-C</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Factorial_in_C"><span class="nav-number">8.</span> <span class="nav-text">Factorial in C</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#reference"><span class="nav-number">9.</span> <span class="nav-text">reference</span></a></li></ol></div>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator"></div>
+        </div>
+      
+
+    </div>
+  </div>
+
+
+    </div>
+
+    <div id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">
+  
+  &copy; &nbsp;  2015 - 
+  2017
+  <span class="with-love">
+    <i class="icon-heart"></i>
+  </span>
+  <span class="author">Qun Wang</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+
+
+      </div>
+    </div>
+
+    <div class="back-to-top"></div>
+  </div>
+
+  <script type="text/javascript" src="/blog/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  
+
+  
+  <script type="text/javascript" src="/blog/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript" src="/blog/js/fancy-box.js"></script>
+
+
+  <script type="text/javascript" src="/blog/js/helpers.js"></script>
+  
+
+  <script type="text/javascript" src="/blog/vendors/velocity/velocity.min.js"></script>
+  <script type="text/javascript" src="/blog/vendors/velocity/velocity.ui.min.js"></script>
+
+  <script type="text/javascript" src="/blog/js/motion_global.js" id="motion.global"></script>
+
+
+
+
+  
+  
+<script type="text/javascript" src="/blog/js/bootstrap.scrollspy.js" id="bootstrap.scrollspy.custom"></script>
+
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var $sidebarInner = $('.sidebar-inner');
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.didShow', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+          var self = this;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      $(indicator).velocity('stop').velocity({
+        opacity: action === 'show' ? 0.4 : 0
+      }, { duration: 100 });
+    }
+
+  });
+</script>
+
+
+  <script type="text/javascript" id="sidebar.nav">
+    $(document).ready(function () {
+      var html = $('html');
+
+      $('.sidebar-nav li').on('click', function () {
+        var item = $(this);
+        var activeTabClassName = 'sidebar-nav-active';
+        var activePanelClassName = 'sidebar-panel-active';
+        if (item.hasClass(activeTabClassName)) {
+          return;
+        }
+
+        var currentTarget = $('.' + activePanelClassName);
+        var target = $('.' + item.data('target'));
+
+        currentTarget.velocity('transition.slideUpOut', 200, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', 200)
+            .addClass(activePanelClassName);
+        });
+
+        item.siblings().removeClass(activeTabClassName);
+        item.addClass(activeTabClassName);
+      });
+
+      $('.post-toc a').on('click', function (e) {
+        e.preventDefault();
+        var offset = $(escapeSelector(this.getAttribute('href'))).offset().top;
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        });
+      });
+
+      // Expand sidebar on post detail page by default, when post has a toc.
+      var $tocContent = $('.post-toc-content');
+      if (isDesktop() && CONFIG.sidebar === 'post') {
+        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+          displaySidebar();
+        }
+      }
+    });
+  </script>
+
+
+
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      if (CONFIG.sidebar === 'always') {
+        displaySidebar();
+      }
+    });
+  </script>
+
+  
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for (i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+  
+  
+  
+
+  
+
+
+
+
+  
+  
+  <script type="text/javascript" src="/blog/js/analytics_google-analytics.js"></script>
+
+
+</body>
+</html>

@@ -130,8 +130,8 @@
           
           
             
-              <a class="post-title-link" href="/blog/baiduOCR/">
-                baidu OCR
+              <a class="post-title-link" href="/blog/javascriptcodepices/">
+                JavaScript代码片段
               </a>
             
           
@@ -140,14 +140,14 @@
 
       <div class="post-meta">
         <span class="post-time">
-          发表于 2015-06-06
+          发表于 2015-06-12
         </span>
 
         
           <span class="post-category">
             &nbsp; | &nbsp; 分类于
             
-              <a href="/blog/categories/OCR/">OCR</a>
+              <a href="/blog/categories/JavaScript/">JavaScript</a>
 
               
               
@@ -169,9 +169,20 @@
 
       
         
-          <h2 id="百度OCR文字识别API_for_Python">百度OCR文字识别API for Python</h2><figure class="highlight haskell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">#!/usr/bin/env python</span></span><br><span class="line"><span class="preprocessor"># -*- coding: utf-8 -*-</span></span><br><span class="line"><span class="import"><span class="keyword">import</span> sys, urllib, urllib2, json</span></span><br><span class="line"><span class="title">f</span> = open(<span class="string">"test.txt"</span>,<span class="string">"w"</span>)</span><br><span class="line"><span class="title">url</span> = 'http://apis.baidu.com/apistore/idlocr/ocr'</span><br><span class="line"></span><br><span class="line"><span class="typedef"><span class="keyword">data</span> = <span class="container">&#123;&#125;</span></span></span><br><span class="line"><span class="typedef"><span class="keyword">data</span>['fromdevice'] = "pc"</span></span><br><span class="line"><span class="typedef"><span class="keyword">data</span>['clientip'] = "10.10.10.0"</span></span><br><span class="line"><span class="typedef"><span class="keyword">data</span>['detecttype'] = "<span class="type">LocateRecognize</span>"</span></span><br><span class="line"><span class="typedef"><span class="keyword">data</span>['languagetype'] = "<span class="type">CHN_ENG</span>"</span></span><br><span class="line"><span class="typedef"><span class="keyword">data</span>['imagetype'] = "1"  #`2`代表图片原文件（只支持<span class="type">JPG</span>）</span></span><br><span class="line"><span class="typedef"><span class="keyword">data</span>['image'] = ""    ##image base64 <span class="keyword">data</span></span></span><br><span class="line"></span><br><span class="line"><span class="title">decoded_data</span> = urllib.urlencode(<span class="typedef"><span class="keyword">data</span>)</span></span><br><span class="line"><span class="title">req</span> = urllib2.<span class="type">Request</span>(url, <span class="typedef"><span class="keyword">data</span> = decoded_data)</span></span><br><span class="line"></span><br><span class="line"><span class="title">req</span>.add_header(<span class="string">"Content-Type"</span>, <span class="string">"application/x-www-form-urlencoded"</span>)</span><br><span class="line"><span class="title">req</span>.add_header(<span class="string">"apikey"</span>, <span class="string">"自己的apikey"</span>)</span><br><span class="line"></span><br><span class="line"><span class="title">resp</span> = urllib2.urlopen(req)</span><br><span class="line"><span class="title">content</span> = resp.read()</span><br><span class="line"><span class="title">if</span>(content):</span><br><span class="line">    print(content)</span><br><span class="line">    f.write(content)</span><br></pre></td></tr></table></figure>
+          <h2 id="编辑器">编辑器</h2><p>在html5中新多了一个特性，叫做<code>contenteditable,</code>这个特性可以让html里的一个元素变成可编辑状态。因此，我们可以通过这个属性来构造一个简单的文本编辑器。<br>在浏览器里新建一个标签页输入网址<br><code>data:text/html,&lt;html contenteditable&gt;</code><br>你会发现你的浏览界面变成了一个简单的文本编辑器。</p>
+<blockquote>
+<p>montas 的改造：You can use textarea and make it “invisible” if you want autofocus.</p>
+</blockquote>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">data:text/<span class="tag">html</span>, &lt;<span class="tag">textarea</span> style=<span class="string">"font-size: 1.5em; width: 100%; height: 100%; border: none; outline: none"</span> autofocus /&gt;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>bgrins 的改造：编辑内容时，自动变换背景颜色；停止后变换白色。</p>
+</blockquote>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">data:text/html, <span class="tag">&lt;<span class="title">html</span>&gt;</span><span class="tag">&lt;<span class="title">head</span>&gt;</span><span class="tag">&lt;<span class="title">style</span> <span class="attribute">type</span>=<span class="value">"text/css"</span>&gt;</span><span class="css"> <span class="tag">html</span> <span class="rules">&#123; <span class="rule"><span class="attribute">font-family</span>:<span class="value"> <span class="string">"Open Sans"</span> &#125; * &#123; -webkit-transition: all linear <span class="number">1s</span></span></span>; &#125;</span></span><span class="tag">&lt;/<span class="title">style</span>&gt;</span><span class="tag">&lt;<span class="title">script</span>&gt;</span><span class="javascript"><span class="built_in">window</span>.onload=<span class="function"><span class="keyword">function</span><span class="params">()</span></span>&#123;<span class="keyword">var</span> e=<span class="literal">false</span>;<span class="keyword">var</span> t=<span class="number">0</span>;setInterval(<span class="function"><span class="keyword">function</span><span class="params">()</span></span>&#123;<span class="keyword">if</span>(!e)&#123;t=<span class="built_in">Math</span>.round(<span class="built_in">Math</span>.max(<span class="number">0</span>,t-<span class="built_in">Math</span>.max(t/<span class="number">3</span>,<span class="number">1</span>)))&#125;<span class="keyword">var</span> n=(<span class="number">255</span>-t*<span class="number">2</span>).toString(<span class="number">16</span>);<span class="built_in">document</span>.body.style.backgroundColor=<span class="string">"#ff"</span>+n+<span class="string">""</span>+n&#125;,<span class="number">1e3</span>);<span class="keyword">var</span> n=<span class="literal">null</span>;<span class="built_in">document</span>.onkeydown=<span class="function"><span class="keyword">function</span><span class="params">()</span></span>&#123;t=<span class="built_in">Math</span>.min(<span class="number">128</span>,t+<span class="number">2</span>);e=<span class="literal">true</span>;clearTimeout(n);n=setTimeout(<span class="function"><span class="keyword">function</span><span class="params">()</span></span>&#123;e=<span class="literal">false</span>&#125;,<span class="number">1500</span>)&#125;&#125;</span><span class="tag">&lt;/<span class="title">script</span>&gt;</span><span class="tag">&lt;/<span class="title">head</span>&gt;</span><span class="tag">&lt;<span class="title">body</span> <span class="attribute">contenteditable</span> <span class="attribute">style</span>=<span class="value">"font-size:2rem;line-height:1.4;max-width:60rem;margin:0 auto;padding:4rem;"</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>fvsch 的改造：</p>
+</blockquote>
           <div class="post-more-link text-center">
-            <a class="btn" href="/blog/baiduOCR/#more">
+            <a class="btn" href="/blog/javascriptcodepices/#more">
               阅读全文 &raquo;
             </a>
           </div>
@@ -183,11 +194,7 @@
       
         <div class="post-tags">
           
-            <a href="/blog/tags/OCR/"> #OCR </a>
-          
-            <a href="/blog/tags/Python/"> #Python </a>
-          
-            <a href="/blog/tags/base64/"> #base64 </a>
+            <a href="/blog/tags/JavaScript/"> #JavaScript </a>
           
         </div>
       
@@ -277,6 +284,90 @@
         <div class="post-tags">
           
             <a href="/blog/tags/GFW/"> #GFW </a>
+          
+        </div>
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </div>
+  </div>
+
+
+    
+      
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
+              <a class="post-title-link" href="/blog/baiduOCR/">
+                baidu OCR
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于 2015-06-06
+        </span>
+
+        
+          <span class="post-category">
+            &nbsp; | &nbsp; 分类于
+            
+              <a href="/blog/categories/OCR/">OCR</a>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+        
+      </div>
+    </div>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <h2 id="百度OCR文字识别API_for_Python">百度OCR文字识别API for Python</h2><figure class="highlight haskell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">#!/usr/bin/env python</span></span><br><span class="line"><span class="preprocessor"># -*- coding: utf-8 -*-</span></span><br><span class="line"><span class="import"><span class="keyword">import</span> sys, urllib, urllib2, json</span></span><br><span class="line"><span class="title">f</span> = open(<span class="string">"test.txt"</span>,<span class="string">"w"</span>)</span><br><span class="line"><span class="title">url</span> = 'http://apis.baidu.com/apistore/idlocr/ocr'</span><br><span class="line"></span><br><span class="line"><span class="typedef"><span class="keyword">data</span> = <span class="container">&#123;&#125;</span></span></span><br><span class="line"><span class="typedef"><span class="keyword">data</span>['fromdevice'] = "pc"</span></span><br><span class="line"><span class="typedef"><span class="keyword">data</span>['clientip'] = "10.10.10.0"</span></span><br><span class="line"><span class="typedef"><span class="keyword">data</span>['detecttype'] = "<span class="type">LocateRecognize</span>"</span></span><br><span class="line"><span class="typedef"><span class="keyword">data</span>['languagetype'] = "<span class="type">CHN_ENG</span>"</span></span><br><span class="line"><span class="typedef"><span class="keyword">data</span>['imagetype'] = "1"  #`2`代表图片原文件（只支持<span class="type">JPG</span>）</span></span><br><span class="line"><span class="typedef"><span class="keyword">data</span>['image'] = ""    ##image base64 <span class="keyword">data</span></span></span><br><span class="line"></span><br><span class="line"><span class="title">decoded_data</span> = urllib.urlencode(<span class="typedef"><span class="keyword">data</span>)</span></span><br><span class="line"><span class="title">req</span> = urllib2.<span class="type">Request</span>(url, <span class="typedef"><span class="keyword">data</span> = decoded_data)</span></span><br><span class="line"></span><br><span class="line"><span class="title">req</span>.add_header(<span class="string">"Content-Type"</span>, <span class="string">"application/x-www-form-urlencoded"</span>)</span><br><span class="line"><span class="title">req</span>.add_header(<span class="string">"apikey"</span>, <span class="string">"自己的apikey"</span>)</span><br><span class="line"></span><br><span class="line"><span class="title">resp</span> = urllib2.urlopen(req)</span><br><span class="line"><span class="title">content</span> = resp.read()</span><br><span class="line"><span class="title">if</span>(content):</span><br><span class="line">    print(content)</span><br><span class="line">    f.write(content)</span><br></pre></td></tr></table></figure>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/blog/baiduOCR/#more">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <div class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/blog/tags/OCR/"> #OCR </a>
+          
+            <a href="/blog/tags/Python/"> #Python </a>
+          
+            <a href="/blog/tags/base64/"> #base64 </a>
           
         </div>
       
@@ -484,86 +575,6 @@
           
           
             
-              <a class="post-title-link" href="/blog/FrontendKnowledgeStructure/">
-                Frontend Knowledge Structure
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于 2015-05-31
-        </span>
-
-        
-          <span class="post-category">
-            &nbsp; | &nbsp; 分类于
-            
-              <a href="/blog/categories/前端/">前端</a>
-
-              
-              
-
-            
-          </span>
-        
-
-        
-          
-        
-      </div>
-    </div>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <p><img src="https://raw.github.com/JacksonTian/fks/master/figures/fks.jpg" alt=""><br>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/blog/FrontendKnowledgeStructure/#more">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/blog/tags/前端/"> #前端 </a>
-          
-        </div>
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </div>
-  </div>
-
-
-    
-      
-
-  <div class="post post-type-normal ">
-    <div class="post-header">
-
-      
-      
-        <h1 class="post-title">
-          
-          
-            
               <a class="post-title-link" href="/blog/HelpSheet/">
                 Help Sheet
               </a>
@@ -618,6 +629,86 @@
         <div class="post-tags">
           
             <a href="/blog/tags/Sheet/"> #Sheet </a>
+          
+        </div>
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </div>
+  </div>
+
+
+    
+      
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
+              <a class="post-title-link" href="/blog/FrontendKnowledgeStructure/">
+                Frontend Knowledge Structure
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于 2015-05-31
+        </span>
+
+        
+          <span class="post-category">
+            &nbsp; | &nbsp; 分类于
+            
+              <a href="/blog/categories/前端/">前端</a>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+        
+      </div>
+    </div>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <p><img src="https://raw.github.com/JacksonTian/fks/master/figures/fks.jpg" alt=""><br>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/blog/FrontendKnowledgeStructure/#more">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <div class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/blog/tags/前端/"> #前端 </a>
           
         </div>
       
@@ -916,81 +1007,6 @@
 
 
     
-      
-
-  <div class="post post-type-normal ">
-    <div class="post-header">
-
-      
-      
-        <h1 class="post-title">
-          
-          
-            
-              <a class="post-title-link" href="/blog/ExMachina/">
-                Secret code in Ex Machina
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于 2015-05-17
-        </span>
-
-        
-          <span class="post-category">
-            &nbsp; | &nbsp; 分类于
-            
-              <a href="/blog/categories/Python/">Python</a>
-
-              
-              
-
-            
-          </span>
-        
-
-        
-          
-        
-      </div>
-    </div>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <p><img src="http://i.imgur.com/C44iJeR.jpg" alt=""></p>
-<h3 id="Code">Code</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#BlueBook code decryption</span></span><br><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">sieve</span><span class="params">(n)</span>:</span></span><br><span class="line">    x = [<span class="number">1</span>] * n</span><br><span class="line">    x[<span class="number">1</span>] = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">2</span>,n/<span class="number">2</span>):</span><br><span class="line">            j = <span class="number">2</span> * i</span><br><span class="line">            <span class="keyword">while</span> j &lt; n:</span><br><span class="line">                    x[j]=<span class="number">0</span></span><br><span class="line">                    j = j+i</span><br><span class="line">    <span class="keyword">return</span> x</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">prime</span><span class="params">(n,x)</span>:</span></span><br><span class="line">    i = <span class="number">1</span></span><br><span class="line">    j = <span class="number">1</span></span><br><span class="line">    <span class="keyword">while</span> j &lt;= n:</span><br><span class="line">            <span class="keyword">if</span> x[i] == <span class="number">1</span>:</span><br><span class="line">                    j = j + <span class="number">1</span></span><br><span class="line">            i = i + <span class="number">1</span></span><br><span class="line">    <span class="keyword">return</span> i - <span class="number">1</span></span><br><span class="line">x=sieve(<span class="number">10000</span>)</span><br><span class="line">code = [<span class="number">1206</span>,<span class="number">301</span>,<span class="number">384</span>,<span class="number">5</span>]</span><br><span class="line">key =[<span class="number">1</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">2</span>,]</span><br><span class="line"></span><br><span class="line">sys.stdout.write(<span class="string">""</span>.join(chr(i) <span class="keyword">for</span> i <span class="keyword">in</span> [<span class="number">73</span>,<span class="number">83</span>,<span class="number">66</span>,<span class="number">78</span>,<span class="number">32</span>,<span class="number">61</span>,<span class="number">32</span>]))</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range (<span class="number">0</span>,<span class="number">4</span>):</span><br><span class="line">    sys.stdout.write(str(prime(code[i],x)-key[i]))</span><br><span class="line"></span><br><span class="line"><span class="keyword">print</span></span><br></pre></td></tr></table></figure>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/blog/ExMachina/#more">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </div>
-  </div>
-
-
-    
   </div>
 
   
@@ -1029,21 +1045,21 @@
         <div class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/blog/archives">
-              <span class="site-state-item-count">36</span>
+              <span class="site-state-item-count">37</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
           <div class="site-state-item site-state-categories">
             <a href="/blog/categories">
-              <span class="site-state-item-count">19</span>
+              <span class="site-state-item-count">20</span>
               <span class="site-state-item-name">分类</span>
               </a>
           </div>
 
           <div class="site-state-item site-state-tags">
             <a href="/blog/tags">
-              <span class="site-state-item-count">36</span>
+              <span class="site-state-item-count">37</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>
