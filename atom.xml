@@ -4,7 +4,7 @@
   
   <link href="/blog/atom.xml" rel="self"/>
   <link href="http://qunwang6.github.io/blog/"/>
-  <updated>2017-03-20T09:00:04.000Z</updated>
+  <updated>2017-03-22T05:58:26.000Z</updated>
   <id>http://qunwang6.github.io/blog/</id>
   
   <author>
@@ -13,6 +13,48 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Lisp]]></title>
+    <link href="http://qunwang6.github.io/blog/Lisp/"/>
+    <id>http://qunwang6.github.io/blog/Lisp/</id>
+    <published>2017-03-21T16:00:00.000Z</published>
+    <updated>2017-03-22T05:58:26.000Z</updated>
+    <content type="html"><![CDATA[<blockquote>
+<p>无言独上西楼，月如勾。</p>
+</blockquote>
+<h3 id="Lisp_Books">Lisp Books</h3><ul>
+<li><a href="http://lisp-lang.org/" target="_blank" rel="external">Common Lisp</a></li>
+<li><a href="http://fullstacklisp.com/" target="_blank" rel="external">Full Stack Lisp Book!</a></li>
+<li><a href="https://github.com/LispTO/llthw" target="_blank" rel="external">Learn Lisp The Hard Way source-code and full book text</a></li>
+</ul>
+<h3 id="SBCL">SBCL</h3><ul>
+<li><a href="http://www.sbcl.org/" target="_blank" rel="external">About - Steel Bank Common Lisp</a></li>
+</ul>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">To quit SBCL, <span class="built_in">type</span> (quit)</span><br></pre></td></tr></table></figure>
+<h3 id="Quicklisp">Quicklisp</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">$ curl -o /tmp/ql.lisp http://beta.quicklisp.org/quicklisp.lisp</span><br><span class="line">$ sbcl --no-sysinit --no-userinit --load /tmp/ql.lisp --eval <span class="string">'(quicklisp-quickstart:install :path ".quicklisp")'</span> --quit</span><br><span class="line"></span><br><span class="line"><span class="comment">### Sublime</span></span><br><span class="line"></span><br><span class="line">```sh</span><br><span class="line">先安装Common lisp 解释器：</span><br><span class="line">brew install sbcl</span><br><span class="line"></span><br><span class="line">然后在sublime text添加一个</span><br><span class="line">build system</span><br><span class="line">&#123;</span><br><span class="line">    <span class="string">"shell_cmd"</span>: <span class="string">"/usr/local/bin/sbcl --disable-debugger --load <span class="variable">$file</span>"</span>,</span><br><span class="line">    <span class="string">"working_dir"</span>: <span class="string">"<span class="variable">$file_path</span>"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="try_lisp_on_browser">try lisp on browser</h3><ul>
+<li><a href="http://learnlispthehardway.org/try-lisp/" target="_blank" rel="external">L(λ)THW</a></li>
+</ul>
+<h3 id="code">code</h3><p>hello world</p>
+<figure class="highlight lisp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="list">(<span class="keyword">defun</span> sayHello<span class="list">()</span></span><br><span class="line">	<span class="list">(<span class="keyword">format</span> <span class="literal">t</span> <span class="string">"Hello, world!"</span>)</span>)</span></span><br><span class="line"><span class="list">(<span class="keyword">sayHello</span>)</span></span><br></pre></td></tr></table></figure>
+<h3 id="References">References</h3><ul>
+<li><a href="https://marktrapp.com/blog/2014/01/20/lisp-with-os-x-sublime-text/" target="_blank" rel="external">Setting up a Common Lisp environment on OS X with Sublime Text 3 | Mark Trapp</a></li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[<blockquote>
+<p>无言独上西楼，月如勾。</p>
+</blockquote>
+<h3 id="Lisp_Books">Lisp Books</h3><ul>
+<li><a href="http://lisp-lang.org/" target="_blank" re]]>
+    </summary>
+    
+      <category term="Lisp" scheme="http://qunwang6.github.io/blog/tags/Lisp/"/>
+    
+      <category term="Lisp" scheme="http://qunwang6.github.io/blog/categories/Lisp/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Factorial in Programs]]></title>
@@ -1282,54 +1324,6 @@
       <category term="host" scheme="http://qunwang6.github.io/blog/tags/host/"/>
     
       <category term="GFW" scheme="http://qunwang6.github.io/blog/categories/GFW/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Sublime 3笔记]]></title>
-    <link href="http://qunwang6.github.io/blog/sublime/"/>
-    <id>http://qunwang6.github.io/blog/sublime/</id>
-    <published>2015-05-22T16:00:00.000Z</published>
-    <updated>2015-06-03T13:13:36.000Z</updated>
-    <content type="html"><![CDATA[<h2 id="Package_Control">Package Control</h2><p><a href="https://packagecontrol.io/installation#st3" target="_blank" rel="external">Package Control</a></p>
-<hr>
-<h2 id="自动换行">自动换行</h2><p>1、打开 Preferences -&gt; Setting - User（设置 - 用户）</p>
-<p>2、在最后一个花括号（即“｝”）前添加如下内容即可：</p>
-<blockquote>
-<p>“word_wrap” : true</p>
-</blockquote>
-<p>//上一行要加入<code>,</code>号</p>
-<hr>
-<h2 id="evernote">evernote</h2><p><a href="https://github.com/bordaigorl/sublime-evernote" target="_blank" rel="external">sublime-evernote</a><br>keymap复制到Preferences -&gt;key Bindings user</p>
-<a id="more"></a>
-<hr>
-<h2 id="编码">编码</h2><p>ConvertToUTF8<br>Codecs33</p>
-<hr>
-<h2 id="网页编辑实时更新">网页编辑实时更新</h2><p><a href="http://livestyle.emmet.io/install/" target="_blank" rel="external">Emmet LiveStyle</a><br>Sublime和浏览器都要安装插件</p>
-<ul>
-<li>sublime 搜索livestyle安装后重启</li>
-<li>Google Chrome 安装扩展重启</li>
-<li>Google Chrome 打开开发者工具，找到livestyle启用，每次都要打开<br><img src="http://livestyle.emmet.io/-/628467848/i/chrome-ext.png" alt=""></li>
-</ul>
-<hr>
-]]></content>
-    <summary type="html">
-    <![CDATA[<h2 id="Package_Control">Package Control</h2><p><a href="https://packagecontrol.io/installation#st3">Package Control</a></p>
-<hr>
-<h2 id="自动换行">自动换行</h2><p>1、打开 Preferences -&gt; Setting - User（设置 - 用户）</p>
-<p>2、在最后一个花括号（即“｝”）前添加如下内容即可：</p>
-<blockquote>
-<p>“word_wrap” : true</p>
-</blockquote>
-<p>//上一行要加入<code>,</code>号</p>
-<hr>
-<h2 id="evernote">evernote</h2><p><a href="https://github.com/bordaigorl/sublime-evernote">sublime-evernote</a><br>keymap复制到Preferences -&gt;key Bindings user</p>]]>
-    
-    </summary>
-    
-      <category term="Sublime" scheme="http://qunwang6.github.io/blog/tags/Sublime/"/>
-    
-      <category term="Sublime" scheme="http://qunwang6.github.io/blog/categories/Sublime/"/>
     
   </entry>
   

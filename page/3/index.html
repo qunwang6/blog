@@ -130,8 +130,8 @@
           
           
             
-              <a class="post-title-link" href="/blog/CSS3D/">
-                CSS Avengers Card with 3D rotation and neon effect
+              <a class="post-title-link" href="/blog/sublime/">
+                Sublime 3笔记
               </a>
             
           
@@ -140,14 +140,14 @@
 
       <div class="post-meta">
         <span class="post-time">
-          发表于 2015-05-17
+          发表于 2015-05-23
         </span>
 
         
           <span class="post-category">
             &nbsp; | &nbsp; 分类于
             
-              <a href="/blog/categories/CSS/">CSS</a>
+              <a href="/blog/categories/Sublime/">Sublime</a>
 
               
               
@@ -169,13 +169,18 @@
 
       
         
-          <p><img src="http://i.imgur.com/iCBLZco.gif" alt=""></p>
+          <h2 id="Package_Control">Package Control</h2><p><a href="https://packagecontrol.io/installation#st3">Package Control</a></p>
+<hr>
+<h2 id="自动换行">自动换行</h2><p>1、打开 Preferences -&gt; Setting - User（设置 - 用户）</p>
+<p>2、在最后一个花括号（即“｝”）前添加如下内容即可：</p>
 <blockquote>
-<p>Avengers assemble an SVG scalable logo!<br>Sort of virtual hologram Marvel Avengers card with 3D rotate animation, SVG scalable Avengers logo and Iron Man colors (red and gold) and a nice neon effect.<br>Pure CSS and an SVG Avengers logo.</p>
+<p>“word_wrap” : true</p>
 </blockquote>
-<h3 id="HTML">HTML</h3><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="tag">div</span> class=<span class="string">"card animate"</span>&gt;</span><br><span class="line">&lt;<span class="tag">img</span> src=<span class="string">"//upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Symbol_from_Marvel%27s_The_Avengers_logo.svg/191px-Symbol_from_Marvel%27s_The_Avengers_logo.svg.png"</span> <span class="attribute">width</span>=<span class="string">"191"</span> <span class="attribute">height</span>=<span class="string">"223"</span> /&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<p>//上一行要加入<code>,</code>号</p>
+<hr>
+<h2 id="evernote">evernote</h2><p><a href="https://github.com/bordaigorl/sublime-evernote">sublime-evernote</a><br>keymap复制到Preferences -&gt;key Bindings user</p>
           <div class="post-more-link text-center">
-            <a class="btn" href="/blog/CSS3D/#more">
+            <a class="btn" href="/blog/sublime/#more">
               阅读全文 &raquo;
             </a>
           </div>
@@ -187,7 +192,94 @@
       
         <div class="post-tags">
           
-            <a href="/blog/tags/CSS/"> #CSS </a>
+            <a href="/blog/tags/Sublime/"> #Sublime </a>
+          
+        </div>
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </div>
+  </div>
+
+
+    
+      
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
+              <a class="post-title-link" href="/blog/SpaceMonkey/">
+                SpaceMonkey
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于 2015-05-17
+        </span>
+
+        
+          <span class="post-category">
+            &nbsp; | &nbsp; 分类于
+            
+              <a href="/blog/categories/Swift/">Swift</a>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+        
+      </div>
+    </div>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <h3 id="项目">项目</h3><p><a href="http://www.raywenderlich.com/94649/sprite-kit-kids-swift">Sprite Kit for Kids with Swift </a></p>
+<h3 id="编译错误">编译错误</h3><p>编译环境：<br>Xcode Version 6.2 (6C131e)<br>OS X 10.9.5<br><figure class="highlight nix"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">override func viewWillLayoutSubviews() &#123;</span><br><span class="line">    super.viewDidLoad()</span><br><span class="line"></span><br><span class="line">    <span class="keyword">let</span> <span class="variable">skView =</span> self.view as! SKView</span><br><span class="line">    <span class="keyword">if</span> skView.<span class="variable">scene =</span>= nil &#123;</span><br><span class="line"></span><br><span class="line">      <span class="keyword">let</span> <span class="variable">scene =</span> GameScene(size:skView.frame.size)</span><br><span class="line">      skView.<span class="variable">showsFPS =</span> <span class="constant">true</span></span><br><span class="line">      skView.<span class="variable">showsNodeCount =</span> <span class="constant">true</span></span><br><span class="line">      skView.<span class="variable">showsPhysics =</span> <span class="constant">true</span></span><br><span class="line">      skView.<span class="variable">ignoresSiblingOrder =</span> <span class="constant">true</span></span><br><span class="line">      scene.<span class="variable">scaleMode =</span> .AspectFill</span><br><span class="line">      skView.presentScene(scene)</span><br><span class="line"></span><br><span class="line">      playBackgroundMusic(<span class="string">"BackgroundMusic.mp3"</span>)</span><br><span class="line"></span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure></p>
+<p>错误信息</p>
+<blockquote>
+<p>Expected type after ‘as’</p>
+</blockquote>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/blog/SpaceMonkey/#more">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <div class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/blog/tags/Swift/"> #Swift </a>
+          
+            <a href="/blog/tags/debug/"> #debug </a>
           
         </div>
       
@@ -289,8 +381,8 @@
           
           
             
-              <a class="post-title-link" href="/blog/SpaceMonkey/">
-                SpaceMonkey
+              <a class="post-title-link" href="/blog/CSS3D/">
+                CSS Avengers Card with 3D rotation and neon effect
               </a>
             
           
@@ -306,7 +398,7 @@
           <span class="post-category">
             &nbsp; | &nbsp; 分类于
             
-              <a href="/blog/categories/Swift/">Swift</a>
+              <a href="/blog/categories/CSS/">CSS</a>
 
               
               
@@ -328,14 +420,13 @@
 
       
         
-          <h3 id="项目">项目</h3><p><a href="http://www.raywenderlich.com/94649/sprite-kit-kids-swift">Sprite Kit for Kids with Swift </a></p>
-<h3 id="编译错误">编译错误</h3><p>编译环境：<br>Xcode Version 6.2 (6C131e)<br>OS X 10.9.5<br><figure class="highlight nix"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">override func viewWillLayoutSubviews() &#123;</span><br><span class="line">    super.viewDidLoad()</span><br><span class="line"></span><br><span class="line">    <span class="keyword">let</span> <span class="variable">skView =</span> self.view as! SKView</span><br><span class="line">    <span class="keyword">if</span> skView.<span class="variable">scene =</span>= nil &#123;</span><br><span class="line"></span><br><span class="line">      <span class="keyword">let</span> <span class="variable">scene =</span> GameScene(size:skView.frame.size)</span><br><span class="line">      skView.<span class="variable">showsFPS =</span> <span class="constant">true</span></span><br><span class="line">      skView.<span class="variable">showsNodeCount =</span> <span class="constant">true</span></span><br><span class="line">      skView.<span class="variable">showsPhysics =</span> <span class="constant">true</span></span><br><span class="line">      skView.<span class="variable">ignoresSiblingOrder =</span> <span class="constant">true</span></span><br><span class="line">      scene.<span class="variable">scaleMode =</span> .AspectFill</span><br><span class="line">      skView.presentScene(scene)</span><br><span class="line"></span><br><span class="line">      playBackgroundMusic(<span class="string">"BackgroundMusic.mp3"</span>)</span><br><span class="line"></span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure></p>
-<p>错误信息</p>
+          <p><img src="http://i.imgur.com/iCBLZco.gif" alt=""></p>
 <blockquote>
-<p>Expected type after ‘as’</p>
+<p>Avengers assemble an SVG scalable logo!<br>Sort of virtual hologram Marvel Avengers card with 3D rotate animation, SVG scalable Avengers logo and Iron Man colors (red and gold) and a nice neon effect.<br>Pure CSS and an SVG Avengers logo.</p>
 </blockquote>
+<h3 id="HTML">HTML</h3><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="tag">div</span> class=<span class="string">"card animate"</span>&gt;</span><br><span class="line">&lt;<span class="tag">img</span> src=<span class="string">"//upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Symbol_from_Marvel%27s_The_Avengers_logo.svg/191px-Symbol_from_Marvel%27s_The_Avengers_logo.svg.png"</span> <span class="attribute">width</span>=<span class="string">"191"</span> <span class="attribute">height</span>=<span class="string">"223"</span> /&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
           <div class="post-more-link text-center">
-            <a class="btn" href="/blog/SpaceMonkey/#more">
+            <a class="btn" href="/blog/CSS3D/#more">
               阅读全文 &raquo;
             </a>
           </div>
@@ -347,9 +438,7 @@
       
         <div class="post-tags">
           
-            <a href="/blog/tags/Swift/"> #Swift </a>
-          
-            <a href="/blog/tags/debug/"> #debug </a>
+            <a href="/blog/tags/CSS/"> #CSS </a>
           
         </div>
       
@@ -562,205 +651,6 @@
           
           
             
-              <a class="post-title-link" href="/blog/OSXDictionary/">
-                \BGL\DSL\MDX\CD\ ===> OS X dictionary
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于 2015-05-08
-        </span>
-
-        
-          <span class="post-category">
-            &nbsp; | &nbsp; 分类于
-            
-              <a href="/blog/categories/dictionary/">dictionary</a>
-
-              
-              
-
-            
-          </span>
-        
-
-        
-          
-        
-      </div>
-    </div>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <h3 id="开源项目：PYGLOSSARY">开源项目：PYGLOSSARY</h3><ul>
-<li><a href="https://github.com/ilius/pyglossary">PYGLOSSARY</a></li>
-<li><a href="https://bitbucket.org/james_taylor/python-lzo-static">python-lzo</a></li>
-</ul>
-<h3 id="准备好以下环境：">准备好以下环境：</h3><blockquote>
-<ul>
-<li>BeautifulSoup4 required to sanitize html contents.<br> <code>sudo easy_install beautifulsoup4 html5lib</code></li>
-<li>GNU make as part of <a href="http://developer.apple.com/downloads">Command Line Tools for Xcode.</a></li>
-<li>Dictionary Development Kit as part of <a href="http://developer.apple.com/downloads">Auxillary Tools for Xcode</a>.将Dictionary Development Kit解压到<strong>/Applications/Utilities/DictionaryDevelopmentKit/  </strong>（不含空格,中文名:应用程序/实用工具那里，也可以解压到其它地方。）</li>
-</ul>
-</blockquote>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/blog/OSXDictionary/#more">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/blog/tags/OS-X/"> #OS X </a>
-          
-            <a href="/blog/tags/Python/"> #Python </a>
-          
-            <a href="/blog/tags/dictionary/"> #dictionary </a>
-          
-            <a href="/blog/tags/iOS/"> #iOS </a>
-          
-        </div>
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </div>
-  </div>
-
-
-    
-      
-
-  <div class="post post-type-normal ">
-    <div class="post-header">
-
-      
-      
-        <h1 class="post-title">
-          
-          
-            
-              <a class="post-title-link" href="/blog/lingvo2osx/">
-                用DSLConverter将Lingvo词典.DSL格式转换成MAC OSX可用的格式
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于 2015-05-08
-        </span>
-
-        
-          <span class="post-category">
-            &nbsp; | &nbsp; 分类于
-            
-              <a href="/blog/categories/dictionary/">dictionary</a>
-
-              
-              
-
-            
-          </span>
-        
-
-        
-          
-        
-      </div>
-    </div>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <h3 id="转换">转换</h3><p>下载.DSL to OS X/iOS dictionary converter<br><a href="https://github.com/svintuss/DSLConverter">https://github.com/svintuss/DSLConverter</a></p>
-<h4 id="windows_xp环境下：">windows xp环境下：</h4><ul>
-<li>安装Python3,(Python2.7会出现以下错误)<blockquote>
-<p>import urllib.parse<br>ImportError: No module named parse<br>(<em>The urllib.parse library is the Python 3 equivalent of the urlparse library used in Python 2.</em>)</p>
-</blockquote>
-</li>
-</ul>
-<ul>
-<li>安装pytidylib：下载pytidylib源文件，直接编译安装<code>python setup.py install</code>；或者用easy_install安装，直接在终端里输入安装命令：<code>easy_install pytidylib</code></li>
-<li>下载tidylib.dll，将tidylib.dll文件放到到Python目录下（前提Python路径已添加到系统路径里），其他系统路径应该也可以如：system32目录。</li>
-<li>转换:<br><code>python dslconverter_auto.py &lt;dictionary.dsl&gt;</code></li>
-</ul>
-<h4 id="MAC_OSX环境下：">MAC OSX环境下：</h4><ul>
-<li>安装Python3 <code>brew install python3</code><br><em>(MAC OSX 10.9.4是默认安装了Python2.7，而DSLConverter里的代码是给Python3用的，python可以多版本并存）</em></li>
-<li>安装pytidylib,下载pytidylib源文件，直接用Python3编译安装， <code>python3 setup.py install</code>。<em>（注意：如果用<code>easy_install pytidylib</code>命令安装，pytidylib会被安装到Python2.7目录下。）</em></li>
-<li>转换:<br><code>python3 dslconverter_auto.py &lt;dictionary.dsl&gt;</code></li>
-</ul>
-<hr>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/blog/lingvo2osx/#more">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/blog/tags/OS-X/"> #OS X </a>
-          
-            <a href="/blog/tags/Python/"> #Python </a>
-          
-            <a href="/blog/tags/dictionary/"> #dictionary </a>
-          
-            <a href="/blog/tags/lingvo/"> #lingvo </a>
-          
-        </div>
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </div>
-  </div>
-
-
-    
-      
-
-  <div class="post post-type-normal ">
-    <div class="post-header">
-
-      
-      
-        <h1 class="post-title">
-          
-          
-            
               <a class="post-title-link" href="/blog/TheJoelTest/">
                 The Joel Test
               </a>
@@ -917,8 +807,8 @@
           
           
             
-              <a class="post-title-link" href="/blog/Wordnik/">
-                Wordnik
+              <a class="post-title-link" href="/blog/lingvo2osx/">
+                用DSLConverter将Lingvo词典.DSL格式转换成MAC OSX可用的格式
               </a>
             
           
@@ -927,7 +817,7 @@
 
       <div class="post-meta">
         <span class="post-time">
-          发表于 2015-05-01
+          发表于 2015-05-08
         </span>
 
         
@@ -956,19 +846,26 @@
 
       
         
-          <h3 id="Wordnik-Definition-Finder"><a href="https://github.com/williamrchr/Wordnik-Definition-Finder">Wordnik-Definition-Finder</a></h3><blockquote>
-<p>This is a Python program that pulls definitions from a list and outputs them to a text file.<br>There are two versions, one with a GUI, and one with a CLI (command line interface). Choose<br>whichever seems most appropriate for you.<br>To read words from a text file, the following configuration should be used:<br>word1,word2,word3<br>Otherwise, the program will not be able to parse your file and most likely crash.</p>
+          <h3 id="转换">转换</h3><p>下载.DSL to OS X/iOS dictionary converter<br><a href="https://github.com/svintuss/DSLConverter">https://github.com/svintuss/DSLConverter</a></p>
+<h4 id="windows_xp环境下：">windows xp环境下：</h4><ul>
+<li>安装Python3,(Python2.7会出现以下错误)<blockquote>
+<p>import urllib.parse<br>ImportError: No module named parse<br>(<em>The urllib.parse library is the Python 3 equivalent of the urlparse library used in Python 2.</em>)</p>
 </blockquote>
-<p>从文本文件中读取单词，再从wordnik.com网站获取单词释义。</p>
-<h3 id="Usage:">Usage:</h3><ul>
-<li><code>easy_install wordnik</code></li>
-<li>命令行版本<br><code>python definitions-finder-cli.py</code><br>单词表放在text.txt。</li>
-<li>图形界面版本需要安装wxpython<figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">brew install wxpython</span><br><span class="line">mkdir -p ~<span class="regexp">/Library/</span>Python<span class="regexp">/2.7/</span>lib<span class="regexp">/python/</span>site-packages</span><br><span class="line">echo <span class="string">"import site; site.addsitedir('$(brew --prefix)/lib/python2.7/site-packages')"</span> &gt;&gt; ~<span class="regexp">/Library/</span>Python<span class="regexp">/2.7/</span>lib<span class="regexp">/python/</span>site-packages<span class="regexp">/homebrew.pth</span></span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<p>另一种方法：
+<ul>
+<li>安装pytidylib：下载pytidylib源文件，直接编译安装<code>python setup.py install</code>；或者用easy_install安装，直接在终端里输入安装命令：<code>easy_install pytidylib</code></li>
+<li>下载tidylib.dll，将tidylib.dll文件放到到Python目录下（前提Python路径已添加到系统路径里），其他系统路径应该也可以如：system32目录。</li>
+<li>转换:<br><code>python dslconverter_auto.py &lt;dictionary.dsl&gt;</code></li>
+</ul>
+<h4 id="MAC_OSX环境下：">MAC OSX环境下：</h4><ul>
+<li>安装Python3 <code>brew install python3</code><br><em>(MAC OSX 10.9.4是默认安装了Python2.7，而DSLConverter里的代码是给Python3用的，python可以多版本并存）</em></li>
+<li>安装pytidylib,下载pytidylib源文件，直接用Python3编译安装， <code>python3 setup.py install</code>。<em>（注意：如果用<code>easy_install pytidylib</code>命令安装，pytidylib会被安装到Python2.7目录下。）</em></li>
+<li>转换:<br><code>python3 dslconverter_auto.py &lt;dictionary.dsl&gt;</code></li>
+</ul>
+<hr>
           <div class="post-more-link text-center">
-            <a class="btn" href="/blog/Wordnik/#more">
+            <a class="btn" href="/blog/lingvo2osx/#more">
               阅读全文 &raquo;
             </a>
           </div>
@@ -980,9 +877,109 @@
       
         <div class="post-tags">
           
+            <a href="/blog/tags/OS-X/"> #OS X </a>
+          
             <a href="/blog/tags/Python/"> #Python </a>
           
             <a href="/blog/tags/dictionary/"> #dictionary </a>
+          
+            <a href="/blog/tags/lingvo/"> #lingvo </a>
+          
+        </div>
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </div>
+  </div>
+
+
+    
+      
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
+              <a class="post-title-link" href="/blog/OSXDictionary/">
+                \BGL\DSL\MDX\CD\ ===> OS X dictionary
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于 2015-05-08
+        </span>
+
+        
+          <span class="post-category">
+            &nbsp; | &nbsp; 分类于
+            
+              <a href="/blog/categories/dictionary/">dictionary</a>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+        
+      </div>
+    </div>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <h3 id="开源项目：PYGLOSSARY">开源项目：PYGLOSSARY</h3><ul>
+<li><a href="https://github.com/ilius/pyglossary">PYGLOSSARY</a></li>
+<li><a href="https://bitbucket.org/james_taylor/python-lzo-static">python-lzo</a></li>
+</ul>
+<h3 id="准备好以下环境：">准备好以下环境：</h3><blockquote>
+<ul>
+<li>BeautifulSoup4 required to sanitize html contents.<br> <code>sudo easy_install beautifulsoup4 html5lib</code></li>
+<li>GNU make as part of <a href="http://developer.apple.com/downloads">Command Line Tools for Xcode.</a></li>
+<li>Dictionary Development Kit as part of <a href="http://developer.apple.com/downloads">Auxillary Tools for Xcode</a>.将Dictionary Development Kit解压到<strong>/Applications/Utilities/DictionaryDevelopmentKit/  </strong>（不含空格,中文名:应用程序/实用工具那里，也可以解压到其它地方。）</li>
+</ul>
+</blockquote>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/blog/OSXDictionary/#more">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <div class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/blog/tags/OS-X/"> #OS X </a>
+          
+            <a href="/blog/tags/Python/"> #Python </a>
+          
+            <a href="/blog/tags/dictionary/"> #dictionary </a>
+          
+            <a href="/blog/tags/iOS/"> #iOS </a>
           
         </div>
       
@@ -1036,21 +1033,21 @@
         <div class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/blog/archives">
-              <span class="site-state-item-count">37</span>
+              <span class="site-state-item-count">38</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
           <div class="site-state-item site-state-categories">
             <a href="/blog/categories">
-              <span class="site-state-item-count">20</span>
+              <span class="site-state-item-count">21</span>
               <span class="site-state-item-name">分类</span>
               </a>
           </div>
 
           <div class="site-state-item site-state-tags">
             <a href="/blog/tags">
-              <span class="site-state-item-count">37</span>
+              <span class="site-state-item-count">38</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>

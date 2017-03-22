@@ -130,8 +130,8 @@
           
           
             
-              <a class="post-title-link" href="/blog/AppstoreStandard/">
-                App store最新审核标准(2015.3)
+              <a class="post-title-link" href="/blog/iOSDevelopNote/">
+                iOS 开发流程笔记
               </a>
             
           
@@ -169,11 +169,15 @@
 
       
         
-          <blockquote>
-<p>苹果近日更新了App Store审核指南的相关章节，对此前版本进行了修改和完善。除了增加应用截图、预览等限制外，使用Apple Pay进行定期付款的应用程序必须展示每个阶段所需款额，费用归属以及如何取消。而从修改的政策部分可以看出，苹果对App store应用的审核更加严格，鉴于近来国内游戏踩雷屡见不鲜，审核标准请各位业内同学耐心阅读。</p>
-</blockquote>
+          <ul>
+<li>[x] 证书知识及准备工作</li>
+<li>[x] 几种开发者帐号区别</li>
+<li>[x] 真机调试流程</li>
+<li>[x] 内测发布流程</li>
+<li>[ ] Appstore 上架流程</li>
+</ul>
           <div class="post-more-link text-center">
-            <a class="btn" href="/blog/AppstoreStandard/#more">
+            <a class="btn" href="/blog/iOSDevelopNote/#more">
               阅读全文 &raquo;
             </a>
           </div>
@@ -186,6 +190,98 @@
         <div class="post-tags">
           
             <a href="/blog/tags/iOS/"> #iOS </a>
+          
+        </div>
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </div>
+  </div>
+
+
+    
+      
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
+              <a class="post-title-link" href="/blog/Wordnik/">
+                Wordnik
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于 2015-05-01
+        </span>
+
+        
+          <span class="post-category">
+            &nbsp; | &nbsp; 分类于
+            
+              <a href="/blog/categories/dictionary/">dictionary</a>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+        
+      </div>
+    </div>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <h3 id="Wordnik-Definition-Finder"><a href="https://github.com/williamrchr/Wordnik-Definition-Finder">Wordnik-Definition-Finder</a></h3><blockquote>
+<p>This is a Python program that pulls definitions from a list and outputs them to a text file.<br>There are two versions, one with a GUI, and one with a CLI (command line interface). Choose<br>whichever seems most appropriate for you.<br>To read words from a text file, the following configuration should be used:<br>word1,word2,word3<br>Otherwise, the program will not be able to parse your file and most likely crash.</p>
+</blockquote>
+<p>从文本文件中读取单词，再从wordnik.com网站获取单词释义。</p>
+<h3 id="Usage:">Usage:</h3><ul>
+<li><code>easy_install wordnik</code></li>
+<li>命令行版本<br><code>python definitions-finder-cli.py</code><br>单词表放在text.txt。</li>
+<li>图形界面版本需要安装wxpython<figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">brew install wxpython</span><br><span class="line">mkdir -p ~<span class="regexp">/Library/</span>Python<span class="regexp">/2.7/</span>lib<span class="regexp">/python/</span>site-packages</span><br><span class="line">echo <span class="string">"import site; site.addsitedir('$(brew --prefix)/lib/python2.7/site-packages')"</span> &gt;&gt; ~<span class="regexp">/Library/</span>Python<span class="regexp">/2.7/</span>lib<span class="regexp">/python/</span>site-packages<span class="regexp">/homebrew.pth</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>另一种方法：
+          <div class="post-more-link text-center">
+            <a class="btn" href="/blog/Wordnik/#more">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <div class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/blog/tags/Python/"> #Python </a>
+          
+            <a href="/blog/tags/dictionary/"> #dictionary </a>
           
         </div>
       
@@ -299,8 +395,8 @@
           
           
             
-              <a class="post-title-link" href="/blog/iOSDevelopNote/">
-                iOS 开发流程笔记
+              <a class="post-title-link" href="/blog/AppstoreStandard/">
+                App store最新审核标准(2015.3)
               </a>
             
           
@@ -338,15 +434,11 @@
 
       
         
-          <ul>
-<li>[x] 证书知识及准备工作</li>
-<li>[x] 几种开发者帐号区别</li>
-<li>[x] 真机调试流程</li>
-<li>[x] 内测发布流程</li>
-<li>[ ] Appstore 上架流程</li>
-</ul>
+          <blockquote>
+<p>苹果近日更新了App Store审核指南的相关章节，对此前版本进行了修改和完善。除了增加应用截图、预览等限制外，使用Apple Pay进行定期付款的应用程序必须展示每个阶段所需款额，费用归属以及如何取消。而从修改的政策部分可以看出，苹果对App store应用的审核更加严格，鉴于近来国内游戏踩雷屡见不鲜，审核标准请各位业内同学耐心阅读。</p>
+</blockquote>
           <div class="post-more-link text-center">
-            <a class="btn" href="/blog/iOSDevelopNote/#more">
+            <a class="btn" href="/blog/AppstoreStandard/#more">
               阅读全文 &raquo;
             </a>
           </div>
@@ -712,21 +804,21 @@
         <div class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/blog/archives">
-              <span class="site-state-item-count">37</span>
+              <span class="site-state-item-count">38</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
           <div class="site-state-item site-state-categories">
             <a href="/blog/categories">
-              <span class="site-state-item-count">20</span>
+              <span class="site-state-item-count">21</span>
               <span class="site-state-item-name">分类</span>
               </a>
           </div>
 
           <div class="site-state-item site-state-tags">
             <a href="/blog/tags">
-              <span class="site-state-item-count">37</span>
+              <span class="site-state-item-count">38</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>

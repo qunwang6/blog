@@ -130,6 +130,102 @@
           
           
             
+              <a class="post-title-link" href="/blog/Lisp/">
+                Lisp
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于 2017-03-22
+        </span>
+
+        
+          <span class="post-category">
+            &nbsp; | &nbsp; 分类于
+            
+              <a href="/blog/categories/Lisp/">Lisp</a>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+        
+      </div>
+    </div>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <blockquote>
+<p>无言独上西楼，月如勾。</p>
+</blockquote>
+<h3 id="Lisp_Books">Lisp Books</h3><ul>
+<li><a href="http://lisp-lang.org/" target="_blank" rel="external">Common Lisp</a></li>
+<li><a href="http://fullstacklisp.com/" target="_blank" rel="external">Full Stack Lisp Book!</a></li>
+<li><a href="https://github.com/LispTO/llthw" target="_blank" rel="external">Learn Lisp The Hard Way source-code and full book text</a></li>
+</ul>
+<h3 id="SBCL">SBCL</h3><ul>
+<li><a href="http://www.sbcl.org/" target="_blank" rel="external">About - Steel Bank Common Lisp</a></li>
+</ul>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">To quit SBCL, <span class="built_in">type</span> (quit)</span><br></pre></td></tr></table></figure>
+<h3 id="Quicklisp">Quicklisp</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">$ curl -o /tmp/ql.lisp http://beta.quicklisp.org/quicklisp.lisp</span><br><span class="line">$ sbcl --no-sysinit --no-userinit --load /tmp/ql.lisp --eval <span class="string">'(quicklisp-quickstart:install :path ".quicklisp")'</span> --quit</span><br><span class="line"></span><br><span class="line"><span class="comment">### Sublime</span></span><br><span class="line"></span><br><span class="line">```sh</span><br><span class="line">先安装Common lisp 解释器：</span><br><span class="line">brew install sbcl</span><br><span class="line"></span><br><span class="line">然后在sublime text添加一个</span><br><span class="line">build system</span><br><span class="line">&#123;</span><br><span class="line">    <span class="string">"shell_cmd"</span>: <span class="string">"/usr/local/bin/sbcl --disable-debugger --load <span class="variable">$file</span>"</span>,</span><br><span class="line">    <span class="string">"working_dir"</span>: <span class="string">"<span class="variable">$file_path</span>"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="try_lisp_on_browser">try lisp on browser</h3><ul>
+<li><a href="http://learnlispthehardway.org/try-lisp/" target="_blank" rel="external">L(λ)THW</a></li>
+</ul>
+<h3 id="code">code</h3><p>hello world</p>
+<figure class="highlight lisp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="list">(<span class="keyword">defun</span> sayHello<span class="list">()</span></span><br><span class="line">	<span class="list">(<span class="keyword">format</span> <span class="literal">t</span> <span class="string">"Hello, world!"</span>)</span>)</span></span><br><span class="line"><span class="list">(<span class="keyword">sayHello</span>)</span></span><br></pre></td></tr></table></figure>
+<h3 id="References">References</h3><ul>
+<li><a href="https://marktrapp.com/blog/2014/01/20/lisp-with-os-x-sublime-text/" target="_blank" rel="external">Setting up a Common Lisp environment on OS X with Sublime Text 3 | Mark Trapp</a></li>
+</ul>
+
+        
+      
+    </div>
+
+    <div class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/blog/tags/Lisp/"> #Lisp </a>
+          
+        </div>
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </div>
+  </div>
+
+
+    
+      
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
               <a class="post-title-link" href="/blog/FactorialInPrograms/">
                 Factorial in Programs
               </a>
@@ -959,98 +1055,6 @@
 
 
     
-      
-
-  <div class="post post-type-normal ">
-    <div class="post-header">
-
-      
-      
-        <h1 class="post-title">
-          
-          
-            
-              <a class="post-title-link" href="/blog/readlang/">
-                语言学习利器:Readlang
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于 2015-06-15
-        </span>
-
-        
-          <span class="post-category">
-            &nbsp; | &nbsp; 分类于
-            
-              <a href="/blog/categories/note/">note</a>
-
-              
-              
-
-            
-          </span>
-        
-
-        
-          
-        
-      </div>
-    </div>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <h3 id="以前学习笔记是这么做的">以前学习笔记是这么做的</h3><p><img src="http://www.pdawiki.com/forum/data/attachment/album/201506/15/095044rfriwixjivavxjvx.jpg" alt=""></p>
-<h3 id="现在可以这样">现在可以这样</h3><p><img src="http://www.pdawiki.com/forum/data/attachment/album/201506/15/095035lv797cwjy4kwkwpp.gif" alt=""></p>
-<blockquote>
-<p>不过网站是不保存笔记数据的，若要保存，可借助evernote.</p>
-</blockquote>
-<h3 id="详细用法：">详细用法：</h3><ul>
-<li><a href="http://readlang.com/" target="_blank" rel="external">http://readlang.com/</a></li>
-<li><a href="http://readlang.com/webReader" target="_blank" rel="external">http://readlang.com/webReader</a></li>
-</ul>
-<h3 id="几个比较赞的功能：">几个比较赞的功能：</h3><ul>
-<li>生词本，划线取词后的单词以及单词所在的例句自动加入到生词本中，不同语言，有各自的生词本。</li>
-<li>用户可上传自定义文本，支持.txt,.epub格式。</li>
-<li>卡片记忆，记忆数据可视化。</li>
-<li>没有被墙</li>
-</ul>
-<h3 id="高级用法：">高级用法：</h3><p><a href="https://youtu.be/z01CETRiJAo" target="_blank" rel="external">Readlang 更改介面字典、影片同步、單字複習功能</a></p>
-<figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">http:</span><span class="comment">//www.wordreference.com/enzh/&#123;&#123;query&#125;&#125;</span></span><br><span class="line"><span class="string">http:</span><span class="comment">//www.vocabulary.com/dictionary/&#123;&#123;query&#125;&#125;</span></span><br><span class="line"><span class="string">http:</span><span class="comment">//www.oxfordlearnersdictionaries.com/us/definition/english/&#123;&#123;query&#125;&#125;</span></span><br></pre></td></tr></table></figure>
-
-        
-      
-    </div>
-
-    <div class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/blog/tags/note/"> #note </a>
-          
-        </div>
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </div>
-  </div>
-
-
-    
   </div>
 
   
@@ -1089,21 +1093,21 @@
         <div class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/blog/archives">
-              <span class="site-state-item-count">37</span>
+              <span class="site-state-item-count">38</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
           <div class="site-state-item site-state-categories">
             <a href="/blog/categories">
-              <span class="site-state-item-count">20</span>
+              <span class="site-state-item-count">21</span>
               <span class="site-state-item-name">分类</span>
               </a>
           </div>
 
           <div class="site-state-item site-state-tags">
             <a href="/blog/tags">
-              <span class="site-state-item-count">37</span>
+              <span class="site-state-item-count">38</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>
