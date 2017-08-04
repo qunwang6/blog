@@ -4,7 +4,7 @@
   
   <link href="/blog/atom.xml" rel="self"/>
   <link href="http://qunwang6.github.io/blog/"/>
-  <updated>2017-08-04T14:49:54.000Z</updated>
+  <updated>2017-08-04T14:57:45.000Z</updated>
   <id>http://qunwang6.github.io/blog/</id>
   
   <author>
@@ -19,9 +19,9 @@
     <link href="http://qunwang6.github.io/blog/Lisp/"/>
     <id>http://qunwang6.github.io/blog/Lisp/</id>
     <published>2017-08-03T16:00:00.000Z</published>
-    <updated>2017-08-04T14:49:54.000Z</updated>
+    <updated>2017-08-04T14:57:45.000Z</updated>
     <content type="html"><![CDATA[<blockquote>
-<p>无言独上西楼，月如勾。</p>
+<p>无言独上西楼，月如勾</p>
 </blockquote>
 <h3 id="Lisp_Books">Lisp Books</h3><ul>
 <li><a href="http://lisp-lang.org/" target="_blank" rel="external">Common Lisp</a></li>
@@ -45,10 +45,10 @@
 ]]></content>
     <summary type="html">
     <![CDATA[<blockquote>
-<p>无言独上西楼，月如勾。</p>
+<p>无言独上西楼，月如勾</p>
 </blockquote>
 <h3 id="Lisp_Books">Lisp Books</h3><ul>
-<li><a href="http://lisp-lang.org/" target="_blank" re]]>
+<li><a href="http://lisp-lang.org/" target="_blank" rel]]>
     </summary>
     
       <category term="Lisp" scheme="http://qunwang6.github.io/blog/tags/Lisp/"/>
