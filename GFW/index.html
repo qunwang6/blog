@@ -22,15 +22,15 @@
 
 
 
-  <meta name="keywords" content="DNS,GFW,host," />
+  <meta name="keywords" content="GFW,DNS,host," />
 
 
 
-  <link rel="alternate" href="/blog/atom.xml" title="Zero to One" type="application/atom+xml" />
+  <link rel="alternate" href="/blog/blog/atom.xml" title="Zero to One" type="application/atom+xml" />
 
 
 
-  <link rel="shorticon icon" type="image/x-icon" href="/blog/images/favicon.ico?v=0.4.2" />
+  <link rel="shorticon icon" type="image/x-icon" href="/blog/blog/images/favicon.ico?v=0.4.2" />
 
 
 
@@ -75,7 +75,7 @@
     
       
       <li class="menu-item menu-item-home">
-        <a href="/blog/">
+        <a href="/blog/blog/">
           <i class="menu-item-icon icon-home"></i> <br />
           首页
         </a>
@@ -83,7 +83,7 @@
     
       
       <li class="menu-item menu-item-categories">
-        <a href="/blog/categories">
+        <a href="/blog/blog/categories">
           <i class="menu-item-icon icon-categories"></i> <br />
           分类
         </a>
@@ -91,7 +91,7 @@
     
       
       <li class="menu-item menu-item-archives">
-        <a href="/blog/archives">
+        <a href="/blog/blog/archives">
           <i class="menu-item-icon icon-archives"></i> <br />
           归档
         </a>
@@ -99,7 +99,7 @@
     
       
       <li class="menu-item menu-item-tags">
-        <a href="/blog/tags">
+        <a href="/blog/blog/tags">
           <i class="menu-item-icon icon-tags"></i> <br />
           标签
         </a>
@@ -164,33 +164,33 @@
       
 
       
-        <h3 id="ip,镜像站">ip,镜像站</h3><p>寻找可用ip,修改系统host</p>
+        <h3 id="ip-镜像站"><a href="#ip-镜像站" class="headerlink" title="ip,镜像站"></a>ip,镜像站</h3><p>寻找可用ip,修改系统host</p>
 <ul>
-<li><a href="http://www.itechzero.com/google-mirror-sites-collect.html" target="_blank" rel="external">Google 镜像站搜集 - Techzero</a><figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">http:</span><span class="comment">//www.findspace.name/adds/hosts2</span></span><br></pre></td></tr></table></figure>
+<li><a href="http://www.itechzero.com/google-mirror-sites-collect.html" target="_blank" rel="external">Google 镜像站搜集 - Techzero</a><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">http://www.findspace.name/adds/hosts2</div></pre></td></tr></table></figure>
 </li>
 </ul>
-<h3 id="更改网络DNS">更改网络DNS</h3><ul>
+<h3 id="更改网络DNS"><a href="#更改网络DNS" class="headerlink" title="更改网络DNS"></a>更改网络DNS</h3><ul>
 <li><p>Hello DNS (可直接翻墙)</p>
-<figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">DNS1</span>: <span class="string">123.56.46.123</span></span><br><span class="line"><span class="attribute">DNS2</span>: <span class="string">182.254.185.148</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">DNS1: 123.56.46.123</div><div class="line">DNS2: 182.254.185.148</div></pre></td></tr></table></figure>
 </li>
 <li><p><a href="http://dns.yc.is/" target="_blank" rel="external">任我行DNS</a>(可直接翻墙)</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">121.201.13.176</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">121.201.13.176</div></pre></td></tr></table></figure>
 </li>
 </ul>
 <a id="more"></a>
 <ul>
 <li><a href="https://github.com/openervpn/openerdns" target="_blank" rel="external">OpenerDNS</a>(可直接翻墙,已被封)</li>
-<li>以下DNS可加速网络访问速度<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">OpenDns</span></span><br><span class="line"><span class="number">208.67.222.222</span></span><br><span class="line"><span class="number">208.67.220.220</span></span><br><span class="line">阿里巴巴DNS</span><br><span class="line"><span class="number">223.5.5.5</span></span><br><span class="line"><span class="number">223.6.6.6</span></span><br><span class="line">国内的<span class="number">114.114.114.114</span>，</span><br><span class="line">国外Google的<span class="number">8.8.8.8</span></span><br><span class="line">CNNIC公共云解析服务（SDNS）地址为：</span><br><span class="line">首选DNS服务器：<span class="number">1.2.4.8</span></span><br><span class="line">备用DNS服务器：<span class="number">210.2.4.8</span></span><br><span class="line">V2EX DNS</span><br><span class="line"><span class="number">199.91.73.222</span></span><br><span class="line"><span class="number">178.79.131.110</span></span><br></pre></td></tr></table></figure>
+<li>以下DNS可加速网络访问速度<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">OpenDns</div><div class="line">208.67.222.222</div><div class="line">208.67.220.220</div><div class="line">阿里巴巴DNS</div><div class="line">223.5.5.5</div><div class="line">223.6.6.6</div><div class="line">国内的114.114.114.114，</div><div class="line">国外Google的8.8.8.8</div><div class="line">CNNIC公共云解析服务（SDNS）地址为：</div><div class="line">首选DNS服务器：1.2.4.8</div><div class="line">备用DNS服务器：210.2.4.8</div><div class="line">V2EX DNS</div><div class="line">199.91.73.222</div><div class="line">178.79.131.110</div></pre></td></tr></table></figure>
 </li>
 </ul>
-<h3 id="自建DNS服务器">自建DNS服务器</h3><ul>
+<h3 id="自建DNS服务器"><a href="#自建DNS服务器" class="headerlink" title="自建DNS服务器"></a>自建DNS服务器</h3><ul>
 <li>在自己的电脑里建立DNS服务器，比较麻烦，待续。。。</li>
 </ul>
-<h3 id="用pac翻墙">用pac翻墙</h3><p>推荐: <a href="https://www.ftq.me/" target="_blank" rel="external">佛跳墙</a></p>
-<h3 id="反向代理">反向代理</h3><ul>
+<h3 id="用pac翻墙"><a href="#用pac翻墙" class="headerlink" title="用pac翻墙"></a>用pac翻墙</h3><p>推荐: <a href="https://www.ftq.me/" target="_blank" rel="external">佛跳墙</a></p>
+<h3 id="反向代理"><a href="#反向代理" class="headerlink" title="反向代理"></a>反向代理</h3><ul>
 <li>在未被封锁的云端服务器上建立代理服务，通过代理服务器访问被封锁的网站</li>
 </ul>
-<h3 id="代理软件">代理软件</h3><p>最常用，最简单，最后写重点介绍。</p>
+<h3 id="代理软件"><a href="#代理软件" class="headerlink" title="代理软件"></a>代理软件</h3><p>最常用，最简单，最后写重点介绍。</p>
 <ul>
 <li><p><a href="http://shadowsocks.org/en/download/clients.html" target="_blank" rel="external">ShadowSocks</a><br><strong> shadowsocks账号免费获取 </strong><br><a href="https://free.gfw.im/code.php" target="_blank" rel="external">潜形匿影</a><br><a href="http://miaoss.pw/login.php" target="_blank" rel="external">Xmiao</a><br><a href="https://ssnode.com/user/index.php" target="_blank" rel="external">ssnode</a><br><a href="https://www.v2ex.com/go/shadowsocks" target="_blank" rel="external">v2ex论坛关注账号分享</a></p>
 </li>
@@ -214,9 +214,9 @@
       
         <div class="post-tags">
           
-            <a href="/blog/tags/DNS/"> #DNS </a>
-          
             <a href="/blog/tags/GFW/"> #GFW </a>
+          
+            <a href="/blog/tags/DNS/"> #DNS </a>
           
             <a href="/blog/tags/host/"> #host </a>
           
@@ -292,21 +292,21 @@
         <p class="site-description motion-element"></p>
         <div class="site-state motion-element">
           <div class="site-state-item site-state-posts">
-            <a href="/blog/archives">
+            <a href="/blog/blog/archives">
               <span class="site-state-item-count">39</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
           <div class="site-state-item site-state-categories">
-            <a href="/blog/categories">
+            <a href="/blog/blog/categories">
               <span class="site-state-item-count">22</span>
               <span class="site-state-item-name">分类</span>
               </a>
           </div>
 
           <div class="site-state-item site-state-tags">
-            <a href="/blog/tags">
+            <a href="/blog/blog/tags">
               <span class="site-state-item-count">39</span>
               <span class="site-state-item-name">标签</span>
               </a>
@@ -316,7 +316,7 @@
 
         
           <div class="feed-link motion-element">
-            <a href="/blog/atom.xml">
+            <a href="/blog/blog/atom.xml">
               <i class="menu-item-icon icon-feed"></i>
               RSS
             </a>
@@ -352,7 +352,7 @@
           <div class="post-toc">
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#ip,镜像站"><span class="nav-number">1.</span> <span class="nav-text">ip,镜像站</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#更改网络DNS"><span class="nav-number">2.</span> <span class="nav-text">更改网络DNS</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自建DNS服务器"><span class="nav-number">3.</span> <span class="nav-text">自建DNS服务器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#用pac翻墙"><span class="nav-number">4.</span> <span class="nav-text">用pac翻墙</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#反向代理"><span class="nav-number">5.</span> <span class="nav-text">反向代理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代理软件"><span class="nav-number">6.</span> <span class="nav-text">代理软件</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#ip-镜像站"><span class="nav-number">1.</span> <span class="nav-text">ip,镜像站</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#更改网络DNS"><span class="nav-number">2.</span> <span class="nav-text">更改网络DNS</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自建DNS服务器"><span class="nav-number">3.</span> <span class="nav-text">自建DNS服务器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#用pac翻墙"><span class="nav-number">4.</span> <span class="nav-text">用pac翻墙</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#反向代理"><span class="nav-number">5.</span> <span class="nav-text">反向代理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代理软件"><span class="nav-number">6.</span> <span class="nav-text">代理软件</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>

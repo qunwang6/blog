@@ -26,11 +26,11 @@
 
 
 
-  <link rel="alternate" href="/blog/atom.xml" title="Zero to One" type="application/atom+xml" />
+  <link rel="alternate" href="/blog/blog/atom.xml" title="Zero to One" type="application/atom+xml" />
 
 
 
-  <link rel="shorticon icon" type="image/x-icon" href="/blog/images/favicon.ico?v=0.4.2" />
+  <link rel="shorticon icon" type="image/x-icon" href="/blog/blog/images/favicon.ico?v=0.4.2" />
 
 
 
@@ -75,7 +75,7 @@
     
       
       <li class="menu-item menu-item-home">
-        <a href="/blog/">
+        <a href="/blog/blog/">
           <i class="menu-item-icon icon-home"></i> <br />
           首页
         </a>
@@ -83,7 +83,7 @@
     
       
       <li class="menu-item menu-item-categories">
-        <a href="/blog/categories">
+        <a href="/blog/blog/categories">
           <i class="menu-item-icon icon-categories"></i> <br />
           分类
         </a>
@@ -91,7 +91,7 @@
     
       
       <li class="menu-item menu-item-archives">
-        <a href="/blog/archives">
+        <a href="/blog/blog/archives">
           <i class="menu-item-icon icon-archives"></i> <br />
           归档
         </a>
@@ -99,7 +99,7 @@
     
       
       <li class="menu-item menu-item-tags">
-        <a href="/blog/tags">
+        <a href="/blog/blog/tags">
           <i class="menu-item-icon icon-tags"></i> <br />
           标签
         </a>
@@ -164,15 +164,15 @@
       
 
       
-        <h3 id="项目">项目</h3><p><a href="http://www.raywenderlich.com/94649/sprite-kit-kids-swift" target="_blank" rel="external">Sprite Kit for Kids with Swift </a></p>
-<h3 id="编译错误">编译错误</h3><p>编译环境：<br>Xcode Version 6.2 (6C131e)<br>OS X 10.9.5<br><figure class="highlight nix"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">override func viewWillLayoutSubviews() &#123;</span><br><span class="line">    super.viewDidLoad()</span><br><span class="line"></span><br><span class="line">    <span class="keyword">let</span> <span class="variable">skView =</span> self.view as! SKView</span><br><span class="line">    <span class="keyword">if</span> skView.<span class="variable">scene =</span>= nil &#123;</span><br><span class="line"></span><br><span class="line">      <span class="keyword">let</span> <span class="variable">scene =</span> GameScene(size:skView.frame.size)</span><br><span class="line">      skView.<span class="variable">showsFPS =</span> <span class="constant">true</span></span><br><span class="line">      skView.<span class="variable">showsNodeCount =</span> <span class="constant">true</span></span><br><span class="line">      skView.<span class="variable">showsPhysics =</span> <span class="constant">true</span></span><br><span class="line">      skView.<span class="variable">ignoresSiblingOrder =</span> <span class="constant">true</span></span><br><span class="line">      scene.<span class="variable">scaleMode =</span> .AspectFill</span><br><span class="line">      skView.presentScene(scene)</span><br><span class="line"></span><br><span class="line">      playBackgroundMusic(<span class="string">"BackgroundMusic.mp3"</span>)</span><br><span class="line"></span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure></p>
+        <p>###项目<br><a href="http://www.raywenderlich.com/94649/sprite-kit-kids-swift" target="_blank" rel="external">Sprite Kit for Kids with Swift </a></p>
+<p>###编译错误<br>编译环境：<br>Xcode Version 6.2 (6C131e)<br>OS X 10.9.5<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">override func viewWillLayoutSubviews() &#123;</div><div class="line">    super.viewDidLoad()</div><div class="line"></div><div class="line">    let skView = self.view as! SKView</div><div class="line">    if skView.scene == nil &#123;</div><div class="line"></div><div class="line">      let scene = GameScene(size:skView.frame.size)</div><div class="line">      skView.showsFPS = true</div><div class="line">      skView.showsNodeCount = true</div><div class="line">      skView.showsPhysics = true</div><div class="line">      skView.ignoresSiblingOrder = true</div><div class="line">      scene.scaleMode = .AspectFill</div><div class="line">      skView.presentScene(scene)</div><div class="line"></div><div class="line">      playBackgroundMusic(&quot;BackgroundMusic.mp3&quot;)</div><div class="line"></div><div class="line">    &#125;</div></pre></td></tr></table></figure></p>
 <p>错误信息</p>
 <blockquote>
 <p>Expected type after ‘as’</p>
 </blockquote>
 <a id="more"></a>
 <p>解决方法<br><code>as!</code>===&gt;<code>as</code></p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">override</span> <span class="func"><span class="keyword">func</span> <span class="title">touchesBegan</span><span class="params">(touches: Set&lt;NSObject&gt;, withEvent event: UIEvent)</span></span> &#123;</span><br><span class="line">  <span class="comment">// 1</span></span><br><span class="line">  <span class="keyword">if</span> (!gameOver) &#123;</span><br><span class="line">    <span class="keyword">if</span> player.physicsBody?.dynamic == <span class="built_in">false</span> &#123;</span><br><span class="line">      player.physicsBody?.dynamic = <span class="built_in">true</span></span><br><span class="line">      touchToBeginLabel.hidden = <span class="built_in">true</span></span><br><span class="line">      backgroundColor = <span class="type">SKColor</span>.blackColor()</span><br><span class="line"></span><br><span class="line">      runAction(<span class="type">SKAction</span>.repeatActionForever(</span><br><span class="line">        <span class="type">SKAction</span>.sequence([</span><br><span class="line">          <span class="type">SKAction</span>.runBlock(spawnEnemy),</span><br><span class="line">          <span class="type">SKAction</span>.waitForDuration(<span class="number">1.0</span>)])))</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 2</span></span><br><span class="line">    jumpPlayer()</span><br><span class="line"></span><br><span class="line">  &#125;</span><br><span class="line">    <span class="comment">// 3</span></span><br><span class="line">  <span class="keyword">else</span> <span class="keyword">if</span> (gameOver) &#123;</span><br><span class="line">    <span class="keyword">let</span> newScene = <span class="type">GameScene</span>(size: size)</span><br><span class="line">    newScene.scaleMode = scaleMode</span><br><span class="line">    <span class="keyword">let</span> reveal = <span class="type">SKTransition</span>.flipHorizontalWithDuration(<span class="number">0.5</span>)</span><br><span class="line">    view?.presentScene(newScene, transition: reveal)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line">override func touchesBegan(touches: Set&lt;NSObject&gt;, withEvent event: UIEvent) &#123;</div><div class="line">  // 1</div><div class="line">  if (!gameOver) &#123;</div><div class="line">    if player.physicsBody?.dynamic == false &#123;</div><div class="line">      player.physicsBody?.dynamic = true</div><div class="line">      touchToBeginLabel.hidden = true</div><div class="line">      backgroundColor = SKColor.blackColor()</div><div class="line"></div><div class="line">      runAction(SKAction.repeatActionForever(</div><div class="line">        SKAction.sequence([</div><div class="line">          SKAction.runBlock(spawnEnemy),</div><div class="line">          SKAction.waitForDuration(1.0)])))</div><div class="line">    &#125;</div><div class="line">    // 2</div><div class="line">    jumpPlayer()</div><div class="line"></div><div class="line">  &#125;</div><div class="line">    // 3</div><div class="line">  else if (gameOver) &#123;</div><div class="line">    let newScene = GameScene(size: size)</div><div class="line">    newScene.scaleMode = scaleMode</div><div class="line">    let reveal = SKTransition.flipHorizontalWithDuration(0.5)</div><div class="line">    view?.presentScene(newScene, transition: reveal)</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>错误信息</p>
 <blockquote>
 <p>Use of undeclared type ‘Set’</p>
@@ -197,13 +197,13 @@
         <div class="post-nav">
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/blog/ExMachina/">Secret code in Ex Machina</a>
+              <a href="/blog/sublime/">Sublime 3笔记</a>
             
           </div>
 
           <div class="post-nav-next post-nav-item">
             
-              <a href="/blog/CherylsBirthday/">When is Cheryl’s birthday?</a>
+              <a href="/blog/CSS3D/">CSS Avengers Card with 3D rotation and neon effect</a>
             
           </div>
         </div>
@@ -262,21 +262,21 @@
         <p class="site-description motion-element"></p>
         <div class="site-state motion-element">
           <div class="site-state-item site-state-posts">
-            <a href="/blog/archives">
+            <a href="/blog/blog/archives">
               <span class="site-state-item-count">39</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
           <div class="site-state-item site-state-categories">
-            <a href="/blog/categories">
+            <a href="/blog/blog/categories">
               <span class="site-state-item-count">22</span>
               <span class="site-state-item-name">分类</span>
               </a>
           </div>
 
           <div class="site-state-item site-state-tags">
-            <a href="/blog/tags">
+            <a href="/blog/blog/tags">
               <span class="site-state-item-count">39</span>
               <span class="site-state-item-name">标签</span>
               </a>
@@ -286,7 +286,7 @@
 
         
           <div class="feed-link motion-element">
-            <a href="/blog/atom.xml">
+            <a href="/blog/blog/atom.xml">
               <i class="menu-item-icon icon-feed"></i>
               RSS
             </a>
@@ -322,7 +322,7 @@
           <div class="post-toc">
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#项目"><span class="nav-number">1.</span> <span class="nav-text">项目</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#编译错误"><span class="nav-number">2.</span> <span class="nav-text">编译错误</span></a></li></ol></div>
+              <p class="post-toc-empty">此文章未包含目录</p>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>

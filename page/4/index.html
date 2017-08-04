@@ -26,11 +26,11 @@
 
 
 
-  <link rel="alternate" href="/blog/atom.xml" title="Zero to One" type="application/atom+xml" />
+  <link rel="alternate" href="/blog/blog/atom.xml" title="Zero to One" type="application/atom+xml" />
 
 
 
-  <link rel="shorticon icon" type="image/x-icon" href="/blog/images/favicon.ico?v=0.4.2" />
+  <link rel="shorticon icon" type="image/x-icon" href="/blog/blog/images/favicon.ico?v=0.4.2" />
 
 
 
@@ -77,7 +77,7 @@
     
       
       <li class="menu-item menu-item-home">
-        <a href="/blog/">
+        <a href="/blog/blog/">
           <i class="menu-item-icon icon-home"></i> <br />
           首页
         </a>
@@ -85,7 +85,7 @@
     
       
       <li class="menu-item menu-item-categories">
-        <a href="/blog/categories">
+        <a href="/blog/blog/categories">
           <i class="menu-item-icon icon-categories"></i> <br />
           分类
         </a>
@@ -93,7 +93,7 @@
     
       
       <li class="menu-item menu-item-archives">
-        <a href="/blog/archives">
+        <a href="/blog/blog/archives">
           <i class="menu-item-icon icon-archives"></i> <br />
           归档
         </a>
@@ -101,7 +101,7 @@
     
       
       <li class="menu-item menu-item-tags">
-        <a href="/blog/tags">
+        <a href="/blog/blog/tags">
           <i class="menu-item-icon icon-tags"></i> <br />
           标签
         </a>
@@ -169,8 +169,9 @@
 
       
         
-          <h3 id="转换">转换</h3><p>下载.DSL to OS X/iOS dictionary converter<br><a href="https://github.com/svintuss/DSLConverter">https://github.com/svintuss/DSLConverter</a></p>
-<h4 id="windows_xp环境下：">windows xp环境下：</h4><ul>
+          <p>###转换<br>下载.DSL to OS X/iOS dictionary converter<br><a href="https://github.com/svintuss/DSLConverter" target="_blank" rel="external">https://github.com/svintuss/DSLConverter</a></p>
+<p>####windows xp环境下：</p>
+<ul>
 <li>安装Python3,(Python2.7会出现以下错误)<blockquote>
 <p>import urllib.parse<br>ImportError: No module named parse<br>(<em>The urllib.parse library is the Python 3 equivalent of the urlparse library used in Python 2.</em>)</p>
 </blockquote>
@@ -181,7 +182,8 @@
 <li>下载tidylib.dll，将tidylib.dll文件放到到Python目录下（前提Python路径已添加到系统路径里），其他系统路径应该也可以如：system32目录。</li>
 <li>转换:<br><code>python dslconverter_auto.py &lt;dictionary.dsl&gt;</code></li>
 </ul>
-<h4 id="MAC_OSX环境下：">MAC OSX环境下：</h4><ul>
+<p>####MAC OSX环境下：</p>
+<ul>
 <li>安装Python3 <code>brew install python3</code><br><em>(MAC OSX 10.9.4是默认安装了Python2.7，而DSLConverter里的代码是给Python3用的，python可以多版本并存）</em></li>
 <li>安装pytidylib,下载pytidylib源文件，直接用Python3编译安装， <code>python3 setup.py install</code>。<em>（注意：如果用<code>easy_install pytidylib</code>命令安装，pytidylib会被安装到Python2.7目录下。）</em></li>
 <li>转换:<br><code>python3 dslconverter_auto.py &lt;dictionary.dsl&gt;</code></li>
@@ -200,13 +202,107 @@
       
         <div class="post-tags">
           
-            <a href="/blog/tags/OS-X/"> #OS X </a>
-          
             <a href="/blog/tags/Python/"> #Python </a>
           
             <a href="/blog/tags/dictionary/"> #dictionary </a>
           
+            <a href="/blog/tags/OS-X/"> #OS X </a>
+          
             <a href="/blog/tags/lingvo/"> #lingvo </a>
+          
+        </div>
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </div>
+  </div>
+
+
+    
+      
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
+              <a class="post-title-link" href="/blog/Wordnik/">
+                Wordnik
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于 2015-05-01
+        </span>
+
+        
+          <span class="post-category">
+            &nbsp; | &nbsp; 分类于
+            
+              <a href="/blog/categories/dictionary/">dictionary</a>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+        
+      </div>
+    </div>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <p>###<a href="https://github.com/williamrchr/Wordnik-Definition-Finder" target="_blank" rel="external">Wordnik-Definition-Finder</a></p>
+<blockquote>
+<p>This is a Python program that pulls definitions from a list and outputs them to a text file.<br>There are two versions, one with a GUI, and one with a CLI (command line interface). Choose<br>whichever seems most appropriate for you.<br>To read words from a text file, the following configuration should be used:<br>word1,word2,word3<br>Otherwise, the program will not be able to parse your file and most likely crash.</p>
+</blockquote>
+<p>从文本文件中读取单词，再从wordnik.com网站获取单词释义。</p>
+<p>###Usage:</p>
+<ul>
+<li><code>easy_install wordnik</code></li>
+<li>命令行版本<br><code>python definitions-finder-cli.py</code><br>单词表放在text.txt。</li>
+<li>图形界面版本需要安装wxpython<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">brew install wxpython</div><div class="line">mkdir -p ~/Library/Python/2.7/lib/python/site-packages</div><div class="line">echo &quot;import site; site.addsitedir(&apos;$(brew --prefix)/lib/python2.7/site-packages&apos;)&quot; &gt;&gt; ~/Library/Python/2.7/lib/python/site-packages/homebrew.pth</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>另一种方法：
+          <div class="post-more-link text-center">
+            <a class="btn" href="/blog/Wordnik/#more">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <div class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/blog/tags/Python/"> #Python </a>
+          
+            <a href="/blog/tags/dictionary/"> #dictionary </a>
           
         </div>
       
@@ -401,98 +497,6 @@
           
           
             
-              <a class="post-title-link" href="/blog/Wordnik/">
-                Wordnik
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于 2015-05-01
-        </span>
-
-        
-          <span class="post-category">
-            &nbsp; | &nbsp; 分类于
-            
-              <a href="/blog/categories/dictionary/">dictionary</a>
-
-              
-              
-
-            
-          </span>
-        
-
-        
-          
-        
-      </div>
-    </div>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <h3 id="Wordnik-Definition-Finder"><a href="https://github.com/williamrchr/Wordnik-Definition-Finder">Wordnik-Definition-Finder</a></h3><blockquote>
-<p>This is a Python program that pulls definitions from a list and outputs them to a text file.<br>There are two versions, one with a GUI, and one with a CLI (command line interface). Choose<br>whichever seems most appropriate for you.<br>To read words from a text file, the following configuration should be used:<br>word1,word2,word3<br>Otherwise, the program will not be able to parse your file and most likely crash.</p>
-</blockquote>
-<p>从文本文件中读取单词，再从wordnik.com网站获取单词释义。</p>
-<h3 id="Usage:">Usage:</h3><ul>
-<li><code>easy_install wordnik</code></li>
-<li>命令行版本<br><code>python definitions-finder-cli.py</code><br>单词表放在text.txt。</li>
-<li>图形界面版本需要安装wxpython<figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">brew install wxpython</span><br><span class="line">mkdir -p ~<span class="regexp">/Library/</span>Python<span class="regexp">/2.7/</span>lib<span class="regexp">/python/</span>site-packages</span><br><span class="line">echo <span class="string">"import site; site.addsitedir('$(brew --prefix)/lib/python2.7/site-packages')"</span> &gt;&gt; ~<span class="regexp">/Library/</span>Python<span class="regexp">/2.7/</span>lib<span class="regexp">/python/</span>site-packages<span class="regexp">/homebrew.pth</span></span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>另一种方法：
-          <div class="post-more-link text-center">
-            <a class="btn" href="/blog/Wordnik/#more">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/blog/tags/Python/"> #Python </a>
-          
-            <a href="/blog/tags/dictionary/"> #dictionary </a>
-          
-        </div>
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </div>
-  </div>
-
-
-    
-      
-
-  <div class="post post-type-normal ">
-    <div class="post-header">
-
-      
-      
-        <h1 class="post-title">
-          
-          
-            
               <a class="post-title-link" href="/blog/SwiftGuide/">
                 Swift 语言指南
               </a>
@@ -533,11 +537,11 @@
       
         
           <p>这份指南汇集了 Swift 语言主流学习资源，并以开发者的视角整理编排。</p>
-<p>GitHub：<a href="https://github.com/ipader/SwiftGuide">ipader/SwiftGuide</a> ｜ 网站：<a href="http://dev.swiftguide.cn">http://dev.swiftguide.cn</a> ｜ <em>欢迎开发者一起<a href="https://github.com/ipader/SwiftGuide/pulls">维护</a>，或<a href="https://github.com/ipader/SwiftGuide/issues/new">反馈/投稿</a></em></p>
+<p>GitHub：<a href="https://github.com/ipader/SwiftGuide" target="_blank" rel="external">ipader/SwiftGuide</a> ｜ 网站：<a href="http://dev.swiftguide.cn" target="_blank" rel="external">http://dev.swiftguide.cn</a> ｜ <em>欢迎开发者一起<a href="https://github.com/ipader/SwiftGuide/pulls" target="_blank" rel="external">维护</a>，或<a href="https://github.com/ipader/SwiftGuide/issues/new" target="_blank" rel="external">反馈/投稿</a></em></p>
 <blockquote>
-<p>想了解关于该指南及 Swift 更多信息的同学，可以阅读短文《<a href="https://github.com/ipader/SwiftGuide/blob/master/2014%20letter.md">致 Swift 开发者</a>》。 想快速找到优秀开源项目的开发者，可以访问我们额外整理的<a href="https://github.com/ipader/SwiftGuide/blob/master/Featured.md">《Swift 开源项目精选》</a>。希望快速找到其中精选文章，可以访问<a href="https://github.com/ipader/SwiftGuide/blob/master/Featured-Articles.md">《Swift 文章精选》</a>。</p>
+<p>想了解关于该指南及 Swift 更多信息的同学，可以阅读短文《<a href="https://github.com/ipader/SwiftGuide/blob/master/2014%20letter.md" target="_blank" rel="external">致 Swift 开发者</a>》。 想快速找到优秀开源项目的开发者，可以访问我们额外整理的<a href="https://github.com/ipader/SwiftGuide/blob/master/Featured.md" target="_blank" rel="external">《Swift 开源项目精选》</a>。希望快速找到其中精选文章，可以访问<a href="https://github.com/ipader/SwiftGuide/blob/master/Featured-Articles.md" target="_blank" rel="external">《Swift 文章精选》</a>。</p>
 </blockquote>
-<p><span style="color:lightgray;font-size:12px"><a href="http://weibo.com/swiftlanguage">@SwiftLanguage</a> 更新于 2015-4-26，更新内容详见<a href="https://github.com/ipader/SwiftGuide/blob/master/weekly/2015-04-26.md">《2015-4-26 收录周报》</a></span></p>
+<p><span style="color:lightgray;font-size:12px"><a href="http://weibo.com/swiftlanguage" target="_blank" rel="external">@SwiftLanguage</a> 更新于 2015-4-26，更新内容详见<a href="https://github.com/ipader/SwiftGuide/blob/master/weekly/2015-04-26.md" target="_blank" rel="external">《2015-4-26 收录周报》</a></span></p>
           <div class="post-more-link text-center">
             <a class="btn" href="/blog/SwiftGuide/#more">
               阅读全文 &raquo;
@@ -551,78 +555,9 @@
       
         <div class="post-tags">
           
-            <a href="/blog/tags/Swift/"> #Swift </a>
-          
             <a href="/blog/tags/iOS/"> #iOS </a>
           
-        </div>
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </div>
-  </div>
-
-
-    
-      
-
-  <div class="post post-type-normal ">
-    <div class="post-header">
-
-      
-      
-        <h1 class="post-title">
-          
-          
-            
-              <a class="post-title-link" href="/blog/xpinyin/">
-                xpinyin
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于 2015-04-29
-        </span>
-
-        
-
-        
-          
-        
-      </div>
-    </div>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <ul>
-<li><a href="https://github.com/lxneng/xpinyin" target="_blank" rel="external">xpinyin</a></li>
-</ul>
-<h3 id="install">install</h3><p><code>pip install xpinyin</code></p>
-<h3 id="Usage">Usage</h3><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="prompt">&gt;&gt;</span>&gt; from xpinyin import <span class="constant">Pinyin</span></span><br><span class="line"><span class="prompt">&gt;&gt;</span>&gt; p = <span class="constant">Pinyin</span>()</span><br><span class="line"><span class="prompt">&gt;&gt;</span>&gt; <span class="comment"># default splitter is `-`</span></span><br><span class="line"><span class="prompt">&gt;&gt;</span>&gt; p.get_pinyin(u<span class="string">"上海"</span>)</span><br><span class="line"><span class="string">'shang-hai'</span></span><br><span class="line"><span class="prompt">&gt;&gt;</span>&gt; <span class="comment"># show tone marks</span></span><br><span class="line"><span class="prompt">&gt;&gt;</span>&gt; p.get_pinyin(u<span class="string">"上海"</span>, show_tone_marks=<span class="constant">True</span>)</span><br><span class="line"><span class="string">'shàng-hǎi'</span></span><br><span class="line"><span class="prompt">&gt;&gt;</span>&gt; <span class="comment"># remove splitter</span></span><br><span class="line"><span class="prompt">&gt;&gt;</span>&gt; p.get_pinyin(u<span class="string">"上海"</span>, <span class="string">''</span>)</span><br><span class="line"><span class="string">'shanghai'</span></span><br><span class="line"><span class="prompt">&gt;&gt;</span>&gt; <span class="comment"># set splitter as whitespace</span></span><br><span class="line"><span class="prompt">&gt;&gt;</span>&gt; p.get_pinyin(u<span class="string">"上海"</span>, <span class="string">' '</span>)</span><br><span class="line"><span class="string">'shang hai'</span></span><br><span class="line"><span class="prompt">&gt;&gt;</span>&gt; p.get_initial(u<span class="string">"上"</span>)&lt;!-- more --&gt;</span><br><span class="line"><span class="string">'S'</span></span><br><span class="line"><span class="prompt">&gt;&gt;</span>&gt; p.get_initials(u<span class="string">"上海"</span>)</span><br><span class="line"><span class="string">'S-H'</span></span><br><span class="line"><span class="prompt">&gt;&gt;</span>&gt; p.get_initials(u<span class="string">"上海"</span>, u<span class="string">''</span>)</span><br><span class="line"><span class="string">'SH'</span></span><br><span class="line"><span class="prompt">&gt;&gt;</span>&gt; p.get_initials(u<span class="string">"上海"</span>, u<span class="string">' '</span>)</span><br><span class="line"><span class="string">'S H'</span></span><br><span class="line"><span class="prompt">&gt;&gt;</span>&gt; print p.get_pinyin(u<span class="string">"上海"</span>,<span class="string">''</span>,show_tone_marks=<span class="constant">True</span>)</span><br><span class="line">shànghǎi</span><br></pre></td></tr></table></figure>
-
-        
-      
-    </div>
-
-    <div class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/blog/tags/Python/"> #Python </a>
+            <a href="/blog/tags/Swift/"> #Swift </a>
           
         </div>
       
@@ -689,10 +624,11 @@
       
         
           <ul>
-<li><a href="https://github.com/coolwanglu/pdf2htmlEX">pdf2htmlEX</a></li>
-<li><a href="http://oku.edu.mie-u.ac.jp/~okumura/texwiki/?pdf2htmlEX">wiki日文</a></li>
+<li><a href="https://github.com/coolwanglu/pdf2htmlEX" target="_blank" rel="external">pdf2htmlEX</a></li>
+<li><a href="http://oku.edu.mie-u.ac.jp/~okumura/texwiki/?pdf2htmlEX" target="_blank" rel="external">wiki日文</a></li>
 </ul>
-<h3 id="install">install</h3><ul>
+<p>###install</p>
+<ul>
 <li><code>brew install fontforge --HEAD</code></li>
 <li><code>brew tap homebrew/versions</code></li>
 <li><code>brew install pdf2htmlex</code></li>
@@ -770,14 +706,83 @@
 
       
         
-          <h3 id="开源项目">开源项目</h3><p><a href="https://github.com/lincolnloop/python-qrcode">python-qrcode</a></p>
-<h3 id="install">install</h3><p>===<br> 安装<a href="https://pypi.python.org/pypi/Pillow/2.6.1#downloads">Pillow</a><br> 安装 <a href="https://github.com/lincolnloop/python-qrcode">python-qrcode</a></p>
-<h3 id="Usage<!-_more_->">Usage
+          <p>###开源项目<br><a href="https://github.com/lincolnloop/python-qrcode" target="_blank" rel="external">python-qrcode</a></p>
+<h1 id="install"><a href="#install" class="headerlink" title="###install"></a>###install</h1><p> 安装<a href="https://pypi.python.org/pypi/Pillow/2.6.1#downloads" target="_blank" rel="external">Pillow</a><br> 安装 <a href="https://github.com/lincolnloop/python-qrcode" target="_blank" rel="external">python-qrcode</a></p>
+<h1 id="Usage"><a href="#Usage" class="headerlink" title="###Usage"></a>###Usage
           <div class="post-more-link text-center">
             <a class="btn" href="/blog/QrCode/#more">
               阅读全文 &raquo;
             </a>
           </div>
+        
+      
+    </div>
+
+    <div class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/blog/tags/Python/"> #Python </a>
+          
+        </div>
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </div>
+  </div>
+
+
+    
+      
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
+              <a class="post-title-link" href="/blog/xpinyin/">
+                xpinyin
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于 2015-04-29
+        </span>
+
+        
+
+        
+          
+        
+      </div>
+    </div>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <ul>
+<li><a href="https://github.com/lxneng/xpinyin" target="_blank" rel="external">xpinyin</a></li>
+</ul>
+<p>###install<br><code>pip install xpinyin</code></p>
+<p>###Usage<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; from xpinyin import Pinyin</div><div class="line">&gt;&gt;&gt; p = Pinyin()</div><div class="line">&gt;&gt;&gt; # default splitter is `-`</div><div class="line">&gt;&gt;&gt; p.get_pinyin(u&quot;上海&quot;)</div><div class="line">&apos;shang-hai&apos;</div><div class="line">&gt;&gt;&gt; # show tone marks</div><div class="line">&gt;&gt;&gt; p.get_pinyin(u&quot;上海&quot;, show_tone_marks=True)</div><div class="line">&apos;shàng-hǎi&apos;</div><div class="line">&gt;&gt;&gt; # remove splitter</div><div class="line">&gt;&gt;&gt; p.get_pinyin(u&quot;上海&quot;, &apos;&apos;)</div><div class="line">&apos;shanghai&apos;</div><div class="line">&gt;&gt;&gt; # set splitter as whitespace</div><div class="line">&gt;&gt;&gt; p.get_pinyin(u&quot;上海&quot;, &apos; &apos;)</div><div class="line">&apos;shang hai&apos;</div><div class="line">&gt;&gt;&gt; p.get_initial(u&quot;上&quot;)&lt;!-- more --&gt;</div><div class="line">&apos;S&apos;</div><div class="line">&gt;&gt;&gt; p.get_initials(u&quot;上海&quot;)</div><div class="line">&apos;S-H&apos;</div><div class="line">&gt;&gt;&gt; p.get_initials(u&quot;上海&quot;, u&apos;&apos;)</div><div class="line">&apos;SH&apos;</div><div class="line">&gt;&gt;&gt; p.get_initials(u&quot;上海&quot;, u&apos; &apos;)</div><div class="line">&apos;S H&apos;</div><div class="line">&gt;&gt;&gt; print p.get_pinyin(u&quot;上海&quot;,&apos;&apos;,show_tone_marks=True)</div><div class="line">shànghǎi</div></pre></td></tr></table></figure></p>
+
         
       
     </div>
@@ -842,13 +847,13 @@
       
         
           <p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start">Quick Start</h2><h3 id="Create_a_new_post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
 <p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server">Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
 <p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
 <p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
 <p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
 
         
@@ -873,7 +878,7 @@
 
   
   <div class="pagination">
-    <a class="extend prev" rel="prev" href="/blog/page/3/">&laquo;</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/blog/page/3/">3</a><span class="page-number current">4</span>
+    <a class="extend prev" rel="prev" href="/blog/page/3/">&laquo;</a><a class="page-number" href="/blog/">1</a><span class="space">&hellip;</span><a class="page-number" href="/blog/page/3/">3</a><span class="page-number current">4</span>
   </div>
 
 
@@ -906,21 +911,21 @@
         <p class="site-description motion-element"></p>
         <div class="site-state motion-element">
           <div class="site-state-item site-state-posts">
-            <a href="/blog/archives">
+            <a href="/blog/blog/archives">
               <span class="site-state-item-count">39</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
           <div class="site-state-item site-state-categories">
-            <a href="/blog/categories">
+            <a href="/blog/blog/categories">
               <span class="site-state-item-count">22</span>
               <span class="site-state-item-name">分类</span>
               </a>
           </div>
 
           <div class="site-state-item site-state-tags">
-            <a href="/blog/tags">
+            <a href="/blog/blog/tags">
               <span class="site-state-item-count">39</span>
               <span class="site-state-item-name">标签</span>
               </a>
@@ -930,7 +935,7 @@
 
         
           <div class="feed-link motion-element">
-            <a href="/blog/atom.xml">
+            <a href="/blog/blog/atom.xml">
               <i class="menu-item-icon icon-feed"></i>
               RSS
             </a>

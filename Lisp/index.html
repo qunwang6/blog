@@ -26,11 +26,11 @@
 
 
 
-  <link rel="alternate" href="/blog/atom.xml" title="Zero to One" type="application/atom+xml" />
+  <link rel="alternate" href="/blog/blog/atom.xml" title="Zero to One" type="application/atom+xml" />
 
 
 
-  <link rel="shorticon icon" type="image/x-icon" href="/blog/images/favicon.ico?v=0.4.2" />
+  <link rel="shorticon icon" type="image/x-icon" href="/blog/blog/images/favicon.ico?v=0.4.2" />
 
 
 
@@ -75,7 +75,7 @@
     
       
       <li class="menu-item menu-item-home">
-        <a href="/blog/">
+        <a href="/blog/blog/">
           <i class="menu-item-icon icon-home"></i> <br />
           首页
         </a>
@@ -83,7 +83,7 @@
     
       
       <li class="menu-item menu-item-categories">
-        <a href="/blog/categories">
+        <a href="/blog/blog/categories">
           <i class="menu-item-icon icon-categories"></i> <br />
           分类
         </a>
@@ -91,7 +91,7 @@
     
       
       <li class="menu-item menu-item-archives">
-        <a href="/blog/archives">
+        <a href="/blog/blog/archives">
           <i class="menu-item-icon icon-archives"></i> <br />
           归档
         </a>
@@ -99,7 +99,7 @@
     
       
       <li class="menu-item menu-item-tags">
-        <a href="/blog/tags">
+        <a href="/blog/blog/tags">
           <i class="menu-item-icon icon-tags"></i> <br />
           标签
         </a>
@@ -167,23 +167,23 @@
         <blockquote>
 <p>无言独上西楼，月如勾。</p>
 </blockquote>
-<h3 id="Lisp_Books">Lisp Books</h3><ul>
+<h3 id="Lisp-Books"><a href="#Lisp-Books" class="headerlink" title="Lisp Books"></a>Lisp Books</h3><ul>
 <li><a href="http://lisp-lang.org/" target="_blank" rel="external">Common Lisp</a></li>
 <li><a href="http://fullstacklisp.com/" target="_blank" rel="external">Full Stack Lisp Book!</a></li>
 <li><a href="https://github.com/LispTO/llthw" target="_blank" rel="external">Learn Lisp The Hard Way source-code and full book text</a></li>
 </ul>
-<h3 id="SBCL">SBCL</h3><ul>
+<h3 id="SBCL"><a href="#SBCL" class="headerlink" title="SBCL"></a>SBCL</h3><ul>
 <li><a href="http://www.sbcl.org/" target="_blank" rel="external">About - Steel Bank Common Lisp</a></li>
 </ul>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">To quit SBCL, <span class="built_in">type</span> (quit)</span><br></pre></td></tr></table></figure>
-<h3 id="Quicklisp">Quicklisp</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ curl -o /tmp/ql.lisp http://beta.quicklisp.org/quicklisp.lisp</span><br><span class="line">$ sbcl --no-sysinit --no-userinit --load /tmp/ql.lisp --eval <span class="string">'(quicklisp-quickstart:install :path ".quicklisp")'</span> --quit</span><br></pre></td></tr></table></figure>
-<h3 id="Sublime">Sublime</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">先安装Common lisp 解释器：</span><br><span class="line">brew install sbcl</span><br><span class="line"></span><br><span class="line">然后在sublime text添加一个</span><br><span class="line">build system</span><br><span class="line">&#123;</span><br><span class="line">    <span class="string">"shell_cmd"</span>: <span class="string">"/usr/local/bin/sbcl --disable-debugger --load <span class="variable">$file</span>"</span>,</span><br><span class="line">    <span class="string">"working_dir"</span>: <span class="string">"<span class="variable">$file_path</span>"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="try_lisp_on_browser">try lisp on browser</h3><ul>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">To quit SBCL, <span class="built_in">type</span> (quit)</div></pre></td></tr></table></figure>
+<h3 id="Quicklisp"><a href="#Quicklisp" class="headerlink" title="Quicklisp"></a>Quicklisp</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ curl -o /tmp/ql.lisp http://beta.quicklisp.org/quicklisp.lisp</div><div class="line">$ sbcl --no-sysinit --no-userinit --load /tmp/ql.lisp --<span class="built_in">eval</span> <span class="string">'(quicklisp-quickstart:install :path ".quicklisp")'</span> --quit</div></pre></td></tr></table></figure>
+<h3 id="Sublime"><a href="#Sublime" class="headerlink" title="Sublime"></a>Sublime</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">先安装Common lisp 解释器：</div><div class="line">brew install sbcl</div><div class="line"></div><div class="line">然后在sublime text添加一个</div><div class="line">build system</div><div class="line">&#123;</div><div class="line">    <span class="string">"shell_cmd"</span>: <span class="string">"/usr/local/bin/sbcl --disable-debugger --load <span class="variable">$file</span>"</span>,</div><div class="line">    <span class="string">"working_dir"</span>: <span class="string">"<span class="variable">$file_path</span>"</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="try-lisp-on-browser"><a href="#try-lisp-on-browser" class="headerlink" title="try lisp on browser"></a>try lisp on browser</h3><ul>
 <li><a href="http://learnlispthehardway.org/try-lisp/" target="_blank" rel="external">L(λ)THW</a></li>
 </ul>
-<h3 id="code">code</h3><p>hello world</p>
-<figure class="highlight lisp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="list">(<span class="keyword">defun</span> sayHello<span class="list">()</span></span><br><span class="line">	<span class="list">(<span class="keyword">format</span> <span class="literal">t</span> <span class="string">"Hello, world!"</span>)</span>)</span></span><br><span class="line"><span class="list">(<span class="keyword">sayHello</span>)</span></span><br></pre></td></tr></table></figure>
-<h3 id="References">References</h3><ul>
+<h3 id="code"><a href="#code" class="headerlink" title="code"></a>code</h3><p>hello world</p>
+<figure class="highlight lisp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">(<span class="name">defun</span> sayHello()</div><div class="line">	(<span class="name">format</span> <span class="literal">t</span> <span class="string">"Hello, world!"</span>))</div><div class="line">(<span class="name">sayHello</span>)</div></pre></td></tr></table></figure>
+<h3 id="References"><a href="#References" class="headerlink" title="References"></a>References</h3><ul>
 <li><a href="https://marktrapp.com/blog/2014/01/20/lisp-with-os-x-sublime-text/" target="_blank" rel="external">Setting up a Common Lisp environment on OS X with Sublime Text 3 | Mark Trapp</a></li>
 </ul>
 
@@ -203,11 +203,13 @@
         <div class="post-nav">
           <div class="post-nav-prev post-nav-item">
             
+              <a href="/blog/test/">Lisp</a>
+            
           </div>
 
           <div class="post-nav-next post-nav-item">
             
-              <a href="/blog/test/">Lisp</a>
+              <a href="/blog/FactorialInPrograms/">Factorial in Programs</a>
             
           </div>
         </div>
@@ -266,21 +268,21 @@
         <p class="site-description motion-element"></p>
         <div class="site-state motion-element">
           <div class="site-state-item site-state-posts">
-            <a href="/blog/archives">
+            <a href="/blog/blog/archives">
               <span class="site-state-item-count">39</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
           <div class="site-state-item site-state-categories">
-            <a href="/blog/categories">
+            <a href="/blog/blog/categories">
               <span class="site-state-item-count">22</span>
               <span class="site-state-item-name">分类</span>
               </a>
           </div>
 
           <div class="site-state-item site-state-tags">
-            <a href="/blog/tags">
+            <a href="/blog/blog/tags">
               <span class="site-state-item-count">39</span>
               <span class="site-state-item-name">标签</span>
               </a>
@@ -290,7 +292,7 @@
 
         
           <div class="feed-link motion-element">
-            <a href="/blog/atom.xml">
+            <a href="/blog/blog/atom.xml">
               <i class="menu-item-icon icon-feed"></i>
               RSS
             </a>
@@ -326,7 +328,7 @@
           <div class="post-toc">
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Lisp_Books"><span class="nav-number">1.</span> <span class="nav-text">Lisp Books</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#SBCL"><span class="nav-number">2.</span> <span class="nav-text">SBCL</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Quicklisp"><span class="nav-number">3.</span> <span class="nav-text">Quicklisp</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Sublime"><span class="nav-number">4.</span> <span class="nav-text">Sublime</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#try_lisp_on_browser"><span class="nav-number">5.</span> <span class="nav-text">try lisp on browser</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#code"><span class="nav-number">6.</span> <span class="nav-text">code</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#References"><span class="nav-number">7.</span> <span class="nav-text">References</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Lisp-Books"><span class="nav-number">1.</span> <span class="nav-text">Lisp Books</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#SBCL"><span class="nav-number">2.</span> <span class="nav-text">SBCL</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Quicklisp"><span class="nav-number">3.</span> <span class="nav-text">Quicklisp</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Sublime"><span class="nav-number">4.</span> <span class="nav-text">Sublime</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#try-lisp-on-browser"><span class="nav-number">5.</span> <span class="nav-text">try lisp on browser</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#code"><span class="nav-number">6.</span> <span class="nav-text">code</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#References"><span class="nav-number">7.</span> <span class="nav-text">References</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>

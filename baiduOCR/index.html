@@ -22,15 +22,15 @@
 
 
 
-  <meta name="keywords" content="OCR,Python,base64," />
+  <meta name="keywords" content="Python,OCR,base64," />
 
 
 
-  <link rel="alternate" href="/blog/atom.xml" title="Zero to One" type="application/atom+xml" />
+  <link rel="alternate" href="/blog/blog/atom.xml" title="Zero to One" type="application/atom+xml" />
 
 
 
-  <link rel="shorticon icon" type="image/x-icon" href="/blog/images/favicon.ico?v=0.4.2" />
+  <link rel="shorticon icon" type="image/x-icon" href="/blog/blog/images/favicon.ico?v=0.4.2" />
 
 
 
@@ -75,7 +75,7 @@
     
       
       <li class="menu-item menu-item-home">
-        <a href="/blog/">
+        <a href="/blog/blog/">
           <i class="menu-item-icon icon-home"></i> <br />
           首页
         </a>
@@ -83,7 +83,7 @@
     
       
       <li class="menu-item menu-item-categories">
-        <a href="/blog/categories">
+        <a href="/blog/blog/categories">
           <i class="menu-item-icon icon-categories"></i> <br />
           分类
         </a>
@@ -91,7 +91,7 @@
     
       
       <li class="menu-item menu-item-archives">
-        <a href="/blog/archives">
+        <a href="/blog/blog/archives">
           <i class="menu-item-icon icon-archives"></i> <br />
           归档
         </a>
@@ -99,7 +99,7 @@
     
       
       <li class="menu-item menu-item-tags">
-        <a href="/blog/tags">
+        <a href="/blog/blog/tags">
           <i class="menu-item-icon icon-tags"></i> <br />
           标签
         </a>
@@ -164,16 +164,16 @@
       
 
       
-        <h2 id="百度OCR文字识别API_for_Python">百度OCR文字识别API for Python</h2><figure class="highlight haskell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">#!/usr/bin/env python</span></span><br><span class="line"><span class="preprocessor"># -*- coding: utf-8 -*-</span></span><br><span class="line"><span class="import"><span class="keyword">import</span> sys, urllib, urllib2, json</span></span><br><span class="line"><span class="title">f</span> = open(<span class="string">"test.txt"</span>,<span class="string">"w"</span>)</span><br><span class="line"><span class="title">url</span> = 'http://apis.baidu.com/apistore/idlocr/ocr'</span><br><span class="line"></span><br><span class="line"><span class="typedef"><span class="keyword">data</span> = <span class="container">&#123;&#125;</span></span></span><br><span class="line"><span class="typedef"><span class="keyword">data</span>['fromdevice'] = "pc"</span></span><br><span class="line"><span class="typedef"><span class="keyword">data</span>['clientip'] = "10.10.10.0"</span></span><br><span class="line"><span class="typedef"><span class="keyword">data</span>['detecttype'] = "<span class="type">LocateRecognize</span>"</span></span><br><span class="line"><span class="typedef"><span class="keyword">data</span>['languagetype'] = "<span class="type">CHN_ENG</span>"</span></span><br><span class="line"><span class="typedef"><span class="keyword">data</span>['imagetype'] = "1"  #`2`代表图片原文件（只支持<span class="type">JPG</span>）</span></span><br><span class="line"><span class="typedef"><span class="keyword">data</span>['image'] = ""    ##image base64 <span class="keyword">data</span></span></span><br><span class="line"></span><br><span class="line"><span class="title">decoded_data</span> = urllib.urlencode(<span class="typedef"><span class="keyword">data</span>)</span></span><br><span class="line"><span class="title">req</span> = urllib2.<span class="type">Request</span>(url, <span class="typedef"><span class="keyword">data</span> = decoded_data)</span></span><br><span class="line"></span><br><span class="line"><span class="title">req</span>.add_header(<span class="string">"Content-Type"</span>, <span class="string">"application/x-www-form-urlencoded"</span>)</span><br><span class="line"><span class="title">req</span>.add_header(<span class="string">"apikey"</span>, <span class="string">"自己的apikey"</span>)</span><br><span class="line"></span><br><span class="line"><span class="title">resp</span> = urllib2.urlopen(req)</span><br><span class="line"><span class="title">content</span> = resp.read()</span><br><span class="line"><span class="title">if</span>(content):</span><br><span class="line">    print(content)</span><br><span class="line">    f.write(content)</span><br></pre></td></tr></table></figure>
+        <h2 id="百度OCR文字识别API-for-Python"><a href="#百度OCR文字识别API-for-Python" class="headerlink" title="百度OCR文字识别API for Python"></a>百度OCR文字识别API for Python</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line">#!/usr/bin/env python</div><div class="line"># -*- coding: utf-8 -*-</div><div class="line">import sys, urllib, urllib2, json</div><div class="line">f = open(&quot;test.txt&quot;,&quot;w&quot;)</div><div class="line">url = &apos;http://apis.baidu.com/apistore/idlocr/ocr&apos;</div><div class="line"></div><div class="line">data = &#123;&#125;</div><div class="line">data[&apos;fromdevice&apos;] = &quot;pc&quot;</div><div class="line">data[&apos;clientip&apos;] = &quot;10.10.10.0&quot;</div><div class="line">data[&apos;detecttype&apos;] = &quot;LocateRecognize&quot;</div><div class="line">data[&apos;languagetype&apos;] = &quot;CHN_ENG&quot;</div><div class="line">data[&apos;imagetype&apos;] = &quot;1&quot;  #`2`代表图片原文件（只支持JPG）</div><div class="line">data[&apos;image&apos;] = &quot;&quot;    ##image base64 data</div><div class="line"></div><div class="line">decoded_data = urllib.urlencode(data)</div><div class="line">req = urllib2.Request(url, data = decoded_data)</div><div class="line"></div><div class="line">req.add_header(&quot;Content-Type&quot;, &quot;application/x-www-form-urlencoded&quot;)</div><div class="line">req.add_header(&quot;apikey&quot;, &quot;自己的apikey&quot;)</div><div class="line"></div><div class="line">resp = urllib2.urlopen(req)</div><div class="line">content = resp.read()</div><div class="line">if(content):</div><div class="line">    print(content)</div><div class="line">    f.write(content)</div></pre></td></tr></table></figure>
 <a id="more"></a>
-<h2 id="image_convert_to_base64_code">image convert to base64 code</h2><figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">openssl base64 &lt; image.jpg | tr -<span class="keyword">d</span> '\<span class="keyword">n</span>' | pbcopy</span><br><span class="line"></span><br><span class="line"><span class="keyword">cat</span> image.jpg | openssl base64 | tr -<span class="keyword">d</span> '\<span class="keyword">n</span>' | pbcopy</span><br><span class="line"></span><br><span class="line">openssl base64 -<span class="keyword">in</span> <span class="keyword">out</span>.jpg -<span class="keyword">out</span> filename.b64</span><br></pre></td></tr></table></figure>
+<h2 id="image-convert-to-base64-code"><a href="#image-convert-to-base64-code" class="headerlink" title="image convert to base64 code"></a>image convert to base64 code</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">openssl base64 &lt; image.jpg | tr -d &apos;\n&apos; | pbcopy</div><div class="line"></div><div class="line">cat image.jpg | openssl base64 | tr -d &apos;\n&apos; | pbcopy</div><div class="line"></div><div class="line">openssl base64 -in out.jpg -out filename.b64</div></pre></td></tr></table></figure>
 <blockquote>
 <ul>
 <li><code>data:image/png;base64,{base64 image code}</code>//直接复制到浏览器地址栏回车</li>
 <li><code>&lt;img src=&quot;data:image/jpg;base64,{base64 image code}/&gt;</code>//或者网页里嵌入</li>
 </ul>
 </blockquote>
-<h2 id="References:">References:</h2><ul>
+<h2 id="References"><a href="#References" class="headerlink" title="References:"></a>References:</h2><ul>
 <li><a href="http://apistore.baidu.com/apiworks/servicedetail/146.html" target="_blank" rel="external">百度OCR文字识别_工具_API服务_API服务_API Store</a></li>
 <li>apikey <a href="http://apistore.baidu.com/astore/toolshttpproxy?apiId=usa-&amp;isAworks=1" target="_blank" rel="external">API调试工具_API Store</a></li>
 <li><a href="https://github.com/JeremyWei/baidu-ocr" target="_blank" rel="external">JeremyWei/baidu-ocr</a></li>
@@ -187,9 +187,9 @@
       
         <div class="post-tags">
           
-            <a href="/blog/tags/OCR/"> #OCR </a>
-          
             <a href="/blog/tags/Python/"> #Python </a>
+          
+            <a href="/blog/tags/OCR/"> #OCR </a>
           
             <a href="/blog/tags/base64/"> #base64 </a>
           
@@ -200,13 +200,13 @@
         <div class="post-nav">
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/blog/ADBLOCKblocklist/">ADBLOCK block list</a>
+              <a href="/blog/Privoxy/">Privoxy</a>
             
           </div>
 
           <div class="post-nav-next post-nav-item">
             
-              <a href="/blog/CNNICCertificate/">CNNIC证书</a>
+              <a href="/blog/ADBLOCKblocklist/">ADBLOCK block list</a>
             
           </div>
         </div>
@@ -265,21 +265,21 @@
         <p class="site-description motion-element"></p>
         <div class="site-state motion-element">
           <div class="site-state-item site-state-posts">
-            <a href="/blog/archives">
+            <a href="/blog/blog/archives">
               <span class="site-state-item-count">39</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
           <div class="site-state-item site-state-categories">
-            <a href="/blog/categories">
+            <a href="/blog/blog/categories">
               <span class="site-state-item-count">22</span>
               <span class="site-state-item-name">分类</span>
               </a>
           </div>
 
           <div class="site-state-item site-state-tags">
-            <a href="/blog/tags">
+            <a href="/blog/blog/tags">
               <span class="site-state-item-count">39</span>
               <span class="site-state-item-name">标签</span>
               </a>
@@ -289,7 +289,7 @@
 
         
           <div class="feed-link motion-element">
-            <a href="/blog/atom.xml">
+            <a href="/blog/blog/atom.xml">
               <i class="menu-item-icon icon-feed"></i>
               RSS
             </a>
@@ -325,7 +325,7 @@
           <div class="post-toc">
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#百度OCR文字识别API_for_Python"><span class="nav-number">1.</span> <span class="nav-text">百度OCR文字识别API for Python</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#image_convert_to_base64_code"><span class="nav-number">2.</span> <span class="nav-text">image convert to base64 code</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#References:"><span class="nav-number">3.</span> <span class="nav-text">References:</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#百度OCR文字识别API-for-Python"><span class="nav-number">1.</span> <span class="nav-text">百度OCR文字识别API for Python</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#image-convert-to-base64-code"><span class="nav-number">2.</span> <span class="nav-text">image convert to base64 code</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#References"><span class="nav-number">3.</span> <span class="nav-text">References:</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>

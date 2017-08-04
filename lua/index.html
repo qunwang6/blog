@@ -26,11 +26,11 @@
 
 
 
-  <link rel="alternate" href="/blog/atom.xml" title="Zero to One" type="application/atom+xml" />
+  <link rel="alternate" href="/blog/blog/atom.xml" title="Zero to One" type="application/atom+xml" />
 
 
 
-  <link rel="shorticon icon" type="image/x-icon" href="/blog/images/favicon.ico?v=0.4.2" />
+  <link rel="shorticon icon" type="image/x-icon" href="/blog/blog/images/favicon.ico?v=0.4.2" />
 
 
 
@@ -75,7 +75,7 @@
     
       
       <li class="menu-item menu-item-home">
-        <a href="/blog/">
+        <a href="/blog/blog/">
           <i class="menu-item-icon icon-home"></i> <br />
           首页
         </a>
@@ -83,7 +83,7 @@
     
       
       <li class="menu-item menu-item-categories">
-        <a href="/blog/categories">
+        <a href="/blog/blog/categories">
           <i class="menu-item-icon icon-categories"></i> <br />
           分类
         </a>
@@ -91,7 +91,7 @@
     
       
       <li class="menu-item menu-item-archives">
-        <a href="/blog/archives">
+        <a href="/blog/blog/archives">
           <i class="menu-item-icon icon-archives"></i> <br />
           归档
         </a>
@@ -99,7 +99,7 @@
     
       
       <li class="menu-item menu-item-tags">
-        <a href="/blog/tags">
+        <a href="/blog/blog/tags">
           <i class="menu-item-icon icon-tags"></i> <br />
           标签
         </a>
@@ -164,18 +164,18 @@
       
 
       
-        <h3 id="about">about</h3><blockquote>
+        <h3 id="about"><a href="#about" class="headerlink" title="about"></a>about</h3><blockquote>
 <p>Lua（英语发音：/ˈluːə/）程序设计语言是一个简洁、轻量、可扩展的脚本语言，是葡萄牙语中“Lua”（月亮）的意思。类似语言Julia,R。</p>
 </blockquote>
 <ul>
 <li><a href="http://www.lua.org/home.html" target="_blank" rel="external">The Programming Language Lua</a></li>
 <li><a href="http://www.lua.org/cgi-bin/demo" target="_blank" rel="external">Lua: demo</a></li>
 </ul>
-<h3 id="install">install</h3><ul>
+<h3 id="install"><a href="#install" class="headerlink" title="install"></a>install</h3><ul>
 <li><code>make macosx test</code> <code>make install</code></li>
 <li><code>brew install lua</code></li>
 </ul>
-<figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[Errno <span class="number">2</span>] No such file or <span class="string">directory:</span> <span class="string">'lua'</span></span><br><span class="line">[<span class="string">cmd:</span> [<span class="string">'lua'</span>, <span class="string">'/Users/qunwang6/Desktop/hello.lua'</span>]]</span><br><span class="line">[<span class="string">dir:</span> <span class="regexp">/Users/</span>qunwang6/Desktop]</span><br><span class="line">[<span class="string">path:</span> <span class="regexp">/usr/</span><span class="string">bin:</span><span class="regexp">/bin:/</span>usr<span class="regexp">/sbin:/</span>sbin]</span><br><span class="line">[Finished]</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">[Errno 2] No such file or directory: &apos;lua&apos;</div><div class="line">[cmd: [&apos;lua&apos;, &apos;/Users/qunwang6/Desktop/hello.lua&apos;]]</div><div class="line">[dir: /Users/qunwang6/Desktop]</div><div class="line">[path: /usr/bin:/bin:/usr/sbin:/sbin]</div><div class="line">[Finished]</div></pre></td></tr></table></figure>
 <blockquote>
 <p>因为 lua默认安装在usr／local／bin里面，而不是usr／bin里面；可以创建一个usr/bin的外链；<br>也可以通过安装fix mac path的包来解决。</p>
 </blockquote>
@@ -183,11 +183,11 @@
 <li><a href="https://github.com/int3h/SublimeFixMacPath" target="_blank" rel="external">int3h/SublimeFixMacPath</a><code>？</code></li>
 <li><code>sudo ln /usr/local/bin/lua /usr/bin/</code></li>
 </ul>
-<h3 id="doc">doc</h3><ul>
+<h3 id="doc"><a href="#doc" class="headerlink" title="doc"></a>doc</h3><ul>
 <li><a href="http://cloudwu.github.io/lua53doc/manual.html" target="_blank" rel="external">Lua 5.3 参考手册</a></li>
 <li><a href="http://www.slideshare.net/ProteasWang/ioslua" target="_blank" rel="external">iOS中Lua脚本的应用</a></li>
 </ul>
-<h3 id="plugs">plugs</h3><ul>
+<h3 id="plugs"><a href="#plugs" class="headerlink" title="plugs"></a>plugs</h3><ul>
 <li>sublilme3 Lua dev</li>
 <li>sublilme3 Lua Love</li>
 </ul>
@@ -273,21 +273,21 @@
         <p class="site-description motion-element"></p>
         <div class="site-state motion-element">
           <div class="site-state-item site-state-posts">
-            <a href="/blog/archives">
+            <a href="/blog/blog/archives">
               <span class="site-state-item-count">39</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
           <div class="site-state-item site-state-categories">
-            <a href="/blog/categories">
+            <a href="/blog/blog/categories">
               <span class="site-state-item-count">22</span>
               <span class="site-state-item-name">分类</span>
               </a>
           </div>
 
           <div class="site-state-item site-state-tags">
-            <a href="/blog/tags">
+            <a href="/blog/blog/tags">
               <span class="site-state-item-count">39</span>
               <span class="site-state-item-name">标签</span>
               </a>
@@ -297,7 +297,7 @@
 
         
           <div class="feed-link motion-element">
-            <a href="/blog/atom.xml">
+            <a href="/blog/blog/atom.xml">
               <i class="menu-item-icon icon-feed"></i>
               RSS
             </a>

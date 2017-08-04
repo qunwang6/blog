@@ -26,11 +26,11 @@
 
 
 
-  <link rel="alternate" href="/blog/atom.xml" title="Zero to One" type="application/atom+xml" />
+  <link rel="alternate" href="/blog/blog/atom.xml" title="Zero to One" type="application/atom+xml" />
 
 
 
-  <link rel="shorticon icon" type="image/x-icon" href="/blog/images/favicon.ico?v=0.4.2" />
+  <link rel="shorticon icon" type="image/x-icon" href="/blog/blog/images/favicon.ico?v=0.4.2" />
 
 
 
@@ -75,7 +75,7 @@
     
       
       <li class="menu-item menu-item-home">
-        <a href="/blog/">
+        <a href="/blog/blog/">
           <i class="menu-item-icon icon-home"></i> <br />
           首页
         </a>
@@ -83,7 +83,7 @@
     
       
       <li class="menu-item menu-item-categories">
-        <a href="/blog/categories">
+        <a href="/blog/blog/categories">
           <i class="menu-item-icon icon-categories"></i> <br />
           分类
         </a>
@@ -91,7 +91,7 @@
     
       
       <li class="menu-item menu-item-archives">
-        <a href="/blog/archives">
+        <a href="/blog/blog/archives">
           <i class="menu-item-icon icon-archives"></i> <br />
           归档
         </a>
@@ -99,7 +99,7 @@
     
       
       <li class="menu-item menu-item-tags">
-        <a href="/blog/tags">
+        <a href="/blog/blog/tags">
           <i class="menu-item-icon icon-tags"></i> <br />
           标签
         </a>
@@ -164,19 +164,22 @@
       
 
       
-        <h3 id="Wordnik-Definition-Finder"><a href="https://github.com/williamrchr/Wordnik-Definition-Finder" target="_blank" rel="external">Wordnik-Definition-Finder</a></h3><blockquote>
+        <p>###<a href="https://github.com/williamrchr/Wordnik-Definition-Finder" target="_blank" rel="external">Wordnik-Definition-Finder</a></p>
+<blockquote>
 <p>This is a Python program that pulls definitions from a list and outputs them to a text file.<br>There are two versions, one with a GUI, and one with a CLI (command line interface). Choose<br>whichever seems most appropriate for you.<br>To read words from a text file, the following configuration should be used:<br>word1,word2,word3<br>Otherwise, the program will not be able to parse your file and most likely crash.</p>
 </blockquote>
 <p>从文本文件中读取单词，再从wordnik.com网站获取单词释义。</p>
-<h3 id="Usage:">Usage:</h3><ul>
+<p>###Usage:</p>
+<ul>
 <li><code>easy_install wordnik</code></li>
 <li>命令行版本<br><code>python definitions-finder-cli.py</code><br>单词表放在text.txt。</li>
-<li>图形界面版本需要安装wxpython<figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">brew install wxpython</span><br><span class="line">mkdir -p ~<span class="regexp">/Library/</span>Python<span class="regexp">/2.7/</span>lib<span class="regexp">/python/</span>site-packages</span><br><span class="line">echo <span class="string">"import site; site.addsitedir('$(brew --prefix)/lib/python2.7/site-packages')"</span> &gt;&gt; ~<span class="regexp">/Library/</span>Python<span class="regexp">/2.7/</span>lib<span class="regexp">/python/</span>site-packages<span class="regexp">/homebrew.pth</span></span><br></pre></td></tr></table></figure>
+<li>图形界面版本需要安装wxpython<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">brew install wxpython</div><div class="line">mkdir -p ~/Library/Python/2.7/lib/python/site-packages</div><div class="line">echo &quot;import site; site.addsitedir(&apos;$(brew --prefix)/lib/python2.7/site-packages&apos;)&quot; &gt;&gt; ~/Library/Python/2.7/lib/python/site-packages/homebrew.pth</div></pre></td></tr></table></figure>
 </li>
 </ul>
-<p>另一种方法：<a id="more"></a><br><figure class="highlight monkey"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor"><span class="keyword">import</span> wxversion</span></span><br><span class="line">wxversion.<span class="keyword">select</span>(<span class="comment">'3.0')</span></span><br><span class="line"><span class="preprocessor"><span class="keyword">import</span> wx</span></span><br></pre></td></tr></table></figure></p>
+<p>另一种方法：<a id="more"></a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">import wxversion</div><div class="line">wxversion.select(&apos;3.0&apos;)</div><div class="line">import wx</div></pre></td></tr></table></figure></p>
 <p><code>python definition-finder.py</code><br>菜单栏open导入单词表，自动查词。</p>
-<h3 id="参考：">参考：</h3><ul>
+<p>###参考：</p>
+<ul>
 <li><a href="https://github.com/wordnik/wordnik-python" target="_blank" rel="external">wordnik-python</a></li>
 <li><a href="http://stackoverflow.com/questions/26306218/wxmac-image-not-found-python-2-7-5-os-x" target="_blank" rel="external">import wx</a></li>
 <li><a href="http://lxiongh.github.io/2014/10/29/install_wxPython_for_osx/" target="_blank" rel="external">Install wxPython in OSX</a></li>
@@ -200,13 +203,13 @@
         <div class="post-nav">
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/blog/AppstoreStandard/">App store最新审核标准(2015.3)</a>
+              <a href="/blog/lingvo2osx/">用DSLConverter将Lingvo词典.DSL格式转换成MAC OSX可用的格式</a>
             
           </div>
 
           <div class="post-nav-next post-nav-item">
             
-              <a href="/blog/SwiftGuide/">Swift 语言指南</a>
+              <a href="/blog/iOSDevelopNote/">iOS 开发流程笔记</a>
             
           </div>
         </div>
@@ -265,21 +268,21 @@
         <p class="site-description motion-element"></p>
         <div class="site-state motion-element">
           <div class="site-state-item site-state-posts">
-            <a href="/blog/archives">
+            <a href="/blog/blog/archives">
               <span class="site-state-item-count">39</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
           <div class="site-state-item site-state-categories">
-            <a href="/blog/categories">
+            <a href="/blog/blog/categories">
               <span class="site-state-item-count">22</span>
               <span class="site-state-item-name">分类</span>
               </a>
           </div>
 
           <div class="site-state-item site-state-tags">
-            <a href="/blog/tags">
+            <a href="/blog/blog/tags">
               <span class="site-state-item-count">39</span>
               <span class="site-state-item-name">标签</span>
               </a>
@@ -289,7 +292,7 @@
 
         
           <div class="feed-link motion-element">
-            <a href="/blog/atom.xml">
+            <a href="/blog/blog/atom.xml">
               <i class="menu-item-icon icon-feed"></i>
               RSS
             </a>
@@ -325,7 +328,7 @@
           <div class="post-toc">
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Wordnik-Definition-Finder"><span class="nav-number">1.</span> <span class="nav-text">Wordnik-Definition-Finder</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Usage:"><span class="nav-number">2.</span> <span class="nav-text">Usage:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#参考："><span class="nav-number">3.</span> <span class="nav-text">参考：</span></a></li></ol></div>
+              <p class="post-toc-empty">此文章未包含目录</p>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>

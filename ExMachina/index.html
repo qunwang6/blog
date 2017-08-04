@@ -26,11 +26,11 @@
 
 
 
-  <link rel="alternate" href="/blog/atom.xml" title="Zero to One" type="application/atom+xml" />
+  <link rel="alternate" href="/blog/blog/atom.xml" title="Zero to One" type="application/atom+xml" />
 
 
 
-  <link rel="shorticon icon" type="image/x-icon" href="/blog/images/favicon.ico?v=0.4.2" />
+  <link rel="shorticon icon" type="image/x-icon" href="/blog/blog/images/favicon.ico?v=0.4.2" />
 
 
 
@@ -75,7 +75,7 @@
     
       
       <li class="menu-item menu-item-home">
-        <a href="/blog/">
+        <a href="/blog/blog/">
           <i class="menu-item-icon icon-home"></i> <br />
           首页
         </a>
@@ -83,7 +83,7 @@
     
       
       <li class="menu-item menu-item-categories">
-        <a href="/blog/categories">
+        <a href="/blog/blog/categories">
           <i class="menu-item-icon icon-categories"></i> <br />
           分类
         </a>
@@ -91,7 +91,7 @@
     
       
       <li class="menu-item menu-item-archives">
-        <a href="/blog/archives">
+        <a href="/blog/blog/archives">
           <i class="menu-item-icon icon-archives"></i> <br />
           归档
         </a>
@@ -99,7 +99,7 @@
     
       
       <li class="menu-item menu-item-tags">
-        <a href="/blog/tags">
+        <a href="/blog/blog/tags">
           <i class="menu-item-icon icon-tags"></i> <br />
           标签
         </a>
@@ -165,7 +165,7 @@
 
       
         <p><img src="http://i.imgur.com/C44iJeR.jpg" alt=""></p>
-<h3 id="Code">Code</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#BlueBook code decryption</span></span><br><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">sieve</span><span class="params">(n)</span>:</span></span><br><span class="line">    x = [<span class="number">1</span>] * n</span><br><span class="line">    x[<span class="number">1</span>] = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">2</span>,n/<span class="number">2</span>):</span><br><span class="line">            j = <span class="number">2</span> * i</span><br><span class="line">            <span class="keyword">while</span> j &lt; n:</span><br><span class="line">                    x[j]=<span class="number">0</span></span><br><span class="line">                    j = j+i</span><br><span class="line">    <span class="keyword">return</span> x</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">prime</span><span class="params">(n,x)</span>:</span></span><br><span class="line">    i = <span class="number">1</span></span><br><span class="line">    j = <span class="number">1</span></span><br><span class="line">    <span class="keyword">while</span> j &lt;= n:</span><br><span class="line">            <span class="keyword">if</span> x[i] == <span class="number">1</span>:</span><br><span class="line">                    j = j + <span class="number">1</span></span><br><span class="line">            i = i + <span class="number">1</span></span><br><span class="line">    <span class="keyword">return</span> i - <span class="number">1</span></span><br><span class="line">x=sieve(<span class="number">10000</span>)</span><br><span class="line">code = [<span class="number">1206</span>,<span class="number">301</span>,<span class="number">384</span>,<span class="number">5</span>]</span><br><span class="line">key =[<span class="number">1</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">2</span>,]</span><br><span class="line"></span><br><span class="line">sys.stdout.write(<span class="string">""</span>.join(chr(i) <span class="keyword">for</span> i <span class="keyword">in</span> [<span class="number">73</span>,<span class="number">83</span>,<span class="number">66</span>,<span class="number">78</span>,<span class="number">32</span>,<span class="number">61</span>,<span class="number">32</span>]))</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range (<span class="number">0</span>,<span class="number">4</span>):</span><br><span class="line">    sys.stdout.write(str(prime(code[i],x)-key[i]))</span><br><span class="line"></span><br><span class="line"><span class="keyword">print</span></span><br></pre></td></tr></table></figure>
+<p>###Code<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div></pre></td><td class="code"><pre><div class="line">#BlueBook code decryption</div><div class="line">import sys</div><div class="line">def sieve(n):</div><div class="line">    x = [1] * n</div><div class="line">    x[1] = 0</div><div class="line">    for i in range(2,n/2):</div><div class="line">            j = 2 * i</div><div class="line">            while j &lt; n:</div><div class="line">                    x[j]=0</div><div class="line">                    j = j+i</div><div class="line">    return x</div><div class="line"></div><div class="line">def prime(n,x):</div><div class="line">    i = 1</div><div class="line">    j = 1</div><div class="line">    while j &lt;= n:</div><div class="line">            if x[i] == 1:</div><div class="line">                    j = j + 1</div><div class="line">            i = i + 1</div><div class="line">    return i - 1</div><div class="line">x=sieve(10000)</div><div class="line">code = [1206,301,384,5]</div><div class="line">key =[1,1,2,2,]</div><div class="line"></div><div class="line">sys.stdout.write(&quot;&quot;.join(chr(i) for i in [73,83,66,78,32,61,32]))</div><div class="line">for i in range (0,4):</div><div class="line">    sys.stdout.write(str(prime(code[i],x)-key[i]))</div><div class="line"></div><div class="line">print</div></pre></td></tr></table></figure></p>
 <a id="more"></a>
 <p>Which when you run with python2.7 you get the following:</p>
 <blockquote>
@@ -176,7 +176,8 @@
 <p>for anyone wondering, the isbn number is generated by concatenating the 1206th 301st 384th and 5th prime number of which each was subtracted 1, 1, 2, 2 …i.e.<br>The 1,206th prime is 9,781. -1<br>The 301st prime is 1,993. -1<br>The 384th prime is 2,657. -2<br>The 5th prime is 11. -2<br>= 9780 1992 2655 9<br>73,83,66,78,32,61,32 are the ascii characters for ‘ISBN = ‘<br>sieve is a reference to <a href="http://en.wikipedia.org/wiki/Sieve_of_Eratosthenes" target="_blank" rel="external">http://en.wikipedia.org/wiki/Sieve_of_Eratosthenes</a> which is used to reduce the number of prime candidates (here from 1 to 10000).</p>
 </blockquote>
 <hr>
-<h3 id="References:">References:</h3><ul>
+<p>###References:</p>
+<ul>
 <li><a href="http://www.v2ex.com/t/191613#reply37" target="_blank" rel="external">v2ex</a></li>
 <li><a href="http://moviecode.tumblr.com/" target="_blank" rel="external">Source Code in TV and Films</a></li>
 <li><a href="http://www.reddit.com/r/movies/comments/365f9b/secret_code_in_ex_machina/" target="_blank" rel="external">reddit.com</a></li>
@@ -198,7 +199,7 @@
 
           <div class="post-nav-next post-nav-item">
             
-              <a href="/blog/SpaceMonkey/">SpaceMonkey</a>
+              <a href="/blog/CherylsBirthday/">When is Cheryl’s birthday?</a>
             
           </div>
         </div>
@@ -257,21 +258,21 @@
         <p class="site-description motion-element"></p>
         <div class="site-state motion-element">
           <div class="site-state-item site-state-posts">
-            <a href="/blog/archives">
+            <a href="/blog/blog/archives">
               <span class="site-state-item-count">39</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
           <div class="site-state-item site-state-categories">
-            <a href="/blog/categories">
+            <a href="/blog/blog/categories">
               <span class="site-state-item-count">22</span>
               <span class="site-state-item-name">分类</span>
               </a>
           </div>
 
           <div class="site-state-item site-state-tags">
-            <a href="/blog/tags">
+            <a href="/blog/blog/tags">
               <span class="site-state-item-count">39</span>
               <span class="site-state-item-name">标签</span>
               </a>
@@ -281,7 +282,7 @@
 
         
           <div class="feed-link motion-element">
-            <a href="/blog/atom.xml">
+            <a href="/blog/blog/atom.xml">
               <i class="menu-item-icon icon-feed"></i>
               RSS
             </a>
@@ -317,7 +318,7 @@
           <div class="post-toc">
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Code"><span class="nav-number">1.</span> <span class="nav-text">Code</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#References:"><span class="nav-number">2.</span> <span class="nav-text">References:</span></a></li></ol></div>
+              <p class="post-toc-empty">此文章未包含目录</p>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>

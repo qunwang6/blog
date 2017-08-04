@@ -22,15 +22,15 @@
 
 
 
-  <meta name="keywords" content="OS X,Python,dictionary,iOS," />
+  <meta name="keywords" content="iOS,Python,dictionary,OS X," />
 
 
 
-  <link rel="alternate" href="/blog/atom.xml" title="Zero to One" type="application/atom+xml" />
+  <link rel="alternate" href="/blog/blog/atom.xml" title="Zero to One" type="application/atom+xml" />
 
 
 
-  <link rel="shorticon icon" type="image/x-icon" href="/blog/images/favicon.ico?v=0.4.2" />
+  <link rel="shorticon icon" type="image/x-icon" href="/blog/blog/images/favicon.ico?v=0.4.2" />
 
 
 
@@ -75,7 +75,7 @@
     
       
       <li class="menu-item menu-item-home">
-        <a href="/blog/">
+        <a href="/blog/blog/">
           <i class="menu-item-icon icon-home"></i> <br />
           首页
         </a>
@@ -83,7 +83,7 @@
     
       
       <li class="menu-item menu-item-categories">
-        <a href="/blog/categories">
+        <a href="/blog/blog/categories">
           <i class="menu-item-icon icon-categories"></i> <br />
           分类
         </a>
@@ -91,7 +91,7 @@
     
       
       <li class="menu-item menu-item-archives">
-        <a href="/blog/archives">
+        <a href="/blog/blog/archives">
           <i class="menu-item-icon icon-archives"></i> <br />
           归档
         </a>
@@ -99,7 +99,7 @@
     
       
       <li class="menu-item menu-item-tags">
-        <a href="/blog/tags">
+        <a href="/blog/blog/tags">
           <i class="menu-item-icon icon-tags"></i> <br />
           标签
         </a>
@@ -164,11 +164,13 @@
       
 
       
-        <h3 id="开源项目：PYGLOSSARY">开源项目：PYGLOSSARY</h3><ul>
+        <p>###开源项目：PYGLOSSARY</p>
+<ul>
 <li><a href="https://github.com/ilius/pyglossary" target="_blank" rel="external">PYGLOSSARY</a></li>
 <li><a href="https://bitbucket.org/james_taylor/python-lzo-static" target="_blank" rel="external">python-lzo</a></li>
 </ul>
-<h3 id="准备好以下环境：">准备好以下环境：</h3><blockquote>
+<p>###准备好以下环境：</p>
+<blockquote>
 <ul>
 <li>BeautifulSoup4 required to sanitize html contents.<br> <code>sudo easy_install beautifulsoup4 html5lib</code></li>
 <li>GNU make as part of <a href="http://developer.apple.com/downloads" target="_blank" rel="external">Command Line Tools for Xcode.</a></li>
@@ -177,8 +179,8 @@
 </blockquote>
 <a id="more"></a>
 <hr>
-<h3 id="BGL_===&gt;_OSX-dictionary">BGL ===&gt; OSX.dictionary</h3><p>转换</p>
-<pre><code>python pyglossary<span class="class">.pyw</span> --read-options=resPath=OtherResources --write-format=AppleDict dict<span class="class">.bgl</span> dict.xml
+<p>###BGL ===&gt; OSX.dictionary<br>转换</p>
+<pre><code>python pyglossary.pyw --read-options=resPath=OtherResources --write-format=AppleDict dict.bgl dict.xml
 </code></pre><p>编译</p>
 <ul>
 <li>在Makefile里设置好相关参数和路径，如DICT_NAME是生成文件的名称，DICT_BUILD_TOOL_DIR是Dictionary Development Kit的路径，如果错了就不能生成文件。</li>
@@ -192,25 +194,25 @@
 </blockquote>
 <p>可以在编译前不加入图片、语音文件，在编译完成后将图片、语音文件复制到xxx.dictionary/Contents目录下。</p>
 <hr>
-<h3 id="DSL_===&gt;_OSX-dictionary">DSL ===&gt; OSX.dictionary</h3><p>1.Convert DSL from UTF-16 to UTF-8:</p>
-<pre><code>iconv -f UTF-<span class="number">16</span> -t UTF-<span class="number">8</span> dict_utf16<span class="class">.dsl</span> &gt; dict_utf8.dsl
+<h3 id="DSL-gt-OSX-dictionary"><a href="#DSL-gt-OSX-dictionary" class="headerlink" title="DSL ===&gt; OSX.dictionary"></a>DSL ===&gt; OSX.dictionary</h3><p>1.Convert DSL from UTF-16 to UTF-8:</p>
+<pre><code>iconv -f UTF-16 -t UTF-8 dict_utf16.dsl &gt; dict_utf8.dsl
 </code></pre><p>2.Using pyGlossary python project, convert UTF-8 DSL to AppleDict XML:</p>
-<pre><code>python pyglossary.pyw --<span class="keyword">read</span>-<span class="keyword">format</span>=ABBYYLingvoDSL --<span class="keyword">write</span>-<span class="keyword">format</span>=AppleDict dict_utf8.dsl dict.xml
+<pre><code>python pyglossary.pyw --read-format=ABBYYLingvoDSL --write-format=AppleDict dict_utf8.dsl dict.xml
 </code></pre><p><strong>lingvo格式.dsl转换成可发音的词典。(注意修改命令参数)</strong>↓</p>
 <blockquote>
-<p>audio conversion is optional, “no” by default. The following command works,<br>~/Development/pyglossary/pyglossary.pyw —read-option=”audio=yes” test.dsl test.xml<br>make &amp;&amp; make install<br><code>python /Applications/Utilities/DictionaryDevelopmentKit/pyglossary/pyglossary.pyw --read-options=&quot;audio=yes&quot; --write-format=AppleDict ldoce55.dsl ldoce55.xml</code></p>
+<p>audio conversion is optional, “no” by default. The following command works,<br>~/Development/pyglossary/pyglossary.pyw –read-option=”audio=yes” test.dsl test.xml<br>make &amp;&amp; make install<br><code>python /Applications/Utilities/DictionaryDevelopmentKit/pyglossary/pyglossary.pyw --read-options=&quot;audio=yes&quot; --write-format=AppleDict ldoce55.dsl ldoce55.xml</code></p>
 </blockquote>
 <p>3.Using Command Line Tools for Xcode and Dictionary Development Kit:<br><code>make</code><br><code>make install</code></p>
 <hr>
-<h3 id="MDX_===&gt;_OSX-dictionary">MDX ===&gt; OSX.dictionary</h3><ul>
+<h3 id="MDX-gt-OSX-dictionary"><a href="#MDX-gt-OSX-dictionary" class="headerlink" title="MDX ===&gt; OSX.dictionary"></a>MDX ===&gt; OSX.dictionary</h3><ul>
 <li>转换</li>
 </ul>
 <pre><code>cd ~/Downloads/oald8/
-~/Software/pyglossary/pyglossary<span class="class">.pyw</span> --read-options=resPath=OtherResources --write-format=AppleDict oald8<span class="class">.mdx</span> oald8.xml
+~/Software/pyglossary/pyglossary.pyw --read-options=resPath=OtherResources --write-format=AppleDict oald8.mdx oald8.xml
 </code></pre><ul>
 <li><p>修改.xml文件里的链接</p>
-<pre><code>sed -<span class="tag">i</span> <span class="string">""</span> <span class="string">'s:src="/:src=":g'</span> oald8<span class="class">.xml</span>
-sed -<span class="tag">i</span> <span class="string">""</span> <span class="string">'s|sound://\([/_a-zA-Z0-9]*\).spx|\1.wav|g'</span> oald8.xml
+<pre><code>sed -i &quot;&quot; &apos;s:src=&quot;/:src=&quot;:g&apos; oald8.xml
+sed -i &quot;&quot; &apos;s|sound://\([/_a-zA-Z0-9]*\).spx|\1.wav|g&apos; oald8.xml
 </code></pre></li>
 </ul>
 <blockquote>
@@ -219,16 +221,17 @@ sed -<span class="tag">i</span> <span class="string">""</span> <span class="stri
 <ul>
 <li>将.spx语音文件转换成.wav(需要安装speex，麻烦!可直接从lingvo那里复制）</li>
 </ul>
-<pre><code><span class="title">find</span> OtherResources -name <span class="string">"*.spx"</span> -execdir sh -c <span class="string">'spx={};speexdec <span class="variable">$spx</span>  <span class="variable">${spx%.*}</span>.wav'</span> \
+<pre><code>find OtherResources -name &quot;*.spx&quot; -execdir sh -c &apos;spx={};speexdec $spx  ${spx%.*}.wav&apos; \
 </code></pre><ul>
 <li>编译</li>
 </ul>
-<pre><code><span class="built_in">make</span> &amp;&amp; <span class="built_in">make</span> install
+<pre><code>make &amp;&amp; make install
 </code></pre><blockquote>
 <p>注意：如果OtherResources里的图片和语音文件太多的话会出现错误，可以在编译前不加入图片和语音文件，在编译完成后将图片复制到xxx.dictionary/Contents目录下。</p>
 </blockquote>
 <hr>
-<h3 id="修改单词内部的链接">修改单词内部的链接</h3><blockquote>
+<p>###修改单词内部的链接</p>
+<blockquote>
 <p>The x-dictionary: URI contains three elements separated by colons as the general form—target selector, target text, and dictionary bundle ID. The target selector must be either <code>d</code>(for definition) or <code>r</code> (for reference). Use d if you want to search definitions of the following key text. Use <code>r</code>if you want to refer to the entry specified by the reference ID which must be unique to each dictionary.<br>辞書.appの辞書を引くURLスキームに<br>次のようなものもあります。<br>x-dictionary:d:key_text:dict_bundle_id<br>x-dictionary:r:reference_id:dict_bundle_id<br><strong>１key_text 　　 調べたい単語
 </strong>２reference_id 辞書を作るために作成するdictionary.xmlの<br>各タイトルごとに割り当てる固有のエントリーID</p>
 <p><d:entry id="0ABCDE" d:title="案の定"><br>**３dict_bundle_id 辞書の中のInfo.plistのBundle identifierの値<br>(例えば大辞泉の場合はcom.apple.dictionary.Daijisen)</d:entry></p>
@@ -237,39 +240,41 @@ sed -<span class="tag">i</span> <span class="string">""</span> <span class="stri
 <li>单词跳转用<code>x-dictionary:r:</code><br>(只能在当前词典内跳转且<code>x-dictionary:r:</code>后的单词大小写须与d:entry id=”<code>***</code>“里的大小写一致，不能有空格否则不能跳转。。）</li>
 <li>单词查找用<code>x-dictionary:d:</code><br>（会先搜索当前的词典，若没有，会调用其它词典搜索，不限大小写、空格。）<br>（基本上都是用r,用d很少)</li>
 </ul>
-<h3 id="ex-">ex.</h3><pre><code><span class="xml"><span class="tag">&lt;<span class="title">d:entry</span> <span class="attribute">id</span>=<span class="value">"make a face"</span> <span class="attribute">d:title</span>=<span class="value">"make a face"</span>&gt;</span>
-<span class="tag">&lt;<span class="title">d:index</span> <span class="attribute">d:value</span>=<span class="value">"make a face"</span>/&gt;</span>
-<span class="tag">&lt;<span class="title">html</span>&gt;</span><span class="tag">&lt;<span class="title">body</span>&gt;</span><span class="tag">&lt;<span class="title">h1</span>&gt;</span>make a face<span class="tag">&lt;/<span class="title">h1</span>&gt;</span>
-<span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"entry://grimace"</span>&gt;</span>grimace<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">body</span>&gt;</span><span class="tag">&lt;/<span class="title">html</span>&gt;</span>
-<span class="tag">&lt;/<span class="title">d:entry</span>&gt;</span>
+<h3 id="ex"><a href="#ex" class="headerlink" title="ex."></a>ex.</h3><pre><code>&lt;d:entry id=&quot;make a face&quot; d:title=&quot;make a face&quot;&gt;
+&lt;d:index d:value=&quot;make a face&quot;/&gt;
+&lt;html&gt;&lt;body&gt;&lt;h1&gt;make a face&lt;/h1&gt;
+&lt;a href=&quot;entry://grimace&quot;&gt;grimace&lt;/a&gt;&lt;/body&gt;&lt;/html&gt;
+&lt;/d:entry&gt;
 
-<span class="tag">&lt;<span class="title">d:entry</span> <span class="attribute">id</span>=<span class="value">"make faces"</span> <span class="attribute">d:title</span>=<span class="value">"make faces"</span>&gt;</span>
-<span class="tag">&lt;<span class="title">d:index</span> <span class="attribute">d:value</span>=<span class="value">"make faces"</span>/&gt;</span>
-<span class="tag">&lt;<span class="title">html</span>&gt;</span><span class="tag">&lt;<span class="title">body</span>&gt;</span><span class="tag">&lt;<span class="title">h1</span>&gt;</span>make faces<span class="tag">&lt;/<span class="title">h1</span>&gt;</span>
-<span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"entry://make a face"</span>&gt;</span>make a face<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">body</span>&gt;</span><span class="tag">&lt;/<span class="title">html</span>
-&lt;/<span class="attribute">d:entry</span>&gt;</span></span>
+&lt;d:entry id=&quot;make faces&quot; d:title=&quot;make faces&quot;&gt;
+&lt;d:index d:value=&quot;make faces&quot;/&gt;
+&lt;html&gt;&lt;body&gt;&lt;h1&gt;make faces&lt;/h1&gt;
+&lt;a href=&quot;entry://make a face&quot;&gt;make a face&lt;/a&gt;&lt;/body&gt;&lt;/html
+&lt;/d:entry&gt;
 </code></pre><blockquote>
 <p><strong>“entry://grimace”</strong><br>将<code>entry://</code>替换为<code>x-dictionary:r:</code></p>
 </blockquote>
 <p>===&gt;<code>&quot;x-dictionary:r:grimace&quot;</code></p>
-<h4 id="不能有空格">不能有空格</h4><p><strong>d:entry id=”make a face”<br>href=”entry://make a face”</strong><br>类似上面的单词，中间不能有空格，否则单词间不能跳转。<br>===&gt;<br>d:entry id=”make_a_face”<br>href=”x-dictionary:r:make_a_face”</p>
+<p>####不能有空格<br><strong>d:entry id=”make a face”<br>href=”entry://make a face”</strong><br>类似上面的单词，中间不能有空格，否则单词间不能跳转。<br>===&gt;<br>d:entry id=”make_a_face”<br>href=”x-dictionary:r:make_a_face”</p>
 <p>正则替换：<code>(&lt;d:entry id=&quot;[^&quot;]+)\s</code>替换为:<code>\1_</code><br><code>(href=&quot;x-dictionary:r:[^&quot;]+)\s</code>替换为<code>\1_</code></p>
-<h4 id="不能含有&#39;or’符号">不能含有<code>&#39;</code>or<code>’</code>符号</h4><p>正则替换：<code>(href=&quot;x-dictionary:r:[^&quot;]+)’</code><br><code>(&lt;d:entry id=&quot;[^&quot;]+)’</code><br>替换为<code>\1-</code></p>
-<h3 id="词组/词性跳转、定位">词组/词性跳转、定位</h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">词组/词性页面内定位</span><br><span class="line"><span class="tag">&lt;<span class="title">a</span> <span class="attribute">class</span>=<span class="value">"LP_OS"</span> <span class="attribute">href</span>=<span class="value">"entry://#L_hkx1"</span>&gt;</span>suffix<span class="tag">&lt;/<span class="title">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">a</span> <span class="attribute">name</span>=<span class="value">"L_hkx1"</span>&gt;</span><span class="tag">&lt;/<span class="title">a</span>&gt;</span></span><br><span class="line">==&gt; <span class="tag">&lt;<span class="title">a</span> <span class="attribute">class</span>=<span class="value">"LP_OS"</span> <span class="attribute">href</span>=<span class="value">"#L_hkx1"</span>&gt;</span>suffix<span class="tag">&lt;/<span class="title">a</span>&gt;</span></span><br><span class="line">------------------</span><br><span class="line">词组/词性跳转并定位</span><br><span class="line"><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"entry://clip#ld3097"</span>&gt;</span>clip<span class="tag">&lt;/<span class="title">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">a</span> <span class="attribute">name</span>=<span class="value">"ld3097"</span>&gt;</span><span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"L_IDOM"</span>&gt;</span>$100 / 50 cents etc a clip<span class="tag">&lt;/<span class="title">span</span>&gt;</span></span><br><span class="line">==&gt; <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"x-dictionary:r:clip:#ld3097"</span>&gt;</span>clip<span class="tag">&lt;/<span class="title">a</span>&gt;</span></span><br><span class="line">用到的正则表达式：</span><br><span class="line">x-dictionary:r:(.+?)#</span><br><span class="line">替换为：</span><br><span class="line">x-dictionary:r:\1:#</span><br><span class="line">相关的词典：朗文当代英语词典英汉双解第4版</span><br><span class="line">Shorter Oxford English Dictionary Sixth Edition</span><br></pre></td></tr></table></figure>
-<h3 id="语音">语音</h3><figure class="highlight nix"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;audio <span class="variable">id=</span><span class="string">"\1"</span> <span class="variable">src=</span><span class="string">"Sounds\/\1"</span> <span class="variable">type=</span><span class="string">"audio/mpeg"</span>/&gt;&lt;img <span class="variable">class=</span><span class="string">"sound"</span> <span class="variable">src=</span><span class="string">"Sound.png"</span> <span class="variable">onmouseover=</span><span class="string">"document.getElementById('\1').play(); return false;"</span>/&gt;</span><br></pre></td></tr></table></figure>
-<h3 id="高亮搜索关键词">高亮搜索关键词</h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">d:index</span> <span class="attribute">d:value</span>=<span class="value">"make it"</span> <span class="attribute">d:parental-control</span>=<span class="value">"1"</span> <span class="attribute">d:anchor</span>=<span class="value">"xpointer(//*[@id='make_it'])"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">d:parental-control</span>=<span class="value">"1"</span> <span class="attribute">d:priority</span>=<span class="value">"2"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="title">h3</span>&gt;</span>PHRASES<span class="tag">&lt;/<span class="title">h3</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"make_it"</span>&gt;</span><span class="tag">&lt;<span class="title">b</span>&gt;</span>make it<span class="tag">&lt;/<span class="title">b</span>&gt;</span> : succeed in something; survive.<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="title">h4</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"x-dictionary:r:make_up_ones_mind"</span>&gt;</span><span class="tag">&lt;<span class="title">b</span>&gt;</span>make up one's mind<span class="tag">&lt;/<span class="title">b</span>&gt;</span><span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">h4</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>===&gt;<br><figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="string">d:</span>index <span class="string">d:</span>value=<span class="string">"make it"</span> <span class="string">d:</span>anchor=<span class="string">"xpointer(//*[@id='make_it'])"</span>/&gt;</span><br></pre></td></tr></table></figure></p>
-<h3 id="附录">附录</h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">d:entry</span> <span class="attribute">id</span>=<span class="value">"front_back_matter"</span> <span class="attribute">d:title</span>=<span class="value">"Front/Back Matter"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">d:entry</span>&gt;</span></span><br><span class="line"></span><br><span class="line">添加以下值到Info.plis或者编译前的.plist文件</span><br><span class="line"><span class="tag">&lt;<span class="title">key</span>&gt;</span>DCSDictionaryFrontMatterReferenceID<span class="tag">&lt;/<span class="title">key</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">string</span>&gt;</span>front_back_matter<span class="tag">&lt;/<span class="title">string</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>entry id值要与string里的值一样<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">key</span>&gt;</span>CFBundleIdentifier<span class="tag">&lt;/<span class="title">key</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="title">string</span>&gt;</span>com.apple.xxxx<span class="tag">&lt;/<span class="title">string</span>&gt;</span></span><br><span class="line">	必须为英文字符，否则不能显示附录。</span><br></pre></td></tr></table></figure></p>
-<h3 id="词条自动合并">词条自动合并</h3><figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="string">d:</span>entry id=<span class="string">"1"</span> <span class="string">d:</span>title=<span class="string">"1"</span>&gt;</span><br><span class="line">    &lt;<span class="string">d:</span>index <span class="string">d:</span>value=<span class="string">"a"</span>/&gt;</span><br><span class="line"><span class="number">1</span></span><br><span class="line">&lt;/<span class="string">d:</span>entry&gt;</span><br><span class="line">&lt;<span class="string">d:</span>entry id=<span class="string">"2"</span> <span class="string">d:</span>title=<span class="string">"2"</span>&gt;</span><br><span class="line">    &lt;<span class="string">d:</span>index <span class="string">d:</span>value=<span class="string">"a"</span>/&gt;</span><br><span class="line"><span class="number">2</span></span><br><span class="line">&lt;/<span class="string">d:</span>entry&gt;</span><br><span class="line">&lt;<span class="string">d:</span>entry id=<span class="string">"3"</span> <span class="string">d:</span>title=<span class="string">"3"</span>&gt;</span><br><span class="line">    &lt;<span class="string">d:</span>index <span class="string">d:</span>value=<span class="string">"a"</span>/&gt;</span><br><span class="line"><span class="number">3</span></span><br><span class="line">&lt;/<span class="string">d:</span>entry&gt;</span><br></pre></td></tr></table></figure>
-<p><code>&lt;d:index d:value=&quot;a&quot;/&gt;</code>值相同，查a时，全部合并在同一页面显示。<br><figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="string">d:</span>entry id=<span class="string">"1"</span> <span class="string">d:</span>title=<span class="string">"1"</span>&gt;</span><br><span class="line">    &lt;<span class="string">d:</span>index <span class="string">d:</span>value=<span class="string">"a"</span>/&gt;</span><br><span class="line">    &lt;<span class="string">d:</span>index <span class="string">d:</span>value=<span class="string">"b"</span>/&gt;</span><br><span class="line">a</span><br><span class="line">&lt;/<span class="string">d:</span>entry&gt;</span><br><span class="line">&lt;<span class="string">d:</span>entry id=<span class="string">"2"</span> <span class="string">d:</span>title=<span class="string">"2"</span>&gt;</span><br><span class="line">    &lt;<span class="string">d:</span>index <span class="string">d:</span>value=<span class="string">"b"</span>/&gt;</span><br><span class="line">b</span><br><span class="line">&lt;/<span class="string">d:</span>entry&gt;</span><br></pre></td></tr></table></figure></p>
-<p>id=”1”里只有a；id=”2”含有a和b。<br>==&gt;查找a，只有一个；查找b，有两个，合并。<br><figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="string">d:</span>entry id=<span class="string">"1"</span> <span class="string">d:</span>title=<span class="string">"1"</span>&gt;</span><br><span class="line">    &lt;<span class="string">d:</span>index <span class="string">d:</span>value=<span class="string">"a b"</span>/&gt;</span><br><span class="line"></span><br><span class="line">a</span><br><span class="line">&lt;/<span class="string">d:</span>entry&gt;</span><br><span class="line">&lt;<span class="string">d:</span>entry id=<span class="string">"2"</span> <span class="string">d:</span>title=<span class="string">"2"</span>&gt;</span><br><span class="line">    &lt;<span class="string">d:</span>index <span class="string">d:</span>value=<span class="string">"a-b"</span>/&gt;</span><br><span class="line">b</span><br><span class="line">&lt;/<span class="string">d:</span>entry&gt;</span><br></pre></td></tr></table></figure></p>
+<p>####不能含有<code>&#39;</code>or<code>’</code>符号<br>正则替换：<code>(href=&quot;x-dictionary:r:[^&quot;]+)’</code><br><code>(&lt;d:entry id=&quot;[^&quot;]+)’</code><br>替换为<code>\1-</code></p>
+<h3 id="词组-词性跳转、定位"><a href="#词组-词性跳转、定位" class="headerlink" title="词组/词性跳转、定位"></a>词组/词性跳转、定位</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">词组/词性页面内定位</div><div class="line">&lt;a class=&quot;LP_OS&quot; href=&quot;entry://#L_hkx1&quot;&gt;suffix&lt;/a&gt;</div><div class="line">&lt;a name=&quot;L_hkx1&quot;&gt;&lt;/a&gt;</div><div class="line">==&gt; &lt;a class=&quot;LP_OS&quot; href=&quot;#L_hkx1&quot;&gt;suffix&lt;/a&gt;</div><div class="line">------------------</div><div class="line">词组/词性跳转并定位</div><div class="line">&lt;a href=&quot;entry://clip#ld3097&quot;&gt;clip&lt;/a&gt;</div><div class="line">&lt;a name=&quot;ld3097&quot;&gt;&lt;/a&gt;&lt;span class=&quot;L_IDOM&quot;&gt;$100 / 50 cents etc a clip&lt;/span&gt;</div><div class="line">==&gt; &lt;a href=&quot;x-dictionary:r:clip:#ld3097&quot;&gt;clip&lt;/a&gt;</div><div class="line">用到的正则表达式：</div><div class="line">x-dictionary:r:(.+?)#</div><div class="line">替换为：</div><div class="line">x-dictionary:r:\1:#</div><div class="line">相关的词典：朗文当代英语词典英汉双解第4版</div><div class="line">Shorter Oxford English Dictionary Sixth Edition</div></pre></td></tr></table></figure>
+<p>###语音<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;audio id=&quot;\1&quot; src=&quot;Sounds\/\1&quot; type=&quot;audio/mpeg&quot;/&gt;&lt;img class=&quot;sound&quot; src=&quot;Sound.png&quot; onmouseover=&quot;document.getElementById(&apos;\1&apos;).play(); return false;&quot;/&gt;</div></pre></td></tr></table></figure></p>
+<h3 id="高亮搜索关键词"><a href="#高亮搜索关键词" class="headerlink" title="高亮搜索关键词"></a>高亮搜索关键词</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&lt;d:index d:value=&quot;make it&quot; d:parental-control=&quot;1&quot; d:anchor=&quot;xpointer(//*[@id=&apos;make_it&apos;])&quot;/&gt;</div><div class="line">&lt;div d:parental-control=&quot;1&quot; d:priority=&quot;2&quot;&gt;</div><div class="line">		&lt;h3&gt;PHRASES&lt;/h3&gt;</div><div class="line">		&lt;div id=&quot;make_it&quot;&gt;&lt;b&gt;make it&lt;/b&gt; : succeed in something; survive.&lt;/div&gt;</div><div class="line">		&lt;h4&gt;&lt;a href=&quot;x-dictionary:r:make_up_ones_mind&quot;&gt;&lt;b&gt;make up one&apos;s mind&lt;/b&gt;&lt;/a&gt;&lt;/h4&gt;</div><div class="line">	&lt;/div&gt;</div></pre></td></tr></table></figure>
+<p>===&gt;<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;d:index d:value=&quot;make it&quot; d:anchor=&quot;xpointer(//*[@id=&apos;make_it&apos;])&quot;/&gt;</div></pre></td></tr></table></figure></p>
+<p>###附录<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&lt;d:entry id=&quot;front_back_matter&quot; d:title=&quot;Front/Back Matter&quot;&gt;</div><div class="line">&lt;/d:entry&gt;</div><div class="line"></div><div class="line">添加以下值到Info.plis或者编译前的.plist文件</div><div class="line">&lt;key&gt;DCSDictionaryFrontMatterReferenceID&lt;/key&gt;</div><div class="line">&lt;string&gt;front_back_matter&lt;/string&gt;</div></pre></td></tr></table></figure></p>
+<p>entry id值要与string里的值一样<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;key&gt;CFBundleIdentifier&lt;/key&gt;</div><div class="line">	&lt;string&gt;com.apple.xxxx&lt;/string&gt;</div><div class="line">	必须为英文字符，否则不能显示附录。</div></pre></td></tr></table></figure></p>
+<p>###词条自动合并<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">&lt;d:entry id=&quot;1&quot; d:title=&quot;1&quot;&gt;</div><div class="line">    &lt;d:index d:value=&quot;a&quot;/&gt;</div><div class="line">1</div><div class="line">&lt;/d:entry&gt;</div><div class="line">&lt;d:entry id=&quot;2&quot; d:title=&quot;2&quot;&gt;</div><div class="line">    &lt;d:index d:value=&quot;a&quot;/&gt;</div><div class="line">2</div><div class="line">&lt;/d:entry&gt;</div><div class="line">&lt;d:entry id=&quot;3&quot; d:title=&quot;3&quot;&gt;</div><div class="line">    &lt;d:index d:value=&quot;a&quot;/&gt;</div><div class="line">3</div><div class="line">&lt;/d:entry&gt;</div></pre></td></tr></table></figure></p>
+<p><code>&lt;d:index d:value=&quot;a&quot;/&gt;</code>值相同，查a时，全部合并在同一页面显示。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">&lt;d:entry id=&quot;1&quot; d:title=&quot;1&quot;&gt;</div><div class="line">    &lt;d:index d:value=&quot;a&quot;/&gt;</div><div class="line">    &lt;d:index d:value=&quot;b&quot;/&gt;</div><div class="line">a</div><div class="line">&lt;/d:entry&gt;</div><div class="line">&lt;d:entry id=&quot;2&quot; d:title=&quot;2&quot;&gt;</div><div class="line">    &lt;d:index d:value=&quot;b&quot;/&gt;</div><div class="line">b</div><div class="line">&lt;/d:entry&gt;</div></pre></td></tr></table></figure></p>
+<p>id=”1”里只有a；id=”2”含有a和b。<br>==&gt;查找a，只有一个；查找b，有两个，合并。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">&lt;d:entry id=&quot;1&quot; d:title=&quot;1&quot;&gt;</div><div class="line">    &lt;d:index d:value=&quot;a b&quot;/&gt;</div><div class="line"></div><div class="line">a</div><div class="line">&lt;/d:entry&gt;</div><div class="line">&lt;d:entry id=&quot;2&quot; d:title=&quot;2&quot;&gt;</div><div class="line">    &lt;d:index d:value=&quot;a-b&quot;/&gt;</div><div class="line">b</div><div class="line">&lt;/d:entry&gt;</div></pre></td></tr></table></figure></p>
 <p><code>a b</code>与<code>a-b</code>相似，合并。<br>id=”1”里有ab；id=”2”有ba。</p>
-<h3 id="隐藏_词条/搜索结果">隐藏 词条/搜索结果</h3><ul>
+<p>###隐藏 词条/搜索结果</p>
+<ul>
 <li>需要电脑打开家长控制</li>
 <li>在词条中加入<code>d:parental-control=&quot;1&quot;</code>标签，含有这个标签的词条或句子就不会显示。</li>
 </ul>
-<h3 id="其他">其他</h3><ul>
+<p>###其他</p>
+<ul>
 <li><p><code>&lt;d:index d:value=&quot;made&quot; d:title=&quot;made (make)&quot;/&gt;</code>查找made,索引栏显示made (make)。</p>
 </li>
 <li><p><code>@@@LINK=(?&lt;sub&gt;.*?)&lt;/body&gt;</code><br>===&gt;<br><code>&lt;a href=&quot;x-dictionary:r:\1&quot;&gt;\1&lt;/a&gt;&lt;/body&gt;</code></p>
@@ -278,47 +283,52 @@ sed -<span class="tag">i</span> <span class="string">""</span> <span class="stri
 <blockquote>
 <p>在 XHTML 中不鼓励使用 name 属性，应该使用 id 取而代之。</p>
 </blockquote>
-<h3 id="help">help</h3><blockquote>
-<p>(run “pyglossary.pyw —help” for more info), or use Tkinter interface:<br>Install python-tk using “pip install python-tk” or somehow else (i don’t know much about Mac)<br>Then run the program with: python pyglossary.pyw —ui=tk</p>
+<h3 id="help"><a href="#help" class="headerlink" title="help"></a>help</h3><blockquote>
+<p>(run “pyglossary.pyw –help” for more info), or use Tkinter interface:<br>Install python-tk using “pip install python-tk” or somehow else (i don’t know much about Mac)<br>Then run the program with: python pyglossary.pyw –ui=tk</p>
 </blockquote>
-<h3 id="RuntimeError">RuntimeError</h3><blockquote>
-<p><strong>RuntimeError: maximum recursion depth exceeded while calling a Python object</strong><br>The conversion stops when cleaning item “non-“. The html text maybe buggy to cause many time recursion. Here is a workaround, insert the following lines at the top of file pyglossary/plugins/appledict.py<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">import sys</span><br><span class="line">sys.<span class="function"><span class="title">setrecursionlimit</span><span class="params">(<span class="number">10000</span>)</span></span></span><br></pre></td></tr></table></figure></p>
+<h3 id="RuntimeError"><a href="#RuntimeError" class="headerlink" title="RuntimeError"></a>RuntimeError</h3><blockquote>
+<p><strong>RuntimeError: maximum recursion depth exceeded while calling a Python object</strong><br>The conversion stops when cleaning item “non-“. The html text maybe buggy to cause many time recursion. Here is a workaround, insert the following lines at the top of file pyglossary/plugins/appledict.py<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">import sys</div><div class="line">sys.setrecursionlimit(10000)</div></pre></td></tr></table></figure></p>
 </blockquote>
 <p>But be aware that this item cannot be displayed at all. The above line is only to avoid runtime exception.</p>
-<h3 id="No_reference_index_record">No reference index record</h3><blockquote>
+<h3 id="No-reference-index-record"><a href="#No-reference-index-record" class="headerlink" title="No reference index record"></a>No reference index record</h3><blockquote>
 <ul>
 <li>Note: No reference index record.</li>
 </ul>
 </blockquote>
 <p>可忽略的错误，文本中若没有<code>a href=&quot;x-dictionary:r:</code>和对应的<code>d:entry id</code>便不会生成reference index</p>
-<h3 id="常用正则表达式">常用正则表达式</h3><figure class="highlight asciidoc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">(\w+)</span><br><span class="line">(\w+.mp3)</span><br><span class="line">(?&lt;sub&gt;.<span class="strong">*?)</span><br><span class="line">(.*</span>?)</span><br><span class="line">(.+?)</span><br><span class="line">(.<span class="strong">*+)</span><br><span class="line">小写转大写\U\1</span><br><span class="line">===</span><br><span class="line">去下划线_</span><br><span class="line">(&lt;d:index d:value="[^"]+)_</span><br><span class="line">\1</span><br><span class="line">===</span><br><span class="line">&lt;h1&gt;advance_2&lt;/h1&gt;</span><br><span class="line">(&lt;h1&gt;[^\&lt;]+)_</span><br><span class="line">\1  (后加一空格）//&lt;h1&gt; air_plane&lt;/h1&gt; ==&gt; &lt;h1&gt; air plane&lt;/h1&gt;</span><br><span class="line">===</span><br><span class="line">匹配/  // //.jpg</span><br><span class="line">&lt;sk_img (?&lt;sub&gt;.*</span>?)/(\w+).jpg" (?&lt;sub&gt;.<span class="strong">*?)”/&gt;</span><br><span class="line">(?&lt;sub&gt;.*</span>?)([^\/]+)"</span><br><span class="line"></span><br><span class="line">===</span><br><span class="line">&lt;sk<span class="emphasis">_example variant="BRE" file="uk/p/p07/p070_</span>/p070-000210864.mp3”/&gt;</span><br><span class="line"><span class="header">&lt;sk_example variant="BRE" file="(?&lt;sub&gt;.*?)/(\w+\-\w+).mp3”/&gt;</span><br><span class="line">===</span></span><br><span class="line"><span class="header">^p  ^n</span><br><span class="line">===</span></span><br><span class="line">去空行</span><br><span class="line">[^p]+</span><br><span class="line">===&gt;^p</span><br></pre></td></tr></table></figure>
-<h3 id="大小写替换">大小写替换</h3><figure class="highlight nix"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">href=</span><span class="string">"x-dictionary:r:(.+?)"</span></span><br><span class="line"><span class="variable">href=</span><span class="string">"x-dictionary:r:\L\1"</span></span><br><span class="line">&lt;d:entry <span class="variable">id=</span><span class="string">"(.+?)"</span></span><br><span class="line">&lt;d:entry <span class="variable">id=</span><span class="string">"\L\1"</span></span><br></pre></td></tr></table></figure>
+<p>###常用正则表达式<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div></pre></td><td class="code"><pre><div class="line">(\w+)</div><div class="line">(\w+.mp3)</div><div class="line">(?&lt;sub&gt;.*?)</div><div class="line">(.*?)</div><div class="line">(.+?)</div><div class="line">(.*+)</div><div class="line">小写转大写\U\1</div><div class="line">===</div><div class="line">去下划线_</div><div class="line">(&lt;d:index d:value=&quot;[^&quot;]+)_</div><div class="line">\1</div><div class="line">===</div><div class="line">&lt;h1&gt;advance_2&lt;/h1&gt;</div><div class="line">(&lt;h1&gt;[^\&lt;]+)_</div><div class="line">\1  (后加一空格）//&lt;h1&gt; air_plane&lt;/h1&gt; ==&gt; &lt;h1&gt; air plane&lt;/h1&gt;</div><div class="line">===</div><div class="line">匹配/  // //.jpg</div><div class="line">&lt;sk_img (?&lt;sub&gt;.*?)/(\w+).jpg&quot; (?&lt;sub&gt;.*?)”/&gt;</div><div class="line">(?&lt;sub&gt;.*?)([^\/]+)&quot;</div><div class="line"></div><div class="line">===</div><div class="line">&lt;sk_example variant=&quot;BRE&quot; file=&quot;uk/p/p07/p070_/p070-000210864.mp3”/&gt;</div><div class="line">&lt;sk_example variant=&quot;BRE&quot; file=&quot;(?&lt;sub&gt;.*?)/(\w+\-\w+).mp3”/&gt;</div><div class="line">===</div><div class="line">^p  ^n</div><div class="line">===</div><div class="line">去空行</div><div class="line">[^p]+</div><div class="line">===&gt;^p</div></pre></td></tr></table></figure></p>
+<p>###大小写替换</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">href=&quot;x-dictionary:r:(.+?)&quot;</div><div class="line">href=&quot;x-dictionary:r:\L\1&quot;</div><div class="line">&lt;d:entry id=&quot;(.+?)&quot;</div><div class="line">&lt;d:entry id=&quot;\L\1&quot;</div></pre></td></tr></table></figure>
 <p>若大写转写会重复的词，编译会出错，不建议替换。<br>词条跳转entry id部分与x-dictionary:r:部分大小写要一致。</p>
 <hr>
-<h3 id="CSS部分">CSS部分</h3><ul>
+<p>###CSS部分</p>
+<ul>
 <li>.apple_client-panel body{margin: 0 0 15px;font-size: 16px;}//取词小窗口修改大小</li>
 <li>mdx===&gt;osx.dic  部分字体间距<br>font {padding: 2px;}</li>
 </ul>
 <hr>
-<h3 id="显示数量限制">显示数量限制</h3><p>0001-01100<br>1000个词</p>
+<p>###显示数量限制<br>0001-01100<br>1000个词</p>
 <hr>
-<h3 id="特殊符号">特殊符号</h3><ul>
+<p>###特殊符号</p>
+<ul>
 <li><p>德文字符<code>ä ü ö ß</code>替换成相应的英文字母，链接跳转用。</p>
 <p>XML文档<code>&lt;htlm&gt;</code>里的 <code>&amp;amp;</code>不要替换。<br>在xml当中“&amp;”必须采用转义字符<code>&amp;amp;</code></p>
 </li>
 </ul>
-<p><code>&amp;amp;</code>&lt;—-&amp;</p>
-<p><code>&amp;copy;</code>&lt;—-&copy;</p>
-<p><code>&amp;reg;</code>&lt;—-&reg;</p>
-<p><code>&amp;quot;</code>&lt;—-<code>&quot;</code></p>
+<p><code>&amp;amp;</code>&lt;—&amp;</p>
+<p><code>&amp;copy;</code>&lt;—&copy;</p>
+<p><code>&amp;reg;</code>&lt;—&reg;</p>
+<p><code>&amp;quot;</code>&lt;—<code>&quot;</code></p>
 <p><code>&amp;apos;</code> =<code>&#39;</code></p>
-<p><code>&amp;nbsp;</code>&lt;—-&nbsp;  空格 ===&gt;<code>&amp;#160;</code></p>
-<p><code>&amp;lt;</code>—-&gt;<code>&lt;</code></p>
-<p><code>&amp;gt;</code>—-&gt;<code>&gt;</code><br>单个<code>&lt; &gt;</code>要替换掉</p>
-<h3 id="&#39;or‘符号的问题"><code>&#39;</code>or<code>‘</code>符号的问题</h3><p><code>&amp;acute;</code></p>
+<p><code>&amp;nbsp;</code>&lt;—&nbsp;  空格 ===&gt;<code>&amp;#160;</code></p>
+<p><code>&amp;lt;</code>—&gt;<code>&lt;</code></p>
+<p><code>&amp;gt;</code>—&gt;<code>&gt;</code><br>单个<code>&lt; &gt;</code>要替换掉</p>
+<p>###<code>&#39;</code>or<code>‘</code>符号的问题</p>
+<p><code>&amp;acute;</code></p>
 <p>audio id元素里不能有<code>&#39;</code> getelementbyid里也不能有<code>’</code><br>正则 <code>(&lt;audio id=&quot;[^&quot;]+)’</code><br>下载链接里不能识别’<br>wget -i 下载<br><code>‘</code> 替换为%27<br><a href="http://www.rhymer.com/RhymingDictionary/hadn%27t.html" target="_blank" rel="external">http://www.rhymer.com/RhymingDictionary/hadn%27t.html</a><br>终端命令里也不能识别文件名含有<code>’</code><br>用<code>_</code>代替</p>
 <hr>
-<h3 id="参考：">参考：</h3><ul>
+<p>###参考：</p>
+<ul>
 <li><a href="http://goldendict.org/forum/viewtopic.php?f=4&amp;t=1933&amp;start=30" target="_blank" rel="external">GoldenDict Mac OS X available - Early Access Builds</a></li>
 <li><a href="https://bitbucket.org/xwang/pyglossary-apple" target="_blank" rel="external">PyGlossary Overview</a></li>
 <li><a href="https://developer.apple.com/library/mac/documentation/userexperience/Conceptual/DictionaryServicesProgGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40006152" target="_blank" rel="external">developer.apple.com</a></li>
@@ -331,13 +341,13 @@ sed -<span class="tag">i</span> <span class="string">""</span> <span class="stri
       
         <div class="post-tags">
           
-            <a href="/blog/tags/OS-X/"> #OS X </a>
+            <a href="/blog/tags/iOS/"> #iOS </a>
           
             <a href="/blog/tags/Python/"> #Python </a>
           
             <a href="/blog/tags/dictionary/"> #dictionary </a>
           
-            <a href="/blog/tags/iOS/"> #iOS </a>
+            <a href="/blog/tags/OS-X/"> #OS X </a>
           
         </div>
       
@@ -346,13 +356,13 @@ sed -<span class="tag">i</span> <span class="string">""</span> <span class="stri
         <div class="post-nav">
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/blog/TheJoelTest/">The Joel Test</a>
+              <a href="/blog/codeVSpoetry/">Code vs. Poetry</a>
             
           </div>
 
           <div class="post-nav-next post-nav-item">
             
-              <a href="/blog/lingvo2osx/">用DSLConverter将Lingvo词典.DSL格式转换成MAC OSX可用的格式</a>
+              <a href="/blog/PasswordGenerator/">password generator</a>
             
           </div>
         </div>
@@ -411,21 +421,21 @@ sed -<span class="tag">i</span> <span class="string">""</span> <span class="stri
         <p class="site-description motion-element"></p>
         <div class="site-state motion-element">
           <div class="site-state-item site-state-posts">
-            <a href="/blog/archives">
+            <a href="/blog/blog/archives">
               <span class="site-state-item-count">39</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
           <div class="site-state-item site-state-categories">
-            <a href="/blog/categories">
+            <a href="/blog/blog/categories">
               <span class="site-state-item-count">22</span>
               <span class="site-state-item-name">分类</span>
               </a>
           </div>
 
           <div class="site-state-item site-state-tags">
-            <a href="/blog/tags">
+            <a href="/blog/blog/tags">
               <span class="site-state-item-count">39</span>
               <span class="site-state-item-name">标签</span>
               </a>
@@ -435,7 +445,7 @@ sed -<span class="tag">i</span> <span class="string">""</span> <span class="stri
 
         
           <div class="feed-link motion-element">
-            <a href="/blog/atom.xml">
+            <a href="/blog/blog/atom.xml">
               <i class="menu-item-icon icon-feed"></i>
               RSS
             </a>
@@ -471,7 +481,7 @@ sed -<span class="tag">i</span> <span class="string">""</span> <span class="stri
           <div class="post-toc">
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#开源项目：PYGLOSSARY"><span class="nav-number">1.</span> <span class="nav-text">开源项目：PYGLOSSARY</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#准备好以下环境："><span class="nav-number">2.</span> <span class="nav-text">准备好以下环境：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#BGL_===>_OSX-dictionary"><span class="nav-number">3.</span> <span class="nav-text">BGL ===> OSX.dictionary</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#DSL_===>_OSX-dictionary"><span class="nav-number">4.</span> <span class="nav-text">DSL ===> OSX.dictionary</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MDX_===>_OSX-dictionary"><span class="nav-number">5.</span> <span class="nav-text">MDX ===> OSX.dictionary</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#修改单词内部的链接"><span class="nav-number">6.</span> <span class="nav-text">修改单词内部的链接</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ex-"><span class="nav-number">7.</span> <span class="nav-text">ex.</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#不能有空格"><span class="nav-number">7.1.</span> <span class="nav-text">不能有空格</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#不能含有'or’符号"><span class="nav-number">7.2.</span> <span class="nav-text">不能含有'or’符号</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#词组/词性跳转、定位"><span class="nav-number">8.</span> <span class="nav-text">词组/词性跳转、定位</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#语音"><span class="nav-number">9.</span> <span class="nav-text">语音</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#高亮搜索关键词"><span class="nav-number">10.</span> <span class="nav-text">高亮搜索关键词</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#附录"><span class="nav-number">11.</span> <span class="nav-text">附录</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#词条自动合并"><span class="nav-number">12.</span> <span class="nav-text">词条自动合并</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#隐藏_词条/搜索结果"><span class="nav-number">13.</span> <span class="nav-text">隐藏 词条/搜索结果</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#其他"><span class="nav-number">14.</span> <span class="nav-text">其他</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#help"><span class="nav-number">15.</span> <span class="nav-text">help</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#RuntimeError"><span class="nav-number">16.</span> <span class="nav-text">RuntimeError</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#No_reference_index_record"><span class="nav-number">17.</span> <span class="nav-text">No reference index record</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#常用正则表达式"><span class="nav-number">18.</span> <span class="nav-text">常用正则表达式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#大小写替换"><span class="nav-number">19.</span> <span class="nav-text">大小写替换</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CSS部分"><span class="nav-number">20.</span> <span class="nav-text">CSS部分</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#显示数量限制"><span class="nav-number">21.</span> <span class="nav-text">显示数量限制</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#特殊符号"><span class="nav-number">22.</span> <span class="nav-text">特殊符号</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#'or‘符号的问题"><span class="nav-number">23.</span> <span class="nav-text">'or‘符号的问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#参考："><span class="nav-number">24.</span> <span class="nav-text">参考：</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#DSL-gt-OSX-dictionary"><span class="nav-number">1.</span> <span class="nav-text">DSL ===> OSX.dictionary</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MDX-gt-OSX-dictionary"><span class="nav-number">2.</span> <span class="nav-text">MDX ===> OSX.dictionary</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ex"><span class="nav-number">3.</span> <span class="nav-text">ex.</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#词组-词性跳转、定位"><span class="nav-number">4.</span> <span class="nav-text">词组/词性跳转、定位</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#高亮搜索关键词"><span class="nav-number">5.</span> <span class="nav-text">高亮搜索关键词</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#help"><span class="nav-number">6.</span> <span class="nav-text">help</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#RuntimeError"><span class="nav-number">7.</span> <span class="nav-text">RuntimeError</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#No-reference-index-record"><span class="nav-number">8.</span> <span class="nav-text">No reference index record</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>

@@ -26,11 +26,11 @@
 
 
 
-  <link rel="alternate" href="/blog/atom.xml" title="Zero to One" type="application/atom+xml" />
+  <link rel="alternate" href="/blog/blog/atom.xml" title="Zero to One" type="application/atom+xml" />
 
 
 
-  <link rel="shorticon icon" type="image/x-icon" href="/blog/images/favicon.ico?v=0.4.2" />
+  <link rel="shorticon icon" type="image/x-icon" href="/blog/blog/images/favicon.ico?v=0.4.2" />
 
 
 
@@ -75,7 +75,7 @@
     
       
       <li class="menu-item menu-item-home">
-        <a href="/blog/">
+        <a href="/blog/blog/">
           <i class="menu-item-icon icon-home"></i> <br />
           首页
         </a>
@@ -83,7 +83,7 @@
     
       
       <li class="menu-item menu-item-categories">
-        <a href="/blog/categories">
+        <a href="/blog/blog/categories">
           <i class="menu-item-icon icon-categories"></i> <br />
           分类
         </a>
@@ -91,7 +91,7 @@
     
       
       <li class="menu-item menu-item-archives">
-        <a href="/blog/archives">
+        <a href="/blog/blog/archives">
           <i class="menu-item-icon icon-archives"></i> <br />
           归档
         </a>
@@ -99,7 +99,7 @@
     
       
       <li class="menu-item menu-item-tags">
-        <a href="/blog/tags">
+        <a href="/blog/blog/tags">
           <i class="menu-item-icon icon-tags"></i> <br />
           标签
         </a>
@@ -136,7 +136,7 @@
 
       <div class="post-meta">
         <span class="post-time">
-          发表于 2016-01-14
+          发表于 2015-06-06
         </span>
 
         
@@ -164,7 +164,7 @@
       
 
       
-        <h2 id="USAGE:">USAGE:</h2><ul>
+        <h2 id="USAGE"><a href="#USAGE" class="headerlink" title="USAGE:"></a>USAGE:</h2><ul>
 <li><p><a href="http://www.privoxy.org/" target="_blank" rel="external">Privoxy - Home Page</a></p>
 </li>
 <li><p><a href="https://velaciela.ms/privoxy_share_proxy" target="_blank" rel="external">使用Privoxy建立代理中心，共享任意代理资源 - Velaciela</a></p>
@@ -172,11 +172,11 @@
 <li><a href="http://www.lainme.com/doku.php/blog/2011/04/privoxy_%E5%B9%BF%E5%91%8A%E8%BF%87%E6%BB%A4%E5%92%8C%E8%87%AA%E5%8A%A8%E4%BB%A3%E7%90%86%E5%88%87%E6%8D%A2" target="_blank" rel="external">privoxy——广告过滤和自动代理切换 [Lainme’s Blog]</a></li>
 <li><a href="http://bbs.kafan.cn/thread-1736776-1-1.html" target="_blank" rel="external">privoxy过滤规则<em>浏览器讨论区</em>软件区 卡饭论坛 - 互助分享 - 大气谦和!</a></li>
 <li><a href="https://fengqi.me/unix/328.html" target="_blank" rel="external">[总结]利用 Privoxy 让命令行下的 wget 和 curl 等命令实现自动代理 - 幸福飞过海</a></li>
-<li><a href="http://www.haodaima.net/art/2815814" target="_blank" rel="external">给MACosx(终端)也插上翻墙的翅膀—Privoxy使用手记 - 好代码编程网</a></li>
+<li><a href="http://www.haodaima.net/art/2815814" target="_blank" rel="external">给MACosx(终端)也插上翻墙的翅膀–Privoxy使用手记 - 好代码编程网</a></li>
 <li><a href="http://program-think.blogspot.com/2014/12/gfw-privoxy.html" target="_blank" rel="external">如何用 Privoxy 辅助翻墙？ @ 编程随想的博客</a></li>
 </ul>
-<h2 id="<!-more->"><a id="more"></a></h2><h2 id="CONFIG">CONFIG</h2><h3 id="修改配置文件">修改配置文件</h3><p><code>/usr/local/etc/privoxy/config</code></p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">listen-<span class="tag">address</span>  <span class="number">127.0</span>.<span class="number">0.1</span>:<span class="number">8118</span></span><br><span class="line">forward-socks5t   /               <span class="number">127.0</span>.<span class="number">0.1</span>:<span class="number">1080</span> .</span><br></pre></td></tr></table></figure>
+<h2 id=""><a href="#" class="headerlink" title=""></a><a id="more"></a></h2><h2 id="CONFIG"><a href="#CONFIG" class="headerlink" title="CONFIG"></a>CONFIG</h2><h3 id="修改配置文件"><a href="#修改配置文件" class="headerlink" title="修改配置文件"></a>修改配置文件</h3><p><code>/usr/local/etc/privoxy/config</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">listen-address  127.0.0.1:8118</div><div class="line">forward-socks5t   /               127.0.0.1:1080 .</div></pre></td></tr></table></figure>
 <p><strong><code>#</code>要去掉，注意ip后的<code>.</code></strong></p>
 <p>设置成内网全局代理，共享给手机用，要设置成<code>listen-address  0.0.0.0:8118</code></p>
 <blockquote>
@@ -185,19 +185,19 @@
 <li>由于默认是绑定在 <code>127.0.0.1</code> 这个地址，所以只有当前系统的软件才可以连接到 Privoxy 的监听端口。如果你希望其它操作系统的软件也可以连接到 Privoxy 的监听端口，可以修改绑定的地址，把 <code>127.0.0.1</code> 改为 <code>0.0.0.0</code> 表示绑定在“任意地址”。</li>
 </ul>
 </blockquote>
-<h3 id="启动privoxy">启动privoxy</h3><p><code>/usr/local/sbin/privoxy /usr/local/etc/privoxy/config</code><br>或者<br><code>sudo /Applications/Privoxy/startPrivoxy.sh</code></p>
+<h3 id="启动privoxy"><a href="#启动privoxy" class="headerlink" title="启动privoxy"></a>启动privoxy</h3><p><code>/usr/local/sbin/privoxy /usr/local/etc/privoxy/config</code><br>或者<br><code>sudo /Applications/Privoxy/startPrivoxy.sh</code></p>
 <blockquote>
 <p>为了检验你的浏览器是否正确配置了Privoxy的代理，你可以在浏览器的地址栏输入 <code>http://p.p/</code>并回车。如果浏览器的页面上出现Privoxy的相关信息，说明你的浏览器已经走Privoxy的 HTTP 代理</p>
 </blockquote>
-<h3 id="关闭privoxy">关闭privoxy</h3><p><code>sudo /Applications/Privoxy/stopPrivoxy.sh</code></p>
-<h3 id="开机启动">开机启动</h3><blockquote>
+<h3 id="关闭privoxy"><a href="#关闭privoxy" class="headerlink" title="关闭privoxy"></a>关闭privoxy</h3><p><code>sudo /Applications/Privoxy/stopPrivoxy.sh</code></p>
+<h3 id="开机启动"><a href="#开机启动" class="headerlink" title="开机启动"></a>开机启动</h3><blockquote>
 <p>sudo launchctl load /Library/LaunchAgents/local.privoxy.plist</p>
 </blockquote>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="pi">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span></span><br><span class="line"><span class="doctype">&lt;!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">plist</span> <span class="attribute">version</span>=<span class="value">"1.0"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">dict</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">key</span>&gt;</span>Label<span class="tag">&lt;/<span class="title">key</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">string</span>&gt;</span>local.arcueid.privoxy<span class="tag">&lt;/<span class="title">string</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">key</span>&gt;</span>ProgramArguments<span class="tag">&lt;/<span class="title">key</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">array</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">string</span>&gt;</span>/usr/local/sbin/privoxy<span class="tag">&lt;/<span class="title">string</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">string</span>&gt;</span>--no-daemon<span class="tag">&lt;/<span class="title">string</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">string</span>&gt;</span>/usr/local/etc/privoxy/config<span class="tag">&lt;/<span class="title">string</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="title">array</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">key</span>&gt;</span>RunAtLoad<span class="tag">&lt;/<span class="title">key</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">true</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">key</span>&gt;</span>KeepAlive<span class="tag">&lt;/<span class="title">key</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">true</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">key</span>&gt;</span>StandardErrorPath<span class="tag">&lt;/<span class="title">key</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">string</span>&gt;</span>/usr/local/Cellar/privoxy/3.0.19/sbin/privoxy.log<span class="tag">&lt;/<span class="title">string</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">key</span>&gt;</span>StandardOutPath<span class="tag">&lt;/<span class="title">key</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">string</span>&gt;</span>/usr/local/Cellar/privoxy/3.0.19/sbin/privoxy.log<span class="tag">&lt;/<span class="title">string</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">dict</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">plist</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h3 id="命令验证privoxy启动">命令验证privoxy启动</h3><blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</div><div class="line">&lt;!DOCTYPE plist PUBLIC &quot;-//Apple//DTD PLIST 1.0//EN&quot; &quot;http://www.apple.com/DTDs/PropertyList-1.0.dtd&quot;&gt;</div><div class="line">&lt;plist version=&quot;1.0&quot;&gt;</div><div class="line">&lt;dict&gt;</div><div class="line">    &lt;key&gt;Label&lt;/key&gt;</div><div class="line">    &lt;string&gt;local.arcueid.privoxy&lt;/string&gt;</div><div class="line">    &lt;key&gt;ProgramArguments&lt;/key&gt;</div><div class="line">    &lt;array&gt;</div><div class="line">        &lt;string&gt;/usr/local/sbin/privoxy&lt;/string&gt;</div><div class="line">        &lt;string&gt;--no-daemon&lt;/string&gt;</div><div class="line">        &lt;string&gt;/usr/local/etc/privoxy/config&lt;/string&gt;</div><div class="line">    &lt;/array&gt;</div><div class="line">    &lt;key&gt;RunAtLoad&lt;/key&gt;</div><div class="line">    &lt;true/&gt;</div><div class="line">    &lt;key&gt;KeepAlive&lt;/key&gt;</div><div class="line">    &lt;true/&gt;</div><div class="line">    &lt;key&gt;StandardErrorPath&lt;/key&gt;</div><div class="line">    &lt;string&gt;/usr/local/Cellar/privoxy/3.0.19/sbin/privoxy.log&lt;/string&gt;</div><div class="line">    &lt;key&gt;StandardOutPath&lt;/key&gt;</div><div class="line">    &lt;string&gt;/usr/local/Cellar/privoxy/3.0.19/sbin/privoxy.log&lt;/string&gt;</div><div class="line">&lt;/dict&gt;</div><div class="line">&lt;/plist&gt;</div></pre></td></tr></table></figure>
+<h3 id="命令验证privoxy启动"><a href="#命令验证privoxy启动" class="headerlink" title="命令验证privoxy启动"></a>命令验证privoxy启动</h3><blockquote>
 <p>一是用ps查看是否有privoxy进程，二是查看privoxy默认监听的8118端口是否已经打开。</p>
 </blockquote>
-<figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[tangqiao LaunchAgents]$ps aux  | <span class="keyword">grep</span> privoxy</span><br><span class="line">tangqiao       <span class="number">25641</span>   <span class="number">0.3</span>  <span class="number">0.0</span>  <span class="number">2436516</span>    <span class="number">492</span> s001  U+    <span class="number">5</span>:<span class="number">31</span>下午   <span class="number">0</span>:<span class="number">00.00</span> <span class="keyword">grep</span> --color=auto privoxy</span><br><span class="line">root           <span class="number">17984</span>   <span class="number">0.0</span>  <span class="number">0.2</span>  <span class="number">2477764</span>  <span class="number">17452</span>   ??  Ss   <span class="number">10</span>:<span class="number">13</span>上午   <span class="number">0</span>:<span class="number">50.28</span> <span class="regexp">/usr/</span>local<span class="regexp">/Cellar/</span>privoxy<span class="regexp">/3.0.19/</span>sbin<span class="regexp">/privoxy --no-daemon /u</span>sr<span class="regexp">/local/</span>etc<span class="regexp">/privoxy/</span>config</span><br><span class="line">[tangqiao LaunchAgents]$netstat -an | <span class="keyword">grep</span> <span class="number">8118</span></span><br><span class="line">tcp4       <span class="number">0</span>      <span class="number">0</span>  <span class="number">127.0</span>.<span class="number">0.1</span>.<span class="number">8118</span>         *.*                    LISTEN</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">[tangqiao LaunchAgents]$ps aux  | grep privoxy</div><div class="line">tangqiao       25641   0.3  0.0  2436516    492 s001  U+    5:31下午   0:00.00 grep --color=auto privoxy</div><div class="line">root           17984   0.0  0.2  2477764  17452   ??  Ss   10:13上午   0:50.28 /usr/local/Cellar/privoxy/3.0.19/sbin/privoxy --no-daemon /usr/local/etc/privoxy/config</div><div class="line">[tangqiao LaunchAgents]$netstat -an | grep 8118</div><div class="line">tcp4       0      0  127.0.0.1.8118         *.*                    LISTEN</div></pre></td></tr></table></figure>
 
       
     </div>
@@ -219,13 +219,13 @@
         <div class="post-nav">
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/blog/API接口测试工具/">API接口测试工具</a>
+              <a href="/blog/javascriptcodepices/">JavaScript代码片段</a>
             
           </div>
 
           <div class="post-nav-next post-nav-item">
             
-              <a href="/blog/torch/">Torch</a>
+              <a href="/blog/baiduOCR/">baidu OCR</a>
             
           </div>
         </div>
@@ -284,21 +284,21 @@
         <p class="site-description motion-element"></p>
         <div class="site-state motion-element">
           <div class="site-state-item site-state-posts">
-            <a href="/blog/archives">
+            <a href="/blog/blog/archives">
               <span class="site-state-item-count">39</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
           <div class="site-state-item site-state-categories">
-            <a href="/blog/categories">
+            <a href="/blog/blog/categories">
               <span class="site-state-item-count">22</span>
               <span class="site-state-item-name">分类</span>
               </a>
           </div>
 
           <div class="site-state-item site-state-tags">
-            <a href="/blog/tags">
+            <a href="/blog/blog/tags">
               <span class="site-state-item-count">39</span>
               <span class="site-state-item-name">标签</span>
               </a>
@@ -308,7 +308,7 @@
 
         
           <div class="feed-link motion-element">
-            <a href="/blog/atom.xml">
+            <a href="/blog/blog/atom.xml">
               <i class="menu-item-icon icon-feed"></i>
               RSS
             </a>
@@ -344,7 +344,7 @@
           <div class="post-toc">
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#USAGE:"><span class="nav-number">1.</span> <span class="nav-text">USAGE:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#<!-more->"><span class="nav-number">2.</span> <span class="nav-text"></span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CONFIG"><span class="nav-number">3.</span> <span class="nav-text">CONFIG</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#修改配置文件"><span class="nav-number">3.1.</span> <span class="nav-text">修改配置文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#启动privoxy"><span class="nav-number">3.2.</span> <span class="nav-text">启动privoxy</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#关闭privoxy"><span class="nav-number">3.3.</span> <span class="nav-text">关闭privoxy</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#开机启动"><span class="nav-number">3.4.</span> <span class="nav-text">开机启动</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#命令验证privoxy启动"><span class="nav-number">3.5.</span> <span class="nav-text">命令验证privoxy启动</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#USAGE"><span class="nav-number">1.</span> <span class="nav-text">USAGE:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#"><span class="nav-number">2.</span> <span class="nav-text"></span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CONFIG"><span class="nav-number">3.</span> <span class="nav-text">CONFIG</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#修改配置文件"><span class="nav-number">3.1.</span> <span class="nav-text">修改配置文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#启动privoxy"><span class="nav-number">3.2.</span> <span class="nav-text">启动privoxy</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#关闭privoxy"><span class="nav-number">3.3.</span> <span class="nav-text">关闭privoxy</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#开机启动"><span class="nav-number">3.4.</span> <span class="nav-text">开机启动</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#命令验证privoxy启动"><span class="nav-number">3.5.</span> <span class="nav-text">命令验证privoxy启动</span></a></li></ol></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>
