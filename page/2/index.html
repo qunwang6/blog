@@ -87,7 +87,7 @@
     
       
       <li class="menu-item menu-item-categories">
-        <a href="/blog/blog/categories">
+        <a href="/blog/categories">
           <i class="menu-item-icon icon-categories"></i> <br />
           分类
         </a>
@@ -95,7 +95,7 @@
     
       
       <li class="menu-item menu-item-archives">
-        <a href="/blog/blog/archives">
+        <a href="/blog/archives">
           <i class="menu-item-icon icon-archives"></i> <br />
           归档
         </a>
@@ -103,7 +103,7 @@
     
       
       <li class="menu-item menu-item-tags">
-        <a href="/blog/blog/tags">
+        <a href="/blog/tags">
           <i class="menu-item-icon icon-tags"></i> <br />
           标签
         </a>
@@ -318,90 +318,6 @@
           
           
             
-              <a class="post-title-link" href="/blog/baiduOCR/">
-                baidu OCR
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于 2015-06-06
-        </span>
-
-        
-          <span class="post-category">
-            &nbsp; | &nbsp; 分类于
-            
-              <a href="/blog/categories/OCR/">OCR</a>
-
-              
-              
-
-            
-          </span>
-        
-
-        
-          
-        
-      </div>
-    </div>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <h2 id="百度OCR文字识别API-for-Python"><a href="#百度OCR文字识别API-for-Python" class="headerlink" title="百度OCR文字识别API for Python"></a>百度OCR文字识别API for Python</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line">#!/usr/bin/env python</div><div class="line"># -*- coding: utf-8 -*-</div><div class="line">import sys, urllib, urllib2, json</div><div class="line">f = open(&quot;test.txt&quot;,&quot;w&quot;)</div><div class="line">url = &apos;http://apis.baidu.com/apistore/idlocr/ocr&apos;</div><div class="line"></div><div class="line">data = &#123;&#125;</div><div class="line">data[&apos;fromdevice&apos;] = &quot;pc&quot;</div><div class="line">data[&apos;clientip&apos;] = &quot;10.10.10.0&quot;</div><div class="line">data[&apos;detecttype&apos;] = &quot;LocateRecognize&quot;</div><div class="line">data[&apos;languagetype&apos;] = &quot;CHN_ENG&quot;</div><div class="line">data[&apos;imagetype&apos;] = &quot;1&quot;  #`2`代表图片原文件（只支持JPG）</div><div class="line">data[&apos;image&apos;] = &quot;&quot;    ##image base64 data</div><div class="line"></div><div class="line">decoded_data = urllib.urlencode(data)</div><div class="line">req = urllib2.Request(url, data = decoded_data)</div><div class="line"></div><div class="line">req.add_header(&quot;Content-Type&quot;, &quot;application/x-www-form-urlencoded&quot;)</div><div class="line">req.add_header(&quot;apikey&quot;, &quot;自己的apikey&quot;)</div><div class="line"></div><div class="line">resp = urllib2.urlopen(req)</div><div class="line">content = resp.read()</div><div class="line">if(content):</div><div class="line">    print(content)</div><div class="line">    f.write(content)</div></pre></td></tr></table></figure>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/blog/baiduOCR/#more">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/blog/tags/Python/"> #Python </a>
-          
-            <a href="/blog/tags/OCR/"> #OCR </a>
-          
-            <a href="/blog/tags/base64/"> #base64 </a>
-          
-        </div>
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </div>
-  </div>
-
-
-    
-      
-
-  <div class="post post-type-normal ">
-    <div class="post-header">
-
-      
-      
-        <h1 class="post-title">
-          
-          
-            
               <a class="post-title-link" href="/blog/ADBLOCKblocklist/">
                 ADBLOCK block list
               </a>
@@ -465,6 +381,90 @@
         <div class="post-tags">
           
             <a href="/blog/tags/GFW/"> #GFW </a>
+          
+        </div>
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </div>
+  </div>
+
+
+    
+      
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
+              <a class="post-title-link" href="/blog/baiduOCR/">
+                baidu OCR
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于 2015-06-06
+        </span>
+
+        
+          <span class="post-category">
+            &nbsp; | &nbsp; 分类于
+            
+              <a href="/blog/categories/OCR/">OCR</a>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+        
+      </div>
+    </div>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <h2 id="百度OCR文字识别API-for-Python"><a href="#百度OCR文字识别API-for-Python" class="headerlink" title="百度OCR文字识别API for Python"></a>百度OCR文字识别API for Python</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line">#!/usr/bin/env python</div><div class="line"># -*- coding: utf-8 -*-</div><div class="line">import sys, urllib, urllib2, json</div><div class="line">f = open(&quot;test.txt&quot;,&quot;w&quot;)</div><div class="line">url = &apos;http://apis.baidu.com/apistore/idlocr/ocr&apos;</div><div class="line"></div><div class="line">data = &#123;&#125;</div><div class="line">data[&apos;fromdevice&apos;] = &quot;pc&quot;</div><div class="line">data[&apos;clientip&apos;] = &quot;10.10.10.0&quot;</div><div class="line">data[&apos;detecttype&apos;] = &quot;LocateRecognize&quot;</div><div class="line">data[&apos;languagetype&apos;] = &quot;CHN_ENG&quot;</div><div class="line">data[&apos;imagetype&apos;] = &quot;1&quot;  #`2`代表图片原文件（只支持JPG）</div><div class="line">data[&apos;image&apos;] = &quot;&quot;    ##image base64 data</div><div class="line"></div><div class="line">decoded_data = urllib.urlencode(data)</div><div class="line">req = urllib2.Request(url, data = decoded_data)</div><div class="line"></div><div class="line">req.add_header(&quot;Content-Type&quot;, &quot;application/x-www-form-urlencoded&quot;)</div><div class="line">req.add_header(&quot;apikey&quot;, &quot;自己的apikey&quot;)</div><div class="line"></div><div class="line">resp = urllib2.urlopen(req)</div><div class="line">content = resp.read()</div><div class="line">if(content):</div><div class="line">    print(content)</div><div class="line">    f.write(content)</div></pre></td></tr></table></figure>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/blog/baiduOCR/#more">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <div class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/blog/tags/Python/"> #Python </a>
+          
+            <a href="/blog/tags/OCR/"> #OCR </a>
+          
+            <a href="/blog/tags/base64/"> #base64 </a>
           
         </div>
       
@@ -1052,21 +1052,21 @@
         <p class="site-description motion-element"></p>
         <div class="site-state motion-element">
           <div class="site-state-item site-state-posts">
-            <a href="/blog/blog/archives">
+            <a href="/blog/archives">
               <span class="site-state-item-count">38</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
           <div class="site-state-item site-state-categories">
-            <a href="/blog/blog/categories">
+            <a href="/blog/categories">
               <span class="site-state-item-count">21</span>
               <span class="site-state-item-name">分类</span>
               </a>
           </div>
 
           <div class="site-state-item site-state-tags">
-            <a href="/blog/blog/tags">
+            <a href="/blog/tags">
               <span class="site-state-item-count">38</span>
               <span class="site-state-item-name">标签</span>
               </a>

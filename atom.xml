@@ -902,47 +902,6 @@
   </entry>
   
   <entry>
-    <title>baidu OCR</title>
-    <link href="http://qunwang6.github.io/blog/baiduOCR/"/>
-    <id>http://qunwang6.github.io/blog/baiduOCR/</id>
-    <published>2015-06-05T16:00:00.000Z</published>
-    <updated>2015-06-24T15:48:38.000Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="百度OCR文字识别API-for-Python"><a href="#百度OCR文字识别API-for-Python" class="headerlink" title="百度OCR文字识别API for Python"></a>百度OCR文字识别API for Python</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line">#!/usr/bin/env python</div><div class="line"># -*- coding: utf-8 -*-</div><div class="line">import sys, urllib, urllib2, json</div><div class="line">f = open(&quot;test.txt&quot;,&quot;w&quot;)</div><div class="line">url = &apos;http://apis.baidu.com/apistore/idlocr/ocr&apos;</div><div class="line"></div><div class="line">data = &#123;&#125;</div><div class="line">data[&apos;fromdevice&apos;] = &quot;pc&quot;</div><div class="line">data[&apos;clientip&apos;] = &quot;10.10.10.0&quot;</div><div class="line">data[&apos;detecttype&apos;] = &quot;LocateRecognize&quot;</div><div class="line">data[&apos;languagetype&apos;] = &quot;CHN_ENG&quot;</div><div class="line">data[&apos;imagetype&apos;] = &quot;1&quot;  #`2`代表图片原文件（只支持JPG）</div><div class="line">data[&apos;image&apos;] = &quot;&quot;    ##image base64 data</div><div class="line"></div><div class="line">decoded_data = urllib.urlencode(data)</div><div class="line">req = urllib2.Request(url, data = decoded_data)</div><div class="line"></div><div class="line">req.add_header(&quot;Content-Type&quot;, &quot;application/x-www-form-urlencoded&quot;)</div><div class="line">req.add_header(&quot;apikey&quot;, &quot;自己的apikey&quot;)</div><div class="line"></div><div class="line">resp = urllib2.urlopen(req)</div><div class="line">content = resp.read()</div><div class="line">if(content):</div><div class="line">    print(content)</div><div class="line">    f.write(content)</div></pre></td></tr></table></figure>
-<a id="more"></a>
-<h2 id="image-convert-to-base64-code"><a href="#image-convert-to-base64-code" class="headerlink" title="image convert to base64 code"></a>image convert to base64 code</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">openssl base64 &lt; image.jpg | tr -d &apos;\n&apos; | pbcopy</div><div class="line"></div><div class="line">cat image.jpg | openssl base64 | tr -d &apos;\n&apos; | pbcopy</div><div class="line"></div><div class="line">openssl base64 -in out.jpg -out filename.b64</div></pre></td></tr></table></figure>
-<blockquote>
-<ul>
-<li><code>data:image/png;base64,{base64 image code}</code>//直接复制到浏览器地址栏回车</li>
-<li><code>&lt;img src=&quot;data:image/jpg;base64,{base64 image code}/&gt;</code>//或者网页里嵌入</li>
-</ul>
-</blockquote>
-<h2 id="References"><a href="#References" class="headerlink" title="References:"></a>References:</h2><ul>
-<li><a href="http://apistore.baidu.com/apiworks/servicedetail/146.html" target="_blank" rel="external">百度OCR文字识别_工具_API服务_API服务_API Store</a></li>
-<li>apikey <a href="http://apistore.baidu.com/astore/toolshttpproxy?apiId=usa-&amp;isAworks=1" target="_blank" rel="external">API调试工具_API Store</a></li>
-<li><a href="https://github.com/JeremyWei/baidu-ocr" target="_blank" rel="external">JeremyWei/baidu-ocr</a></li>
-<li><a href="http://superuser.com/questions/120796/os-x-base64-encode-via-command-line" target="_blank" rel="external">osx - OS X: Base64 encode via command line - Super User</a></li>
-</ul>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;百度OCR文字识别API-for-Python&quot;&gt;&lt;a href=&quot;#百度OCR文字识别API-for-Python&quot; class=&quot;headerlink&quot; title=&quot;百度OCR文字识别API for Python&quot;&gt;&lt;/a&gt;百度OCR文字识别API for Python&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;11&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;12&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;13&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;14&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;15&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;16&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;17&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;18&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;19&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;20&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;21&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;22&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;23&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;24&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;25&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;#!/usr/bin/env python&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;# -*- coding: utf-8 -*-&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;import sys, urllib, urllib2, json&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;f = open(&amp;quot;test.txt&amp;quot;,&amp;quot;w&amp;quot;)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;url = &amp;apos;http://apis.baidu.com/apistore/idlocr/ocr&amp;apos;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;data = &amp;#123;&amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;data[&amp;apos;fromdevice&amp;apos;] = &amp;quot;pc&amp;quot;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;data[&amp;apos;clientip&amp;apos;] = &amp;quot;10.10.10.0&amp;quot;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;data[&amp;apos;detecttype&amp;apos;] = &amp;quot;LocateRecognize&amp;quot;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;data[&amp;apos;languagetype&amp;apos;] = &amp;quot;CHN_ENG&amp;quot;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;data[&amp;apos;imagetype&amp;apos;] = &amp;quot;1&amp;quot;  #`2`代表图片原文件（只支持JPG）&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;data[&amp;apos;image&amp;apos;] = &amp;quot;&amp;quot;    ##image base64 data&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;decoded_data = urllib.urlencode(data)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;req = urllib2.Request(url, data = decoded_data)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;req.add_header(&amp;quot;Content-Type&amp;quot;, &amp;quot;application/x-www-form-urlencoded&amp;quot;)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;req.add_header(&amp;quot;apikey&amp;quot;, &amp;quot;自己的apikey&amp;quot;)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;resp = urllib2.urlopen(req)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;content = resp.read()&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;if(content):&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    print(content)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    f.write(content)&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-    
-    </summary>
-    
-      <category term="OCR" scheme="http://qunwang6.github.io/blog/categories/OCR/"/>
-    
-    
-      <category term="Python" scheme="http://qunwang6.github.io/blog/tags/Python/"/>
-    
-      <category term="OCR" scheme="http://qunwang6.github.io/blog/tags/OCR/"/>
-    
-      <category term="base64" scheme="http://qunwang6.github.io/blog/tags/base64/"/>
-    
-  </entry>
-  
-  <entry>
     <title>ADBLOCK block list</title>
     <link href="http://qunwang6.github.io/blog/ADBLOCKblocklist/"/>
     <id>http://qunwang6.github.io/blog/ADBLOCKblocklist/</id>
@@ -989,6 +948,47 @@
     
     
       <category term="GFW" scheme="http://qunwang6.github.io/blog/tags/GFW/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>baidu OCR</title>
+    <link href="http://qunwang6.github.io/blog/baiduOCR/"/>
+    <id>http://qunwang6.github.io/blog/baiduOCR/</id>
+    <published>2015-06-05T16:00:00.000Z</published>
+    <updated>2015-06-24T15:48:38.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="百度OCR文字识别API-for-Python"><a href="#百度OCR文字识别API-for-Python" class="headerlink" title="百度OCR文字识别API for Python"></a>百度OCR文字识别API for Python</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line">#!/usr/bin/env python</div><div class="line"># -*- coding: utf-8 -*-</div><div class="line">import sys, urllib, urllib2, json</div><div class="line">f = open(&quot;test.txt&quot;,&quot;w&quot;)</div><div class="line">url = &apos;http://apis.baidu.com/apistore/idlocr/ocr&apos;</div><div class="line"></div><div class="line">data = &#123;&#125;</div><div class="line">data[&apos;fromdevice&apos;] = &quot;pc&quot;</div><div class="line">data[&apos;clientip&apos;] = &quot;10.10.10.0&quot;</div><div class="line">data[&apos;detecttype&apos;] = &quot;LocateRecognize&quot;</div><div class="line">data[&apos;languagetype&apos;] = &quot;CHN_ENG&quot;</div><div class="line">data[&apos;imagetype&apos;] = &quot;1&quot;  #`2`代表图片原文件（只支持JPG）</div><div class="line">data[&apos;image&apos;] = &quot;&quot;    ##image base64 data</div><div class="line"></div><div class="line">decoded_data = urllib.urlencode(data)</div><div class="line">req = urllib2.Request(url, data = decoded_data)</div><div class="line"></div><div class="line">req.add_header(&quot;Content-Type&quot;, &quot;application/x-www-form-urlencoded&quot;)</div><div class="line">req.add_header(&quot;apikey&quot;, &quot;自己的apikey&quot;)</div><div class="line"></div><div class="line">resp = urllib2.urlopen(req)</div><div class="line">content = resp.read()</div><div class="line">if(content):</div><div class="line">    print(content)</div><div class="line">    f.write(content)</div></pre></td></tr></table></figure>
+<a id="more"></a>
+<h2 id="image-convert-to-base64-code"><a href="#image-convert-to-base64-code" class="headerlink" title="image convert to base64 code"></a>image convert to base64 code</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">openssl base64 &lt; image.jpg | tr -d &apos;\n&apos; | pbcopy</div><div class="line"></div><div class="line">cat image.jpg | openssl base64 | tr -d &apos;\n&apos; | pbcopy</div><div class="line"></div><div class="line">openssl base64 -in out.jpg -out filename.b64</div></pre></td></tr></table></figure>
+<blockquote>
+<ul>
+<li><code>data:image/png;base64,{base64 image code}</code>//直接复制到浏览器地址栏回车</li>
+<li><code>&lt;img src=&quot;data:image/jpg;base64,{base64 image code}/&gt;</code>//或者网页里嵌入</li>
+</ul>
+</blockquote>
+<h2 id="References"><a href="#References" class="headerlink" title="References:"></a>References:</h2><ul>
+<li><a href="http://apistore.baidu.com/apiworks/servicedetail/146.html" target="_blank" rel="external">百度OCR文字识别_工具_API服务_API服务_API Store</a></li>
+<li>apikey <a href="http://apistore.baidu.com/astore/toolshttpproxy?apiId=usa-&amp;isAworks=1" target="_blank" rel="external">API调试工具_API Store</a></li>
+<li><a href="https://github.com/JeremyWei/baidu-ocr" target="_blank" rel="external">JeremyWei/baidu-ocr</a></li>
+<li><a href="http://superuser.com/questions/120796/os-x-base64-encode-via-command-line" target="_blank" rel="external">osx - OS X: Base64 encode via command line - Super User</a></li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;百度OCR文字识别API-for-Python&quot;&gt;&lt;a href=&quot;#百度OCR文字识别API-for-Python&quot; class=&quot;headerlink&quot; title=&quot;百度OCR文字识别API for Python&quot;&gt;&lt;/a&gt;百度OCR文字识别API for Python&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;11&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;12&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;13&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;14&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;15&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;16&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;17&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;18&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;19&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;20&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;21&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;22&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;23&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;24&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;25&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;#!/usr/bin/env python&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;# -*- coding: utf-8 -*-&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;import sys, urllib, urllib2, json&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;f = open(&amp;quot;test.txt&amp;quot;,&amp;quot;w&amp;quot;)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;url = &amp;apos;http://apis.baidu.com/apistore/idlocr/ocr&amp;apos;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;data = &amp;#123;&amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;data[&amp;apos;fromdevice&amp;apos;] = &amp;quot;pc&amp;quot;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;data[&amp;apos;clientip&amp;apos;] = &amp;quot;10.10.10.0&amp;quot;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;data[&amp;apos;detecttype&amp;apos;] = &amp;quot;LocateRecognize&amp;quot;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;data[&amp;apos;languagetype&amp;apos;] = &amp;quot;CHN_ENG&amp;quot;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;data[&amp;apos;imagetype&amp;apos;] = &amp;quot;1&amp;quot;  #`2`代表图片原文件（只支持JPG）&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;data[&amp;apos;image&amp;apos;] = &amp;quot;&amp;quot;    ##image base64 data&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;decoded_data = urllib.urlencode(data)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;req = urllib2.Request(url, data = decoded_data)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;req.add_header(&amp;quot;Content-Type&amp;quot;, &amp;quot;application/x-www-form-urlencoded&amp;quot;)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;req.add_header(&amp;quot;apikey&amp;quot;, &amp;quot;自己的apikey&amp;quot;)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;resp = urllib2.urlopen(req)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;content = resp.read()&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;if(content):&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    print(content)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    f.write(content)&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+      <category term="OCR" scheme="http://qunwang6.github.io/blog/categories/OCR/"/>
+    
+    
+      <category term="Python" scheme="http://qunwang6.github.io/blog/tags/Python/"/>
+    
+      <category term="OCR" scheme="http://qunwang6.github.io/blog/tags/OCR/"/>
+    
+      <category term="base64" scheme="http://qunwang6.github.io/blog/tags/base64/"/>
     
   </entry>
   
