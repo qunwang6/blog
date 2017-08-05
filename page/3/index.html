@@ -79,7 +79,7 @@
     
       
       <li class="menu-item menu-item-home">
-        <a href="/blog/blog/">
+        <a href="/blog/">
           <i class="menu-item-icon icon-home"></i> <br />
           首页
         </a>
@@ -197,81 +197,6 @@
             <a href="/blog/tags/Sublime/"> #Sublime </a>
           
         </div>
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </div>
-  </div>
-
-
-    
-      
-
-  <div class="post post-type-normal ">
-    <div class="post-header">
-
-      
-      
-        <h1 class="post-title">
-          
-          
-            
-              <a class="post-title-link" href="/blog/ExMachina/">
-                Secret code in Ex Machina
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于 2015-05-17
-        </span>
-
-        
-          <span class="post-category">
-            &nbsp; | &nbsp; 分类于
-            
-              <a href="/blog/categories/Python/">Python</a>
-
-              
-              
-
-            
-          </span>
-        
-
-        
-          
-        
-      </div>
-    </div>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <p><img src="http://i.imgur.com/C44iJeR.jpg" alt=""></p>
-<p>###Code<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div></pre></td><td class="code"><pre><div class="line">#BlueBook code decryption</div><div class="line">import sys</div><div class="line">def sieve(n):</div><div class="line">    x = [1] * n</div><div class="line">    x[1] = 0</div><div class="line">    for i in range(2,n/2):</div><div class="line">            j = 2 * i</div><div class="line">            while j &lt; n:</div><div class="line">                    x[j]=0</div><div class="line">                    j = j+i</div><div class="line">    return x</div><div class="line"></div><div class="line">def prime(n,x):</div><div class="line">    i = 1</div><div class="line">    j = 1</div><div class="line">    while j &lt;= n:</div><div class="line">            if x[i] == 1:</div><div class="line">                    j = j + 1</div><div class="line">            i = i + 1</div><div class="line">    return i - 1</div><div class="line">x=sieve(10000)</div><div class="line">code = [1206,301,384,5]</div><div class="line">key =[1,1,2,2,]</div><div class="line"></div><div class="line">sys.stdout.write(&quot;&quot;.join(chr(i) for i in [73,83,66,78,32,61,32]))</div><div class="line">for i in range (0,4):</div><div class="line">    sys.stdout.write(str(prime(code[i],x)-key[i]))</div><div class="line"></div><div class="line">print</div></pre></td></tr></table></figure></p>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/blog/ExMachina/#more">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div class="post-footer">
       
 
       
@@ -443,6 +368,81 @@
             <a href="/blog/tags/debug/"> #debug </a>
           
         </div>
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </div>
+  </div>
+
+
+    
+      
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
+              <a class="post-title-link" href="/blog/ExMachina/">
+                Secret code in Ex Machina
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于 2015-05-17
+        </span>
+
+        
+          <span class="post-category">
+            &nbsp; | &nbsp; 分类于
+            
+              <a href="/blog/categories/Python/">Python</a>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+        
+      </div>
+    </div>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <p><img src="http://i.imgur.com/C44iJeR.jpg" alt=""></p>
+<p>###Code<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div></pre></td><td class="code"><pre><div class="line">#BlueBook code decryption</div><div class="line">import sys</div><div class="line">def sieve(n):</div><div class="line">    x = [1] * n</div><div class="line">    x[1] = 0</div><div class="line">    for i in range(2,n/2):</div><div class="line">            j = 2 * i</div><div class="line">            while j &lt; n:</div><div class="line">                    x[j]=0</div><div class="line">                    j = j+i</div><div class="line">    return x</div><div class="line"></div><div class="line">def prime(n,x):</div><div class="line">    i = 1</div><div class="line">    j = 1</div><div class="line">    while j &lt;= n:</div><div class="line">            if x[i] == 1:</div><div class="line">                    j = j + 1</div><div class="line">            i = i + 1</div><div class="line">    return i - 1</div><div class="line">x=sieve(10000)</div><div class="line">code = [1206,301,384,5]</div><div class="line">key =[1,1,2,2,]</div><div class="line"></div><div class="line">sys.stdout.write(&quot;&quot;.join(chr(i) for i in [73,83,66,78,32,61,32]))</div><div class="line">for i in range (0,4):</div><div class="line">    sys.stdout.write(str(prime(code[i],x)-key[i]))</div><div class="line"></div><div class="line">print</div></pre></td></tr></table></figure></p>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/blog/ExMachina/#more">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <div class="post-footer">
       
 
       
@@ -653,82 +653,6 @@
           
           
             
-              <a class="post-title-link" href="/blog/TheJoelTest/">
-                The Joel Test
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于 2015-05-08
-        </span>
-
-        
-          <span class="post-category">
-            &nbsp; | &nbsp; 分类于
-            
-              <a href="/blog/categories/program/">program</a>
-
-              
-              
-
-            
-          </span>
-        
-
-        
-          
-        
-      </div>
-    </div>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">Do you use source control?</div><div class="line">Can you make a build in one step?</div><div class="line">Do you make daily builds?</div><div class="line">Do you have a bug database?</div><div class="line">Do you fix bugs before writing new code?</div><div class="line">Do you have an up-to-date schedule?</div><div class="line">Do you have a spec?</div><div class="line">Do programmers have quiet working conditions?</div><div class="line">Do you use the best tools money can buy?</div><div class="line">Do you have testers?</div><div class="line">Do new candidates write code during their interview?</div><div class="line">Do you do hallway usability testing?</div></pre></td></tr></table></figure>
-
-        
-      
-    </div>
-
-    <div class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/blog/tags/program/"> #program </a>
-          
-        </div>
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </div>
-  </div>
-
-
-    
-      
-
-  <div class="post post-type-normal ">
-    <div class="post-header">
-
-      
-      
-        <h1 class="post-title">
-          
-          
-            
               <a class="post-title-link" href="/blog/PasswordGenerator/">
                 password generator
               </a>
@@ -809,8 +733,8 @@
           
           
             
-              <a class="post-title-link" href="/blog/OSXDictionary/">
-                \BGL\DSL\MDX\CD\ ===> OS X dictionary
+              <a class="post-title-link" href="/blog/TheJoelTest/">
+                The Joel Test
               </a>
             
           
@@ -826,7 +750,7 @@
           <span class="post-category">
             &nbsp; | &nbsp; 分类于
             
-              <a href="/blog/categories/dictionary/">dictionary</a>
+              <a href="/blog/categories/program/">program</a>
 
               
               
@@ -848,24 +772,8 @@
 
       
         
-          <p>###开源项目：PYGLOSSARY</p>
-<ul>
-<li><a href="https://github.com/ilius/pyglossary" target="_blank" rel="external">PYGLOSSARY</a></li>
-<li><a href="https://bitbucket.org/james_taylor/python-lzo-static" target="_blank" rel="external">python-lzo</a></li>
-</ul>
-<p>###准备好以下环境：</p>
-<blockquote>
-<ul>
-<li>BeautifulSoup4 required to sanitize html contents.<br> <code>sudo easy_install beautifulsoup4 html5lib</code></li>
-<li>GNU make as part of <a href="http://developer.apple.com/downloads" target="_blank" rel="external">Command Line Tools for Xcode.</a></li>
-<li>Dictionary Development Kit as part of <a href="http://developer.apple.com/downloads" target="_blank" rel="external">Auxillary Tools for Xcode</a>.将Dictionary Development Kit解压到<strong>/Applications/Utilities/DictionaryDevelopmentKit/  </strong>（不含空格,中文名:应用程序/实用工具那里，也可以解压到其它地方。）</li>
-</ul>
-</blockquote>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/blog/OSXDictionary/#more">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">Do you use source control?</div><div class="line">Can you make a build in one step?</div><div class="line">Do you make daily builds?</div><div class="line">Do you have a bug database?</div><div class="line">Do you fix bugs before writing new code?</div><div class="line">Do you have an up-to-date schedule?</div><div class="line">Do you have a spec?</div><div class="line">Do programmers have quiet working conditions?</div><div class="line">Do you use the best tools money can buy?</div><div class="line">Do you have testers?</div><div class="line">Do new candidates write code during their interview?</div><div class="line">Do you do hallway usability testing?</div></pre></td></tr></table></figure>
+
         
       
     </div>
@@ -874,13 +782,7 @@
       
         <div class="post-tags">
           
-            <a href="/blog/tags/iOS/"> #iOS </a>
-          
-            <a href="/blog/tags/Python/"> #Python </a>
-          
-            <a href="/blog/tags/dictionary/"> #dictionary </a>
-          
-            <a href="/blog/tags/OS-X/"> #OS X </a>
+            <a href="/blog/tags/program/"> #program </a>
           
         </div>
       
@@ -986,6 +888,104 @@
             <a href="/blog/tags/OS-X/"> #OS X </a>
           
             <a href="/blog/tags/lingvo/"> #lingvo </a>
+          
+        </div>
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </div>
+  </div>
+
+
+    
+      
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
+              <a class="post-title-link" href="/blog/OSXDictionary/">
+                \BGL\DSL\MDX\CD\ ===> OS X dictionary
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于 2015-05-08
+        </span>
+
+        
+          <span class="post-category">
+            &nbsp; | &nbsp; 分类于
+            
+              <a href="/blog/categories/dictionary/">dictionary</a>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+        
+      </div>
+    </div>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <p>###开源项目：PYGLOSSARY</p>
+<ul>
+<li><a href="https://github.com/ilius/pyglossary" target="_blank" rel="external">PYGLOSSARY</a></li>
+<li><a href="https://bitbucket.org/james_taylor/python-lzo-static" target="_blank" rel="external">python-lzo</a></li>
+</ul>
+<p>###准备好以下环境：</p>
+<blockquote>
+<ul>
+<li>BeautifulSoup4 required to sanitize html contents.<br> <code>sudo easy_install beautifulsoup4 html5lib</code></li>
+<li>GNU make as part of <a href="http://developer.apple.com/downloads" target="_blank" rel="external">Command Line Tools for Xcode.</a></li>
+<li>Dictionary Development Kit as part of <a href="http://developer.apple.com/downloads" target="_blank" rel="external">Auxillary Tools for Xcode</a>.将Dictionary Development Kit解压到<strong>/Applications/Utilities/DictionaryDevelopmentKit/  </strong>（不含空格,中文名:应用程序/实用工具那里，也可以解压到其它地方。）</li>
+</ul>
+</blockquote>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/blog/OSXDictionary/#more">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <div class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/blog/tags/iOS/"> #iOS </a>
+          
+            <a href="/blog/tags/Python/"> #Python </a>
+          
+            <a href="/blog/tags/dictionary/"> #dictionary </a>
+          
+            <a href="/blog/tags/OS-X/"> #OS X </a>
           
         </div>
       
